@@ -1,6 +1,7 @@
 {
 	"mods": [
 		{
+			"id": "unity-explorer-mono",
 			"title": "UnityExplorer Mono",
 			"author": "Sinai",
 			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
