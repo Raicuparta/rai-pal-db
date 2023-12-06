@@ -2,18 +2,22 @@
 	"mods": {
 		"unity-explorer-mono": {
 			"id": "unity-explorer-mono",
-			"title": "UnityExplorer Mono",
-			"author": "Sinai",
-			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
-			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
-			"engine": "Unity",
-			"unityBackend": "Mono",
-			"downloads": [
-				{
-					"version": "4.9.0",
-					"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
-				}
-			]
+			"common": {
+				"engine": "Unity",
+				"unityBackend": "Mono",
+			},
+			"data": {
+				"title": "UnityExplorer Mono",
+				"author": "Sinai",
+				"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
+				"description": "An in-game UI for exploring, debugging and modifying Unity games.",
+				"downloads": [
+					{
+						"version": "4.9.0",
+						"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
+					}
+				]
+			}
 		}
 	}
 }
