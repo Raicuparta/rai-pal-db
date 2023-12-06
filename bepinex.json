@@ -4,7 +4,7 @@
 			"id": "unity-explorer-mono",
 			"common": {
 				"engine": "Unity",
-				"unityBackend": "Mono",
+				"unityBackend": "Mono"
 			},
 			"data": {
 				"title": "UnityExplorer Mono",
