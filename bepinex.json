@@ -1,8 +1,8 @@
 {
 	"mods": {
 		"unity-explorer-mono": {
-			"id": "unity-explorer-mono",
 			"common": {
+				"id": "unity-explorer-mono",
 				"engine": "Unity",
 				"unityBackend": "Mono"
 			},
