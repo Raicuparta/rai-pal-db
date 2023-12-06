@@ -1,6 +1,6 @@
 {
-	"mods": [
-		{
+	"mods": {
+		"unity-explorer-mono": {
 			"id": "unity-explorer-mono",
 			"title": "UnityExplorer Mono",
 			"author": "Sinai",
@@ -15,5 +15,5 @@
 				}
 			]
 		}
-	]
+	}
 }
