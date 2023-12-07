@@ -18,6 +18,25 @@
 					}
 				]
 			}
+		},
+		"unity-explorer-il2cpp": {
+			"common": {
+				"id": "unity-explorer-il2cpp",
+				"engine": "Unity",
+				"unityBackend": "Il2Cpp"
+			},
+			"data": {
+				"title": "UnityExplorer Il2Cpp",
+				"author": "Sinai",
+				"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
+				"description": "An in-game UI for exploring, debugging and modifying Unity games.",
+				"downloads": [
+					{
+						"version": "4.9.0",
+						"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx.IL2CPP.zip"
+					}
+				]
+			}
 		}
 	}
 }
