@@ -34,7 +34,7 @@
 					{
 						"version": "4.9.0",
 						"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx.IL2CPP.zip",
-						"root": "UnityExplorer.BepInEx.IL2CPP",
+						"root": "UnityExplorer.BepInEx.IL2CPP"
 					}
 				]
 			}
