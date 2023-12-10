@@ -1,0 +1,88 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+	  "$schema": {
+		"type": "string"
+	  },
+	  "mods": {
+		"type": "object",
+		"additionalProperties": {
+		  "type": "object",
+		  "properties": {
+			"common": {
+			  "type": "object",
+			  "description": "Common information between mods from the database and locally installed mods.",
+			  "properties": {
+				"id": {
+				  "type": "string",
+				  "description": "Uniquely identifies this mod within this mod loader. Same as the object key."
+				},
+				"engine": {
+				  "type": "string",
+				  "enum": ["Unity", "Unreal", "Godot"],
+				  "description": "Game engine that this mod supports."
+				},
+				"unityBackend": {
+				  "type": "string",
+				  "enum": ["Il2Cpp", "Mono"],
+				  "description": "Only relevant if engine=Unity. Scripting backend used by the game."
+				}
+			  },
+			  "required": ["id"]
+			},
+			"data": {
+			  "type": "object",
+			  "description": "Information unique to mods in the database.",
+			  "properties": {
+				"title": {
+				  "type": "string",
+				  "description": "Mod's display name."
+				},
+				"author": {
+				  "type": "string",
+				  "description": "Mod author."
+				},
+				"sourceCode": {
+				  "type": "string",
+				  "format": "uri",
+				  "description": "URL of a repository with the mod's source code."
+				},
+				"description": {
+				  "type": "string",
+				  "description": "Short description that explains what the mod does."
+				},
+				"downloads": {
+				  "type": "array",
+				  "description": "List of downloadable mod releases.",
+				  "items": {
+					"type": "object",
+					"properties": {
+					  "version": {
+						"type": "string",
+						"description": "String that uniquely identifies this release."
+					  },
+					  "url": {
+						"type": "string",
+						"format": "uri",
+						"description": "Direct download url for the release zip"
+					  },
+					  "root": {
+						"type": "string",
+						"description": "Optional, path of the root folder within the zip."
+					  }
+					},
+					"required": ["version", "url"]
+				  }
+				}
+			  },
+			  "required": ["title", "author", "sourceCode", "description", "downloads"]
+			}
+		  },
+		  "required": ["common", "data"]
+		}
+	  }
+	},
+	"required": ["$schema", "mods"]
+  }
+  
