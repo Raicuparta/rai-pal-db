@@ -2,81 +2,61 @@
 	"$schema": "./schema.json",
 	"mods": {
 		"unity-explorer-mono": {
-			"common": {
-				"id": "unity-explorer-mono",
-				"engine": "Unity",
-				"unityBackend": "Mono"
-			},
-			"data": {
-				"title": "UnityExplorer Mono",
-				"author": "Sinai",
-				"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
-				"description": "An in-game UI for exploring, debugging and modifying Unity games.",
-				"downloads": [
-					{
-						"version": "4.9.0",
-						"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
-					}
-				]
-			}
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"title": "UnityExplorer Mono",
+			"author": "Sinai",
+			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
+			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
+			"downloads": [
+				{
+					"version": "4.9.0",
+					"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
+				}
+			]
 		},
 		"unity-explorer-il2cpp": {
-			"common": {
-				"id": "unity-explorer-il2cpp",
-				"engine": "Unity",
-				"unityBackend": "Il2Cpp"
-			},
-			"data": {
-				"title": "UnityExplorer Il2Cpp",
-				"author": "Sinai",
-				"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
-				"description": "An in-game UI for exploring, debugging and modifying Unity games.",
-				"downloads": [
-					{
-						"version": "4.9.0",
-						"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx.IL2CPP.zip",
-						"root": "UnityExplorer.BepInEx.IL2CPP"
-					}
-				]
-			}
+			"engine": "Unity",
+			"unityBackend": "Il2Cpp",
+			"title": "UnityExplorer Il2Cpp",
+			"author": "Sinai",
+			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
+			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
+			"downloads": [
+				{
+					"version": "4.9.0",
+					"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx.IL2CPP.zip",
+					"root": "UnityExplorer.BepInEx.IL2CPP"
+				}
+			]
 		},
 		"uuvr-mono": {
-			"common": {
-				"id": "uuvr-mono",
-				"engine": "Unity",
-				"unityBackend": "Mono"
-			},
-			"data": {
-				"title": "Universal Unity VR Mono",
-				"author": "Sinai",
-				"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-				"description": "Universal VR mod for Unity games",
-				"downloads": [
-					{
-						"version": "0.1.0",
-						"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-mono.zip"
-					}
-				]
-			}
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"title": "Universal Unity VR Mono",
+			"author": "Sinai",
+			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
+			"description": "Universal VR mod for Unity games",
+			"downloads": [
+				{
+					"version": "0.1.0",
+					"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-mono.zip"
+				}
+			]
 		},
 		"uuvr-il2cpp": {
-			"common": {
-				"id": "uuvr-il2cpp",
-				"engine": "Unity",
-				"unityBackend": "Il2Cpp"
-			},
-			"data": {
-				"title": "Universal Unity VR Il2Cpp",
-				"author": "Sinai",
-				"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-				"description": "Universal VR mod for Unity games",
-				"downloads": [
-					{
-						"version": "0.1.0",
-						"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-il2cpp.zip"
-					}
-				]
-			}
+			"engine": "Unity",
+			"unityBackend": "Il2Cpp",
+			"title": "Universal Unity VR Il2Cpp",
+			"author": "Sinai",
+			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
+			"description": "Universal VR mod for Unity games",
+			"downloads": [
+				{
+					"version": "0.1.0",
+					"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-il2cpp.zip"
+				}
+			]
 		}
 	}
 }
