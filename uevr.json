@@ -1,4 +1,17 @@
 {
     "$schema": "./schema.json",
-	"mods": []
+    "mods": [
+        {
+            "id": "uevr",
+            "engine": "Unreal",
+            "title": "UEVR",
+            "author": "praydog",
+            "sourceCode": "https://github.com/praydog/UEVR",
+            "description": "Not released yet. Click 'Open mod folder' and place your UEVR files in there.",
+            "latestVersion": {
+				"id": "",
+				"url": ""
+			}
+        }
+    ]
 }
