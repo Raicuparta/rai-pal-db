@@ -1,7 +1,8 @@
 {
 	"$schema": "./schema.json",
-	"mods": {
-		"unity-explorer-mono": {
+	"mods": [
+		{
+			"id": "unity-explorer-mono",
 			"engine": "Unity",
 			"unityBackend": "Mono",
 			"title": "UnityExplorer Mono",
@@ -15,7 +16,8 @@
 				}
 			]
 		},
-		"unity-explorer-il2cpp": {
+		{
+			"id": "unity-explorer-il2cpp",
 			"engine": "Unity",
 			"unityBackend": "Il2Cpp",
 			"title": "UnityExplorer Il2Cpp",
@@ -30,7 +32,8 @@
 				}
 			]
 		},
-		"uuvr-mono": {
+		{
+			"id": "uuvr-mono",
 			"engine": "Unity",
 			"unityBackend": "Mono",
 			"title": "Universal Unity VR Mono",
@@ -44,7 +47,8 @@
 				}
 			]
 		},
-		"uuvr-il2cpp": {
+		{
+			"id": "uuvr-il2cpp",
 			"engine": "Unity",
 			"unityBackend": "Il2Cpp",
 			"title": "Universal Unity VR Il2Cpp",
@@ -58,5 +62,5 @@
 				}
 			]
 		}
-	}
+	]
 }
