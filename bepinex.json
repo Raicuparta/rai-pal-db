@@ -9,12 +9,10 @@
 			"author": "Sinai",
 			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
 			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
-			"downloads": [
-				{
-					"version": "4.9.0",
-					"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
-				}
-			]
+			"latestVersion": {
+				"id": "4.9.0",
+				"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
+			}
 		},
 		{
 			"id": "unity-explorer-il2cpp",
@@ -24,13 +22,11 @@
 			"author": "Sinai",
 			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
 			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
-			"downloads": [
-				{
-					"version": "4.9.0",
-					"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx.IL2CPP.zip",
-					"root": "UnityExplorer.BepInEx.IL2CPP"
-				}
-			]
+			"latestVersion": {
+				"id": "4.9.0",
+				"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx.IL2CPP.zip",
+				"root": "UnityExplorer.BepInEx.IL2CPP"
+			}
 		},
 		{
 			"id": "uuvr-mono",
@@ -40,12 +36,10 @@
 			"author": "Sinai",
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
 			"description": "Universal VR mod for Unity games",
-			"downloads": [
-				{
-					"version": "0.1.0",
-					"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-mono.zip"
-				}
-			]
+			"latestVersion": {
+				"id": "0.1.0",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-mono.zip"
+			}
 		},
 		{
 			"id": "uuvr-il2cpp",
@@ -55,12 +49,10 @@
 			"author": "Sinai",
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
 			"description": "Universal VR mod for Unity games",
-			"downloads": [
-				{
-					"version": "0.1.0",
-					"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-il2cpp.zip"
-				}
-			]
+			"latestVersion": {
+				"id": "0.1.0",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-il2cpp.zip"
+			}
 		}
 	]
 }

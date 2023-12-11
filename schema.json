@@ -48,31 +48,27 @@
 						"type": "string",
 						"description": "Short description that explains what the mod does."
 					},
-					"downloads": {
-						"type": "array",
-						"description": "List of downloadable mod releases.",
-						"items": {
-							"type": "object",
-							"properties": {
-								"version": {
-									"type": "string",
-									"description": "String that uniquely identifies this release."
-								},
-								"url": {
-									"type": "string",
-									"format": "uri",
-									"description": "Direct download url for the release zip"
-								},
-								"root": {
-									"type": "string",
-									"description": "Optional, path of the root folder within the zip."
-								}
+					"latestVersion": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "string",
+								"description": "String that uniquely identifies this release when compared with other releases of the same mod."
 							},
-							"required": [
-								"version",
-								"url"
-							]
-						}
+							"url": {
+								"type": "string",
+								"format": "uri",
+								"description": "Direct download url for the release zip."
+							},
+							"root": {
+								"type": "string",
+								"description": "Optional, path of the root folder within the zip."
+							}
+						},
+						"required": [
+							"id",
+							"url"
+						]
 					}
 				},
 				"additionalProperties": false,
@@ -82,7 +78,7 @@
 					"author",
 					"sourceCode",
 					"description",
-					"downloads"
+					"latestVersion"
 				]
 			}
 		}
