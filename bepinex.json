@@ -35,10 +35,10 @@
 			"title": "UUVR Mono",
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-			"description": "Universal VR mod for Unity games. Works best on Unity versions 5 to 2019.",
+			"description": "Press F3 to toggle VR in-game. Works best on Unity versions 5 to 2019.",
 			"latestVersion": {
-				"id": "0.1.0",
-				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-mono.zip"
+				"id": "0.2.0",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.0/uuvr-mono.zip"
 			}
 		},
 		{
@@ -48,10 +48,10 @@
 			"title": "UUVR Il2Cpp",
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-			"description": "Universal VR mod for Unity games. Works best on Unity versions 5 to 2019.",
+			"description": "Press F3 to toggle VR in-game. Works best on Unity versions 5 to 2019.",
 			"latestVersion": {
-				"id": "0.1.0",
-				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-il2cpp.zip"
+				"id": "0.2.0",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.0/uuvr-il2cpp.zip"
 			}
 		}
 	]
