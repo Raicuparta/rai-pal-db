@@ -32,10 +32,10 @@
 			"id": "uuvr-mono",
 			"engine": "Unity",
 			"unityBackend": "Mono",
-			"title": "Universal Unity VR Mono",
-			"author": "Sinai",
+			"title": "UUVR Mono",
+			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-			"description": "Universal VR mod for Unity games",
+			"description": "Universal VR mod for Unity games. Works best on Unity versions 5 to 2019.",
 			"latestVersion": {
 				"id": "0.1.0",
 				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-mono.zip"
@@ -45,10 +45,10 @@
 			"id": "uuvr-il2cpp",
 			"engine": "Unity",
 			"unityBackend": "Il2Cpp",
-			"title": "Universal Unity VR Il2Cpp",
-			"author": "Sinai",
+			"title": "UUVR Il2Cpp",
+			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-			"description": "Universal VR mod for Unity games",
+			"description": "Universal VR mod for Unity games. Works best on Unity versions 5 to 2019.",
 			"latestVersion": {
 				"id": "0.1.0",
 				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.1.0/uuvr-il2cpp.zip"
