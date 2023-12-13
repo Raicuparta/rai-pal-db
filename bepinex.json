@@ -37,8 +37,8 @@
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
 			"description": "Press F3 to toggle VR in-game. Works best on Unity versions 5 to 2019.",
 			"latestVersion": {
-				"id": "0.2.0",
-				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.0/uuvr-mono.zip"
+				"id": "0.2.1",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.1/uuvr-mono.zip"
 			}
 		},
 		{
@@ -50,8 +50,8 @@
 			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
 			"description": "Press F3 to toggle VR in-game. Works best on Unity versions 5 to 2019.",
 			"latestVersion": {
-				"id": "0.2.0",
-				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.0/uuvr-il2cpp.zip"
+				"id": "0.2.1",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.1/uuvr-il2cpp.zip"
 			}
 		}
 	]
