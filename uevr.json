@@ -7,11 +7,7 @@
             "title": "UEVR",
             "author": "praydog",
             "sourceCode": "https://github.com/praydog/UEVR",
-            "latestVersion": {
-                "id": "1.0.0",
-                "url": "https://github.com/praydog/UEVR/releases/latest/download/UEVR.zip"
-            },
-            "description": "Universal VR injector for Unreal Engine games."
+            "description": "VR injector for Unreal games. Click 'Open mod folder' and place the UEVR files in there manually."
         }
     ]
 }
