@@ -6,8 +6,12 @@
             "engine": "Unreal",
             "title": "UEVR",
             "author": "praydog",
+            "latestVersion": {
+                "id": "1.0.0",
+                "url": "https://github.com/praydog/UEVR/releases/download/1.0/UEVR.zip"
+            },
             "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "VR injector for Unreal games. Click 'Open mod folder' and place the UEVR files in there manually."
+            "description": "Universal VR injector for Unreal Engine games. (Make sure to update Rai Pal to 0.3.3 by restarting the app)"
         }
     ]
 }
