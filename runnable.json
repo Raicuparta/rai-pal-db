@@ -12,9 +12,9 @@
                 "runnable": {
                     "path": "UEVRInjector.exe",
                     "args": [
-                        "--attach=\"{{ExecutableName}}\"",
-                        "--path=\"{{ExecutablePath}}\"",
-                        "--json=\"{{GameJson}}\""
+                        "--attach={{ExecutableName}}",
+                        "--path={{ExecutablePath}}",
+                        "--json={{GameJson}}"
                     ]
                 }
             },
