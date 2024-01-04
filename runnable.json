@@ -11,7 +11,11 @@
                 "url": "https://github.com/praydog/UEVR/releases/download/1.01/UEVR.zip",
                 "runnable": {
                     "path": "UEVRInjector.exe",
-                    "args": ["--attach=\"{{ExecutableName}}\" --path=\"{{ExecutablePath}}\"  --json=\"{{GameJson}}\""]
+                    "args": [
+                        "--attach=\"{{ExecutableName}}\"",
+                        "--path=\"{{ExecutablePath}}\"",
+                        "--json=\"{{GameJson}}\""
+                    ]
                 }
             },
             "sourceCode": "https://github.com/praydog/UEVR",
