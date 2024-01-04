@@ -63,8 +63,29 @@
 							"root": {
 								"type": "string",
 								"description": "Optional, path of the root folder within the zip."
+							},
+							"runnable": {
+								"type": "object",
+								"properties": {
+									"path": {
+										"type": "string",
+										"description": "Path relative to the mod folder, pointing to the executable/script to run"
+									},
+									"args": {
+										"type": "array",
+										"description": "List of arguments to pass to the command. TODO: explain parameters.",
+										"items": {
+											"type": "string"
+										}
+									}
+								},
+								"additionalProperties": false,
+								"required": [
+									"path"
+								]
 							}
 						},
+						"additionalProperties": false,
 						"required": [
 							"id",
 							"url"
@@ -82,6 +103,7 @@
 			}
 		}
 	},
+	"additionalProperties": false,
 	"required": [
 		"$schema",
 		"mods"
