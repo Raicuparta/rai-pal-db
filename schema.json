@@ -73,7 +73,7 @@
 									},
 									"args": {
 										"type": "array",
-										"description": "List of arguments to pass to the command. TODO: explain parameters.",
+										"description": "List of arguments to pass to the command. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}",
 										"items": {
 											"type": "string"
 										}
