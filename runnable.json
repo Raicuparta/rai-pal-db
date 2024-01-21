@@ -19,16 +19,16 @@
             "github": {
                 "assetName": "UEVR.zip",
                 "repo": "UEVR",
-                "user": "praydog",
-                "runnable": {
-                    "path": "UEVRInjector.exe",
-                    "args": [
-                        "--attach={{ExecutableName}}"
-                    ]
-                }
+                "user": "praydog"
             },
             "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "Universal VR injector for Unreal Engine games."
+            "description": "Universal VR injector for Unreal Engine games.",
+            "runnable": {
+                "path": "UEVRInjector.exe",
+                "args": [
+                    "--attach={{ExecutableName}}"
+                ]
+            }
         }
     ]
 }

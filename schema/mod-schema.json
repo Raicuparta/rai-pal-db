@@ -45,6 +45,13 @@
         },
         "latestVersion": {
             "$ref": "./release-schema.json"
+        },
+        "runnable": {
+            "$ref": "./runnable-schema.json"
+        },
+        "root": {
+            "type": "string",
+            "description": "Optional, path of the root folder within the zip."
         }
     },
     "additionalProperties": false,

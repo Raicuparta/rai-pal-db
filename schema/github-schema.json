@@ -13,9 +13,6 @@
         "assetName": {
             "type": "string",
             "description": "Name of the release asset to download. Asset needs to have the same name on every release."
-        },
-        "runnable": {
-            "$ref": "./runnable-schema.json"
         }
     },
     "additionalProperties": false,
