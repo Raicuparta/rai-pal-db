@@ -40,7 +40,7 @@
             "type": "string",
             "description": "Short description that explains what the mod does."
         },
-        "gitHub": {
+        "github": {
             "$ref": "./github-schema.json"
         },
         "latestVersion": {
