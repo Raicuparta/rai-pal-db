@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "string",
+            "description": "Path relative to the mod folder, pointing to the executable/script to run"
+        },
+        "args": {
+            "type": "array",
+            "description": "List of arguments to pass to the command. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "path"
+    ]
+}

@@ -1,0 +1,58 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
+        },
+        "engine": {
+            "type": "string",
+            "enum": [
+                "Unity",
+                "Unreal",
+                "Godot"
+            ],
+            "description": "Game engine that this mod supports."
+        },
+        "unityBackend": {
+            "type": "string",
+            "enum": [
+                "Il2Cpp",
+                "Mono"
+            ],
+            "description": "Only relevant if engine=Unity. Scripting backend used by the game."
+        },
+        "title": {
+            "type": "string",
+            "description": "Mod's display name."
+        },
+        "author": {
+            "type": "string",
+            "description": "Mod author."
+        },
+        "sourceCode": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of a repository with the mod's source code."
+        },
+        "description": {
+            "type": "string",
+            "description": "Short description that explains what the mod does."
+        },
+        "gitHub": {
+            "$ref": "./github-schema.json"
+        },
+        "latestVersion": {
+            "$ref": "./release-schema.json"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "id",
+        "title",
+        "author",
+        "sourceCode",
+        "description"
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "$schema": "./schema.json",
+    "$schema": "./schema/db-schema.json",
     "mods": [
         {
             "id": "uevr",
@@ -9,6 +9,17 @@
             "latestVersion": {
                 "id": "1.03",
                 "url": "https://github.com/praydog/UEVR/releases/download/1.03/UEVR.zip",
+                "runnable": {
+                    "path": "UEVRInjector.exe",
+                    "args": [
+                        "--attach={{ExecutableName}}"
+                    ]
+                }
+            },
+            "gitHub": {
+                "assetName": "UEVR.zip",
+                "repo": "UEVR",
+                "user": "praydog",
                 "runnable": {
                     "path": "UEVRInjector.exe",
                     "args": [
