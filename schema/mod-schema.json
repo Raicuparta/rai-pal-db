@@ -6,6 +6,10 @@
             "type": "string",
             "description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
         },
+        "redownloadId": {
+            "type": "number",
+            "description": "Increment this number to force clients to redownload this mod. Useful when a mod needs to be redownloaded without a new version being released."
+        },
         "engine": {
             "type": "string",
             "enum": [

@@ -3,6 +3,7 @@
     "mods": [
         {
             "id": "uevr",
+            "redownloadId": 1,
             "engine": "Unreal",
             "title": "UEVR",
             "author": "praydog",
