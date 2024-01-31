@@ -28,13 +28,7 @@
                 }
             },
             "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "Universal VR injector for Unreal Engine games.",
-            "runnable": {
-                "path": "UEVRInjector.exe",
-                "args": [
-                    "--attach={{ExecutableName}}"
-                ]
-            }
+            "description": "Universal VR injector for Unreal Engine games."
         }
     ]
 }
