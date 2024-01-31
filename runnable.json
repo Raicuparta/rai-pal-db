@@ -28,7 +28,7 @@
                 }
             },
             "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "Unreal Engine VR mod. ⚠️ If this gives you a manifest error, go to the Mods tab, select UEVR, and click 'Download Mod'."
+            "description": "Unreal Engine VR mod. ⚠️ If you get a manifest error, go to Mods tab in Rai Pal, select UEVR, and click 'Download Mod'."
         }
     ]
 }
