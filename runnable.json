@@ -28,7 +28,7 @@
                 }
             },
             "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "Universal VR injector for Unreal Engine games."
+            "description": "Unreal Engine VR mod. ⚠️ If this gives you a manifest error, go to the Mods tab, select UEVR, and click 'Download Mod'."
         }
     ]
 }
