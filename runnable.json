@@ -29,7 +29,26 @@
                 }
             },
             "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "Unreal Engine VR mod. ⚠️ If you get a manifest error, go to Mods tab in Rai Pal, select UEVR, and click 'Download Mod'."
+            "description": "Universal VR mod for Unreal Engine games."
+        },
+        {
+            "id": "uevr-nightly",
+            "engine": "Unreal",
+            "title": "UEVR Nightly",
+            "author": "praydog",
+            "github": {
+                "assetName": "uevr.zip",
+                "repo": "UEVR-nightly",
+                "user": "praydog",
+                "runnable": {
+                    "path": "UEVRInjector.exe",
+                    "args": [
+                        "--attach={{ExecutableName}}"
+                    ]
+                }
+            },
+            "sourceCode": "https://github.com/praydog/UEVR",
+            "description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes."
         }
     ]
 }
