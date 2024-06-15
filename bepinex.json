@@ -44,7 +44,7 @@
 		},
 		{
 			"id": "uuvr-mono",
-			"deprecated": true,
+			"deprecated": false,
 			"engine": "Unity",
 			"unityBackend": "Mono",
 			"title": "UUVR Mono",
@@ -58,7 +58,7 @@
 		},
 		{
 			"id": "uuvr-il2cpp",
-			"deprecated": true,
+			"deprecated": false,
 			"engine": "Unity",
 			"unityBackend": "Il2Cpp",
 			"title": "UUVR Il2Cpp",
