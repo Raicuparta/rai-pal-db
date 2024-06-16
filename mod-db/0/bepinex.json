@@ -96,7 +96,8 @@
 			"description": "Press F1 to show an in-game menu for changing mod settings.",
 			"latestVersion": {
 				"id": "18.3.0",
-				"url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v18.3/BepInEx.ConfigurationManager.IL2CPP_v18.3.zip"
+				"url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v18.3/BepInEx.ConfigurationManager.IL2CPP_v18.3.zip",
+				"root": "BepInEx"
 			}
 		}
 	]
