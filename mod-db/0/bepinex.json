@@ -38,7 +38,6 @@
 			"latestVersion": {
 				"id": "4.12.1",
 				"url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.12.1/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
-				"root": "UnityExplorer.BepInEx.IL2CPP"
 			}
 		},
 		{
