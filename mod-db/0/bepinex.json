@@ -24,7 +24,8 @@
 			"description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
 			"latestVersion": {
 				"id": "5.2.1",
-				"url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip"
+				"url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip",
+				"root": "BepInEx"
 			}
 		},
 		{
@@ -96,7 +97,8 @@
 			"description": "Press F1 to show an in-game menu for changing mod settings.",
 			"latestVersion": {
 				"id": "18.3.0",
-				"url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v18.3/BepInEx.ConfigurationManager.IL2CPP_v18.3.zip"
+				"url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v18.3/BepInEx.ConfigurationManager.IL2CPP_v18.3.zip",
+				"root": "BepInEx"
 			}
 		}
 	]
