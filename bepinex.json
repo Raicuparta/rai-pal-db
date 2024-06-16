@@ -1,5 +1,5 @@
 {
-    "$schema": "./schema/db-schema.json",
+    "$schema": "./mod-db/schema/db-schema.json",
 	"mods": [
 		{
 			"id": "unity-explorer-mono",

@@ -1,0 +1,104 @@
+{
+    "$schema": "../schema/db-schema.json",
+	"mods": [
+		{
+			"id": "unity-explorer-mono",
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"title": "UnityExplorer Mono",
+			"author": "Sinai",
+			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
+			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
+			"latestVersion": {
+				"id": "4.9.0",
+				"url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
+			}
+		},
+		{
+			"id": "runtime-unity-editor-mono",
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"title": "Runtime Unity Editor",
+			"author": "ManlyMarco",
+			"sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
+			"description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
+			"latestVersion": {
+				"id": "5.2.1",
+				"url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip"
+			}
+		},
+		{
+			"id": "unity-explorer-il2cpp",
+			"engine": "Unity",
+			"unityBackend": "Il2Cpp",
+			"title": "UnityExplorer Il2Cpp",
+			"author": "Sinai",
+			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
+			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
+			"latestVersion": {
+				"id": "4.12.1",
+				"url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.12.1/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+				"root": "UnityExplorer.BepInEx.IL2CPP"
+			}
+		},
+		{
+			"id": "uuvr-mono",
+			"deprecated": true,
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"title": "DEPRECATED UUVR Mono",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
+			"description": "F3: Toggle VR. F4: Reparent Camera. F5: Fix UI. Unity 5-2019 only",
+			"latestVersion": {
+				"id": "0.2.1",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.1/uuvr-mono.zip"
+			}
+		},
+		{
+			"id": "uuvr-il2cpp",
+			"deprecated": true,
+			"engine": "Unity",
+			"unityBackend": "Il2Cpp",
+			"title": "DEPRECATED UUVR IL2CPP",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
+			"description": "F3: Toggle VR. F4: Reparent Camera. F5: Fix UI. Unity 5-2019 only",
+			"latestVersion": {
+				"id": "0.2.1",
+				"url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.1/uuvr-il2cpp.zip"
+			}
+		},
+		{
+			"id": "uuvr-il2cpp-legacy",
+			"engine": "Unity",
+			"unityBackend": "Il2Cpp",
+			"title": "UUVR Il2Cpp Legacy",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/uuvr",
+			"description": "Best mod",
+            "engineVersionRange": {
+                "maximum": {
+                    "major": 2019
+                }
+            },
+			"latestVersion": {
+				"id": "0.3.0",
+				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/uuvr-tests-0.3.0/uuvr-il2cpp-legacy.zip"
+			}
+		},
+		{
+			"id": "configuration-manager-il2cpp",
+			"engine": "Unity",
+			"unityBackend": "Il2Cpp",
+			"title": "BepInEx Configuration Manager IL2CPP",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/BepInEx/BepInEx.ConfigurationManager",
+			"description": "Press F1 to show an in-game menu for changing mod settings.",
+			"latestVersion": {
+				"id": "18.3.0",
+				"url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v18.3/BepInEx.ConfigurationManager.IL2CPP_v18.3.zip"
+			}
+		}
+	]
+}

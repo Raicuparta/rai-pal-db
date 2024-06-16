@@ -1,5 +1,5 @@
 {
-    "$schema": "./mod-db/schema/db-schema.json",
+    "$schema": "../schema/db-schema.json",
     "mods": [
         {
             "id": "uevr",
