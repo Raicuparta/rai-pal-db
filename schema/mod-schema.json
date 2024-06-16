@@ -57,6 +57,17 @@
         "root": {
             "type": "string",
             "description": "Optional, path of the root folder within the zip."
+        },
+        "engineVersionRange": {
+            "type": "object",
+            "properties": {
+                "minimum": {
+                    "$ref": "./engine-version-schema.json"
+                },
+                "maximum": {
+                    "$ref": "./engine-version-schema.json"
+                }
+            }
         }
     },
     "additionalProperties": false,
