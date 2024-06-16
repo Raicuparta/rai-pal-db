@@ -88,17 +88,16 @@
 			}
 		},
 		{
-			"id": "configuration-manager-il2cpp",
+			"id": "config-manager-il2cpp",
 			"engine": "Unity",
 			"unityBackend": "Il2Cpp",
-			"title": "BepInEx Configuration Manager IL2CPP",
+			"title": "BepInEx Config Manager IL2CPP",
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/BepInEx/BepInEx.ConfigurationManager",
-			"description": "Press F1 to show an in-game menu for changing mod settings.",
+			"description": "Press F5 to show an in-game menu for changing mod settings.",
 			"latestVersion": {
-				"id": "18.3.0",
-				"url": "https://github.com/BepInEx/BepInEx.ConfigurationManager/releases/download/v18.3/BepInEx.ConfigurationManager.IL2CPP_v18.3.zip",
-				"root": "BepInEx"
+				"id": "1.0.0",
+				"url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
 			}
 		}
 	]
