@@ -35,7 +35,7 @@ This repo is automatically deployed to GitHub pages, so the best way to access t
 
 Example: https://raicuparta.github.io/rai-pal-db/mod-db/0/bepinex.json
 
-There are JSON schemas available in [/mod-db/schema](/mod-db/schema) that you can use to understand the format of the database files.
+There are JSON schemas available in [/mod-db/schema](/mod-db/schema) that you can use to understand the format of the database files. The main one is [db-schema.json](/mod-db/schema/db-schema.json), which then references all the others.
 
 ## Steam IDs
 
