@@ -16,7 +16,7 @@ We then need to update the `DATABASE_VERSION` constant in Rai Pal to match the l
 
 ### Mod Loader ID
 
-The name of the JSON file needs to match the mod loader ID used in Rai Pal. For example, BepInEx has the ID `bepinex`, which you can find in [rai-pal/backend/src/mod_loaders/bepinex.rs](https://github.com/Raicuparta/rai-pal/blob/main/backend/src/mod_loaders/bepinex.rs):
+`[mod-loader-id]`, the name of the JSON file, needs to match the mod loader ID used in Rai Pal. For example, BepInEx has the ID `bepinex`, which you can find in [rai-pal/backend/src/mod_loaders/bepinex.rs](https://github.com/Raicuparta/rai-pal/blob/main/backend/src/mod_loaders/bepinex.rs):
 
 ```rust
 impl ModLoaderStatic for BepInEx {
