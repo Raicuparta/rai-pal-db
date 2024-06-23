@@ -83,8 +83,45 @@
                 }
             },
 			"latestVersion": {
-				"id": "0.3.0",
-				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/uuvr-tests-0.3.0/uuvr-il2cpp-legacy.zip"
+				"id": "0.3.1",
+				"url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip"
+			}
+		},
+		{
+			"id": "uuvr-mono-legacy",
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"title": "UUVR Mono Legacy",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/uuvr",
+			"description": "Best mod",
+            "engineVersionRange": {
+                "maximum": {
+                    "major": 2019
+                }
+            },
+			"latestVersion": {
+				"id": "0.3.1",
+				"url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip"
+			}
+		},
+		{
+			"id": "uuvr-mono-modern",
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"title": "UUVR Mono Modern",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/uuvr",
+			"description": "Best mod",
+            "engineVersionRange": {
+                "minimum": {
+                    "major": 2018,
+					"minor": 4
+                }
+            },
+			"latestVersion": {
+				"id": "0.3.1",
+				"url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-modern.zip"
 			}
 		},
 		{
