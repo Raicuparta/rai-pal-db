@@ -35,7 +35,7 @@
 			"title": "UnityExplorer Il2Cpp",
 			"author": "Sinai",
 			"sourceCode": "https://github.com/sinai-dev/UnityExplorer",
-			"description": "An in-game UI for exploring, debugging and modifying Unity games.",
+			"description": "An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
 			"latestVersion": {
 				"id": "4.12.1",
 				"url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.12.1/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
@@ -76,7 +76,7 @@
 			"title": "UUVR Il2Cpp Legacy",
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/uuvr",
-			"description": "Best mod",
+			"description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
             "engineVersionRange": {
                 "maximum": {
                     "major": 2019
@@ -94,7 +94,7 @@
 			"title": "UUVR Mono Legacy",
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/uuvr",
-			"description": "Best mod",
+			"description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
             "engineVersionRange": {
                 "maximum": {
                     "major": 2019
@@ -112,7 +112,7 @@
 			"title": "UUVR Mono Modern",
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/uuvr",
-			"description": "Best mod",
+			"description": "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
             "engineVersionRange": {
                 "minimum": {
                     "major": 2018,
@@ -128,10 +128,10 @@
 			"id": "config-manager-il2cpp",
 			"engine": "Unity",
 			"unityBackend": "Il2Cpp",
-			"title": "BepInEx Config Manager IL2CPP",
+			"title": "Config Manager IL2CPP",
 			"author": "sinai",
 			"sourceCode": "https://github.com/Vapok/BepInExConfigManager",
-			"description": "Press F5 to show an in-game menu for changing mod settings.",
+			"description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
 			"latestVersion": {
 				"id": "1.0.0",
 				"url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
@@ -141,10 +141,10 @@
 			"id": "config-manager-mono",
 			"engine": "Unity",
 			"unityBackend": "Mono",
-			"title": "BepInEx Config Manager Mono",
+			"title": "Config Manager Mono",
 			"author": "sinai",
 			"sourceCode": "https://github.com/sinai-dev/BepInExConfigManager",
-			"description": "Press F5 to show an in-game menu for changing mod settings.",
+			"description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR.",
 			"latestVersion": {
 				"id": "1.3.0",
 				"url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
