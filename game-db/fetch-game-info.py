@@ -17,14 +17,15 @@ def fetch_games_by_engine(engine_name):
     all_games = []
     offset = 0
 
-    # TODO: There can be multiple Steam/GOG ids per game, need to be careful with that.
-
     while True:
+        print(
+            f"Fetching games for engine {engine_name} with offset {offset}...")
+
         params = {
             'action': 'cargoquery',
-            'tables': 'Infobox_game_engine,Infobox_game',
-            'join_on': 'Infobox_game._pageName=Infobox_game_engine._pageName',
-            'fields': 'Infobox_game._pageName=Title,Infobox_game_engine.Engine,Infobox_game.Steam_AppID,Infobox_game.GOGcom_ID,Infobox_game_engine.Build',
+            'tables': 'Infobox_game_engine=Engine,Infobox_game=Game,Availability',
+            'join_on': 'Game._pageName=Engine._pageName,Availability._pageName=Game._pageName',
+            'fields': 'Game._pageName=title,Engine.Engine=engine,Game.Steam_AppID=steamIds,Game.GOGcom_ID=gogIds,Engine.Build=engineVersion,Availability.Xbox_Game_Pass=gamePass',
             'where': f'Engine LIKE "Engine:{engine_name}%"',
             'format': 'json',
             'limit': limit_per_page,
@@ -32,7 +33,6 @@ def fetch_games_by_engine(engine_name):
         }
 
         response = requests.get(url, params=params)
-        print(response.url)
         data = response.json()
 
         if 'cargoquery' in data:
@@ -49,8 +49,16 @@ def fetch_games_by_engine(engine_name):
 
 def clean_up_properties(game):
     cleaned_game = {k: v for k, v in game.items() if v is not None}
-    if 'Engine' in cleaned_game:
-        cleaned_game['Engine'] = cleaned_game['Engine'].replace('Engine:', '')
+
+    if 'engine' in cleaned_game:
+        cleaned_game['engine'] = cleaned_game['engine'].replace('Engine:', '')
+
+    if 'steamIds' in cleaned_game:
+        cleaned_game['steamIds'] = cleaned_game['steamIds'].split(',')
+
+    if 'gogIds' in cleaned_game:
+        cleaned_game['gogIds'] = cleaned_game['gogIds'].split(',')
+
     return cleaned_game
 
 
