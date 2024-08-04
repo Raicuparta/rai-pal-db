@@ -47,8 +47,11 @@ def fetch_games_by_engine(engine_name):
     return all_games
 
 
-def remove_null_properties(game):
-    return {k: v for k, v in game.items() if v is not None}
+def clean_up_properties(game):
+    cleaned_game = {k: v for k, v in game.items() if v is not None}
+    if 'Engine' in cleaned_game:
+        cleaned_game['Engine'] = cleaned_game['Engine'].replace('Engine:', '')
+    return cleaned_game
 
 
 engine_names = ["Unity", "Godot", "Unreal", "GameMaker"]
@@ -56,7 +59,7 @@ engine_names = ["Unity", "Godot", "Unreal", "GameMaker"]
 all_games = []
 for engine_name in engine_names:
     games = fetch_games_by_engine(engine_name)
-    all_games.extend(remove_null_properties(game) for game in games)
+    all_games.extend(clean_up_properties(game) for game in games)
 
 output_path = f"{database_version}/games.json"
 os.makedirs(os.path.dirname(output_path), exist_ok=True)
