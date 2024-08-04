@@ -39,9 +39,9 @@ def fetch_games_by_engine(engine_name):
 
         params = {
             'action': 'cargoquery',
-            'tables': 'Infobox_game_engine=Engine,Infobox_game=Game,Availability',
-            'join_on': 'Game._pageName=Engine._pageName,Availability._pageName=Game._pageName',
-            'fields': 'Game._pageName=title,Engine.Engine=engine,Game.Steam_AppID=steamIds,Game.GOGcom_ID=gogIds,Engine.Build=engineVersion,Availability.Xbox_Game_Pass=gamePass',
+            'tables': 'Infobox_game_engine=Engine,Infobox_game=Game',
+            'join_on': 'Game._pageName=Engine._pageName',
+            'fields': 'Game._pageName=title,Engine.Engine=engine,Game.Steam_AppID=steamIds,Game.GOGcom_ID=gogIds,Engine.Build=engineVersions',
             'where': f'Engine LIKE "Engine:{engine_name}%"',
             'format': 'json',
             'limit': limit_per_page,
@@ -53,6 +53,7 @@ def fetch_games_by_engine(engine_name):
 
         if 'cargoquery' in data:
             games = [item['title'] for item in data['cargoquery']]
+
             all_games.extend(games)
             if len(games) < limit_per_page:
                 break
@@ -99,5 +100,32 @@ all_games = []
 for engine_name in engine_names:
     games = fetch_games_by_engine(engine_name)
     all_games.extend(clean_up_properties(game) for game in games)
-    with open(output_path, "w") as json_file:
-        json.dump(all_games, json_file, indent=4)
+
+# create map where keys are game titles and values are a list of games with the same title
+games_by_title = {}
+for game in all_games:
+    title = game['title']
+    if title not in games_by_title:
+        games_by_title[title] = []
+    games_by_title[title].append(game)
+
+# now flatten it back down into a list, where engineVersions is now a list of versions
+unique_games = []
+
+for title, games in games_by_title.items():
+    unique_game = None
+    for game in games:
+        if unique_game is None:
+            unique_game = game
+            if 'engineVersions' in game:
+                unique_game['engineVersions'] = [game['engineVersions']]
+            continue
+
+        if 'engineVersions' in game:
+            unique_game['engineVersions'] = unique_game.get(
+                'engineVersions', []) + [game['engineVersions']]
+
+    unique_games.append(unique_game)
+
+with open(output_path, "w") as json_file:
+    json.dump(unique_games, json_file, indent=4)
