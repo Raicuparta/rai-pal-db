@@ -41,7 +41,7 @@ def fetch_games_by_engine(engine_name):
             'action': 'cargoquery',
             'tables': 'Infobox_game_engine=Engine,Infobox_game=Game',
             'join_on': 'Game._pageName=Engine._pageName',
-            'fields': 'Game._pageName=title,Engine.Engine=engine,Game.Steam_AppID=steamIds,Game.GOGcom_ID=gogIds,Engine.Build=engineVersions',
+            'fields': 'Game._pageName=title,Engine.Engine=engineBrand,Game.Steam_AppID=steamIds,Game.GOGcom_ID=gogIds,Engine.Build=engineVersion',
             'where': f'Engine LIKE "Engine:{engine_name}%"',
             'format': 'json',
             'limit': limit_per_page,
@@ -79,8 +79,9 @@ def comma_separated_to_array(comma_separated):
 def clean_up_properties(game):
     cleaned_game = {k: v for k, v in game.items() if v is not None}
 
-    if 'engine' in cleaned_game:
-        cleaned_game['engine'] = cleaned_game['engine'].replace('Engine:', '')
+    if 'engineBrand' in cleaned_game:
+        cleaned_game['engineBrand'] = cleaned_game['engineBrand'].replace(
+            'Engine:', '')
 
     if 'steamIds' in cleaned_game:
         cleaned_game['steamIds'] = comma_separated_to_array(
@@ -104,8 +105,9 @@ engine_names = ["GameMaker", "Unity", "Godot", "Unreal"]
 
 all_games = []
 for engine_name in engine_names:
-    games = fetch_games_by_engine(engine_name)
-    all_games.extend(clean_up_properties(game) for game in games)
+    games_with_same_title = fetch_games_by_engine(engine_name)
+    all_games.extend(clean_up_properties(game)
+                     for game in games_with_same_title)
 
 # create map where keys are game titles and values are a list of games with the same title
 games_by_title = {}
@@ -115,23 +117,29 @@ for game in all_games:
         games_by_title[title] = []
     games_by_title[title].append(game)
 
-# now flatten it back down into a list, where engineVersions is now a list of versions
+# now flatten it back down into a list, where engineVersion is now a list of versions
 # TODO: actually the engine itself can be different,
 # so we should group it into a single "engines" property that includes engine id and version
 unique_games = []
 
-for title, games in games_by_title.items():
+for title, games_with_same_title in games_by_title.items():
     unique_game = None
-    for game in games:
+    for game in games_with_same_title:
         if unique_game is None:
             unique_game = game
-            if 'engineVersions' in game:
-                unique_game['engineVersions'] = [game['engineVersions']]
+
+        if 'engineBrand' not in game:
             continue
 
-        if 'engineVersions' in game:
-            unique_game['engineVersions'] = unique_game.get(
-                'engineVersions', []) + [game['engineVersions']]
+        engine = {'brand': game['engineBrand']}
+        del game['engineBrand']
+
+        if 'engineVersion' in game:
+            engine['version'] = game['engineVersion']
+            del game['engineVersion']
+
+        unique_game['engines'] = unique_game.get(
+            'engines', []) + [engine]
 
     unique_games.append(unique_game)
 
