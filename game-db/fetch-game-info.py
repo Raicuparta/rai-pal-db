@@ -72,6 +72,10 @@ def get_epic_game_id_from_title(title):
     return epic_games_store_items.get(normalize_title(title), None)
 
 
+def comma_separated_to_array(comma_separated):
+    return [id.strip() for id in comma_separated.split(',')]
+
+
 def clean_up_properties(game):
     cleaned_game = {k: v for k, v in game.items() if v is not None}
 
@@ -79,10 +83,12 @@ def clean_up_properties(game):
         cleaned_game['engine'] = cleaned_game['engine'].replace('Engine:', '')
 
     if 'steamIds' in cleaned_game:
-        cleaned_game['steamIds'] = cleaned_game['steamIds'].split(',')
+        cleaned_game['steamIds'] = comma_separated_to_array(
+            cleaned_game['steamIds'])
 
     if 'gogIds' in cleaned_game:
-        cleaned_game['gogIds'] = cleaned_game['gogIds'].split(',')
+        cleaned_game['gogIds'] = comma_separated_to_array(
+            cleaned_game['gogIds'])
 
     epic_id = get_epic_game_id_from_title(cleaned_game['title'])
     if epic_id:
