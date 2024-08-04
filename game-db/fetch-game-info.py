@@ -110,6 +110,8 @@ for game in all_games:
     games_by_title[title].append(game)
 
 # now flatten it back down into a list, where engineVersions is now a list of versions
+# TODO: actually the engine itself can be different,
+# so we should group it into a single "engines" property that includes engine id and version
 unique_games = []
 
 for title, games in games_by_title.items():
