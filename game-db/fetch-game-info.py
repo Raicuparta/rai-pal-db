@@ -49,10 +49,6 @@ def read_steam_ids():
                 steam_id = line.strip()
                 steam_ids[steam_id] = provider
 
-    # save to json
-    with open(f"{database_version}/steam_ids.json", "w") as json_file:
-        json.dump(steam_ids, json_file, indent=4)
-
     return steam_ids
 
 
