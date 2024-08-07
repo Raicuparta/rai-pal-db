@@ -175,4 +175,4 @@ for steam_appid, engine_brand in engines_per_steam_appid.items():
     })
 
 with open(output_path, "w") as json_file:
-    json.dump(unique_games, json_file, indent=4)
+    json.dump(unique_games, json_file)
