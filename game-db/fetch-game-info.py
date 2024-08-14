@@ -172,7 +172,7 @@ for title, games_with_same_title in games_by_title.items():
 
 for steam_appid, engine_brand in engines_per_steam_appid.items():
     unique_games.append({
-        'steamIds': [steam_appid],
+        'providerIds': {'Steam': [steam_appid]},
         'engines': [{'brand': engine_brand}]
     })
 
