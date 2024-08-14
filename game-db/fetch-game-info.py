@@ -109,21 +109,23 @@ def clean_up_properties(game):
         cleaned_game['engineBrand'] = cleaned_game['engineBrand'].replace(
             'Engine:', '')
 
+    cleaned_game['providerIds'] = {}
+
     if 'steamIds' in cleaned_game:
-        cleaned_game['steamIds'] = comma_separated_to_array(
+        cleaned_game['providerIds']['Steam'] = comma_separated_to_array(
             cleaned_game['steamIds'])
         # remove steam ids from engines_per_steam_appid
-        for steam_id in cleaned_game['steamIds']:
+        for steam_id in cleaned_game['providerIds']['Steam']:
             if steam_id in engines_per_steam_appid:
                 del engines_per_steam_appid[steam_id]
 
     if 'gogIds' in cleaned_game:
-        cleaned_game['gogIds'] = comma_separated_to_array(
+        cleaned_game['providerIds']['Gog'] = comma_separated_to_array(
             cleaned_game['gogIds'])
 
     epic_id = get_epic_game_id_from_title(cleaned_game['title'])
     if epic_id:
-        cleaned_game['epicIds'] = [epic_id]
+        cleaned_game['providerIds']['Epic'] = [epic_id]
 
     return cleaned_game
 
