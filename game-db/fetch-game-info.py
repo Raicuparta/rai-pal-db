@@ -16,6 +16,7 @@ limit_per_page = 500
 epic_games_store_items = "https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/titles.json"
 
 # These are all the engines that exist in the universe.
+# engine_names = ["GameMaker"]
 engine_names = ["GameMaker", "Unity", "Godot", "Unreal"]
 
 
@@ -114,6 +115,7 @@ def clean_up_properties(game):
     if 'steamIds' in cleaned_game:
         cleaned_game['providerIds']['Steam'] = comma_separated_to_array(
             cleaned_game['steamIds'])
+        del cleaned_game['steamIds']
         # remove steam ids from engines_per_steam_appid
         for steam_id in cleaned_game['providerIds']['Steam']:
             if steam_id in engines_per_steam_appid:
@@ -122,6 +124,7 @@ def clean_up_properties(game):
     if 'gogIds' in cleaned_game:
         cleaned_game['providerIds']['Gog'] = comma_separated_to_array(
             cleaned_game['gogIds'])
+        del cleaned_game['gogIds']
 
     epic_id = get_epic_game_id_from_title(cleaned_game['title'])
     if epic_id:
