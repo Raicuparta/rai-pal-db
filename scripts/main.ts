@@ -1,4 +1,4 @@
-import { join } from "std/path";
+import { join } from "jsr:@std/path";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
 import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
@@ -15,11 +15,17 @@ export type Provider = "Steam" | "Gog" | "Epic" | "Xbox" | "Ubisoft" | "Ea";
 export type EngineBrand = "GameMaker" | "Unity" | "Godot" | "Unreal";
 export type Engine = { brand: EngineBrand; version?: string };
 export type ProviderIdMap = Partial<Record<Provider, string[]>>;
+export type GameSubscription =
+  | "XboxGamePass"
+  | "EaPlay"
+  | "UbisoftClassics"
+  | "UbisoftPremium";
 
 export type Game = {
   title?: string;
   providerIds?: ProviderIdMap;
   engines: Engine[];
+  partOfSubscriptions?: GameSubscription[];
 };
 
 async function main() {

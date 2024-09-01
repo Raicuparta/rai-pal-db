@@ -1,4 +1,4 @@
-import { Game } from "./main.ts";
+import { Game, GameSubscription } from "./main.ts";
 
 const APIIds = {
   console: "f6f1f99f-9b49-4ccd-b3bf-4d9767a77f5e",
@@ -318,7 +318,10 @@ async function fetchGameProperties(
     });
 }
 
-async function fetchGames(passType: PassType): Promise<Game[]> {
+async function fetchGames(
+  passType: PassType,
+  subscription: GameSubscription
+): Promise<Game[]> {
   const ids = await fetchGameIDs(passType, "US");
   const properties = await fetchGameProperties(ids, passType, "US");
   return properties.map((product) => ({
@@ -327,13 +330,14 @@ async function fetchGames(passType: PassType): Promise<Game[]> {
     providerIds: {
       Xbox: [product.ProductId],
     },
+    partOfSubscriptions: [subscription],
   }));
 }
 
 export async function fetchPCGamePassGames(): Promise<Game[]> {
-  return await fetchGames("pc");
+  return await fetchGames("pc", "XboxGamePass");
 }
 
 export async function fetchEAGamePassGames(): Promise<Game[]> {
-  return await fetchGames("eaPlay");
+  return await fetchGames("eaPlay", "EaPlay");
 }

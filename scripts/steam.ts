@@ -1,4 +1,4 @@
-import { join } from "std/path/join";
+import { join } from "jsr:@std/path/join";
 import { engineNames, Game } from "./main.ts";
 
 export async function fetchSteamGames(): Promise<Game[]> {
