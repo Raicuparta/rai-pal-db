@@ -11,7 +11,7 @@ const databaseVersion = 0;
 // These are all the engines that exist in the universe.
 export const engineNames = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
 
-export type Provider = "Steam" | "Gog" | "Epic";
+export type Provider = "Steam" | "Gog" | "Epic" | "Xbox" | "Ubisoft" | "Ea";
 export type EngineBrand = "GameMaker" | "Unity" | "Godot" | "Unreal";
 export type Engine = { brand: EngineBrand; version?: string };
 export type ProviderIdMap = Partial<Record<Provider, string[]>>;

@@ -1,5 +1,5 @@
 import { join } from "std/path/join";
-import { engineNames, Game } from "./game-db.ts";
+import { engineNames, Game } from "./main.ts";
 
 export async function fetchSteamGames(): Promise<Game[]> {
   const games: Game[] = [];

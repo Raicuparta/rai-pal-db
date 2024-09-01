@@ -1,4 +1,4 @@
-import { Game } from "./game-db.ts";
+import { Game } from "./main.ts";
 
 const APIIds = {
   console: "f6f1f99f-9b49-4ccd-b3bf-4d9767a77f5e",

@@ -1,5 +1,5 @@
-import { EngineBrand, ProviderIdMap } from "./game-db.ts";
-import { Engine, engineNames, type Game } from "./game-db.ts";
+import { EngineBrand, ProviderIdMap } from "./main.ts";
+import { Engine, engineNames, type Game } from "./main.ts";
 
 type PCGamingWikiGame = {
   title: string;
