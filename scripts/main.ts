@@ -1,6 +1,7 @@
 import { join } from "std/path";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
+import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
 
 // If any backwards-incompatible changes are made to the database, increment this number.
 // This will be used as the folder name where the database files are stored,
@@ -26,6 +27,8 @@ async function main() {
   const games = await Promise.allSettled([
     fetchPcGamingWikiGames(),
     fetchSteamGames(),
+    fetchPCGamePassGames(),
+    fetchEAGamePassGames(),
   ]);
 
   await Deno.writeTextFile(outputPath, JSON.stringify(games));

@@ -9,7 +9,7 @@ type EpicGamesStoreItem = {
   title: string;
 };
 
-async function fetchEpicGamesStoreGames(): Promise<Game[]> {
+export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
   const response = await fetch(epicGamesStoreItemsUrl);
   const items = (await response.json()) as EpicGamesStoreItem[];
 
