@@ -1,11 +1,17 @@
 import { Game } from "./main.ts";
 
+// Hey! If you're changing this, note that Rai Pal also has a very similar algo for normalizing titles,
+// and these need to be mostly in sync with each other.
+// It's annoying, but I couldn't think of a good way around this,
+// other than not doing the merging on the db side at all,
+// which would make the db a lot bigger and move a lot of work to the frontend.
+
 const DEMO_REGEX = /\(\s*demo\s*\)$/i;
 const BRACKETS_REGEX = /\[.*?\]|\(.*?\)|\{.*?\}|<.*?>/;
 const SEPARATORS_REGEX = /\s-\s.+/;
 
 // Titles given by the game providers can have all sorts of trash.
-// But we want to be able to use the titles to match some local and remote games.
+// But we want to be able to use the titles to match games from different providers.
 // So we need to normalize the titles.
 // Some ways of normalizing the titles work for some games/providers, some work for others.
 // So we have a list of different normalization methods, so we can try each one later.
