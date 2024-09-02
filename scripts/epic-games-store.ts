@@ -13,12 +13,13 @@ export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
   const response = await fetch(epicGamesStoreItemsUrl);
   const items = (await response.json()) as EpicGamesStoreItem[];
 
-  // Create a map where keys are normalized titles, and values are the ids
-  return items.map((item) => ({
-    engines: [],
-    title: item.title,
-    providerIds: {
-      Epic: [item.id],
-    },
-  }));
+  return items.map(
+    (item): Game => ({
+      engines: [],
+      title: item.title,
+      ids: {
+        Epic: [item.id],
+      },
+    })
+  );
 }

@@ -13,7 +13,7 @@ export async function fetchSteamGames(): Promise<Game[]> {
       if (steamId) {
         games.push({
           engines: [{ brand: engineName }],
-          providerIds: {
+          ids: {
             Steam: [steamId],
           },
         });

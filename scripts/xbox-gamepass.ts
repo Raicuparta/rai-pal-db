@@ -324,14 +324,16 @@ async function fetchGames(
 ): Promise<Game[]> {
   const ids = await fetchGameIDs(passType, "US");
   const properties = await fetchGameProperties(ids, passType, "US");
-  return properties.map((product) => ({
-    engines: [],
-    title: product.LocalizedProperties[0].ProductTitle,
-    providerIds: {
-      Xbox: [product.ProductId],
-    },
-    partOfSubscriptions: [subscription],
-  }));
+  return properties.map(
+    (product): Game => ({
+      engines: [],
+      title: product.LocalizedProperties[0].ProductTitle,
+      ids: {
+        Xbox: [product.ProductId],
+      },
+      subscriptions: [subscription],
+    })
+  );
 }
 
 export async function fetchPCGamePassGames(): Promise<Game[]> {

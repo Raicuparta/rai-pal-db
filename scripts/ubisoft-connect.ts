@@ -78,14 +78,16 @@ export async function fetchUbisoftGames(): Promise<Game[]> {
     throw new Error(`Could not fetch Ubisoft games: ${response.statusText}`);
   }
   const data = (await response.json()) as AlgoliaResponse;
-  return data.hits.map((hit) => ({
-    engines: [],
-    title: hit.title,
-    providerIds: {
-      Ubisoft: [hit.id],
-    },
-    partOfSubscriptions: filterFalsy(
-      hit.partofSubscriptionOffer.map(getSubscription)
-    ),
-  }));
+  return data.hits.map(
+    (hit): Game => ({
+      engines: [],
+      title: hit.title,
+      ids: {
+        Ubisoft: [hit.id],
+      },
+      subscriptions: filterFalsy(
+        hit.partofSubscriptionOffer.map(getSubscription)
+      ),
+    })
+  );
 }

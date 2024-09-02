@@ -2,6 +2,7 @@ import { join } from "jsr:@std/path";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
 import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
+import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
 
 // If any backwards-incompatible changes are made to the database, increment this number.
 // This will be used as the folder name where the database files are stored,
@@ -12,9 +13,10 @@ const databaseVersion = 0;
 export const engineNames = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
 
 export type Provider = "Steam" | "Gog" | "Epic" | "Xbox" | "Ubisoft" | "Ea";
+export type IdKind = Provider | "NormalizedTitle";
 export type EngineBrand = "GameMaker" | "Unity" | "Godot" | "Unreal";
 export type Engine = { brand: EngineBrand; version?: string };
-export type ProviderIdMap = Partial<Record<Provider, string[]>>;
+export type IdMap = Partial<Record<IdKind, string[]>>;
 export type GameSubscription =
   | "XboxGamePass"
   | "EaPlay"
@@ -23,9 +25,9 @@ export type GameSubscription =
 
 export type Game = {
   title?: string;
-  providerIds?: ProviderIdMap;
-  engines: Engine[];
-  partOfSubscriptions?: GameSubscription[];
+  ids: IdMap;
+  engines?: Engine[];
+  subscriptions?: GameSubscription[];
 };
 
 async function main() {
@@ -35,6 +37,8 @@ async function main() {
     fetchSteamGames(),
     fetchPCGamePassGames(),
     fetchEAGamePassGames(),
+    fetchPCGamePassGames(),
+    fetchEpicGamesStoreGames(),
   ]);
 
   await Deno.writeTextFile(outputPath, JSON.stringify(games));
