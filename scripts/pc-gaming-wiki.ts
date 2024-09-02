@@ -10,7 +10,7 @@ type PCGamingWikiGame = {
 };
 
 type PCGamingWikiResponse = {
-  cargoquery?: PCGamingWikiGame[];
+  cargoquery?: { title: PCGamingWikiGame }[];
 };
 
 // PCGamingWiki seems to allow for this many elements per page for now.
@@ -33,7 +33,7 @@ function commaSeparatedToArray(commaSeparated: string): string[] {
   return commaSeparated.split(",").map((id) => id.trim());
 }
 
-function getProviderIds(game: PCGamingWikiGame): IdMap | undefined {
+function getProviderIds(game: PCGamingWikiGame): IdMap {
   const result: IdMap = {};
 
   if (game.steamIds) {
@@ -62,7 +62,9 @@ function getEngineVersion(game: PCGamingWikiGame): string | undefined {
 
 function getEngine(game: PCGamingWikiGame): Engine | undefined {
   const brand = getEngineBrand(game);
-  if (!brand) return undefined;
+  if (!brand) {
+    return undefined;
+  }
 
   return {
     brand,
@@ -72,7 +74,7 @@ function getEngine(game: PCGamingWikiGame): Engine | undefined {
 
 async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
   const url = "https://www.pcgamingwiki.com/w/api.php";
-  let allGames: Game[] = [];
+  const allGames: Game[] = [];
   const gamesByTitle: Partial<Record<string, Game>> = {};
   let offset = 0;
 
@@ -100,13 +102,14 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 
     if (data.cargoquery) {
       const games: Game[] = [];
+      const entries = data.cargoquery.map((entry) => entry.title);
 
-      for (const pcGamingWikiGame of data.cargoquery) {
+      for (const pcGamingWikiGame of entries) {
         const engine = getEngine(pcGamingWikiGame);
         if (!engine) continue;
 
         const ids = getProviderIds(pcGamingWikiGame);
-        if (!ids) continue;
+        if (Object.keys(ids).length === 0) continue;
 
         const gameBase: Game = gamesByTitle[pcGamingWikiGame.title] ?? {
           engines: [],
@@ -120,9 +123,9 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
         });
       }
 
-      allGames = allGames.concat(games);
+      allGames.push(...games);
 
-      if (games.length < limitPerPage) {
+      if (entries.length < limitPerPage) {
         break;
       }
 
