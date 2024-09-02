@@ -33,7 +33,11 @@ export type Game = {
   subscriptions?: GameSubscription[];
 };
 
-type GamesByIds = Partial<Record<IdKind, Record<string, Game>>>;
+interface GameWithUniqueIndex extends Game {
+  uniqueIndex: number;
+}
+
+type GamesByIds = Partial<Record<IdKind, Record<string, GameWithUniqueIndex>>>;
 
 async function main() {
   const outputPath = join("..", "game-db", `${databaseVersion}`, "games.json");
@@ -59,6 +63,7 @@ async function main() {
     .flat();
 
   const gamesByIds: GamesByIds = {};
+  const uniqueGames: Game[] = [];
 
   for (const game of games) {
     if (!game.title) continue;
@@ -80,19 +85,28 @@ async function main() {
           gamesByIds[idKind] = {};
         }
 
-        const existingGame = gamesByIds[idKind][id] ?? {};
+        const existingGame: GameWithUniqueIndex | undefined =
+          gamesByIds[idKind][id];
+        const uniqueIndex = existingGame?.uniqueIndex ?? uniqueGames.length;
 
-        gamesByIds[idKind][id] = deepMerge(existingGame, game);
-        const normalizedTitles = gamesByIds[idKind][id].ids["NormalizedTitle"];
+        const mergedGame: GameWithUniqueIndex = {
+          uniqueIndex,
+          ...deepMerge(existingGame ?? {}, game),
+        };
+
+        const normalizedTitles = mergedGame.ids["NormalizedTitle"];
         if (normalizedTitles) {
-          gamesByIds[idKind][id].ids["NormalizedTitle"] =
+          mergedGame.ids["NormalizedTitle"] =
             deduplicateTitles(normalizedTitles);
         }
+
+        gamesByIds[idKind][id] = mergedGame;
+        uniqueGames[uniqueIndex] = mergedGame;
       }
     }
   }
 
-  await Deno.writeTextFile(outputPath, JSON.stringify(gamesByIds, null, 2));
+  await Deno.writeTextFile(outputPath, JSON.stringify(uniqueGames, null, 2));
 }
 
 main().catch(console.error);
