@@ -15,7 +15,6 @@ export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
 
   return items.map(
     (item): Game => ({
-      engines: [],
       title: item.title,
       ids: {
         Epic: [item.id],

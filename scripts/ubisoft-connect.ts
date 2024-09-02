@@ -80,7 +80,6 @@ export async function fetchUbisoftGames(): Promise<Game[]> {
   const data = (await response.json()) as AlgoliaResponse;
   return data.hits.map(
     (hit): Game => ({
-      engines: [],
       title: hit.title,
       ids: {
         Ubisoft: [hit.id],

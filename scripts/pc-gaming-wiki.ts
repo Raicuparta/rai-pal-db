@@ -112,7 +112,6 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
         if (Object.keys(ids).length === 0) continue;
 
         const gameBase: Game = gamesByTitle[pcGamingWikiGame.title] ?? {
-          engines: [],
           ids,
           title: pcGamingWikiGame.title,
         };

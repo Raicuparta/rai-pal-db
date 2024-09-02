@@ -326,7 +326,6 @@ async function fetchGames(
   const properties = await fetchGameProperties(ids, passType, "US");
   return properties.map(
     (product): Game => ({
-      engines: [],
       title: product.LocalizedProperties[0].ProductTitle,
       ids: {
         Xbox: [product.ProductId],

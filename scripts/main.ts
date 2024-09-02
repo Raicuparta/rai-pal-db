@@ -4,7 +4,8 @@ import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
 import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
 import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
-import { getNormalizedTitles } from "./normalized-title.ts";
+import { deduplicateTitles, getNormalizedTitles } from "./normalized-title.ts";
+import { fetchUbisoftGames } from "./ubisoft-connect.ts";
 
 // If any backwards-incompatible changes are made to the database, increment this number.
 // This will be used as the folder name where the database files are stored,
@@ -44,6 +45,7 @@ async function main() {
       fetchEAGamePassGames(),
       fetchPCGamePassGames(),
       fetchEpicGamesStoreGames(),
+      fetchUbisoftGames(),
     ])
   )
     .map((result) => {
@@ -81,11 +83,16 @@ async function main() {
         const existingGame = gamesByIds[idKind][id] ?? {};
 
         gamesByIds[idKind][id] = deepMerge(existingGame, game);
+        const normalizedTitles = gamesByIds[idKind][id].ids["NormalizedTitle"];
+        if (normalizedTitles) {
+          gamesByIds[idKind][id].ids["NormalizedTitle"] =
+            deduplicateTitles(normalizedTitles);
+        }
       }
     }
   }
 
-  await Deno.writeTextFile(outputPath, JSON.stringify(games));
+  await Deno.writeTextFile(outputPath, JSON.stringify(gamesByIds, null, 2));
 }
 
 main().catch(console.error);
