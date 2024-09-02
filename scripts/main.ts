@@ -39,7 +39,7 @@ interface GameWithUniqueIndex extends Game {
 
 type GamesByIds = Partial<Record<IdKind, Record<string, GameWithUniqueIndex>>>;
 
-async function main() {
+async function main(pretty: boolean) {
   const outputPath = join("..", "game-db", `${databaseVersion}`, "games.json");
   const games = (
     await Promise.allSettled([
@@ -74,8 +74,8 @@ async function main() {
 
   await Deno.writeTextFile(
     outputPath,
-    JSON.stringify(gamesWithEngines, jsonReplacer)
+    JSON.stringify(gamesWithEngines, jsonReplacer, pretty ? 2 : undefined)
   );
 }
 
-main().catch(console.error);
+main(true).catch(console.error);

@@ -40,10 +40,22 @@ const testGames: Game[] = [
       },
     ],
   },
+  {
+    ids: {
+      Steam: new Set(["SteamC"]),
+    },
+    title: "Game C",
+    engines: [
+      {
+        brand: "Unity",
+        version: "2019.4.20f1",
+      },
+    ],
+  },
 ];
 
 function test() {
-  console.log(mergeGames(testGames));
+  console.log(JSON.stringify(mergeGames(testGames), null, 2));
 }
 
 test();
