@@ -67,20 +67,32 @@ function mergeAllEngines(
   const allEngines = [...(enginesA ?? []), ...(enginesB ?? [])];
   for (const engine of allEngines) {
     if (
-      !mergedEngines.some((mergedEngine) => mergedEngine.brand === engine.brand)
-    ) {
-      mergedEngines.push(engine);
-      continue;
-    }
-    if (
-      !mergedEngines.some(
+      mergedEngines.some(
         (mergedEngine) =>
           mergedEngine.brand === engine.brand &&
           mergedEngine.version === engine.version
       )
     ) {
-      mergedEngines.push(engine);
+      continue;
     }
+
+    if (
+      !engine.version &&
+      mergedEngines.some((mergedEngine) => mergedEngine.brand === engine.brand)
+    ) {
+      continue;
+    }
+
+    const engineWithSameBrand = mergedEngines.find(
+      (mergedEngine) =>
+        mergedEngine.brand === engine.brand && !mergedEngine.version
+    );
+    if (engineWithSameBrand) {
+      engineWithSameBrand.version = engine.version;
+      continue;
+    }
+
+    mergedEngines.push(engine);
   }
 
   if (mergedEngines.length === 0) return undefined;

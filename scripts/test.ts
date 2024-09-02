@@ -14,6 +14,9 @@ const testGames: Game[] = [
         brand: "Unity",
         version: "2019.4.20f1",
       },
+      {
+        brand: "Unreal",
+      },
     ],
   },
   {
@@ -26,6 +29,17 @@ const testGames: Game[] = [
         brand: "Unity",
         version: "2019.4.20f1",
       },
+      {
+        brand: "Unity",
+        version: "2019.4.21f1",
+      },
+      {
+        brand: "Unreal",
+        version: "2019.4.20f1",
+      },
+      {
+        brand: "Godot",
+      },
     ],
   },
   {
@@ -42,9 +56,9 @@ const testGames: Game[] = [
   },
   {
     ids: {
-      Steam: new Set(["SteamC"]),
+      Steam: new Set(["SteamE"]),
     },
-    title: "Game C",
+    title: "Game D",
     engines: [
       {
         brand: "Unity",

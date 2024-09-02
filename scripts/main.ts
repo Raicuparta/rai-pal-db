@@ -78,4 +78,4 @@ async function main(pretty: boolean) {
   );
 }
 
-main(true).catch(console.error);
+main(false).catch(console.error);
