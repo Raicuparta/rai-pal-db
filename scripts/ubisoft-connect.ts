@@ -82,7 +82,7 @@ export async function fetchUbisoftGames(): Promise<Game[]> {
     (hit): Game => ({
       title: hit.title,
       ids: {
-        Ubisoft: [hit.id],
+        Ubisoft: new Set([hit.id]),
       },
       subscriptions: filterFalsy(
         hit.partofSubscriptionOffer.map(getSubscription)

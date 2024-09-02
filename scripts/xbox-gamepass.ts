@@ -328,7 +328,7 @@ async function fetchGames(
     (product): Game => ({
       title: product.LocalizedProperties[0].ProductTitle,
       ids: {
-        Xbox: [product.ProductId],
+        Xbox: new Set([product.ProductId]),
       },
       subscriptions: [subscription],
     })

@@ -29,8 +29,8 @@ function getEngineBrand(game: PCGamingWikiGame): EngineBrand | undefined {
   return undefined;
 }
 
-function commaSeparatedToArray(commaSeparated: string): string[] {
-  return commaSeparated.split(",").map((id) => id.trim());
+function commaSeparatedToArray(commaSeparated: string): Set<string> {
+  return new Set(commaSeparated.split(",").map((id) => id.trim()));
 }
 
 function getProviderIds(game: PCGamingWikiGame): IdMap {
