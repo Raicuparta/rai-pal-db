@@ -1,11 +1,11 @@
 import { join } from "jsr:@std/path";
-import { deepMerge } from "jsr:@std/collections";
 import { fetchPcGamingWikiGames } from "./pc-gaming-wiki.ts";
 import { fetchSteamGames } from "./steam.ts";
 import { fetchEAGamePassGames, fetchPCGamePassGames } from "./xbox-gamepass.ts";
 import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
-import { deduplicateTitles, getNormalizedTitles } from "./normalized-title.ts";
 import { fetchUbisoftGames } from "./ubisoft-connect.ts";
+import { jsonReplacer } from "./helpers.ts";
+import { mergeGames } from "./merge-games.ts";
 
 // If any backwards-incompatible changes are made to the database, increment this number.
 // This will be used as the folder name where the database files are stored,
@@ -19,7 +19,7 @@ export type Provider = "Steam" | "Gog" | "Epic" | "Xbox" | "Ubisoft" | "Ea";
 export type IdKind = Provider | "NormalizedTitle";
 export type EngineBrand = "GameMaker" | "Unity" | "Godot" | "Unreal";
 export type Engine = { brand: EngineBrand; version?: string };
-export type IdMap = Partial<Record<IdKind, string[]>>;
+export type IdMap = Partial<Record<IdKind, Set<string>>>;
 export type GameSubscription =
   | "XboxGamePass"
   | "EaPlay"
@@ -62,51 +62,20 @@ async function main() {
     })
     .flat();
 
-  const gamesByIds: GamesByIds = {};
-  const uniqueGames: Game[] = [];
+  const mergedGames = mergeGames(games);
 
-  for (const game of games) {
-    if (!game.title) continue;
+  const gamesWithEngines = mergedGames.filter(
+    (game) => game.engines && game.engines.length > 0
+  );
 
-    const normalizedTitles = getNormalizedTitles(game.title);
-    if (normalizedTitles.length == 0) continue;
+  console.log(
+    `Found ${gamesWithEngines.length} unique games vs ${games.length} games`
+  );
 
-    game.ids = {
-      ...game.ids,
-      NormalizedTitle: normalizedTitles,
-    };
-
-    for (const [idKind, ids] of Object.entries(game.ids) as [
-      IdKind,
-      string[]
-    ][]) {
-      for (const id of ids) {
-        if (!gamesByIds[idKind]) {
-          gamesByIds[idKind] = {};
-        }
-
-        const existingGame: GameWithUniqueIndex | undefined =
-          gamesByIds[idKind][id];
-        const uniqueIndex = existingGame?.uniqueIndex ?? uniqueGames.length;
-
-        const mergedGame: GameWithUniqueIndex = {
-          uniqueIndex,
-          ...deepMerge(existingGame ?? {}, game),
-        };
-
-        const normalizedTitles = mergedGame.ids["NormalizedTitle"];
-        if (normalizedTitles) {
-          mergedGame.ids["NormalizedTitle"] =
-            deduplicateTitles(normalizedTitles);
-        }
-
-        gamesByIds[idKind][id] = mergedGame;
-        uniqueGames[uniqueIndex] = mergedGame;
-      }
-    }
-  }
-
-  await Deno.writeTextFile(outputPath, JSON.stringify(uniqueGames, null, 2));
+  await Deno.writeTextFile(
+    outputPath,
+    JSON.stringify(gamesWithEngines, jsonReplacer)
+  );
 }
 
 main().catch(console.error);
