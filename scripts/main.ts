@@ -17,13 +17,14 @@ export const engineNames = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
 
 // These IDs need to match the Provider IDs in Rai Pal
 export type ProviderId =
-  | "Steam"
-  | "Gog"
-  | "Epic"
-  | "Xbox"
-  | "Ubisoft"
   | "Ea"
-  | "Manual";
+  | "Epic"
+  | "Gog"
+  | "Itch"
+  | "Manual"
+  | "Steam"
+  | "Ubisoft"
+  | "Xbox";
 
 export type EngineBrand = "GameMaker" | "Unity" | "Godot" | "Unreal";
 export type Engine = { brand: EngineBrand; version?: string };
