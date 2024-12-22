@@ -10,16 +10,24 @@ import { mergeGames } from "./merge-games.ts";
 // If any backwards-incompatible changes are made to the database, increment this number.
 // This will be used as the folder name where the database files are stored,
 // which means the database URLs also change.
-const databaseVersion = 0;
+const databaseVersion = 1;
 
 // These are all the engines that exist in the universe.
 export const engineNames = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
 
-export type Provider = "Steam" | "Gog" | "Epic" | "Xbox" | "Ubisoft" | "Ea";
-export type IdKind = Provider | "NormalizedTitle";
+// These IDs need to match the Provider IDs in Rai Pal
+export type ProviderId =
+  | "Steam"
+  | "Gog"
+  | "Epic"
+  | "Xbox"
+  | "Ubisoft"
+  | "Ea"
+  | "Manual";
+
 export type EngineBrand = "GameMaker" | "Unity" | "Godot" | "Unreal";
 export type Engine = { brand: EngineBrand; version?: string };
-export type IdMap = Partial<Record<IdKind, Set<string>>>;
+export type IdMap = Partial<Record<ProviderId, Set<string>>>;
 export type GameSubscription =
   | "XboxGamePass"
   | "EaPlay"
@@ -37,10 +45,15 @@ interface GameWithUniqueIndex extends Game {
   uniqueIndex: number;
 }
 
-type GamesByIds = Partial<Record<IdKind, Record<string, GameWithUniqueIndex>>>;
+type GamesByIds = Partial<
+  Record<ProviderId, Record<string, GameWithUniqueIndex>>
+>;
 
 async function main(pretty: boolean) {
-  const outputPath = join("..", "game-db", `${databaseVersion}`, "games.json");
+  const folder = join("..", "game-db", `${databaseVersion}`);
+  await Deno.mkdir(folder, { recursive: true });
+
+  const outputPath = join(folder, "games.json");
   const games = (
     await Promise.allSettled([
       fetchPcGamingWikiGames(),
@@ -66,10 +79,6 @@ async function main(pretty: boolean) {
 
   const gamesWithEngines = mergedGames.filter(
     (game) => game.engines && game.engines.length > 0
-  );
-
-  console.log(
-    `Found ${gamesWithEngines.length} unique games vs ${games.length} games`
   );
 
   await Deno.writeTextFile(
