@@ -5,8 +5,8 @@ const epicGamesStoreItemsUrl =
   "https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/titles.json";
 
 type EpicGamesStoreItem = {
-  id: string;
-  title: string;
+  id?: string;
+  title?: string;
 };
 
 export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
@@ -16,8 +16,8 @@ export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
   return items
     .filter(
       (item) =>
-        !item.title.toLowerCase().endsWith("audience") &&
-        !item.title.toLowerCase().includes("_")
+        !item.title?.toLowerCase().endsWith("audience") &&
+        !item.title?.toLowerCase().includes("_")
     )
     .map(
       (item): Game => ({

@@ -71,7 +71,9 @@ async function main(pretty: boolean) {
         return result.value;
       }
 
-      console.error(`Failed to fetch games: ${result.reason}`);
+      console.error(
+        `Failed to fetch games: ${result.reason} ${result.reason.stack}`
+      );
       return [];
     })
     .flat();
