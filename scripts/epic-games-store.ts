@@ -5,26 +5,24 @@ const epicGamesStoreItemsUrl =
   "https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/titles.json";
 
 type EpicGamesStoreItem = {
-  id?: string;
-  title?: string;
+  id: string;
+  title: string;
 };
 
 export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
   const response = await fetch(epicGamesStoreItemsUrl);
-  const items = (await response.json()) as EpicGamesStoreItem[];
+  const items = (await response.json()) as Partial<EpicGamesStoreItem>[];
+  // The guy who put these on github added a funny {} item at the end, so it killed my script.
+  const nonNullItems = items.filter(
+    (item) => item !== null
+  ) as EpicGamesStoreItem[];
 
-  return items
-    .filter(
-      (item) =>
-        !item.title?.toLowerCase().endsWith("audience") &&
-        !item.title?.toLowerCase().includes("_")
-    )
-    .map(
-      (item): Game => ({
-        title: item.title,
-        ids: {
-          Epic: new Set([item.id]),
-        },
-      })
-    );
+  return nonNullItems.map(
+    (item): Game => ({
+      title: item.title!,
+      ids: {
+        Epic: new Set([item.id!]),
+      },
+    })
+  );
 }
