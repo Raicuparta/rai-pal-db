@@ -61,7 +61,6 @@ async function main(pretty: boolean) {
       fetchSteamGames(),
       fetchPCGamePassGames(),
       fetchEAGamePassGames(),
-      fetchPCGamePassGames(),
       fetchEpicGamesStoreGames(),
       fetchUbisoftGames(),
     ])
