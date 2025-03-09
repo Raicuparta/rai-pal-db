@@ -9,6 +9,8 @@ import { Game } from "./main.ts";
 const DEMO_REGEX = /\(\s*demo\s*\)$/i;
 const BRACKETS_REGEX = /\[.*?\]|\(.*?\)|\{.*?\}|<.*?>/;
 const SEPARATORS_REGEX = /\s-\s.+/;
+const EDITION_REGEX =
+  /\b(?:standard|pc|deluxe|collectors|ultimate|definitive)\s+edition.*$/i;
 
 // Titles given by the game providers can have all sorts of trash.
 // But we want to be able to use the titles to match games from different providers.
@@ -21,6 +23,7 @@ function getNormalizedTitles(title: string): Set<string> {
     normalizeTitle(title.replace(DEMO_REGEX, "")),
     normalizeTitle(title.replace(BRACKETS_REGEX, "")),
     normalizeTitle(title.replace(SEPARATORS_REGEX, "")),
+    normalizeTitle(title.replace(EDITION_REGEX, "")),
   ]);
 }
 
