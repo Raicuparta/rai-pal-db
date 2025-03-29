@@ -1,10 +1,10 @@
 import { join } from "jsr:@std/path/join";
-import { engineNames, Game } from "./main.ts";
+import { engineBrands, Game } from "./main.ts";
 
 export async function fetchSteamGames(): Promise<Game[]> {
   const games: Game[] = [];
 
-  for (const engineName of engineNames) {
+  for (const engineName of engineBrands) {
     const providerPath = join("..", "steam-ids", engineName);
 
     const lines = (await Deno.readTextFile(providerPath)).split("\n");

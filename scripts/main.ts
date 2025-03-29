@@ -6,34 +6,40 @@ import { fetchEpicGamesStoreGames } from "./epic-games-store.ts";
 import { fetchUbisoftGames } from "./ubisoft-connect.ts";
 import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
+import { createDatabase } from "./sqlite.ts";
 
 // If any backwards-incompatible changes are made to the database, increment this number.
 // This will be used as the folder name where the database files are stored,
 // which means the database URLs also change.
-const databaseVersion = 1;
+const databaseVersion = 2;
 
 // These are all the engines that exist in the universe.
-export const engineNames = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
+export const engineBrands = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
 
-// These IDs need to match the Provider IDs in Rai Pal
-export type ProviderId =
-  | "Ea"
-  | "Epic"
-  | "Gog"
-  | "Itch"
-  | "Manual"
-  | "Steam"
-  | "Ubisoft"
-  | "Xbox";
+export const providerIds = [
+  "Ea",
+  "Epic",
+  "Gog",
+  "Itch",
+  "Manual",
+  "Steam",
+  "Ubisoft",
+  "Xbox",
+] as const;
 
-export type EngineBrand = "GameMaker" | "Unity" | "Godot" | "Unreal";
+export const gameSubscriptions = [
+  "XboxGamePass",
+  "EaPlay",
+  "UbisoftClassics",
+  "UbisoftPremium",
+] as const;
+
+export type ProviderId = (typeof providerIds)[number];
+export type EngineBrand = (typeof engineBrands)[number];
+export type GameSubscription = (typeof gameSubscriptions)[number];
+
 export type Engine = { brand: EngineBrand; version?: string };
 export type IdMap = Partial<Record<ProviderId, Set<string>>>;
-export type GameSubscription =
-  | "XboxGamePass"
-  | "EaPlay"
-  | "UbisoftClassics"
-  | "UbisoftPremium";
 
 export type Game = {
   title?: string;
@@ -82,6 +88,8 @@ async function main(pretty: boolean) {
   const gamesWithEngines = mergedGames.filter(
     (game) => game.engines && game.engines.length > 0
   );
+
+  createDatabase(join(folder, "games.db"), gamesWithEngines);
 
   await Deno.writeTextFile(
     outputPath,

@@ -1,5 +1,5 @@
 import { EngineBrand, IdMap } from "./main.ts";
-import { Engine, engineNames, type Game } from "./main.ts";
+import { Engine, engineBrands, type Game } from "./main.ts";
 
 type PCGamingWikiGame = {
   title: string;
@@ -138,7 +138,7 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 }
 
 export async function fetchPcGamingWikiGames(): Promise<Game[]> {
-  return await Promise.all(engineNames.map(fetchGamesByEngine)).then((games) =>
+  return await Promise.all(engineBrands.map(fetchGamesByEngine)).then((games) =>
     games.flat()
   );
 }
