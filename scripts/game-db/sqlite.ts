@@ -1,11 +1,5 @@
 import { DatabaseSync } from "node:sqlite";
-import {
-	engineBrands,
-	gameSubscriptions,
-	ProviderId,
-	providerIds,
-	type Game,
-} from "./main.ts";
+import { type Game } from "./main.ts";
 import { existsSync, rmSync } from "node:fs";
 
 export function createDatabase(path: string, games: Game[]) {

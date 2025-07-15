@@ -5,8 +5,10 @@
 		"@std/fs": "jsr:@std/fs@^1.0.2",
 		"@std/path": "jsr:@std/path@^1.0.3"
 	},
+
 	"tasks": {
-		"update-game-db": "deno run --allow-net --allow-read --allow-write main.ts",
+		"update-game-db": "deno run --allow-net --allow-read --allow-write game-db/main.ts",
+		"update-mod-db": "deno run --allow-net --allow-read --allow-write mod-db/main.ts",
 		"test": "deno run --allow-net --allow-read --allow-write test.ts"
 	}
 }
