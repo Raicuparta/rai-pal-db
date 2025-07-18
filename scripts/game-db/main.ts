@@ -7,11 +7,7 @@ import { fetchUbisoftGames } from "./ubisoft-connect.ts";
 import { jsonReplacer } from "./helpers.ts";
 import { mergeGames } from "./merge-games.ts";
 import { createDatabase } from "./sqlite.ts";
-
-// If any backwards-incompatible changes are made to the database, increment this number.
-// This will be used as the folder name where the database files are stored,
-// which means the database URLs also change.
-const databaseVersion = 2;
+import { DATABASE_VERSION } from "../version.ts";
 
 // These are all the engines that exist in the universe.
 export const engineBrands = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
@@ -57,7 +53,7 @@ type GamesByIds = Partial<
 >;
 
 async function main(pretty: boolean) {
-	const folder = join("..", "game-db", `${databaseVersion}`);
+	const folder = join("..", "game-db", `${DATABASE_VERSION}`);
 	await Deno.mkdir(folder, { recursive: true });
 
 	const outputPath = join(folder, "games.json");

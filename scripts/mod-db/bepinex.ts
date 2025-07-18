@@ -1,4 +1,5 @@
 import { DOMParser } from "@b-fuze/deno-dom";
+import { ModSchema } from "../types/generated/db-schema.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE = `${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;
@@ -7,8 +8,10 @@ type BepInExBuilds = {
 	[version: string]: BepInExBuild[];
 };
 
+type UnityBackend = NonNullable<ModSchema["unityBackend"]>;
+
 type BepInExBuild = {
-	engine: string;
+	backend: UnityBackend;
 	os: string;
 	arch: string;
 	downloadUrl: string;
@@ -29,18 +32,18 @@ export async function getLatestBuildURls(): Promise<BepInExBuilds> {
 
 	return links.reduce((result: BepInExBuilds, href) => {
 		const match = href.match(
-			/\/(\d+)\/BepInEx-(Unity\.(Mono|IL2CPP))-(win|linux|macos)-(x86|x64)-/
+			/\/(\d+)\/BepInEx-Unity\.(Mono|IL2CPP)-(win|linux|macos)-(x86|x64)-/
 		);
 
 		if (match && !href.includes("NET")) {
-			const [, version, engine, , os, arch] = match;
+			const [, version, backend, os, arch] = match;
 
 			if (!result[version]) result[version] = [];
 
 			result[version].push({
 				arch,
 				os,
-				engine,
+				backend: backend as UnityBackend, // TODO validate.
 				downloadUrl: `${BLEEDING_BUILD_URL_DOMAIN}${href}`,
 			});
 		}
