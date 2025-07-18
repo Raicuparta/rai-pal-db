@@ -3,17 +3,18 @@ import { DOMParser } from "@b-fuze/deno-dom";
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE = `${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;
 
-type BuildInfo = {
-	[version: string]: {
-		[engine: string]: {
-			[os: string]: {
-				[arch: string]: string;
-			};
-		};
-	};
+type BepInExBuilds = {
+	[version: string]: BepInExBuild[];
 };
 
-export async function getLatestBuildURls(): Promise<BuildInfo> {
+type BepInExBuild = {
+	engine: string;
+	os: string;
+	arch: string;
+	downloadUrl: string;
+};
+
+export async function getLatestBuildURls(): Promise<BepInExBuilds> {
 	const response = await fetch(BLEEDING_BUILD_URL_BASE);
 	const html = await response.text();
 
@@ -26,7 +27,7 @@ export async function getLatestBuildURls(): Promise<BuildInfo> {
 			return accumulator;
 		}, []);
 
-	return links.reduce((result: BuildInfo, href) => {
+	return links.reduce((result: BepInExBuilds, href) => {
 		const match = href.match(
 			/\/(\d+)\/BepInEx-(Unity\.(Mono|IL2CPP))-(win|linux|macos)-(x86|x64)-/
 		);
@@ -34,11 +35,14 @@ export async function getLatestBuildURls(): Promise<BuildInfo> {
 		if (match && !href.includes("NET")) {
 			const [, version, engine, , os, arch] = match;
 
-			if (!result[version]) result[version] = {};
-			if (!result[version][engine]) result[version][engine] = {};
-			if (!result[version][engine][os]) result[version][engine][os] = {};
+			if (!result[version]) result[version] = [];
 
-			result[version][engine][os][arch] = `${BLEEDING_BUILD_URL_DOMAIN}${href}`;
+			result[version].push({
+				arch,
+				os,
+				engine,
+				downloadUrl: `${BLEEDING_BUILD_URL_DOMAIN}${href}`,
+			});
 		}
 
 		return result;
