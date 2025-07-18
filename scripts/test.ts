@@ -1,7 +1,5 @@
-import { Game } from "./game-db/main.ts";
-import { mergeGames } from "./game-db/merge-games.ts";
-import { fetchUbisoftGames } from "./game-db/ubisoft-connect.ts";
-import { fetchPCGamePassGames } from "./game-db/xbox-gamepass.ts";
+import { Game } from "#game-db/main.ts";
+import { mergeGames } from "#game-db/merge-games.ts";
 
 const testGames: Game[] = [
 	{

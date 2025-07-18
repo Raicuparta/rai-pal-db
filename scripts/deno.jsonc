@@ -4,7 +4,13 @@
 		"@std/collections": "jsr:@std/collections@^1.0.5",
 		"@std/fs": "jsr:@std/fs@^1.0.2",
 		"@std/path": "jsr:@std/path@^1.0.3",
-		"json-schema-to-typescript": "npm:json-schema-to-typescript@^15.0.2"
+		"json-schema-to-typescript": "npm:json-schema-to-typescript@^15.0.2",
+
+		// Local maps for convenience
+		"#types/": "./types/generated/",
+		"#mod-db/": "./mod-db/",
+		"#game-db/": "./game-db/",
+		"#common/": "./common/"
 	},
 
 	"tasks": {

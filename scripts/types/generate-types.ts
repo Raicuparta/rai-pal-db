@@ -1,5 +1,5 @@
 import { compileFromFile } from "json-schema-to-typescript";
-import { DATABASE_VERSION } from "../version.ts";
+import { DATABASE_VERSION } from "#common/version.ts";
 
 async function generateDbSchemaTypes() {
 	const schemaFolder = `../mod-db/${DATABASE_VERSION}/schema`;

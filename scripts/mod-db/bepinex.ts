@@ -1,5 +1,5 @@
 import { DOMParser } from "@b-fuze/deno-dom";
-import { ModSchema } from "../types/generated/db-schema.ts";
+import { ModSchema } from "#types/db-schema.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE = `${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;
