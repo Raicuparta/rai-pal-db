@@ -1,5 +1,7 @@
 import { Game } from "#game-db/main.ts";
 import { mergeGames } from "#game-db/merge-games.ts";
+import { getBepInExBleedingBuilds } from "#mod-db/bepinex/bepinex-bleeding.ts";
+import { getBepInExStableBuilds } from "#mod-db/bepinex/bepinex-stable.ts";
 
 const testGames: Game[] = [
 	{
@@ -66,8 +68,18 @@ const testGames: Game[] = [
 	},
 ];
 
-function test() {
-	console.log(JSON.stringify(mergeGames(testGames), null, 2));
+async function test() {
+	const result = Object.entries({
+		...(await getBepInExStableBuilds()),
+		...(await getBepInExBleedingBuilds()),
+	})
+		.sort((a, b) => a[0].localeCompare(b[0]))
+		.map(([version, builds]) => ({
+			version,
+			builds,
+		}));
+
+	await Deno.writeTextFile("./test.json", JSON.stringify(result, null, 2));
 }
 
-test();
+await test();

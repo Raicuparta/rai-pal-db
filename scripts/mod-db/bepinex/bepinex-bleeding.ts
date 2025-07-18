@@ -1,23 +1,10 @@
 import { DOMParser } from "@b-fuze/deno-dom";
-import { ModSchema } from "#types/db-schema.ts";
+import { BepInExBuilds, UnityBackend } from "#mod-db/bepinex/bepinex.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE = `${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;
 
-type BepInExBuilds = {
-	[version: string]: BepInExBuild[];
-};
-
-type UnityBackend = NonNullable<ModSchema["unityBackend"]>;
-
-type BepInExBuild = {
-	backend: UnityBackend;
-	os: string;
-	arch: string;
-	downloadUrl: string;
-};
-
-export async function getLatestBuildURls(): Promise<BepInExBuilds> {
+export async function getBepInExBleedingBuilds(): Promise<BepInExBuilds> {
 	const response = await fetch(BLEEDING_BUILD_URL_BASE);
 	const html = await response.text();
 
@@ -32,11 +19,11 @@ export async function getLatestBuildURls(): Promise<BepInExBuilds> {
 
 	return links.reduce((result: BepInExBuilds, href) => {
 		const match = href.match(
-			/\/(\d+)\/BepInEx-Unity\.(Mono|IL2CPP)-(win|linux|macos)-(x86|x64)-/
+			/\/BepInEx-Unity\.(Mono|IL2CPP)-(win|linux|macos)-(x86|x64)-(\d+\.\d+\.\d+-be\.\d+)/
 		);
 
 		if (match && !href.includes("NET")) {
-			const [, version, backend, os, arch] = match;
+			const [, backend, os, arch, version] = match;
 
 			if (!result[version]) result[version] = [];
 

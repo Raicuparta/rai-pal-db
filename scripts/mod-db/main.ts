@@ -1,3 +1,9 @@
-import { getLatestBuildURls } from "./bepinex.ts";
+import { getBepInExBleedingBuilds } from "./bepinex/bepinex-bleeding.ts";
+import { getBepInExStableBuilds } from "./bepinex/bepinex-stable.ts";
 
-console.log(JSON.stringify(await getLatestBuildURls(), null, 2));
+const result = {
+	...(await getBepInExStableBuilds()),
+	...(await getBepInExBleedingBuilds()),
+};
+
+console.log(JSON.stringify(result, null, 2));
