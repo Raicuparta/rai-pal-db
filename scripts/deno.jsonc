@@ -8,14 +8,14 @@
 
 		// Local maps for convenience
 		"#types/": "./types/generated/",
-		"#mod-db/": "./mod-db/",
+		"#loader-db/": "./loader-db/",
 		"#game-db/": "./game-db/",
 		"#common/": "./common/"
 	},
 
 	"tasks": {
 		"update-game-db": "deno task generate-types && deno run --allow-net --allow-read --allow-write game-db/main.ts",
-		"update-mod-db": "deno task generate-types && deno run --allow-net --allow-read --allow-write mod-db/main.ts",
+		"update-loader-db": "deno task generate-types && deno run --allow-net --allow-read --allow-write loader-db/main.ts",
 		"generate-types": "deno run --allow-read --allow-write --allow-env --allow-sys types/generate-types.ts",
 		"test": "deno run --allow-net --allow-read --allow-write test.ts"
 	}

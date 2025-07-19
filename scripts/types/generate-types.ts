@@ -1,8 +1,8 @@
 import { compileFromFile } from "json-schema-to-typescript";
-import { DATABASE_VERSION } from "#common/version.ts";
+import { MOD_DATABASE_VERSION } from "../common/versions.ts";
 
 async function generateDbSchemaTypes() {
-	const schemaFolder = `../mod-db/${DATABASE_VERSION}/schema`;
+	const schemaFolder = `../mod-db/${MOD_DATABASE_VERSION}/schema`;
 
 	const schemaTs = await compileFromFile(`${schemaFolder}/db-schema.json`, {
 		cwd: schemaFolder,

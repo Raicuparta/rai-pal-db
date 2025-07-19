@@ -5,16 +5,12 @@
 		"$schema": {
 			"type": "string"
 		},
-		"mods": {
-			"type": "array",
+		"loaders": {
 			"items": {
-                "$ref": "./mod-schema.json"
-            }
+				"$ref": "./loader-schema.json"
+			}
 		}
 	},
 	"additionalProperties": false,
-	"required": [
-		"$schema",
-		"mods"
-	]
+	"required": ["$schema", "loaders"]
 }

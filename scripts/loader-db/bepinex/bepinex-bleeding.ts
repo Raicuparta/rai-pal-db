@@ -1,5 +1,5 @@
 import { DOMParser } from "@b-fuze/deno-dom";
-import { BepInExBuilds, UnityBackend } from "#mod-db/bepinex/bepinex.ts";
+import { BepInExBuilds, UnityBackend } from "#loader-db/bepinex/bepinex.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE = `${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;

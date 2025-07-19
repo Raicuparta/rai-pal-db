@@ -1,4 +1,4 @@
-import { BepInExBuilds, UnityBackend } from "#mod-db/bepinex/bepinex.ts";
+import { BepInExBuilds, UnityBackend } from "#loader-db/bepinex/bepinex.ts";
 
 const repository = "BepInEx/BepInEx";
 
