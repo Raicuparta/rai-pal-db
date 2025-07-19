@@ -1,81 +1,89 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "properties": {
-        "id": {
-            "type": "string",
-            "description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
-        },
-        "deprecated": {
-            "type": "boolean",
-            "description": "If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement."
-        },
-        "redownloadId": {
-            "type": "number",
-            "description": "Increment this number to force clients to redownload this mod. Useful when a mod needs to be redownloaded without a new version being released."
-        },
-        "engine": {
-            "type": "string",
-            "enum": [
-                "Unity",
-                "Unreal",
-                "Godot"
-            ],
-            "description": "Game engine that this mod supports."
-        },
-        "unityBackend": {
-            "type": "string",
-            "enum": [
-                "Il2Cpp",
-                "Mono"
-            ],
-            "description": "Only relevant if engine=Unity. Scripting backend used by the game."
-        },
-        "title": {
-            "type": "string",
-            "description": "Mod's display name."
-        },
-        "author": {
-            "type": "string",
-            "description": "Mod author."
-        },
-        "sourceCode": {
-            "type": "string",
-            "format": "uri",
-            "description": "URL of a repository with the mod's source code."
-        },
-        "description": {
-            "type": "string",
-            "description": "Short description that explains what the mod does."
-        },
-        "github": {
-            "$ref": "./github-schema.json"
-        },
-        "latestVersion": {
-            "$ref": "./release-schema.json"
-        },
-        "root": {
-            "type": "string",
-            "description": "Optional, path of the root folder within the zip."
-        },
-        "engineVersionRange": {
-            "type": "object",
-            "properties": {
-                "minimum": {
-                    "$ref": "./engine-version-schema.json"
-                },
-                "maximum": {
-                    "$ref": "./engine-version-schema.json"
-                }
-            }
-        }
-    },
-    "additionalProperties": false,
-    "required": [
-        "id",
-        "title",
-        "author",
-        "sourceCode",
-        "description"
-    ]
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
+		},
+		"deprecated": {
+			"type": "boolean",
+			"description": "If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement."
+		},
+		"redownloadId": {
+			"type": "number",
+			"description": "Increment this number to force clients to redownload this mod. Useful when a mod needs to be redownloaded without a new version being released."
+		},
+		"engine": {
+			"type": "string",
+			"enum": ["Unity", "Unreal", "Godot"],
+			"description": "Game engine that this mod supports."
+		},
+		"unityBackend": {
+			"type": "string",
+			"enum": ["Il2Cpp", "Mono"],
+			"description": "Only relevant if engine=Unity. Scripting backend used by the game."
+		},
+		"title": {
+			"type": "string",
+			"description": "Mod's display name."
+		},
+		"author": {
+			"type": "string",
+			"description": "Mod author."
+		},
+		"sourceCode": {
+			"type": "string",
+			"format": "uri",
+			"description": "URL of a repository with the mod's source code."
+		},
+		"description": {
+			"type": "string",
+			"description": "Short description that explains what the mod does."
+		},
+		"github": {
+			"$ref": "./github-schema.json"
+		},
+		"latestVersion": {
+			"$ref": "./release-schema.json"
+		},
+		"root": {
+			"type": "string",
+			"description": "Optional, path of the root folder within the zip."
+		},
+		"engineVersionRange": {
+			"type": "object",
+			"properties": {
+				"minimum": {
+					"$ref": "./engine-version-schema.json"
+				},
+				"maximum": {
+					"$ref": "./engine-version-schema.json"
+				}
+			}
+		},
+		"configs": {
+			"type": "object",
+			"description": "If defined, Rai Pal will look for configs for this mod.",
+			"properties": {
+				"destinationPath": {
+					"type": "string",
+					"description": "Path in the user's PC where the config is installed to. This path can be relative to something, depending on the mod loader."
+				},
+				"destinationType": {
+					"type": "string",
+					"description": "If file, the downloaded config will be placed directly in the installTo path. If folder, the downloaded file must be a zip, and gets extracted to the destination path, which must be a folder.",
+					"enum": ["file", "folder"]
+				},
+				"modIdOverride": {
+					"type": "string",
+					"description": "If set, overrides the mod ID used for finding config files. Useful when multiple mods use the same configs."
+				}
+			},
+			"required": ["destinationPath", "destinationType"],
+			"additionalProperties": false
+		}
+	},
+	"additionalProperties": false,
+	"required": ["id", "title", "author", "sourceCode", "description"]
 }

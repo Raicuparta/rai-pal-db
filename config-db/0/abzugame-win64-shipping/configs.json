@@ -1,0 +1,11 @@
+{
+	"$schema": "../schema/config-db-schema.json",
+	"configs": [
+		{
+			"mod": "uevr",
+			"loader": "runnable",
+			"file": "uevr.zip",
+			"version": 0
+		}
+	]
+}

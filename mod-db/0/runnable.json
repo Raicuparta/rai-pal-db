@@ -25,7 +25,11 @@
 				}
 			},
 			"sourceCode": "https://github.com/praydog/UEVR",
-			"description": "Universal VR mod for Unreal Engine games."
+			"description": "Universal VR mod for Unreal Engine games.",
+			"configs": {
+				"destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
+				"destinationType": "folder"
+			}
 		},
 		{
 			"id": "uevr-nightly",
@@ -42,7 +46,12 @@
 				}
 			},
 			"sourceCode": "https://github.com/praydog/UEVR",
-			"description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes."
+			"description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes.",
+			"configs": {
+				"destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
+				"destinationType": "folder",
+				"modIdOverride": "uevr"
+			}
 		}
 	]
 }
