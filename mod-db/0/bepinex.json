@@ -122,6 +122,10 @@
 			"latestVersion": {
 				"id": "0.4.0",
 				"url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip"
+			},
+			"configs": {
+				"destinationPath": "configs/raicuparta.uuvr-modern.cfg",
+				"destinationType": "file"
 			}
 		},
 		{

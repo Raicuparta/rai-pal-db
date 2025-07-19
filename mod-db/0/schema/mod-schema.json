@@ -64,7 +64,7 @@
 		},
 		"configs": {
 			"type": "object",
-			"description": "If defined, Rai Pal will look for configs for this mod.",
+			"description": "Information used to find local mod configs, and also for downloading configs from the database.",
 			"properties": {
 				"destinationPath": {
 					"type": "string",
