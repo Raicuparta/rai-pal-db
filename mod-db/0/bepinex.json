@@ -1,5 +1,5 @@
 {
-    "$schema": "../schema/db-schema.json",
+	"$schema": "./schema/db-schema.json",
 	"mods": [
 		{
 			"id": "unity-explorer-mono",
@@ -77,11 +77,11 @@
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/uuvr",
 			"description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
-            "engineVersionRange": {
-                "maximum": {
-                    "major": 2019
-                }
-            },
+			"engineVersionRange": {
+				"maximum": {
+					"major": 2019
+				}
+			},
 			"latestVersion": {
 				"id": "0.3.1",
 				"url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip"
@@ -95,11 +95,11 @@
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/uuvr",
 			"description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
-            "engineVersionRange": {
-                "maximum": {
-                    "major": 2019
-                }
-            },
+			"engineVersionRange": {
+				"maximum": {
+					"major": 2019
+				}
+			},
 			"latestVersion": {
 				"id": "0.3.1",
 				"url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip"
@@ -113,12 +113,12 @@
 			"author": "Raicuparta",
 			"sourceCode": "https://github.com/Raicuparta/uuvr",
 			"description": "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
-            "engineVersionRange": {
-                "minimum": {
-                    "major": 2018,
+			"engineVersionRange": {
+				"minimum": {
+					"major": 2018,
 					"minor": 4
-                }
-            },
+				}
+			},
 			"latestVersion": {
 				"id": "0.4.0",
 				"url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip"

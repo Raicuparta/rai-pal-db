@@ -1,54 +1,48 @@
 {
-    "$schema": "./mod-db/schema/db-schema.json",
-    "mods": [
-        {
-            "id": "uevr",
-            "redownloadId": 1,
-            "engine": "Unreal",
-            "title": "UEVR",
-            "author": "praydog",
-            "latestVersion": {
-                "id": "1.03",
-                "url": "https://github.com/praydog/UEVR/releases/download/1.03/UEVR.zip",
-                "runnable": {
-                    "path": "UEVRInjector.exe",
-                    "args": [
-                        "--attach={{ExecutableName}}"
-                    ]
-                }
-            },
-            "github": {
-                "assetName": "UEVR.zip",
-                "repo": "UEVR",
-                "user": "praydog",
-                "runnable": {
-                    "path": "UEVRInjector.exe",
-                    "args": [
-                        "--attach={{ExecutableName}}"
-                    ]
-                }
-            },
-            "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "Universal VR mod for Unreal Engine games."
-        },
-        {
-            "id": "uevr-nightly",
-            "engine": "Unreal",
-            "title": "UEVR Nightly",
-            "author": "praydog",
-            "github": {
-                "assetName": "uevr.zip",
-                "repo": "UEVR-nightly",
-                "user": "praydog",
-                "runnable": {
-                    "path": "UEVRInjector.exe",
-                    "args": [
-                        "--attach={{ExecutableName}}"
-                    ]
-                }
-            },
-            "sourceCode": "https://github.com/praydog/UEVR",
-            "description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes."
-        }
-    ]
+	"$schema": "./mod-db/schema/db-schema.json",
+	"mods": [
+		{
+			"id": "uevr",
+			"redownloadId": 1,
+			"engine": "Unreal",
+			"title": "UEVR",
+			"author": "praydog",
+			"latestVersion": {
+				"id": "1.03",
+				"url": "https://github.com/praydog/UEVR/releases/download/1.03/UEVR.zip",
+				"runnable": {
+					"path": "UEVRInjector.exe",
+					"args": ["--attach={{ExecutableName}}"]
+				}
+			},
+			"github": {
+				"assetName": "UEVR.zip",
+				"repo": "UEVR",
+				"user": "praydog",
+				"runnable": {
+					"path": "UEVRInjector.exe",
+					"args": ["--attach={{ExecutableName}}"]
+				}
+			},
+			"sourceCode": "https://github.com/praydog/UEVR",
+			"description": "Universal VR mod for Unreal Engine games."
+		},
+		{
+			"id": "uevr-nightly",
+			"engine": "Unreal",
+			"title": "UEVR Nightly",
+			"author": "praydog",
+			"github": {
+				"assetName": "uevr.zip",
+				"repo": "UEVR-nightly",
+				"user": "praydog",
+				"runnable": {
+					"path": "UEVRInjector.exe",
+					"args": ["--attach={{ExecutableName}}"]
+				}
+			},
+			"sourceCode": "https://github.com/praydog/UEVR",
+			"description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes."
+		}
+	]
 }

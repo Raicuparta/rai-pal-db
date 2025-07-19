@@ -1,13 +1,14 @@
 {
-  "cSpell.words": [
-    "cargoquery",
-    "gamemaker",
-    "gamepass",
-    "Infobox",
-    "mooncake",
-    "partof",
-    "Ubisoft"
-  ],
-  "deno.enable": true,
-  "typescript.tsserver.experimental.enableProjectDiagnostics": false
+	"cSpell.words": [
+		"bepinex",
+		"cargoquery",
+		"gamemaker",
+		"gamepass",
+		"Infobox",
+		"mooncake",
+		"partof",
+		"Ubisoft"
+	],
+	"deno.enable": true,
+	"typescript.tsserver.experimental.enableProjectDiagnostics": false
 }
