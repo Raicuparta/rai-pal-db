@@ -125,7 +125,7 @@
 			},
 			"configs": {
 				"destinationPath": "config/raicuparta.uuvr-modern.cfg",
-				"destinationType": "file"
+				"destinationType": "File"
 			}
 		},
 		{

@@ -73,7 +73,7 @@
 				"destinationType": {
 					"type": "string",
 					"description": "If file, the downloaded config will be placed directly in the installTo path. If folder, the downloaded file must be a zip, and gets extracted to the destination path, which must be a folder.",
-					"enum": ["file", "folder"]
+					"enum": ["File", "Folder"]
 				},
 				"modIdOverride": {
 					"type": "string",
