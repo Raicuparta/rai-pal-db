@@ -11,7 +11,8 @@
 				"type": "object",
 				"properties": {
 					"version": {
-						"type": "number",
+						"type": "integer",
+						"minimum": 0,
 						"description": "Increment this when the config changes. Used to check if a config needs updating."
 					},
 					"modId": {
