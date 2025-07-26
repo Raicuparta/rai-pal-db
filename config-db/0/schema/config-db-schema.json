@@ -14,11 +14,11 @@
 						"type": "number",
 						"description": "Increment this when the config changes. Used to check if a config needs updating."
 					},
-					"mod": {
+					"modId": {
 						"type": "string",
 						"description": "The ID of the mod this config belongs to."
 					},
-					"loader": {
+					"loaderId": {
 						"type": "string",
 						"description": "The ID of the mod loader that handles this mod."
 					},
@@ -27,7 +27,7 @@
 						"description": "Name of the file to download in the 'configs' folder for this game in this db."
 					}
 				},
-				"required": ["version", "mod", "loader", "file"]
+				"required": ["version", "modId", "loaderId", "file"]
 			}
 		}
 	},

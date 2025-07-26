@@ -2,8 +2,8 @@
 	"$schema": "../schema/config-db-schema.json",
 	"configs": [
 		{
-			"mod": "uevr",
-			"loader": "runnable",
+			"modId": "uevr",
+			"loaderId": "runnable",
 			"file": "uevr.zip",
 			"version": 0
 		}

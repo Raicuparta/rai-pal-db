@@ -2,8 +2,8 @@
 	"$schema": "../schema/config-db-schema.json",
 	"configs": [
 		{
-			"mod": "uuvr-mono-modern",
-			"loader": "bepinex",
+			"modId": "uuvr-mono-modern",
+			"loaderId": "bepinex",
 			"file": "raicuparta.uuvr-modern.cfg",
 			"version": 0
 		}
