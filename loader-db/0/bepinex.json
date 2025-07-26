@@ -1,6 +1,1123 @@
 [
   {
+    "version": "6.0.0-be.738",
+    "timestamp": 1750467623352,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-win-x86-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-win-x64-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-linux-x86-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-linux-x64-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-macos-x64-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.738%2Baf0cba7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.738%2Baf0cba7.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.735",
+    "timestamp": 1746810671666,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-win-x86-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-win-x64-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-linux-x86-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-linux-x64-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-macos-x64-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.735%2B5fef357.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.735%2B5fef357.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.23.3",
+    "timestamp": 1745327639000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_linux_x64_5.4.23.3.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_linux_x86_5.4.23.3.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "macos",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_macos_x64_5.4.23.3.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x86_5.4.23.3.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.733",
+    "timestamp": 1736698467461,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-win-x86-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-win-x64-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-linux-x86-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-linux-x64-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-macos-x64-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.733%2B995f049.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.733%2B995f049.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.732",
+    "timestamp": 1736696082606,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-win-x86-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-win-x64-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-linux-x86-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-linux-x64-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-macos-x64-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.732%2B0c2a3f1.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.732%2B0c2a3f1.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.729",
+    "timestamp": 1733165405538,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-win-x86-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-win-x64-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-linux-x86-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-linux-x64-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-macos-x64-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.729%2B35f6b1b.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.729%2B35f6b1b.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.725",
+    "timestamp": 1727614460463,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-win-x86-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-win-x64-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-linux-x86-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-linux-x64-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-macos-x64-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.725%2Be1974e2.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.725%2Be1974e2.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.722",
+    "timestamp": 1727202828892,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-win-x86-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-win-x64-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-linux-x86-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-linux-x64-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-macos-x64-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.722%2Be2d5ab8.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.722%2Be2d5ab8.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.721",
+    "timestamp": 1727202440520,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-win-x86-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-win-x64-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-linux-x86-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-linux-x64-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-macos-x64-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.721%2B544f909.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.721%2B544f909.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.719",
+    "timestamp": 1726591918559,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-win-x86-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-win-x64-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-linux-x86-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-linux-x64-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-macos-x64-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.719%2Bd9b95a0.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.719%2Bd9b95a0.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.718",
+    "timestamp": 1726590005494,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-win-x86-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-win-x64-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-linux-x86-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-linux-x64-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-macos-x64-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.718%2Bb891cec.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.718%2Bb891cec.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.716",
+    "timestamp": 1725972604398,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-win-x86-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-win-x64-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-linux-x86-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-linux-x64-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-macos-x64-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.716%2B726b68e.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.716%2B726b68e.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.715",
+    "timestamp": 1725972514251,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-win-x86-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-win-x64-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-linux-x86-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-linux-x64-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-macos-x64-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.715%2Bcdeaad7.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.715%2Bcdeaad7.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.711",
+    "timestamp": 1725804653675,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-win-x86-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-win-x64-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-linux-x86-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-linux-x64-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-macos-x64-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.711%2Bf800cbc.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.711%2Bf800cbc.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.710",
+    "timestamp": 1725803191424,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-win-x86-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-win-x64-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-linux-x86-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-linux-x64-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-macos-x64-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.710%2Bcbd70eb.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.710%2Bcbd70eb.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.709",
+    "timestamp": 1725801676157,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-win-x86-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-win-x64-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-linux-x86-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-linux-x64-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-macos-x64-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.709%2B2a61b61.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.709%2B2a61b61.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.704",
+    "timestamp": 1725400493038,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-win-x86-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-win-x64-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-linux-x86-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-linux-x64-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-macos-x64-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.704%2B6b38cee.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.704%2B6b38cee.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.700",
+    "timestamp": 1725210642824,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-win-x86-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-win-x64-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-linux-x86-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-linux-x64-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-macos-x64-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.700%2B5a32424.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.700%2B5a32424.zip"
+      }
+    ]
+  },
+  {
+    "version": "6.0.0-be.699",
+    "timestamp": 1725095341274,
+    "builds": [
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-win-x86-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-win-x64-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-linux-x86-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-linux-x64-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "Mono",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-macos-x64-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x86",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "win",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "linux",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.699%2Bba3fac9.zip"
+      },
+      {
+        "arch": "x64",
+        "os": "macos",
+        "backend": "IL2CPP",
+        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.699%2Bba3fac9.zip"
+      }
+    ]
+  },
+  {
     "version": "6.0.0-pre.2",
+    "timestamp": 1724786416000,
     "builds": [
       {
         "backend": "Mono",
@@ -83,1104 +1200,8 @@
     ]
   },
   {
-    "version": "6.0.0-pre.1",
-    "builds": [
-      {
-        "backend": "Il2Cpp",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x64_6.0.0-pre.1.zip"
-      },
-      {
-        "backend": "Il2Cpp",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x86_6.0.0-pre.1.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_unix_6.0.0-pre.1.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_x64_6.0.0-pre.1.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_x86_6.0.0-pre.1.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.738",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-win-x86-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-win-x64-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-linux-x86-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-linux-x64-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.Mono-macos-x64-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.738%2Baf0cba7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/738/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.738%2Baf0cba7.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.735",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-win-x86-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-win-x64-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-linux-x86-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-linux-x64-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.Mono-macos-x64-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.735%2B5fef357.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/735/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.735%2B5fef357.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.733",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-win-x86-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-win-x64-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-linux-x86-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-linux-x64-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.Mono-macos-x64-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.733%2B995f049.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/733/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.733%2B995f049.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.732",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-win-x86-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-win-x64-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-linux-x86-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-linux-x64-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.Mono-macos-x64-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.732%2B0c2a3f1.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/732/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.732%2B0c2a3f1.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.729",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-win-x86-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-win-x64-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-linux-x86-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-linux-x64-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.Mono-macos-x64-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.729%2B35f6b1b.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/729/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.729%2B35f6b1b.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.725",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-win-x86-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-win-x64-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-linux-x86-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-linux-x64-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.Mono-macos-x64-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.725%2Be1974e2.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/725/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.725%2Be1974e2.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.722",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-win-x86-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-win-x64-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-linux-x86-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-linux-x64-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.Mono-macos-x64-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.722%2Be2d5ab8.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/722/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.722%2Be2d5ab8.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.721",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-win-x86-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-win-x64-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-linux-x86-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-linux-x64-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.Mono-macos-x64-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.721%2B544f909.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/721/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.721%2B544f909.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.719",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-win-x86-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-win-x64-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-linux-x86-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-linux-x64-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.Mono-macos-x64-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.719%2Bd9b95a0.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/719/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.719%2Bd9b95a0.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.718",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-win-x86-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-win-x64-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-linux-x86-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-linux-x64-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.Mono-macos-x64-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.718%2Bb891cec.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/718/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.718%2Bb891cec.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.716",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-win-x86-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-win-x64-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-linux-x86-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-linux-x64-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.Mono-macos-x64-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.716%2B726b68e.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/716/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.716%2B726b68e.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.715",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-win-x86-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-win-x64-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-linux-x86-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-linux-x64-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.Mono-macos-x64-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.715%2Bcdeaad7.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/715/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.715%2Bcdeaad7.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.711",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-win-x86-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-win-x64-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-linux-x86-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-linux-x64-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.Mono-macos-x64-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.711%2Bf800cbc.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/711/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.711%2Bf800cbc.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.710",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-win-x86-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-win-x64-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-linux-x86-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-linux-x64-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.Mono-macos-x64-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.710%2Bcbd70eb.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/710/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.710%2Bcbd70eb.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.709",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-win-x86-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-win-x64-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-linux-x86-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-linux-x64-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.Mono-macos-x64-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.709%2B2a61b61.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/709/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.709%2B2a61b61.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.704",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-win-x86-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-win-x64-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-linux-x86-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-linux-x64-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.Mono-macos-x64-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.704%2B6b38cee.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/704/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.704%2B6b38cee.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.700",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-win-x86-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-win-x64-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-linux-x86-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-linux-x64-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.Mono-macos-x64-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.700%2B5a32424.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/700/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.700%2B5a32424.zip"
-      }
-    ]
-  },
-  {
-    "version": "6.0.0-be.699",
-    "builds": [
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-win-x86-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-win-x64-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-linux-x86-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-linux-x64-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "Mono",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.Mono-macos-x64-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x86",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "win",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "linux",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.699%2Bba3fac9.zip"
-      },
-      {
-        "arch": "x64",
-        "os": "macos",
-        "backend": "IL2CPP",
-        "downloadUrl": "https://builds.bepinex.dev/projects/bepinex_be/699/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-be.699%2Bba3fac9.zip"
-      }
-    ]
-  },
-  {
     "version": "6.0.0-be.697",
+    "timestamp": 1723492508575,
     "builds": [
       {
         "arch": "x86",
@@ -1240,6 +1261,7 @@
   },
   {
     "version": "6.0.0-be.692",
+    "timestamp": 1718121705235,
     "builds": [
       {
         "arch": "x86",
@@ -1299,6 +1321,7 @@
   },
   {
     "version": "6.0.0-be.691",
+    "timestamp": 1716294646253,
     "builds": [
       {
         "arch": "x86",
@@ -1358,6 +1381,7 @@
   },
   {
     "version": "6.0.0-be.690",
+    "timestamp": 1715892197978,
     "builds": [
       {
         "arch": "x86",
@@ -1417,6 +1441,7 @@
   },
   {
     "version": "6.0.0-be.689",
+    "timestamp": 1715891463407,
     "builds": [
       {
         "arch": "x86",
@@ -1475,7 +1500,44 @@
     ]
   },
   {
+    "version": "5.4.23.2",
+    "timestamp": 1714571245000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_linux_x64_5.4.23.2.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_linux_x86_5.4.23.2.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "macos",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_macos_x64_5.4.23.2.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x64_5.4.23.2.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x86_5.4.23.2.zip"
+      }
+    ]
+  },
+  {
     "version": "6.0.0-be.688",
+    "timestamp": 1707504839281,
     "builds": [
       {
         "arch": "x86",
@@ -1535,6 +1597,7 @@
   },
   {
     "version": "6.0.0-be.682",
+    "timestamp": 1703460794469,
     "builds": [
       {
         "arch": "x86",
@@ -1594,6 +1657,7 @@
   },
   {
     "version": "6.0.0-be.680",
+    "timestamp": 1703326807545,
     "builds": [
       {
         "arch": "x86",
@@ -1653,6 +1717,7 @@
   },
   {
     "version": "6.0.0-be.679",
+    "timestamp": 1701446939276,
     "builds": [
       {
         "arch": "x86",
@@ -1712,6 +1777,7 @@
   },
   {
     "version": "6.0.0-be.674",
+    "timestamp": 1693998394638,
     "builds": [
       {
         "arch": "x86",
@@ -1770,7 +1836,32 @@
     ]
   },
   {
+    "version": "5.4.22",
+    "timestamp": 1693357545000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_unix_5.4.22.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x86_5.4.22.0.zip"
+      }
+    ]
+  },
+  {
     "version": "6.0.0-be.673",
+    "timestamp": 1693339181428,
     "builds": [
       {
         "arch": "x86",
@@ -1830,6 +1921,7 @@
   },
   {
     "version": "6.0.0-be.672",
+    "timestamp": 1690395310879,
     "builds": [
       {
         "arch": "x86",
@@ -1889,6 +1981,7 @@
   },
   {
     "version": "6.0.0-be.671",
+    "timestamp": 1689599746102,
     "builds": [
       {
         "arch": "x86",
@@ -1948,6 +2041,7 @@
   },
   {
     "version": "6.0.0-be.670",
+    "timestamp": 1686857887680,
     "builds": [
       {
         "arch": "x86",
@@ -2007,6 +2101,7 @@
   },
   {
     "version": "6.0.0-be.669",
+    "timestamp": 1686753252571,
     "builds": [
       {
         "arch": "x86",
@@ -2066,6 +2161,7 @@
   },
   {
     "version": "6.0.0-be.668",
+    "timestamp": 1678116685875,
     "builds": [
       {
         "arch": "x86",
@@ -2125,6 +2221,7 @@
   },
   {
     "version": "6.0.0-be.667",
+    "timestamp": 1677337768813,
     "builds": [
       {
         "arch": "x86",
@@ -2184,6 +2281,7 @@
   },
   {
     "version": "6.0.0-be.666",
+    "timestamp": 1677241398087,
     "builds": [
       {
         "arch": "x86",
@@ -2243,6 +2341,7 @@
   },
   {
     "version": "6.0.0-be.665",
+    "timestamp": 1672363454630,
     "builds": [
       {
         "arch": "x86",
@@ -2302,6 +2401,7 @@
   },
   {
     "version": "6.0.0-be.664",
+    "timestamp": 1670770070059,
     "builds": [
       {
         "arch": "x86",
@@ -2361,6 +2461,7 @@
   },
   {
     "version": "6.0.0-be.663",
+    "timestamp": 1668362647501,
     "builds": [
       {
         "arch": "x86",
@@ -2420,6 +2521,7 @@
   },
   {
     "version": "6.0.0-be.662",
+    "timestamp": 1666441319038,
     "builds": [
       {
         "arch": "x86",
@@ -2479,6 +2581,7 @@
   },
   {
     "version": "6.0.0-be.661",
+    "timestamp": 1666441295954,
     "builds": [
       {
         "arch": "x86",
@@ -2538,6 +2641,7 @@
   },
   {
     "version": "6.0.0-be.660",
+    "timestamp": 1664900581554,
     "builds": [
       {
         "arch": "x86",
@@ -2597,6 +2701,7 @@
   },
   {
     "version": "6.0.0-be.659",
+    "timestamp": 1664654435994,
     "builds": [
       {
         "arch": "x86",
@@ -2656,6 +2761,7 @@
   },
   {
     "version": "6.0.0-be.658",
+    "timestamp": 1664608211700,
     "builds": [
       {
         "arch": "x86",
@@ -2715,6 +2821,7 @@
   },
   {
     "version": "6.0.0-be.657",
+    "timestamp": 1664559345977,
     "builds": [
       {
         "arch": "x86",
@@ -2774,6 +2881,7 @@
   },
   {
     "version": "6.0.0-be.656",
+    "timestamp": 1662919180882,
     "builds": [
       {
         "arch": "x86",
@@ -2833,6 +2941,7 @@
   },
   {
     "version": "6.0.0-be.655",
+    "timestamp": 1662910984740,
     "builds": [
       {
         "arch": "x86",
@@ -2892,6 +3001,7 @@
   },
   {
     "version": "6.0.0-be.654",
+    "timestamp": 1662837053104,
     "builds": [
       {
         "arch": "x86",
@@ -2951,6 +3061,7 @@
   },
   {
     "version": "6.0.0-be.653",
+    "timestamp": 1662658270239,
     "builds": [
       {
         "arch": "x86",
@@ -3010,6 +3121,7 @@
   },
   {
     "version": "6.0.0-be.652",
+    "timestamp": 1661800679475,
     "builds": [
       {
         "arch": "x86",
@@ -3069,6 +3181,7 @@
   },
   {
     "version": "6.0.0-be.651",
+    "timestamp": 1661795922862,
     "builds": [
       {
         "arch": "x86",
@@ -3128,6 +3241,7 @@
   },
   {
     "version": "6.0.0-be.650",
+    "timestamp": 1661795763253,
     "builds": [
       {
         "arch": "x86",
@@ -3187,6 +3301,7 @@
   },
   {
     "version": "6.0.0-be.649",
+    "timestamp": 1660591440371,
     "builds": [
       {
         "arch": "x86",
@@ -3246,6 +3361,7 @@
   },
   {
     "version": "6.0.0-be.648",
+    "timestamp": 1660489157906,
     "builds": [
       {
         "arch": "x86",
@@ -3305,6 +3421,7 @@
   },
   {
     "version": "6.0.0-be.647",
+    "timestamp": 1660488310283,
     "builds": [
       {
         "arch": "x86",
@@ -3363,261 +3480,44 @@
     ]
   },
   {
-    "version": "5.4.9",
+    "version": "6.0.0-pre.1",
+    "timestamp": 1660487753000,
     "builds": [
       {
+        "backend": "Il2Cpp",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x64_6.0.0-pre.1.zip"
+      },
+      {
+        "backend": "Il2Cpp",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x86_6.0.0-pre.1.zip"
+      },
+      {
         "backend": "Mono",
         "os": "linux",
         "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.9/BepInEx_unix_5.4.9.0.zip"
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_unix_6.0.0-pre.1.zip"
       },
       {
         "backend": "Mono",
         "os": "win",
         "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.9/BepInEx_x64_5.4.9.0.zip"
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_x64_6.0.0-pre.1.zip"
       },
       {
         "backend": "Mono",
         "os": "win",
         "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.9/BepInEx_x86_5.4.9.0.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.8",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_unix_5.4.8.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_x64_5.4.8.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_x86_5.4.8.0.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.7",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.7/BepInEx_unix_5.4.7.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.7/BepInEx_x64_5.4.7.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.7/BepInEx_x86_5.4.7.0.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.6",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_unix_5.4.6.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_x64_5.4.6.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_x86_5.4.6.0.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.5",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.5/BepInEx_unix_5.4.5.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.5/BepInEx_x64_5.4.5.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.5/BepInEx_x86_5.4.5.0.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.4",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_unix_5.4.4.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_x64_5.4.4.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_x86_5.4.4.0.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.3",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.3/BepInEx_unix_5.4.3.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.3/BepInEx_x64_5.4.3.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.3/BepInEx_x86_5.4.3.0.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.23.3",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_linux_x64_5.4.23.3.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_linux_x86_5.4.23.3.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "macos",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_macos_x64_5.4.23.3.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x86_5.4.23.3.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.23.2",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_linux_x64_5.4.23.2.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_linux_x86_5.4.23.2.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "macos",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_macos_x64_5.4.23.2.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x64_5.4.23.2.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x86_5.4.23.2.zip"
-      }
-    ]
-  },
-  {
-    "version": "5.4.22",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_unix_5.4.22.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x64_5.4.22.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_x86_5.4.22.0.zip"
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_x86_6.0.0-pre.1.zip"
       }
     ]
   },
   {
     "version": "5.4.21",
+    "timestamp": 1658252174000,
     "builds": [
       {
         "backend": "Mono",
@@ -3641,6 +3541,7 @@
   },
   {
     "version": "5.4.20",
+    "timestamp": 1657912476000,
     "builds": [
       {
         "backend": "Mono",
@@ -3663,30 +3564,8 @@
     ]
   },
   {
-    "version": "5.4.2",
-    "builds": [
-      {
-        "backend": "Mono",
-        "os": "linux",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_unix_5.4.2.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x64",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_x64_5.4.2.0.zip"
-      },
-      {
-        "backend": "Mono",
-        "os": "win",
-        "arch": "x86",
-        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_x86_5.4.2.0.zip"
-      }
-    ]
-  },
-  {
     "version": "5.4.19",
+    "timestamp": 1643908583000,
     "builds": [
       {
         "backend": "Mono",
@@ -3710,6 +3589,7 @@
   },
   {
     "version": "5.4.18",
+    "timestamp": 1640206762000,
     "builds": [
       {
         "backend": "Mono",
@@ -3733,6 +3613,7 @@
   },
   {
     "version": "5.4.17",
+    "timestamp": 1633278521000,
     "builds": [
       {
         "backend": "Mono",
@@ -3756,6 +3637,7 @@
   },
   {
     "version": "5.4.16",
+    "timestamp": 1632595225000,
     "builds": [
       {
         "backend": "Mono",
@@ -3779,6 +3661,7 @@
   },
   {
     "version": "5.4.15",
+    "timestamp": 1628193948000,
     "builds": [
       {
         "backend": "Mono",
@@ -3802,6 +3685,7 @@
   },
   {
     "version": "5.4.14",
+    "timestamp": 1627657421000,
     "builds": [
       {
         "backend": "Mono",
@@ -3825,6 +3709,7 @@
   },
   {
     "version": "5.4.13",
+    "timestamp": 1627066948000,
     "builds": [
       {
         "backend": "Mono",
@@ -3848,6 +3733,7 @@
   },
   {
     "version": "5.4.12",
+    "timestamp": 1626770862000,
     "builds": [
       {
         "backend": "Mono",
@@ -3871,6 +3757,7 @@
   },
   {
     "version": "5.4.11",
+    "timestamp": 1619942707000,
     "builds": [
       {
         "backend": "Mono",
@@ -3894,6 +3781,7 @@
   },
   {
     "version": "5.4.10",
+    "timestamp": 1619381628000,
     "builds": [
       {
         "backend": "Mono",
@@ -3916,7 +3804,200 @@
     ]
   },
   {
+    "version": "5.4.9",
+    "timestamp": 1616351400000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.9/BepInEx_unix_5.4.9.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.9/BepInEx_x64_5.4.9.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.9/BepInEx_x86_5.4.9.0.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.8",
+    "timestamp": 1614493512000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_unix_5.4.8.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_x64_5.4.8.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_x86_5.4.8.0.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.7",
+    "timestamp": 1614376932000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.7/BepInEx_unix_5.4.7.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.7/BepInEx_x64_5.4.7.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.7/BepInEx_x86_5.4.7.0.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.6",
+    "timestamp": 1614361317000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_unix_5.4.6.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_x64_5.4.6.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_x86_5.4.6.0.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.5",
+    "timestamp": 1608381698000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.5/BepInEx_unix_5.4.5.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.5/BepInEx_x64_5.4.5.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.5/BepInEx_x86_5.4.5.0.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.4",
+    "timestamp": 1607287768000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_unix_5.4.4.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_x64_5.4.4.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_x86_5.4.4.0.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.3",
+    "timestamp": 1606218928000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.3/BepInEx_unix_5.4.3.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.3/BepInEx_x64_5.4.3.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.3/BepInEx_x86_5.4.3.0.zip"
+      }
+    ]
+  },
+  {
+    "version": "5.4.2",
+    "timestamp": 1606157038000,
+    "builds": [
+      {
+        "backend": "Mono",
+        "os": "linux",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_unix_5.4.2.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x64",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_x64_5.4.2.0.zip"
+      },
+      {
+        "backend": "Mono",
+        "os": "win",
+        "arch": "x86",
+        "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_x86_5.4.2.0.zip"
+      }
+    ]
+  },
+  {
     "version": "5.4.1",
+    "timestamp": 1605280905000,
     "builds": [
       {
         "backend": "Mono",
@@ -3940,6 +4021,7 @@
   },
   {
     "version": "5.4",
+    "timestamp": 1604839911000,
     "builds": [
       {
         "backend": "Mono",
@@ -3963,6 +4045,7 @@
   },
   {
     "version": "5.3",
+    "timestamp": 1596822306000,
     "builds": [
       {
         "backend": "Mono",
@@ -3986,6 +4069,7 @@
   },
   {
     "version": "5.2",
+    "timestamp": 1593969969000,
     "builds": [
       {
         "backend": "Mono",
@@ -4009,6 +4093,7 @@
   },
   {
     "version": "5.1",
+    "timestamp": 1592043358000,
     "builds": [
       {
         "backend": "Mono",
@@ -4032,6 +4117,7 @@
   },
   {
     "version": "5.0.1",
+    "timestamp": 1577119951000,
     "builds": [
       {
         "backend": "Mono",
@@ -4049,6 +4135,7 @@
   },
   {
     "version": "5.0",
+    "timestamp": 1573575732000,
     "builds": [
       {
         "backend": "Mono",
@@ -4065,7 +4152,13 @@
     ]
   },
   {
+    "version": "5.0-RC1",
+    "timestamp": 1557231184000,
+    "builds": []
+  },
+  {
     "version": "4.1.1",
+    "timestamp": 1547645904000,
     "builds": [
       {
         "backend": "Mono",
@@ -4095,6 +4188,7 @@
   },
   {
     "version": "4.1",
+    "timestamp": 1533219979000,
     "builds": [
       {
         "backend": "Mono",
@@ -4109,5 +4203,60 @@
         "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v4.1/BepInEx_x86_v4.1.zip"
       }
     ]
+  },
+  {
+    "version": "4.0",
+    "timestamp": 1529326021000,
+    "builds": []
+  },
+  {
+    "version": "3.2",
+    "timestamp": 1526243289000,
+    "builds": []
+  },
+  {
+    "version": "3.1",
+    "timestamp": 1524826171000,
+    "builds": []
+  },
+  {
+    "version": "3.0",
+    "timestamp": 1524135677000,
+    "builds": []
+  },
+  {
+    "version": "2.0",
+    "timestamp": 1520477193000,
+    "builds": []
+  },
+  {
+    "version": "1.3",
+    "timestamp": 1519503966000,
+    "builds": []
+  },
+  {
+    "version": "1.2",
+    "timestamp": 1519011187000,
+    "builds": []
+  },
+  {
+    "version": "1.1",
+    "timestamp": 1518889441000,
+    "builds": []
+  },
+  {
+    "version": "1.0.1",
+    "timestamp": 1518831444000,
+    "builds": []
+  },
+  {
+    "version": "1.0",
+    "timestamp": 1518762234000,
+    "builds": []
+  },
+  {
+    "version": "0.1",
+    "timestamp": 1518394528000,
+    "builds": []
   }
 ]
