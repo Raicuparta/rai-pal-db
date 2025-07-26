@@ -1,7 +1,7 @@
 import { Game } from "#game-db/main.ts";
 import { mergeGames } from "#game-db/merge-games.ts";
-import { getBepInExBleedingBuilds } from "#loader-db/bepinex/bepinex-bleeding.ts";
-import { getBepInExStableBuilds } from "#loader-db/bepinex/bepinex-stable.ts";
+import { getBepInExBleedingReleases } from "#loader-db/bepinex/bepinex-bleeding.ts";
+import { getBepInExStableReleases } from "#loader-db/bepinex/bepinex-stable.ts";
 
 const testGames: Game[] = [
 	{
@@ -70,8 +70,8 @@ const testGames: Game[] = [
 
 async function test() {
 	const result = Object.entries({
-		...(await getBepInExStableBuilds()),
-		...(await getBepInExBleedingBuilds()),
+		...(await getBepInExStableReleases()),
+		...(await getBepInExBleedingReleases()),
 	})
 		.sort((a, b) => b[0].localeCompare(a[0]))
 		.map(([version, builds]) => ({
