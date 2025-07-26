@@ -1,0 +1,36 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+		"$schema": {
+			"type": "string"
+		},
+		"configs": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"version": {
+						"type": "integer",
+						"minimum": 0,
+						"description": "Increment this when the config changes. Used to check if a config needs updating."
+					},
+					"modId": {
+						"type": "string",
+						"description": "The ID of the mod this config belongs to."
+					},
+					"loaderId": {
+						"type": "string",
+						"description": "The ID of the mod loader that handles this mod."
+					},
+					"file": {
+						"type": "string",
+						"description": "Name of the file to download in the 'configs' folder for this game in this db."
+					}
+				},
+				"required": ["version", "modId", "loaderId", "file"]
+			}
+		}
+	},
+	"additionalItems": false
+}
