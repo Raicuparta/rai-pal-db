@@ -1,0 +1,11 @@
+{
+	"$schema": "../schema/config-db-schema.json",
+	"configs": [
+		{
+			"modId": "uuvr-mono-modern",
+			"loaderId": "bepinex",
+			"file": "raicuparta.uuvr-modern.cfg",
+			"version": 0
+		}
+	]
+}
