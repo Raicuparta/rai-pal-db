@@ -153,32 +153,6 @@
 				"id": "1.3.0",
 				"url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
 			}
-		},
-		{
-			"id": "everyone-mono",
-			"engine": "Unity",
-			"unityBackend": "Mono",
-			"title": "Everyone",
-			"author": "Raicuparta",
-			"sourceCode": "https://github.com/Raicuparta/everyone",
-			"description": "Work in progress! F3 to chat.",
-			"latestVersion": {
-				"id": "0.0.1",
-				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx5.Mono.zip"
-			}
-		},
-		{
-			"id": "everyone-il2cpp",
-			"engine": "Unity",
-			"unityBackend": "Il2Cpp",
-			"title": "Everyone",
-			"author": "Raicuparta",
-			"sourceCode": "https://github.com/Raicuparta/everyone",
-			"description": "Work in progress! F3 to chat.",
-			"latestVersion": {
-				"id": "0.0.1",
-				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
-			}
 		}
 	]
 }
