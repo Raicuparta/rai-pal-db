@@ -1,0 +1,13 @@
+{
+  "$schema": "../config-schema.json",
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "Thomas"
+      }
+    ]
+  },
+  "Rendering": {
+    "ShaderName": "Legacy Shaders/VertexLit"
+  }
+}

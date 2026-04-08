@@ -1,0 +1,14 @@
+{
+  "$schema": "../config-schema.json",
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "_Boy",
+        "ChildPath": "_BoyPreprocessed/visual/Boy/Head"
+      }
+    ]
+  },
+  "Rendering": {
+    "ShaderName": "Playdead/Self Illuminate/Textured Cutout"
+  }
+}

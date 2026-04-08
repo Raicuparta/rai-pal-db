@@ -1,0 +1,17 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 2,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "Player"
+      }
+    ]
+  },
+  "Text": {
+    "TextScale": 1.5
+  },
+  "RemotePlayer": {
+    "EulerAnglesOffset": "0,180,0"
+  }
+}

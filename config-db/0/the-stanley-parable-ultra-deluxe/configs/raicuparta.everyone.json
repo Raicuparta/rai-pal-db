@@ -1,0 +1,12 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 0.5,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "Component": "UnityEngine.Camera",
+        "Tag": "MainCamera"
+      }
+    ]
+  }
+}

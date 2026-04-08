@@ -1,0 +1,18 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 1.5,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "AlexPlayer(Clone)",
+        "ChildPath": "Alex_Rig:head1_head"
+      }
+    ]
+  },
+  "Text": {
+    "TextScale": 2
+  },
+  "RemotePlayer": {
+    "EulerAnglesOffset": "0,0,90"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "../config-schema.json",
+  "Origin": {
+    "Include": [
+      {
+        "Component": "Sector"
+      }
+    ],
+    "Exclude": [
+      {
+        "ObjectName": "ShipSector"
+      }
+    ]
+  },
+  "Text": {
+    "FontName": "SpaceMono-Regular"
+  }
+}

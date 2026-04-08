@@ -1,0 +1,12 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 1.5,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "Walkster",
+        "ChildPath": "HeadPivot"
+      }
+    ]
+  }
+}

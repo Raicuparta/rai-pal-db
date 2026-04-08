@@ -1,0 +1,12 @@
+{
+  "$schema": "https://the-everyone.github.io/everyone-game-configs/everyone-settings-schema.json",
+  "BaseScale": 2,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "Tag": "Player",
+        "ChildPath": "YookaLaylee_combined/ALL_BASE/BASE/BACK/BACK_A/NECK/HEAD"
+      }
+    ]
+  }
+}

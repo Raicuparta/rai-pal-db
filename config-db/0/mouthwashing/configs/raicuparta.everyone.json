@@ -1,0 +1,6 @@
+{
+  "$schema": "../config-schema.json",
+  "Rendering": {
+    "ShaderName": "Universal Render Pipeline/Lit"
+  }
+}

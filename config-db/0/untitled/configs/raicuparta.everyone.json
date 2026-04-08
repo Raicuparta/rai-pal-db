@@ -1,0 +1,15 @@
+{
+  "$schema": "https://the-everyone.github.io/everyone-game-configs/everyone-settings-schema.json",
+  "BaseScale": 0.5,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "Tag": "Player"
+      }
+    ]
+  },
+  "RemotePlayer": {
+    "EulerAnglesOffset": "0,-90,90",
+    "PositionOffset": "0,0,0.1"
+  }
+}

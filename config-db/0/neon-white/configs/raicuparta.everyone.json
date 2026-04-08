@@ -1,0 +1,10 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 3,
+  "Text": {
+    "TextScale": 1.5
+  },
+  "Rendering": {
+    "RenderQueue": 5000
+  }
+}

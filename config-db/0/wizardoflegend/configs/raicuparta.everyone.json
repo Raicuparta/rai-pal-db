@@ -1,0 +1,18 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 2,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "Player0",
+        "ChildPath": "PlayerSprite/HeadPosition"
+      }
+    ]
+  },
+  "Text": {
+    "TextScale": 1.5
+  },
+  "RemotePlayer": {
+    "EulerAnglesOffset": "0,130,0"
+  }
+}

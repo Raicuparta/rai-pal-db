@@ -1,0 +1,25 @@
+{
+  "$schema": "../config-schema.json",
+  "LocalPlayer": {
+    "Include": [
+      {
+        "Component": "Gris.CharacterController2D",
+        "ChildPath": "Sprite"
+      }
+    ]
+  },
+  "MainCamera": {
+    "Include": [
+      {
+        "ObjectName": "Main Camera(Clone)"
+      }
+    ]
+  },
+  "Text": {
+    "TextScale": 2
+  },
+  "RemotePlayer": {
+    "PositionOffset": "0,0.9,0",
+    "EulerAnglesOffset": "0,130,0"
+  }
+}

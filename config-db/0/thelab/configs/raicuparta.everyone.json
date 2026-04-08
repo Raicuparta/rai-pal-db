@@ -1,0 +1,7 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 0.75,
+  "Rendering": {
+    "ShaderName": "Unlit/Unlit Transparent Hybrid"
+  }
+}

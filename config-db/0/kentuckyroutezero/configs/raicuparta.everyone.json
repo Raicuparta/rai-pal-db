@@ -1,0 +1,17 @@
+{
+  "$schema": "../config-schema.json",
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "Conway",
+        "ChildPath": "ConwayArmature/root/torso/chest/lower_neck/neck/head"
+      }
+    ]
+  },
+  "RemotePlayer": {
+    "EulerAnglesOffset": "0,180,-90"
+  },
+  "Rendering": {
+    "ShaderName": "Vertex/Textured/Unlit"
+  }
+}

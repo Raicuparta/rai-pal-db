@@ -1,0 +1,20 @@
+{
+  "$schema": "../config-schema.json",
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "Player(Clone)"
+      }
+    ]
+  },
+  "Text": {
+    "TextScale": 2,
+    "FontName": "InfoScreen"
+  },
+  "RemotePlayer": {
+    "EulerAnglesOffset": "0,180,0"
+  },
+  "Rendering": {
+    "ShaderName": "Ittle Dew/Transparent Vertex Colored"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 1,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "PlayerPositionIndicator(Clone)",
+        "ChildPath": "DeadIcon"
+      }
+    ]
+  }
+}

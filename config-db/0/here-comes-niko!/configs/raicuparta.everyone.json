@@ -1,0 +1,15 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 1.5,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "PlayerCharacter",
+        "ChildPath": "CharacterController/LookDirection/Image Carry"
+      }
+    ]
+  },
+  "Text": {
+    "TextScale": 2
+  }
+}

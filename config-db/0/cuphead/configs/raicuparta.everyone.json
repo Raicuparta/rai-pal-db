@@ -1,0 +1,18 @@
+{
+  "$schema": "../config-schema.json",
+  "BaseScale": 150,
+  "LocalPlayer": {
+    "Include": [
+      {
+        "ObjectName": "PlayerOne"
+      }
+    ]
+  },
+  "Rendering": {
+    "ShaderName": "Legacy Shaders/VertexLit"
+  },
+  "RemotePlayer": {
+    "PositionOffset": "0,63,0",
+    "EulerAnglesOffset": "0,130,0"
+  }
+}
