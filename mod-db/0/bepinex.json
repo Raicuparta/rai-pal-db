@@ -153,6 +153,55 @@
 				"id": "1.3.0",
 				"url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
 			}
+		},
+		{
+			"id": "everyone-mono",
+			"engine": "Unity",
+			"unityBackend": "Mono",
+			"engineVersionRange": {
+				"minimum": {
+					"major": 5
+				}
+			},
+			"title": "Everyone",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/everyone",
+			"description": "Mono version. Work in progress! F3 to chat.",
+			"latestVersion": {
+				"id": "0.0.1",
+				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx5.Mono.zip"
+			}
+		},
+		{
+			"id": "everyone-mono-legacy",
+			"engine": "Unity",
+			"engineVersionRange": {
+				"maximum": {
+					"major": 5
+				}
+			},
+			"unityBackend": "Mono",
+			"title": "Everyone (Legacy)",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/everyone",
+			"description": "Mono Legacy version. Work in progress! F3 to chat.",
+			"latestVersion": {
+				"id": "0.0.1",
+				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx5.Mono.Legacy.zip"
+			}
+		},
+		{
+			"id": "everyone-il2cpp",
+			"engine": "Unity",
+			"unityBackend": "Il2Cpp",
+			"title": "Everyone",
+			"author": "Raicuparta",
+			"sourceCode": "https://github.com/Raicuparta/everyone",
+			"description": "IL2CPP version. Work in progress! F3 to chat.",
+			"latestVersion": {
+				"id": "0.0.1",
+				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+			}
 		}
 	]
 }
