@@ -2,7 +2,7 @@
 	"$schema": "../schema/config-db-schema.json",
 	"configs": [
 		{
-			"modId": "everyone-mono",
+			"modId": "everyone-il2cpp",
 			"loaderId": "bepinex",
 			"file": "raicuparta.everyone.json",
 			"version": 0
