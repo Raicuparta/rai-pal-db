@@ -170,6 +170,10 @@
 			"latestVersion": {
 				"id": "0.0.1",
 				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx5.Mono.zip"
+			},
+			"configs": {
+				"destinationPath": "config/raicuparta.everyone.json",
+				"destinationType": "File"
 			}
 		},
 		{
@@ -188,6 +192,10 @@
 			"latestVersion": {
 				"id": "0.0.1",
 				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx5.Mono.Legacy.zip"
+			},
+			"configs": {
+				"destinationPath": "config/raicuparta.everyone.json",
+				"destinationType": "File"
 			}
 		},
 		{
@@ -201,6 +209,10 @@
 			"latestVersion": {
 				"id": "0.0.1",
 				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+			},
+			"configs": {
+				"destinationPath": "config/raicuparta.everyone.json",
+				"destinationType": "File"
 			}
 		}
 	]
