@@ -168,8 +168,8 @@
 			"sourceCode": "https://github.com/Raicuparta/everyone",
 			"description": "Mono version. Work in progress! F3 to chat.",
 			"latestVersion": {
-				"id": "0.0.2",
-				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx5.Mono.zip"
+				"id": "0.1.0",
+				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
 			},
 			"configs": {
 				"destinationPath": "config/raicuparta.everyone.json",
@@ -190,8 +190,8 @@
 			"sourceCode": "https://github.com/Raicuparta/everyone",
 			"description": "Mono Legacy version. Work in progress! F3 to chat.",
 			"latestVersion": {
-				"id": "0.0.2",
-				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx5.Mono.Legacy.zip"
+				"id": "0.1.0",
+				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
 			},
 			"configs": {
 				"destinationPath": "config/raicuparta.everyone.json",
@@ -207,8 +207,8 @@
 			"sourceCode": "https://github.com/Raicuparta/everyone",
 			"description": "IL2CPP version. Work in progress! F3 to chat.",
 			"latestVersion": {
-				"id": "0.0.2",
-				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-test-0.0.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+				"id": "0.1.0",
+				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
 			},
 			"configs": {
 				"destinationPath": "config/raicuparta.everyone.json",
