@@ -8,7 +8,9 @@ async function generateDbSchemaTypes() {
 		cwd: schemaFolder,
 	});
 
-	await Deno.writeTextFile("./types/generated/db-schema.ts", schemaTs);
+	const folder = "./types/generated";
+	await Deno.mkdir(folder, { recursive: true });
+	await Deno.writeTextFile(`${folder}/db-schema.ts`, schemaTs);
 }
 
 await generateDbSchemaTypes();
