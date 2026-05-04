@@ -1,12 +1,12 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 0.5,
-  "LocalPlayer": {
-    "Include": [
-      {
-        "Component": "UnityEngine.Camera",
-        "Tag": "MainCamera"
-      }
-    ]
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 0.5,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"Component": "UnityEngine.Camera",
+				"Tag": "MainCamera"
+			}
+		]
+	}
 }

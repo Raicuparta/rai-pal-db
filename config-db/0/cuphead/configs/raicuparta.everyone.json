@@ -1,18 +1,18 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 150,
-  "LocalPlayer": {
-    "Include": [
-      {
-        "ObjectName": "PlayerOne"
-      }
-    ]
-  },
-  "Rendering": {
-    "ShaderName": "Legacy Shaders/VertexLit"
-  },
-  "RemotePlayer": {
-    "PositionOffset": "0,63,0",
-    "EulerAnglesOffset": "0,130,0"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 150,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "PlayerOne"
+			}
+		]
+	},
+	"Rendering": {
+		"ShaderName": "Legacy Shaders/VertexLit"
+	},
+	"RemotePlayer": {
+		"PositionOffset": "0,63,0",
+		"EulerAnglesOffset": "0,130,0"
+	}
 }

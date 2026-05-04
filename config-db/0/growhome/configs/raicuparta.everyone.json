@@ -1,15 +1,15 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 1.5,
-  "LocalPlayer": {
-    "Include": [
-      {
-        "ObjectName": "Walkster",
-        "ChildPath": "HeadPivot"
-      }
-    ]
-  },
-  "Text": {
-    "FontName": "block_fixed"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 1.5,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Walkster",
+				"ChildPath": "HeadPivot"
+			}
+		]
+	},
+	"Text": {
+		"FontName": "block_fixed"
+	}
 }

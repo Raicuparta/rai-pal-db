@@ -1,18 +1,18 @@
 {
-  "$schema": "../config-schema.json",
-  "Origin": {
-    "Include": [
-      {
-        "Component": "Sector"
-      }
-    ],
-    "Exclude": [
-      {
-        "ObjectName": "ShipSector"
-      }
-    ]
-  },
-  "Text": {
-    "FontName": "SpaceMono-Regular"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"Origin": {
+		"Include": [
+			{
+				"Component": "Sector"
+			}
+		],
+		"Exclude": [
+			{
+				"ObjectName": "ShipSector"
+			}
+		]
+	},
+	"Text": {
+		"FontName": "SpaceMono-Regular"
+	}
 }

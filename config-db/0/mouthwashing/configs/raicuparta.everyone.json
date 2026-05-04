@@ -1,6 +1,6 @@
 {
-  "$schema": "../config-schema.json",
-  "Rendering": {
-    "ShaderName": "Universal Render Pipeline/Lit"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"Rendering": {
+		"ShaderName": "Universal Render Pipeline/Lit"
+	}
 }

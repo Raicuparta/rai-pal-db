@@ -1,4 +1,4 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 50
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 50
 }

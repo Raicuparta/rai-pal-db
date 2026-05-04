@@ -1,5 +1,11 @@
 {
-  "$schema": "../config-schema.json",
-  "LocalPlayerObjectName": "Anita Agent",
-  "LocalPlayerObjectChildPath": "Head Target Pivot"
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Anita Agent",
+				"ChildPath": "Head Target Pivot"
+			}
+		]
+	}
 }

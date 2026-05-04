@@ -1,18 +1,18 @@
 {
-  "$schema": "../config-schema.json",
-  "LocalPlayer": {
-    "Include": [
-      {
-        "Tag": "Player",
-        "ChildPath": "Character/Armature/root/Base/Chest/Head"
-      }
-    ]
-  },
-  "RemotePlayer": {
-    "EulerAnglesOffset": "0,0,90"
-  },
-  "BaseScale": 5,
-  "Text": {
-    "TextScale": 2
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"Tag": "Player",
+				"ChildPath": "Character/Armature/root/Base/Chest/Head"
+			}
+		]
+	},
+	"RemotePlayer": {
+		"EulerAnglesOffset": "0,0,90"
+	},
+	"BaseScale": 5,
+	"Text": {
+		"TextScale": 2
+	}
 }

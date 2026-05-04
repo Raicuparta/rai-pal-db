@@ -1,7 +1,14 @@
 {
-  "$schema": "../config-schema.json",
-  "LocalPlayerObjectName": "Tequila Sunset",
-  "LocalPlayerObjectChildPath": "char/char_SHJntGrp/char_body_ROOTSHJnt/char_body_Spine_01SHJnt/char_body_Spine_02SHJnt/char_body_Spine_TopSHJnt/char_body_Neck_01SHJnt/char_body_Neck_02SHJnt/char_body_Neck_TopSHJnt/char_body_head_TopSHJnt",
-  "RemotePlayerObjectScale": 0.75,
-  "RemotePlayerObjectPositionOffset": "0,-0.2,0"
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Tequila Sunset",
+				"ChildPath": "char/char_SHJntGrp/char_body_ROOTSHJnt/char_body_Spine_01SHJnt/char_body_Spine_02SHJnt/char_body_Spine_TopSHJnt/char_body_Neck_01SHJnt/char_body_Neck_02SHJnt/char_body_Neck_TopSHJnt/char_body_head_TopSHJnt"
+			}
+		]
+	},
+	"RemotePlayer": {
+		"PositionOffset": "0,-0.2,0"
+	}
 }

@@ -1,23 +1,23 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 1,
-  "LocalPlayer": {
-    "Include": [
-      {
-        "ObjectName": "Player",
-        "ChildPath": "ZekeRigged/ZekeArmature/Pelvis/LowerTorso/UpperTorso/Head"
-      }
-    ]
-  },
-  "Text": {
-    "TextScale": 1,
-    "FontName": ""
-  },
-  "RemotePlayer": {
-    "PositionOffset": "0,0,0",
-    "EulerAnglesOffset": "0,0,0"
-  },
-  "Rendering": {
-    "ShaderName": "PSX/PSXLit"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 1,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Player",
+				"ChildPath": "ZekeRigged/ZekeArmature/Pelvis/LowerTorso/UpperTorso/Head"
+			}
+		]
+	},
+	"Text": {
+		"TextScale": 1,
+		"FontName": ""
+	},
+	"RemotePlayer": {
+		"PositionOffset": "0,0,0",
+		"EulerAnglesOffset": "0,0,0"
+	},
+	"Rendering": {
+		"ShaderName": "PSX/PSXLit"
+	}
 }

@@ -1,20 +1,20 @@
 {
-  "$schema": "../config-schema.json",
-  "LocalPlayer": {
-    "Include": [
-      {
-        "ObjectName": "Player(Clone)"
-      }
-    ]
-  },
-  "Text": {
-    "TextScale": 2,
-    "FontName": "InfoScreen"
-  },
-  "RemotePlayer": {
-    "EulerAnglesOffset": "0,180,0"
-  },
-  "Rendering": {
-    "ShaderName": "Ittle Dew/Transparent Vertex Colored"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "Player(Clone)"
+			}
+		]
+	},
+	"Text": {
+		"TextScale": 2,
+		"FontName": "InfoScreen"
+	},
+	"RemotePlayer": {
+		"EulerAnglesOffset": "0,180,0"
+	},
+	"Rendering": {
+		"ShaderName": "Ittle Dew/Transparent Vertex Colored"
+	}
 }

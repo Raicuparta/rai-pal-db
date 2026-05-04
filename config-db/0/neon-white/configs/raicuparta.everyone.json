@@ -1,10 +1,10 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 3,
-  "Text": {
-    "TextScale": 1.5
-  },
-  "Rendering": {
-    "RenderQueue": 5000
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 3,
+	"Text": {
+		"TextScale": 1.5
+	},
+	"Rendering": {
+		"RenderQueue": 5000
+	}
 }

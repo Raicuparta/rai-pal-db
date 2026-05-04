@@ -1,19 +1,19 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 1.5,
-  "LocalPlayer": {
-    "Include": [
-      {
-        "Component": "CharacterShell",
-        "ObjectName": "Sebastian",
-        "ChildPath": "Sebastian_Ny/CharacterRig/master_ctrl/root_bn/spine0_bn/spine1_bn/shoulder_bn/head_bn"
-      }
-    ]
-  },
-  "Text": {
-    "TextScale": 1.5
-  },
-  "RemotePlayer": {
-    "EulerAnglesOffset": "90,0,90"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 1.5,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"Component": "CharacterShell",
+				"ObjectName": "Sebastian",
+				"ChildPath": "Sebastian_Ny/CharacterRig/master_ctrl/root_bn/spine0_bn/spine1_bn/shoulder_bn/head_bn"
+			}
+		]
+	},
+	"Text": {
+		"TextScale": 1.5
+	},
+	"RemotePlayer": {
+		"EulerAnglesOffset": "90,0,90"
+	}
 }

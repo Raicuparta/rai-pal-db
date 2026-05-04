@@ -1,14 +1,14 @@
 {
-  "$schema": "../config-schema.json",
-  "LocalPlayer": {
-    "Include": [
-      {
-        "ObjectName": "_Boy",
-        "ChildPath": "_BoyPreprocessed/visual/Boy/Head"
-      }
-    ]
-  },
-  "Rendering": {
-    "ShaderName": "Playdead/Self Illuminate/Textured Cutout"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "_Boy",
+				"ChildPath": "_BoyPreprocessed/visual/Boy/Head"
+			}
+		]
+	},
+	"Rendering": {
+		"ShaderName": "Playdead/Self Illuminate/Textured Cutout"
+	}
 }

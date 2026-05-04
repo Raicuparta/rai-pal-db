@@ -1,18 +1,18 @@
 {
-  "$schema": "../config-schema.json",
-  "BaseScale": 1.5,
-  "LocalPlayer": {
-    "Include": [
-      {
-        "ObjectName": "AlexPlayer(Clone)",
-        "ChildPath": "Alex_Rig:head1_head"
-      }
-    ]
-  },
-  "Text": {
-    "TextScale": 2
-  },
-  "RemotePlayer": {
-    "EulerAnglesOffset": "0,0,90"
-  }
+	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
+	"BaseScale": 1.5,
+	"LocalPlayer": {
+		"Include": [
+			{
+				"ObjectName": "AlexPlayer(Clone)",
+				"ChildPath": "Alex_Rig:head1_head"
+			}
+		]
+	},
+	"Text": {
+		"TextScale": 2
+	},
+	"RemotePlayer": {
+		"EulerAnglesOffset": "0,0,90"
+	}
 }
