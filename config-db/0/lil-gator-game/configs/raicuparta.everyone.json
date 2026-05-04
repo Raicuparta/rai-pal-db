@@ -1,0 +1,11 @@
+{
+    "$schema": "../../schema/everyone-config-schema.json",
+    "LocalPlayer": {
+      "Include": [
+          {
+            "Component": "PlayerMovement",
+            "ChildPath": "Heroboy/Heroboy/Hips/LowerSpine/Chest/Neck/Head"
+          }
+      ]
+    }
+}
