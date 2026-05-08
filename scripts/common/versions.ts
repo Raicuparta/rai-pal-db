@@ -3,4 +3,4 @@
 // which means the database URLs also change.
 export const GAME_DATABASE_VERSION = 2;
 export const MOD_DATABASE_VERSION = 0;
-export const LOADER_DATABASE_VERSION = 0;
+export const LOADER_DATABASE_VERSION = 1;

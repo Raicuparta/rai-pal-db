@@ -1,20 +1,20 @@
-import { BepInExRelease, UnityBackend } from "#loader-db/bepinex/bepinex.ts";
+import { LoaderRelease, UnityBackend } from "#loader-db/main.ts";
 
 const repository = "BepInEx/BepInEx";
 
-export async function getBepInExStableReleases(): Promise<BepInExRelease[]> {
+export async function getBepInExStableReleases(): Promise<LoaderRelease[]> {
 	const response = await fetch(
-		`https://api.github.com/repos/${repository}/releases?per_page=100`
+		`https://api.github.com/repos/${repository}/releases?per_page=100`,
 	);
 	const githubReleasesJson = await response.json();
 
-	const bepinexReleases: BepInExRelease[] = [];
+	const bepinexReleases: LoaderRelease[] = [];
 
 	for (const gitHubRelease of githubReleasesJson) {
 		if (gitHubRelease.assets) {
 			const version = gitHubRelease.tag_name.replace(/^v/, "");
 
-			const bepInExRelease: BepInExRelease = {
+			const bepInExRelease: LoaderRelease = {
 				version,
 				timestamp: new Date(gitHubRelease.published_at).getTime(),
 				builds: [],
@@ -23,7 +23,7 @@ export async function getBepInExStableReleases(): Promise<BepInExRelease[]> {
 			for (const asset of gitHubRelease.assets) {
 				// Modern pattern: BepInEx_(linux|win|macos)_(x64|x86)_version.zip
 				const modernMatch = asset.name.match(
-					/^BepInEx_(linux|win|macos)_(x64|x86)_/
+					/^BepInEx_(linux|win|macos)_(x64|x86)_/,
 				);
 
 				// Older pattern: BepInEx_(unix|x64|x86)_version.zip
@@ -31,12 +31,12 @@ export async function getBepInExStableReleases(): Promise<BepInExRelease[]> {
 
 				// Prerelease pattern: BepInEx-{Backend}-{OS}-{Arch}-{Version}.zip
 				const prereleaseMatch = asset.name.match(
-					/^BepInEx-(.+)-(linux|win|macos)-(x64|x86)-/
+					/^BepInEx-(.+)-(linux|win|macos)-(x64|x86)-/,
 				);
 
 				// Alternative prerelease pattern: BepInEx_{Backend}_{OS/Arch}_{Version}.zip
 				const altPrereleaseMatch = asset.name.match(
-					/^BepInEx_(.+)_(unix|x64|x86)_/
+					/^BepInEx_(.+)_(unix|x64|x86)_/,
 				);
 
 				let os: string;
@@ -58,7 +58,7 @@ export async function getBepInExStableReleases(): Promise<BepInExRelease[]> {
 						arch = osOrArch;
 					} else {
 						console.warn(
-							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown OS/arch pattern`
+							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown OS/arch pattern`,
 						);
 						continue; // Skip unknown patterns
 					}
@@ -79,7 +79,7 @@ export async function getBepInExStableReleases(): Promise<BepInExRelease[]> {
 						backend = "Mono"; // .NET Framework/CoreCLR builds are treated as Mono
 					} else {
 						console.warn(
-							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown backend: ${backendStr}`
+							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown backend: ${backendStr}`,
 						);
 						continue;
 					}
@@ -95,7 +95,7 @@ export async function getBepInExStableReleases(): Promise<BepInExRelease[]> {
 						arch = osOrArch;
 					} else {
 						console.warn(
-							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown OS/arch pattern: ${osOrArch}`
+							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown OS/arch pattern: ${osOrArch}`,
 						);
 						continue;
 					}
@@ -109,24 +109,26 @@ export async function getBepInExStableReleases(): Promise<BepInExRelease[]> {
 						backend = "Mono"; // NetLauncher is treated as Mono
 					} else {
 						console.warn(
-							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown backend: ${backendStr}`
+							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown backend: ${backendStr}`,
 						);
 						continue;
 					}
 				} else {
 					console.warn(
-						`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown naming pattern`
+						`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown naming pattern`,
 					);
 					continue; // Skip assets that don't match any pattern
 				}
 
 				bepInExRelease.builds.push({
-					backend,
+					unityBackend: backend,
 					os,
 					arch,
 					downloadUrl: asset.browser_download_url,
 				});
 			}
+
+			if (bepInExRelease.builds.length === 0) continue;
 
 			bepinexReleases.push(bepInExRelease);
 		}

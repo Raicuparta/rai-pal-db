@@ -1,20 +1,16 @@
 import { DOMParser } from "@b-fuze/deno-dom";
-import {
-	BepInExBuild,
-	BepInExRelease,
-	UnityBackend,
-} from "#loader-db/bepinex/bepinex.ts";
+import { LoaderBuild, LoaderRelease, UnityBackend } from "#loader-db/main.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE = `${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;
 
-export async function getBepInExBleedingReleases(): Promise<BepInExRelease[]> {
+export async function getBepInExBleedingReleases(): Promise<LoaderRelease[]> {
 	const response = await fetch(BLEEDING_BUILD_URL_BASE);
 	const html = await response.text();
 
 	const doc = new DOMParser().parseFromString(html, "text/html");
 	const releaseElements = doc.getElementsByClassName("artifact-item");
-	const bepInExReleases: BepInExRelease[] = [];
+	const bepInExReleases: LoaderRelease[] = [];
 
 	for (const releaseElement of releaseElements) {
 		const dateText =
@@ -31,7 +27,7 @@ export async function getBepInExBleedingReleases(): Promise<BepInExRelease[]> {
 			continue;
 		}
 
-		const builds: BepInExBuild[] = [];
+		const builds: LoaderBuild[] = [];
 
 		// Version needs to be parsed from assets, so we declare it here and wait for it to be defined later.
 		let releaseVersion: string | null = null;
@@ -44,7 +40,7 @@ export async function getBepInExBleedingReleases(): Promise<BepInExRelease[]> {
 			if (!href) continue;
 
 			const match = href.match(
-				/\/BepInEx-Unity\.(Mono|IL2CPP)-(win|linux|macos)-(x86|x64)-(\d+\.\d+\.\d+-be\.\d+)/
+				/\/BepInEx-Unity\.(Mono|IL2CPP)-(win|linux|macos)-(x86|x64)-(\d+\.\d+\.\d+-be\.\d+)/,
 			);
 
 			if (match && !href.includes("NET")) {
@@ -57,7 +53,7 @@ export async function getBepInExBleedingReleases(): Promise<BepInExRelease[]> {
 				builds.push({
 					arch,
 					os,
-					backend: backend as UnityBackend, // TODO validate.
+					unityBackend: backend as UnityBackend, // TODO validate.
 					downloadUrl: `${BLEEDING_BUILD_URL_DOMAIN}${href}`,
 				});
 			}
@@ -68,7 +64,7 @@ export async function getBepInExBleedingReleases(): Promise<BepInExRelease[]> {
 			// 	`Finished parsing BepInEx bleeding builds for release with date ${dateText}, but release version was not set.`
 			// );
 			console.warn(
-				`Finished parsing BepInEx bleeding builds for release with date ${dateText}, but release version was not set.`
+				`Finished parsing BepInEx bleeding builds for release with date ${dateText}, but release version was not set.`,
 			);
 			continue;
 		}
