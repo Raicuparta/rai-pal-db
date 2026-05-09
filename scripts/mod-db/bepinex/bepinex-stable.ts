@@ -59,6 +59,7 @@ function toMonoModSchema(
 ): ModSchema {
 	return {
 		id: `bepinex-mono-${architecture.toLowerCase()}`,
+		isLoader: true,
 		engine: "Unity",
 		architecture,
 		unityBackend: "Mono",

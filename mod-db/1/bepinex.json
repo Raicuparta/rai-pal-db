@@ -217,6 +217,7 @@
     },
     {
       "id": "bepinex-mono-x86",
+      "isLoader": true,
       "engine": "Unity",
       "architecture": "X86",
       "unityBackend": "Mono",
@@ -231,6 +232,7 @@
     },
     {
       "id": "bepinex-mono-x64",
+      "isLoader": true,
       "engine": "Unity",
       "architecture": "X64",
       "unityBackend": "Mono",
@@ -245,6 +247,7 @@
     },
     {
       "id": "bepinex-il2cpp-x86",
+      "isLoader": true,
       "engine": "Unity",
       "architecture": "X86",
       "unityBackend": "Il2Cpp",
@@ -259,6 +262,7 @@
     },
     {
       "id": "bepinex-il2cpp-x64",
+      "isLoader": true,
       "engine": "Unity",
       "architecture": "X64",
       "unityBackend": "Il2Cpp",

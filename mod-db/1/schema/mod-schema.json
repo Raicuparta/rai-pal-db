@@ -6,6 +6,10 @@
 			"type": "string",
 			"description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
 		},
+		"isLoader": {
+			"type": "boolean",
+			"description": "Whether this mod is a mod loader, meaning it is required to install one of these to be able to use any of the mods in this library."
+		},
 		"deprecated": {
 			"type": "boolean",
 			"description": "If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement."

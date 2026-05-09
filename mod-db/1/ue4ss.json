@@ -3,6 +3,7 @@
   "mods": [
     {
       "id": "ue4ss",
+      "isLoader": true,
       "engine": "Unreal",
       "title": "UE4SS",
       "author": "UE4SS-RE",

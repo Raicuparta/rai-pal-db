@@ -18,6 +18,7 @@ function toIl2CppModSchema(
 ): ModSchema {
 	return {
 		id: `bepinex-il2cpp-${architecture.toLowerCase()}`,
+		isLoader: true,
 		engine: "Unity",
 		architecture,
 		unityBackend: "Il2Cpp",
