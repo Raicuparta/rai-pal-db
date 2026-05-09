@@ -226,7 +226,7 @@
       "description": "BepInEx stable Mono build for X86 games.",
       "latestVersion": {
         "id": "5.4.23.5",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
       }
     },
     {
@@ -240,7 +240,7 @@
       "description": "BepInEx stable Mono build for X64 games.",
       "latestVersion": {
         "id": "5.4.23.5",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
       }
     },
     {

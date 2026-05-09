@@ -28,23 +28,19 @@ export async function getBepInExStableReleases(): Promise<LoaderRelease[]> {
 			};
 
 			for (const asset of gitHubRelease.assets) {
-				// Modern pattern: BepInEx_(linux|win|macos)_(x64|x86)_version.zip
-				const modernMatch = asset.name.match(
-					/^BepInEx_(linux|win|macos)_(x64|x86)_/,
-				);
+				// Modern pattern: BepInEx_win_(x64|x86)_version.zip
+				const modernMatch = asset.name.match(/^BepInEx_win_(x64|x86)_/);
 
-				// Older pattern: BepInEx_(unix|x64|x86)_version.zip
-				const legacyMatch = asset.name.match(/^BepInEx_(unix|x64|x86)_/);
+				// Older pattern: BepInEx_(x64|x86)_version.zip
+				const legacyMatch = asset.name.match(/^BepInEx_(x64|x86)_/);
 
-				// Prerelease pattern: BepInEx-{Backend}-{OS}-{Arch}-{Version}.zip
+				// Prerelease pattern: BepInEx-{Backend}-win-{Arch}-{Version}.zip
 				const prereleaseMatch = asset.name.match(
-					/^BepInEx-(.+)-(linux|win|macos)-(x64|x86)-/,
+					/^BepInEx-(.+)-win-(x64|x86)-/,
 				);
 
-				// Alternative prerelease pattern: BepInEx_{Backend}_{OS/Arch}_{Version}.zip
-				const altPrereleaseMatch = asset.name.match(
-					/^BepInEx_(.+)_(unix|x64|x86)_/,
-				);
+				// Alternative prerelease pattern: BepInEx_{Backend}_{Arch}_{Version}.zip
+				const altPrereleaseMatch = asset.name.match(/^BepInEx_(.+)_(x64|x86)_/);
 
 				let os: string;
 				let arch: string;
@@ -54,24 +50,13 @@ export async function getBepInExStableReleases(): Promise<LoaderRelease[]> {
 					[, os, arch] = modernMatch;
 					backend = "Mono"; // Stable releases are Mono only
 				} else if (legacyMatch) {
-					const [, osOrArch] = legacyMatch;
+					const [, archValue] = legacyMatch;
 					backend = "Mono"; // Stable releases are Mono only
-
-					if (osOrArch === "unix") {
-						os = "linux";
-						arch = "x64"; // Unix releases are x64
-					} else if (osOrArch === "x64" || osOrArch === "x86") {
-						os = "win"; // x64/x86 without OS prefix means Windows
-						arch = osOrArch;
-					} else {
-						console.warn(
-							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown OS/arch pattern`,
-						);
-						continue; // Skip unknown patterns
-					}
+					os = "win"; // x64/x86 without OS prefix means Windows
+					arch = archValue;
 				} else if (prereleaseMatch) {
-					const [, backendStr, osStr, archStr] = prereleaseMatch;
-					os = osStr;
+					const [, backendStr, archStr] = prereleaseMatch;
+					os = "win";
 					arch = archStr;
 
 					// Map backend string to UnityBackend type
@@ -91,21 +76,9 @@ export async function getBepInExStableReleases(): Promise<LoaderRelease[]> {
 						continue;
 					}
 				} else if (altPrereleaseMatch) {
-					const [, backendStr, osOrArch] = altPrereleaseMatch;
-
-					// Handle OS/Arch mapping
-					if (osOrArch === "unix") {
-						os = "linux";
-						arch = "x64"; // Unix releases are x64
-					} else if (osOrArch === "x64" || osOrArch === "x86") {
-						os = "win"; // x64/x86 without OS prefix means Windows
-						arch = osOrArch;
-					} else {
-						console.warn(
-							`Skipping asset ${asset.name} from release ${gitHubRelease.tag_name} due to unknown OS/arch pattern: ${osOrArch}`,
-						);
-						continue;
-					}
+					const [, backendStr, archValue] = altPrereleaseMatch;
+					os = "win";
+					arch = archValue;
 
 					// Map backend string to UnityBackend type
 					if (backendStr.includes("UnityMono")) {

@@ -14,29 +14,21 @@ interface LatestByArchEntry {
 }
 
 function getMonoArchFromAssetName(assetName: string): Arch | null {
-	const modernMatch = assetName.match(/^BepInEx_(linux|win|macos)_(x64|x86)_/);
+	const modernMatch = assetName.match(/^BepInEx_win_(x64|x86)_/);
 	if (modernMatch) {
-		const [, , arch] = modernMatch;
+		const [, arch] = modernMatch;
 		return arch as Arch;
 	}
 
-	const legacyMatch = assetName.match(/^BepInEx_(unix|x64|x86)_/);
+	const legacyMatch = assetName.match(/^BepInEx_(x64|x86)_/);
 	if (legacyMatch) {
-		const [, osOrArch] = legacyMatch;
-		if (osOrArch === "x64" || osOrArch === "x86") {
-			return osOrArch;
-		}
-		if (osOrArch === "unix") {
-			return "x64";
-		}
-		return null;
+		const [, arch] = legacyMatch;
+		return arch as Arch;
 	}
 
-	const prereleaseMatch = assetName.match(
-		/^BepInEx-(.+)-(linux|win|macos)-(x64|x86)-/,
-	);
+	const prereleaseMatch = assetName.match(/^BepInEx-(.+)-win-(x64|x86)-/);
 	if (prereleaseMatch) {
-		const [, backendStr, , arch] = prereleaseMatch;
+		const [, backendStr, arch] = prereleaseMatch;
 		if (
 			backendStr.includes("Unity.Mono") ||
 			backendStr.includes("NET.Framework") ||
@@ -47,20 +39,15 @@ function getMonoArchFromAssetName(assetName: string): Arch | null {
 		return null;
 	}
 
-	const altPrereleaseMatch = assetName.match(/^BepInEx_(.+)_(unix|x64|x86)_/);
+	const altPrereleaseMatch = assetName.match(/^BepInEx_(.+)_(x64|x86)_/);
 	if (altPrereleaseMatch) {
-		const [, backendStr, osOrArch] = altPrereleaseMatch;
+		const [, backendStr, arch] = altPrereleaseMatch;
 		const isMonoLike =
 			backendStr.includes("UnityMono") || backendStr.includes("NetLauncher");
 		if (!isMonoLike) {
 			return null;
 		}
-		if (osOrArch === "x64" || osOrArch === "x86") {
-			return osOrArch;
-		}
-		if (osOrArch === "unix") {
-			return "x64";
-		}
+		return arch as Arch;
 	}
 
 	return null;

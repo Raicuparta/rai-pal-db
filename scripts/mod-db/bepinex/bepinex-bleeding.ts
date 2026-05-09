@@ -66,13 +66,13 @@ export async function getBepInExBleedingReleases(): Promise<ModSchema[]> {
 			}
 
 			const match = href.match(
-				/\/BepInEx-Unity\.(Mono|IL2CPP)-(win|linux|macos)-(x86|x64)-(\d+\.\d+\.\d+-be\.\d+)/,
+				/\/BepInEx-Unity\.(Mono|IL2CPP)-win-(x86|x64)-(\d+\.\d+\.\d+-be\.\d+)/,
 			);
 			if (!match) {
 				continue;
 			}
 
-			const [, backend, , arch, buildVersion] = match;
+			const [, backend, arch, buildVersion] = match;
 			if (backend !== "IL2CPP") {
 				continue;
 			}
