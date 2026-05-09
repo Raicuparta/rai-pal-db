@@ -2,11 +2,3371 @@
   "id": "ue4ss",
   "releases": [
     {
-      "timestamp": 1778239088902,
-      "version": "v3.0.1-946-g265115c0",
+      "version": "v2.5.2-273",
+      "timestamp": 1677630650000,
       "builds": [
         {
-          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental-latest/UE4SS_v3.0.1-946-g265115c0.zip",
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-273-gf743eda.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-274",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-274-gb24a552.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-282",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-282-g696e826.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-283",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-283-g435d689.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-284",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-284-g4e3cb15.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-285",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-285-gcf1fc1a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-286",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-286-g1421584.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-287",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-287-g3ef38a9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-291",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-291-g33cf12d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-292",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-292-g83b6158.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-294",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-294-g06678f0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-300",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-300-g46603e3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-301",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-301-gbfece1b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-306",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-306-ged67376.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-307",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-307-g13d335c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-312",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-312-gffe377b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-313",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-313-g1f7da86.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-314",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-314-gee8c48f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-315",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-315-g7390d60.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-316",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-316-ge1de8a5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-319",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-319-g407c3f0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-321",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-321-g6e388df.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-326",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-326-g142bb7d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-328",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-328-ga96cc52.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-419",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-419-g5465e13.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-420",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-420-gb7e1779.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-421",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-421-g4634348.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-422",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-422-g606a5b8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-424",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-424-gd991abc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-425",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-425-gab5adf8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-426",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-426-g8e242de.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-427",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-427-g21e913f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-433",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-433-g892eefe.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-436",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-436-ge5469a2.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-437",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-437-gd336666.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-439",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-439-g3cea237.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-440",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-440-gbed71e0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-443",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-443-g616941d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-445",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-445-gf16e361.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-446",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-446-g3177ae5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-447",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-447-gd9f4da0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-454",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-454-g657e008.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-455",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-455-g16cb35a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-458",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-458-gea3872b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-460",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-460-gc476a66.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-464",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-464-ga63e825.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-466",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-466-g65630d2.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-468",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-468-g5b9f96e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-470",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-470-g99a60cc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-472",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-472-g15952e6.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-473",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-473-gdd753e9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-474",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-474-g8e8b075.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-489",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-489-g6ca8f43.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-497",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-497-gce074a9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-498",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-498-gf67639c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-499",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-499-g0e02967.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-501",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-501-g4729265.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-507",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-507-g1a47383.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-514",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-514-ge743743.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-530",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-530-g202e816.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-535",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-535-gbf1d363.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-540",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-540-gb199467.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-542",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-542-g12cef4a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-557",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-557-g16152df.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-559",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-559-g8adbf47.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-560",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-560-g595910f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-566",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-566-gdb2b69f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-570",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-570-g37e727b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-574",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-574-g1e728f2.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-576",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-576-g4e9dc1e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-577",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-577-gddee25c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-580",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-580-g09fc702.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-581",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-581-ge73a39d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-588",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-588-g842cb09.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-590",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-590-g013ff54.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-591",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-591-gf7b77f0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-593",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-593-g1dfb582.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-594",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-594-gc053439.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-604",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-604-g32c2459.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v2.5.2-605",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v2.5.2-605-g92624ab.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.0-1",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-1-g0352054.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-1-g6a0f235.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-1-g7a0a941.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-1-g829e702.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.0-24",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-24-g3b0d831.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.0-26",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-26-g9c0993c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.0-28",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-28-g40fd010.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.0-31",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-31-g6f0417f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.0-5",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-5-ga5e818e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.0-9",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.0-9-ge695ef8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-10",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-10-g6f944dc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-112",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-112-gdfd715d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-114",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-114-g7f0558a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-118",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-118-g2624306.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-123",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-123-g919b7f9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-124",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-124-ge0fe418.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-126",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-126-g142577b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-13",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-13-g21b1717.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-130",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-130-gb2277fb.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-132",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-132-gd5eb2f5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-133",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-133-g7b5ff7d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-134",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-134-g3524b88.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-137",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-137-g6867a08.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-14",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-14-g332eea5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-140",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-140-g672330a.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-140-g86c09a7.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-141",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-141-g8771f93.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-142",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-142-g5382f47.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-146",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-146-gbbc43c9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-148",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-148-g9fd6e3e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-149",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-149-g10c8a67.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-151",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-151-g0e84e2e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-154",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-154-g1b5ff77.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-157",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-157-gfb8c324.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-16",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-16-gd2f6a97.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-161",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-161-ge123730.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-166",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-166-g4bb9868.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-167",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-167-gf4e749b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-172",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-172-gd79b488.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-173",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-173-gd1a5478.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-174",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-174-g501c669.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-175",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-175-g229040b.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-175-g82b2ebf.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-176",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-176-gd0ebf12.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-185",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-185-g833b84b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-186",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-186-g8d38572.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-189",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-189-g15085ad.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-190",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-190-g3ec830c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-195",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-195-g2f6002a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-201",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-201-g7cd4e3f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-204",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-204-gb47690f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-215",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-215-g0b367ff.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-224",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-224-gc27728b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-225",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-225-gcd7746e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-228",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-228-g8f077f6.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-230",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-230-g3187e45.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-234",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-234-g4fc8691.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-240",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-240-g1244004.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-245",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-245-g50ee4f5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-246",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-246-g7cb23a0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-252",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-252-g7b9e340.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-253",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-253-g154f502.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-261",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-261-g11ae887.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-270",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-270-g35b8bde.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-272",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-272-g5015114.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-276",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-276-gdee8e1e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-278",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-278-g039acd4.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-279",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-279-ga776fea.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-28",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-28-gda247ed.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-280",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-280-g3912ee3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-29",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-29-gb5e6483.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-299",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-299-ga0a0c3f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-3",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-3-gfbce66b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-30",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-30-g2d7f114.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-303",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-303-gc0a8d4c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-308",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-308-g627d148.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-312",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-312-gb32c848.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-314",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-314-gdd2da52.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-315",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-315-g72c00a9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-321",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-321-gc62ada0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-323",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-323-g34270af.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-324",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-324-gb3a62e6.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-325",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-325-g0b16de6.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-326",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-326-g940af53.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-333",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-333-gda0fa64.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-334",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-334-g198a61a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-335",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-335-g8838114.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-337",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-337-g93a2d3e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-34",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-34-gf05e40d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-340",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-340-g8526b3b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-352",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-352-gaf67a0f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-353",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-353-g9ed532b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-355",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-355-gdab5e68.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-357",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-357-g0271db8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-358",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-358-g74ef0a4.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-359",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-359-g80b67cc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-365",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-365-g1fe59d5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-366",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-366-g7982b56.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-368",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-368-g79c61fc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-384",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-384-g16d9079.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-388",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-388-gcb77edd.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-389",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-389-ga83f160.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-39",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-39-g3320fc1.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-39-ged989df.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-394",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-394-g437a8ff.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-395",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-395-g7bb156c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-397",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-397-g89b3be7.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-398",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-398-g167deed.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-399",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-399-g1b571cb.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-403",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-403-gef834e8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-415",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-415-g0a9ab77.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-416",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-416-g4a88719.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-420",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-420-g8e08d13.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-421",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-421-g2e365b8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-422",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-422-ge6a283b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-424",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-424-g2b73f36.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-428",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-428-g65beeb1.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-43",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-43-ge659ec1.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-430",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-430-g1b284a7.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-433",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-433-g025cf4c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-436",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-436-g3d146b0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-442",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-442-gfb22cb3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-443",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-443-gc6d4e73.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-444",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-444-g10711fa.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-445",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-445-g7705f2e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-447",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-447-gbc66bb1.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-449",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-449-g87a7867.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-450",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-450-g1033902.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-451",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-451-g3535e4f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-458",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-458-g3e97593.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-46",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-46-g7e82ef9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-460",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-460-g6dce2dc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-462",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-462-gd62187b.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-463",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-463-gb75eb5c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-464",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-464-gc343a32.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-466",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-466-g4af42bd.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-469",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-469-g5b0f2b9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-471",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-471-g5a9eaf9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-472",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-472-g4b58d1e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-481",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-481-g20f0f94.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-485",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-485-g205d3bc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-489",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-489-ga23ca94.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-492",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-492-g46b1596.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-494",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-494-g4618897.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-51",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-51-g8a54570.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-514",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-514-g973bcd9.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-52",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-52-g7d6f790.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-522",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-522-g4acf640.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-526",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-526-g0967ff5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-528",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-528-g56640ce.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-532",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-532-gb9a16ef.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-534",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-534-g49eda85.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-535",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-535-g4809391.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-54",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-54-g258eeb1.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-54-g3976965.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-54-g7f6d0c7.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-540",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-540-g8e6d9fa.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-541",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-541-gf732ada.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-553",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-553-gc68f4f7.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-556",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-556-ga4b3968.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-558",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-558-g3afa881.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-560",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-560-gf5bf380.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-562",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-562-g0a7434d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-563",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-563-gb0d0b78.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-564",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-564-ge77e3d1.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-566",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-566-gf6cf84d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-568",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-568-g25d3dc3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-57",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-57-g0b000a5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-570",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-570-g3d4fbd0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-571",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-571-g99bfeed.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-572",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-572-gcd3b314.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-573",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-573-g9a2f27c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-574",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-574-gad867f0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-58",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-58-g5c9c069.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-595",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-595-g63cd919.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-596",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-596-g96c34c5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-598",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-598-ge8dc2c8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-599",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-599-g1a6cdbc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-6",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-6-gfd7105f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-60",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-60-g94e2dec.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-603",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-603-g07f4b8f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-607",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-607-g9170280.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-609",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-609-gd971c87.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-632",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-632-gb734711.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-64",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-64-g8a34dcb.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-662",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-662-gd2205eb.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-67",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-67-g666b477.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-671",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-671-ga058bda.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-675",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-675-gb56a297.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-676",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-676-g2c4cc53.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-678",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-678-gb013c6a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-68",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-68-gebecf0f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-689",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-689-g08619ca.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-69",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-69-gc58486c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-7",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-7-g11eb57a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-70",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-70-g8c0c687.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-707",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-707-g47a0847.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-708",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-708-g3c4f2d6.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-710",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-710-g4e6ffe2.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-73",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-73-g7ae56f3.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-73-ge3d07a8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-74",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-74-gb7c20e5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-75",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-75-g24594f6.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-757",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-757-gf08dfdf.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-76",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-76-g472ad3e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-77",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-77-ge057fa3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-772",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-772-gdd9076c.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-775",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-775-g1181729.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-78",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-78-g34484ea.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-781",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-781-gf0329fd.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-782",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-782-g4dfc765.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-788",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-788-g9a20a8f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-791",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-791-g5cc3e83.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-8",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-8-g7ab782e.zip",
+          "os": "win"
+        },
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-8-gd07a6ea.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-80",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-80-gc82f9bc.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-81",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-81-gd8189f3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-814",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-814-g5eb3073.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-819",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-819-g12c6627.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-822",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-822-ga82616a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-823",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-823-g3e2d111.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-826",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-826-g900c3df.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-827",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-827-gfb8721f.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-828",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-828-g83b2a4a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-831",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-831-g838e009.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-835",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-835-gbc2a177.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-838",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-838-gf2e8f3d.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-839",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-839-gc1d91cf.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-84",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-84-gd20fa77.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-841",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-841-gf709715.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-842",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-842-g74db633.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-843",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-843-g51878bd.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-844",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-844-gb4e69e2.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-845",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-845-ge71d5e5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-847",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-847-gd70f525.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-848",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-848-g91b70e5.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-849",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-849-g486806a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-851",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-851-g43b7fea.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-852",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-852-g953b6dd.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-853",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-853-g918d935.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-856",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-856-g3b303a4.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-857",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-857-gce789eb.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-859",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-859-g2b8cf79.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-861",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-861-gdd29fb3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-87",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-87-gfe5a3ae.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-894",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-894-g2172883.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-90",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-90-g43abdb3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-929",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-929-gcd556d70.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-930",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-930-g3dd2bc5a.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-932",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-932-ge31aaaa6.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-934",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-934-gcac01ee2.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-937",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-937-g48e7edfe.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-938",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-938-g733e5969.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-939",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-939-g2e0f2dc8.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-940",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-940-g01e0a584.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-941",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-941-g0bfec09e.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-942",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-942-gc0335505.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-943",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-943-g0ada6ac3.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-944",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-944-g0196ef29.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-946",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-946-g265115c0.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-947",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-947-g06474186.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-97",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-97-g6c84261.zip",
+          "os": "win"
+        }
+      ]
+    },
+    {
+      "version": "v3.0.1-98",
+      "timestamp": 1677630650000,
+      "builds": [
+        {
+          "downloadUrl": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-98-g5c1bfc4.zip",
           "os": "win"
         }
       ]

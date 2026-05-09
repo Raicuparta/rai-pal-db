@@ -5,6 +5,7 @@
 		"@std/fs": "jsr:@std/fs@^1.0.2",
 		"@std/path": "jsr:@std/path@^1.0.3",
 		"json-schema-to-typescript": "npm:json-schema-to-typescript@^15.0.2",
+		"octokit": "https://esm.sh/octokit?dts",
 
 		// Local maps for convenience
 		"#types/": "./types/generated/",

@@ -34,3 +34,5 @@ async function updateDatabase(getter: () => Promise<LoaderDatabase>) {
 
 await updateDatabase(getBepInExDatabase);
 await updateDatabase(getUe4ssDatabase);
+
+Deno.exit(0);

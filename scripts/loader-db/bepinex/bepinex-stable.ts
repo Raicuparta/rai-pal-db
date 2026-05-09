@@ -1,22 +1,29 @@
 import { LoaderRelease, UnityBackend } from "#loader-db/main.ts";
+import { Octokit } from "octokit";
 
 const repository = "BepInEx/BepInEx";
+const [owner, repo] = repository.split("/");
+const octokit = new Octokit();
 
 export async function getBepInExStableReleases(): Promise<LoaderRelease[]> {
-	const response = await fetch(
-		`https://api.github.com/repos/${repository}/releases?per_page=100`,
-	);
-	const githubReleasesJson = await response.json();
+	const response = await octokit.rest.repos.listReleases({
+		owner,
+		repo,
+		per_page: 100,
+	});
+	const githubReleasesJson = response.data;
 
 	const bepinexReleases: LoaderRelease[] = [];
 
 	for (const gitHubRelease of githubReleasesJson) {
 		if (gitHubRelease.assets) {
 			const version = gitHubRelease.tag_name.replace(/^v/, "");
+			const publishedAt =
+				gitHubRelease.published_at ?? gitHubRelease.created_at;
 
 			const bepInExRelease: LoaderRelease = {
 				version,
-				timestamp: new Date(gitHubRelease.published_at).getTime(),
+				timestamp: new Date(publishedAt).getTime(),
 				builds: [],
 			};
 

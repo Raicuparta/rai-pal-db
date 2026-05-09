@@ -60,9 +60,6 @@ export async function getBepInExBleedingReleases(): Promise<LoaderRelease[]> {
 		}
 
 		if (!releaseVersion) {
-			// throw new Error(
-			// 	`Finished parsing BepInEx bleeding builds for release with date ${dateText}, but release version was not set.`
-			// );
 			console.warn(
 				`Finished parsing BepInEx bleeding builds for release with date ${dateText}, but release version was not set.`,
 			);
