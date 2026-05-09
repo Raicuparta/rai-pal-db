@@ -1,0 +1,27 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "user": {
+            "type": "string",
+            "description": "GitHub user ID. For https://github.com/Raicuparta/rai-pal, this would be 'Raicuparta'."
+        },
+        "repo": {
+            "type": "string",
+            "description": "GitHub repository. For https://github.com/Raicuparta/rai-pal, this would be 'rai-pal'."
+        },
+        "assetName": {
+            "type": "string",
+            "description": "Name of the release asset to download. Asset needs to have the same name on every release."
+        },
+        "runnable": {
+            "$ref": "./runnable-schema.json"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "user",
+        "repo",
+        "assetName"
+    ]
+}

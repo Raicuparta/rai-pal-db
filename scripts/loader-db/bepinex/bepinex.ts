@@ -5,6 +5,7 @@ import { LoaderDatabase } from "#loader-db/main.ts";
 export async function getBepInExDatabase(): Promise<LoaderDatabase> {
 	return {
 		id: "bepinex",
+		engine: "Unity",
 		releases: (
 			await Promise.all([
 				getBepInExStableReleases(),

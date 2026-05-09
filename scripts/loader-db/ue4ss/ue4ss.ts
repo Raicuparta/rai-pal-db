@@ -8,6 +8,7 @@ export async function getUe4ssDatabase(): Promise<LoaderDatabase> {
 
 	return {
 		id: "ue4ss",
+		engine: "Unreal",
 		releases,
 	};
 }

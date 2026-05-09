@@ -8,6 +8,7 @@ export type UnityBackend = NonNullable<ModSchema["unityBackend"]>;
 export type LoaderDatabase = {
 	id: string;
 	releases: LoaderRelease[];
+	engine?: ModSchema["engine"];
 };
 
 export type LoaderRelease = {

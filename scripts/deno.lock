@@ -262,6 +262,7 @@
     "https://esm.sh/@octokit/oauth-app@8.0.3?target=denonext": "4d07df28d8c73aadfbe06b1ee19376e52e47405c19fae5e4973199e9e855f95d",
     "https://esm.sh/@octokit/oauth-authorization-url@8.0.0/denonext/oauth-authorization-url.mjs": "5fb31dffe819f3cf2b56330775e8080d044ea8f0ab410ba713cda2d3456c495e",
     "https://esm.sh/@octokit/oauth-authorization-url@8.0.0?target=denonext": "776b9aec0c52fce04fb478f7f1ea22c8b4db81d05e8dbdc741edfa22952d257a",
+    "https://esm.sh/@octokit/oauth-methods@6.0.2": "12c121a3c8370fdd24ff0997a565ff78f822bef7f8c13d194ba085aadf075784",
     "https://esm.sh/@octokit/oauth-methods@6.0.2/denonext/oauth-methods.mjs": "52de855d6030833fa470bd4d9715629d61f4ad70d8a571e07ee90e53a25e05af",
     "https://esm.sh/@octokit/oauth-methods@6.0.2?target=denonext": "12c121a3c8370fdd24ff0997a565ff78f822bef7f8c13d194ba085aadf075784",
     "https://esm.sh/@octokit/plugin-paginate-graphql@6.0.0/denonext/plugin-paginate-graphql.mjs": "d940e5fc46be315436b20fb04d9ac6ce6f25aad2ae4390bcc7616b1b9653b83f",
