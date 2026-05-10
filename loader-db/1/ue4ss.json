@@ -1,5 +1,6 @@
 {
   "id": "ue4ss",
+  "engine": "Unreal",
   "releases": [
     {
       "version": "v3.0.1-947",

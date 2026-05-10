@@ -1,5 +1,6 @@
 {
   "id": "bepinex",
+  "engine": "Unity",
   "releases": [
     {
       "version": "6.0.0-be.755",
@@ -127,26 +128,12 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x86",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x64",
+          "os": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
         },
         {
           "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x86",
+          "os": "x86",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
         }
       ]
@@ -337,32 +324,12 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_linux_x64_5.4.23.4.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x86",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_linux_x86_5.4.23.4.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "macos",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_macos_x64_5.4.23.4.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x64",
+          "os": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_win_x64_5.4.23.4.zip"
         },
         {
           "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x86",
+          "os": "x86",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.4/BepInEx_win_x86_5.4.23.4.zip"
         }
       ]
@@ -493,32 +460,12 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_linux_x64_5.4.23.3.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x86",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_linux_x86_5.4.23.3.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "macos",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_macos_x64_5.4.23.3.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x64",
+          "os": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x64_5.4.23.3.zip"
         },
         {
           "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x86",
+          "os": "x86",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.3/BepInEx_win_x86_5.4.23.3.zip"
         }
       ]
@@ -1513,18 +1460,6 @@
         },
         {
           "unityBackend": "Il2Cpp",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-pre.2.zip"
-        },
-        {
-          "unityBackend": "Il2Cpp",
-          "os": "macos",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.IL2CPP-macos-x64-6.0.0-pre.2.zip"
-        },
-        {
-          "unityBackend": "Il2Cpp",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.IL2CPP-win-x64-6.0.0-pre.2.zip"
@@ -1534,24 +1469,6 @@
           "os": "win",
           "arch": "x86",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.IL2CPP-win-x86-6.0.0-pre.2.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.Mono-linux-x64-6.0.0-pre.2.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x86",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.Mono-linux-x86-6.0.0-pre.2.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "macos",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.2/BepInEx-Unity.Mono-macos-x64-6.0.0-pre.2.zip"
         },
         {
           "unityBackend": "Mono",
@@ -1873,32 +1790,12 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_linux_x64_5.4.23.2.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x86",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_linux_x86_5.4.23.2.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "macos",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_macos_x64_5.4.23.2.zip"
-        },
-        {
-          "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x64",
+          "os": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x64_5.4.23.2.zip"
         },
         {
           "unityBackend": "Mono",
-          "os": "win",
-          "arch": "x86",
+          "os": "x86",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.2/BepInEx_win_x86_5.4.23.2.zip"
         }
       ]
@@ -2207,12 +2104,6 @@
       "version": "5.4.22",
       "timestamp": 1693357545000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.22/BepInEx_unix_5.4.22.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -3865,12 +3756,6 @@
         },
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_unix_6.0.0-pre.1.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityMono_x64_6.0.0-pre.1.zip"
@@ -3887,12 +3772,6 @@
       "version": "5.4.21",
       "timestamp": 1658252174000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.21/BepInEx_unix_5.4.21.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -3913,12 +3792,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.20/BepInEx_unix_5.4.20.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.20/BepInEx_x64_5.4.20.0.zip"
@@ -3935,12 +3808,6 @@
       "version": "5.4.19",
       "timestamp": 1643908583000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.19/BepInEx_unix_5.4.19.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -3961,12 +3828,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.18/BepInEx_unix_5.4.18.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.18/BepInEx_x64_5.4.18.0.zip"
@@ -3983,12 +3844,6 @@
       "version": "5.4.17",
       "timestamp": 1633278521000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.17/BepInEx_unix_5.4.17.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4009,12 +3864,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.16/BepInEx_unix_5.4.16.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.16/BepInEx_x64_5.4.16.0.zip"
@@ -4031,12 +3880,6 @@
       "version": "5.4.15",
       "timestamp": 1628193948000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.15/BepInEx_unix_5.4.15.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4057,12 +3900,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.14/BepInEx_unix_5.4.14.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.14/BepInEx_x64_5.4.14.0.zip"
@@ -4079,12 +3916,6 @@
       "version": "5.4.13",
       "timestamp": 1627066948000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.13/BepInEx_unix_5.4.13.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4105,12 +3936,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.12/BepInEx_unix_5.4.12.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.12/BepInEx_x64_5.4.12.0.zip"
@@ -4127,12 +3952,6 @@
       "version": "5.4.11",
       "timestamp": 1619942707000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.11/BepInEx_unix_5.4.11.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4153,12 +3972,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.10/BepInEx_unix_5.4.10.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.10/BepInEx_x64_5.4.10.0.zip"
@@ -4175,12 +3988,6 @@
       "version": "5.4.9",
       "timestamp": 1616351400000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.9/BepInEx_unix_5.4.9.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4201,12 +4008,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_unix_5.4.8.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.8/BepInEx_x64_5.4.8.0.zip"
@@ -4223,12 +4024,6 @@
       "version": "5.4.7",
       "timestamp": 1614376932000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.7/BepInEx_unix_5.4.7.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4249,12 +4044,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_unix_5.4.6.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.6/BepInEx_x64_5.4.6.0.zip"
@@ -4271,12 +4060,6 @@
       "version": "5.4.5",
       "timestamp": 1608381698000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.5/BepInEx_unix_5.4.5.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4297,12 +4080,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_unix_5.4.4.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.4/BepInEx_x64_5.4.4.0.zip"
@@ -4319,12 +4096,6 @@
       "version": "5.4.3",
       "timestamp": 1606218928000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.3/BepInEx_unix_5.4.3.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4345,12 +4116,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_unix_5.4.2.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.2/BepInEx_x64_5.4.2.0.zip"
@@ -4367,12 +4132,6 @@
       "version": "5.4.1",
       "timestamp": 1605280905000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.1/BepInEx_unix_5.4.1.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4393,12 +4152,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4/BepInEx_unix_5.4.0.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.4/BepInEx_x64_5.4.0.0.zip"
@@ -4415,12 +4168,6 @@
       "version": "5.3",
       "timestamp": 1596822306000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.3/BepInEx_unix_5.3.0.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
@@ -4441,12 +4188,6 @@
       "builds": [
         {
           "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.2/BepInEx_unix_5.2.0.0.zip"
-        },
-        {
-          "unityBackend": "Mono",
           "os": "win",
           "arch": "x64",
           "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.2/BepInEx_x64_5.2.0.0.zip"
@@ -4463,12 +4204,6 @@
       "version": "5.1",
       "timestamp": 1592043358000,
       "builds": [
-        {
-          "unityBackend": "Mono",
-          "os": "linux",
-          "arch": "x64",
-          "downloadUrl": "https://github.com/BepInEx/BepInEx/releases/download/v5.1/BepInEx_unix_5.1.0.0.zip"
-        },
         {
           "unityBackend": "Mono",
           "os": "win",
