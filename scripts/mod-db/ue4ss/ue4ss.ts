@@ -48,6 +48,7 @@ export async function getUe4ssDatabase(): Promise<ModSchema[]> {
 	return [
 		{
 			id: "ue4ss",
+			loaderId: "ue4ss",
 			isLoader: true,
 			engine: "Unreal",
 			title: "UE4SS",

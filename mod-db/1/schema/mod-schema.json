@@ -6,6 +6,11 @@
 			"type": "string",
 			"description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
 		},
+		"loaderId": {
+			"type": "string",
+			"enum": ["bepinex", "ue4ss", "runnable"],
+			"description": "ID of the mod loader required to use this mod. If not set, assumed to be compatible with any loader."
+		},
 		"isLoader": {
 			"type": "boolean",
 			"description": "Whether this mod is a mod loader, meaning it is required to install one of these to be able to use any of the mods in this library."
@@ -94,5 +99,5 @@
 		}
 	},
 	"additionalProperties": false,
-	"required": ["id", "title", "author", "sourceCode", "description"]
+	"required": ["id", "loaderId", "title", "author", "sourceCode", "description"]
 }
