@@ -201,7 +201,7 @@
 					"path": "UEVRInjector.exe",
 					"args": ["--attach={{ExecutableName}}"],
 					"wineEnvironment": {
-						"DOTNET_ROOT": "{{RunnablePath}}/../dotnet-desktop-runtime-win-x64"
+						"DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
 					}
 				}
 			},
