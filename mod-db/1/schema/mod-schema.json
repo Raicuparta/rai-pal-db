@@ -8,7 +8,7 @@
 		},
 		"loaderId": {
 			"type": "string",
-			"enum": ["bepinex", "ue4ss", "runnable"],
+			"enum": ["bepinex", "ue4ss", "runnable", "package"],
 			"description": "ID of the mod loader required to use this mod. If not set, assumed to be compatible with any loader."
 		},
 		"isLoader": {
