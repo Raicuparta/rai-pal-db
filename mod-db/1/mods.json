@@ -210,7 +210,13 @@
 			"configs": {
 				"destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
 				"destinationType": "Folder"
-			}
+			},
+			"dependencies": [
+				{
+					"modId": "dotnet-desktop-runtime-win-x64",
+					"operatingSystems": ["Linux"]
+				}
+			]
 		},
 		{
 			"id": "uevr-nightly",
@@ -236,7 +242,13 @@
 				"destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
 				"destinationType": "Folder",
 				"modIdOverride": "uevr"
-			}
+			},
+			"dependencies": [
+				{
+					"modId": "dotnet-desktop-runtime-win-x64",
+					"operatingSystems": ["Linux"]
+				}
+			]
 		},
 		{
 			"id": "unity-explorer-il2cpp",
