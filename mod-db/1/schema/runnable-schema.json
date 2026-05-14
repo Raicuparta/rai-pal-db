@@ -8,8 +8,15 @@
 		},
 		"args": {
 			"type": "array",
-			"description": "List of arguments to pass to the command. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}, {{StartCommand}}, {{StartCommandArgs}}",
+			"description": "List of arguments to pass to the command. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}, {{StartCommand}}, {{StartCommandArgs}}, {{RunnablePath}}",
 			"items": {
+				"type": "string"
+			}
+		},
+		"wineEnvironment": {
+			"type": "object",
+			"description": "Environment variables to set when running the command via Wine. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}, {{StartCommand}}, {{StartCommandArgs}}, {{RunnablePath}}",
+			"additionalProperties": {
 				"type": "string"
 			}
 		}
