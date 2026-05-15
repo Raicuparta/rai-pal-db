@@ -1,4 +1,4 @@
-name: Update Loader DB
+name: Update DB
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  update-loader-db:
+  update-mod-db:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,11 +20,11 @@ jobs:
         with:
           deno-version: v2.x
 
-      - name: Run update-loader-db task
+      - name: Run update-mod-db task
         working-directory: scripts
-        run: deno task update-loader-db
+        run: deno task update-mod-db
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(loader-db): auto-update loader db"
+          commit_message: "auto-update mod db"
