@@ -1,0 +1,24 @@
+{
+	"$schema": "../../schema/mod-schema.json",
+	"id": "everyone-mono",
+	"loaderId": "bepinex",
+	"engine": "Unity",
+	"unityBackend": "Mono",
+	"engineVersionRange": {
+		"minimum": {
+			"major": 5
+		}
+	},
+	"title": "Everyone",
+	"author": "Raicuparta",
+	"sourceCode": "https://github.com/Raicuparta/everyone",
+	"description": "Mono version. Work in progress! F3 to chat.",
+	"latestVersion": {
+		"id": "0.1.0",
+		"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
+	},
+	"configs": {
+		"destinationPath": "config/raicuparta.everyone.json",
+		"destinationType": "File"
+	}
+}
