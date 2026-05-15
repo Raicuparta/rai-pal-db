@@ -29,5 +29,14 @@
 			"modId": "dotnet-desktop-runtime-win-x64",
 			"operatingSystems": ["Linux"]
 		}
-	]
+	],
+	"actions": {
+		"runForGame": {
+			"path": "UEVRInjector.exe",
+			"args": ["--attach={{GameExecutableName}}"],
+			"wineEnvironment": {
+				"DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
+			}
+		}
+	}
 }

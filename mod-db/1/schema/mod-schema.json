@@ -64,6 +64,9 @@
 		"latestVersion": {
 			"$ref": "./release-schema.json"
 		},
+		"actions": {
+			"$ref": "./mod-action-schema.json"
+		},
 		"root": {
 			"type": "string",
 			"description": "Optional, path of the root folder within the zip."

@@ -36,7 +36,8 @@
 					"source": "BepInEx.cfg",
 					"destination": "{{InstaleldModPath}}/BepInEx/config/BepInEx.cfg"
 				}
-			]
+			],
+			"wineDllOverrides": ["winhttp"]
 		}
 	}
 }

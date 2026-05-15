@@ -1,0 +1,78 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+		"install": {
+			"type": "object",
+			"properties": {
+				"overrideModFolder": {
+					"type": "string",
+					"description": "Use this as the folder name for an installed mod, instead of the mod ID"
+				},
+				"extract": {
+					"type": "array",
+					"description": "Files and folders to extract from the downloaded mod zip",
+					"items": {
+						"type": "object",
+						"properties": {
+							"source": {
+								"type": "string",
+								"description": "Path of the source file or folder within the downloaded mod zip"
+							},
+							"destination": {
+								"type": "string",
+								"description": "Supports replacement tokens. Destination path to extract this file or folder to. If source was a folder, this must be a folder, if file, file."
+							}
+						},
+						"required": ["source", "destination"],
+						"additionalProperties": false
+					}
+				},
+				"write": {
+					"type": "array",
+					"description": "Text files to write when installing the mod.",
+					"items": {
+						"type": "object",
+						"properties": {
+							"source": {
+								"type": "string",
+								"description": "Relative path of the source file within this mod's folder in the mod-db repo. The contents of the file may contain replacement tokens."
+							},
+							"destination": {
+								"type": "string",
+								"description": "Supports replacement tokens. Destination path to write this file to."
+							}
+						},
+						"required": ["source", "destination"],
+						"additionalProperties": false
+					}
+				},
+				"additionalProperties": false
+			}
+		},
+		"runForGame": {
+			"type": "object",
+			"properties": {
+				"path": {
+					"type": "string",
+					"description": "Path relative to the mod folder, pointing to the executable/script to run"
+				},
+				"args": {
+					"type": "array",
+					"description": "List of arguments to pass to the command. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}, {{StartCommand}}, {{StartCommandArgs}}, {{RunnablePath}}, {{LocalModsPath}}, {{RoamingAppData}}, {{ExecutableNameWithoutExtension}}",
+					"items": {
+						"type": "string"
+					}
+				},
+				"wineEnvironment": {
+					"type": "object",
+					"description": "Environment variables to set when running the command via Wine. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}, {{StartCommand}}, {{StartCommandArgs}}, {{RunnablePath}}, {{LocalModsPath}}, {{RoamingAppData}}, {{ExecutableNameWithoutExtension}}",
+					"additionalProperties": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	},
+	"additionalProperties": false
+}
