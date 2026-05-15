@@ -13,5 +13,30 @@
 	"latestVersion": {
 		"id": "5.4.23.5",
 		"url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
+	},
+	"actions": {
+		"install": {
+			"overrideModFolder": "bepinex",
+			"extract": [
+				{
+					"source": "BepInEx",
+					"destination": "{{InstalledModPath}}/BepInEx"
+				},
+				{
+					"source": "winhttp.dll",
+					"destination": "{{GameExecutableFolder}}/winhttp.dll"
+				}
+			],
+			"write": [
+				{
+					"source": "doorstop_config.ini",
+					"destination": "{{GameExecutableFolder}}/doorstop_config.ini"
+				},
+				{
+					"source": "BepInEx.cfg",
+					"destination": "{{InstaleldModPath}}/BepInEx/config/BepInEx.cfg"
+				}
+			]
+		}
 	}
 }
