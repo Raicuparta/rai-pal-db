@@ -99,6 +99,10 @@ export interface ModAction {
 			 */
 			destination: string;
 		}[];
+		/**
+		 * Dll file names without extension, that will get the Wine DLL override flags set to "native,builtin".
+		 */
+		wineDllOverrides?: string[];
 	};
 	runForGame?: {
 		/**

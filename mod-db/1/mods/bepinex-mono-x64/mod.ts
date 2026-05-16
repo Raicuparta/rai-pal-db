@@ -1,4 +1,5 @@
 import { Mod } from "../../mod.ts";
+import { token } from "../../replacement-tokens.ts";
 
 export default {
 	id: "bepinex-mono-x64",
@@ -18,31 +19,30 @@ export default {
 			extract: [
 				{
 					source: "BepInEx",
-					destination: "{{InstalledModsPath}}/bepinex/BepInEx",
+					destination: `${token.InstalledModsPath}/bepinex/BepInEx`,
 				},
 				{
 					source: "winhttp.dll",
-					destination: "{{GameExecutableFolder}}/winhttp.dll",
+					destination: `${token.GameExecutableFolderPath}/winhttp.dll`,
 				},
 			],
 			write: [
 				{
 					source: "doorstop_config.ini",
-					destination: "{{GameExecutableFolder}}/doorstop_config.ini",
+					destination: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
 				},
 				{
 					source: "BepInEx.cfg",
-					destination: "{{InstaleldModPath}}/BepInEx/config/BepInEx.cfg",
+					destination: `${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 				},
 			],
 			wineDllOverrides: ["winhttp"],
 		},
 		getModFolderForGame: {
-			path: "{{InstalledModsPath}}/bepinex/BepInEx",
+			path: `${token.InstalledModsPath}/bepinex/BepInEx`,
 		},
 		getConfig: {
-			destinationPath:
-				"{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+			destinationPath: `${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 			destinationType: "File",
 		},
 	},
