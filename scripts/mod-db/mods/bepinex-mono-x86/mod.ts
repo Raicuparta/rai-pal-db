@@ -1,4 +1,5 @@
 import { Mod } from "../../mod.ts";
+import { bepinexMonoActions } from "../bepinex-common/bepinex-mono.ts";
 
 export default {
 	id: "bepinex-mono-x86",
@@ -13,29 +14,5 @@ export default {
 		id: "5.4.23.5",
 		url: "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip",
 	},
-	actions: {
-		install: {
-			extract: [
-				{
-					source: "BepInEx",
-					destination: "{{InstalledModPath}}/BepInEx",
-				},
-				{
-					source: "winhttp.dll",
-					destination: "{{GameExecutableFolder}}/winhttp.dll",
-				},
-			],
-			write: [
-				{
-					// TODO: needs relative path.
-					content: Deno.readTextFileSync("doorstop_config.ini"),
-					destination: "{{GameExecutableFolder}}/doorstop_config.ini",
-				},
-				{
-					content: Deno.readTextFileSync("BepInEx.cfg"),
-					destination: "{{InstaleldModPath}}/BepInEx/config/BepInEx.cfg",
-				},
-			],
-		},
-	},
+	actions: bepinexMonoActions,
 } satisfies Mod;

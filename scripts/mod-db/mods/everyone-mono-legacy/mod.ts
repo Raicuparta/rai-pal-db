@@ -1,14 +1,13 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "everyone-mono-legacy",
-	engine: "Unity",
+	...bepinexModBase("everyone-il2cpp", "Il2Cpp", "raicuparta.everyone.json"),
 	engineVersionRange: {
 		maximum: {
 			major: 5,
 		},
 	},
-	unityBackend: "Mono",
 	title: "Everyone (Legacy)",
 	author: "Raicuparta",
 	sourceCode: "https://github.com/Raicuparta/everyone",
@@ -16,9 +15,5 @@ export default {
 	latestVersion: {
 		id: "0.1.0",
 		url: "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip",
-	},
-	configs: {
-		destinationPath: "config/raicuparta.everyone.json",
-		destinationType: "File",
 	},
 } satisfies Mod;

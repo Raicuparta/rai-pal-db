@@ -40,7 +40,7 @@ export interface Mod {
 	 */
 	description: string;
 	latestVersion?: Release;
-	actions?: ModAction;
+	actions?: ModActions;
 	engineVersionRange?: {
 		minimum?: EngineVersion;
 		maximum?: EngineVersion;
@@ -71,7 +71,7 @@ export interface Release {
 	root?: string;
 }
 
-export interface ModAction {
+export interface ModActions {
 	install?: {
 		/**
 		 * Files and folders to extract from the downloaded mod zip

@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "config-manager-il2cpp",
-	engine: "Unity",
-	unityBackend: "Il2Cpp",
+	...bepinexModBase("config-manager-mono", "Il2Cpp"),
 	title: "Config Manager IL2CPP",
 	author: "sinai",
 	sourceCode: "https://github.com/Vapok/BepInExConfigManager",

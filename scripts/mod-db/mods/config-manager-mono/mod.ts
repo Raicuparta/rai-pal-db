@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "config-manager-mono",
-	engine: "Unity",
-	unityBackend: "Mono",
+	...bepinexModBase("config-manager-mono", "Mono"),
 	title: "Config Manager Mono",
 	author: "sinai",
 	sourceCode: "https://github.com/sinai-dev/BepInExConfigManager",

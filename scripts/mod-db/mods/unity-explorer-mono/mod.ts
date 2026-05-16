@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "unity-explorer-mono",
-	engine: "Unity",
-	unityBackend: "Mono",
+	...bepinexModBase("unity-explorer-mono", "Mono"),
 	title: "UnityExplorer Mono",
 	author: "Sinai",
 	sourceCode: "https://github.com/sinai-dev/UnityExplorer",

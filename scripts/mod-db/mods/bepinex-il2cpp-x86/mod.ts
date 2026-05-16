@@ -1,4 +1,5 @@
 import { Mod } from "../../mod.ts";
+import { bepinexIl2cppActions } from "../bepinex-common/bepinex-il2cpp.ts";
 
 export default {
 	id: "bepinex-il2cpp-x86",
@@ -13,4 +14,5 @@ export default {
 		id: "6.0.0-be.755",
 		url: "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip",
 	},
+	actions: bepinexIl2cppActions,
 } satisfies Mod;

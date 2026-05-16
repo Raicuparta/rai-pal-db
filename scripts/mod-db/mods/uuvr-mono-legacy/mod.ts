@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "uuvr-mono-legacy",
-	engine: "Unity",
-	unityBackend: "Mono",
+	...bepinexModBase("uuvr-mono-legacy", "Mono", "raicuparta.uuvr.json"),
 	title: "UUVR Mono Legacy",
 	author: "Raicuparta",
 	sourceCode: "https://github.com/Raicuparta/uuvr",

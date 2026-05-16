@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "runtime-unity-editor-mono",
-	engine: "Unity",
-	unityBackend: "Mono",
+	...bepinexModBase("runtime-unity-editor-mono", "Mono"),
 	title: "Runtime Unity Editor",
 	author: "ManlyMarco",
 	sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",

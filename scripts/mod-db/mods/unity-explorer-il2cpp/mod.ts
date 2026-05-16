@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "unity-explorer-il2cpp",
-	engine: "Unity",
-	unityBackend: "Il2Cpp",
+	...bepinexModBase("unity-explorer-il2cpp", "Il2Cpp"),
 	title: "UnityExplorer Il2Cpp",
 	author: "Sinai",
 	sourceCode: "https://github.com/sinai-dev/UnityExplorer",

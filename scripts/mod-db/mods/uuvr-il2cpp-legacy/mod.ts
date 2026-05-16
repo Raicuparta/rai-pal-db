@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "uuvr-il2cpp-legacy",
-	engine: "Unity",
-	unityBackend: "Il2Cpp",
+	...bepinexModBase("uuvr-il2cpp-legacy", "Il2Cpp", "raicuparta.uuvr.json"),
 	title: "UUVR Il2Cpp Legacy",
 	author: "Raicuparta",
 	sourceCode: "https://github.com/Raicuparta/uuvr",

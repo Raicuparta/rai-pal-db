@@ -1,9 +1,8 @@
 import { Mod } from "../../mod.ts";
+import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
-	id: "uuvr-mono-modern",
-	engine: "Unity",
-	unityBackend: "Mono",
+	...bepinexModBase("uuvr-mono-modern", "Mono", "raicuparta.uuvr.json"),
 	title: "UUVR Mono Modern",
 	author: "Raicuparta",
 	sourceCode: "https://github.com/Raicuparta/uuvr",
@@ -18,9 +17,5 @@ export default {
 	latestVersion: {
 		id: "0.4.0",
 		url: "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip",
-	},
-	configs: {
-		destinationPath: "config/raicuparta.uuvr-modern.cfg",
-		destinationType: "File",
 	},
 } satisfies Mod;
