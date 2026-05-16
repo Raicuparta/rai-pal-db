@@ -151,12 +151,12 @@ export interface ModActions {
 		path?: string;
 
 		/**
-		 * List of arguments to pass to the command. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}, {{StartCommand}}, {{StartCommandArgs}}, {{RunnablePath}}, {{LocalModsPath}}, {{RoamingAppData}}, {{ExecutableNameWithoutExtension}}
+		 * List of arguments to pass to the command. Supports replacement tokens.
 		 */
 		args?: string[];
 
 		/**
-		 * Environment variables to set when running the command via Wine. Tokens in the format of {{TOKEN}} get replaced with values from the game: {{ExecutableName}}, {{GameJson}}, {{ExecutablePath}}, {{StartCommand}}, {{StartCommandArgs}}, {{RunnablePath}}, {{LocalModsPath}}, {{RoamingAppData}}, {{ExecutableNameWithoutExtension}}
+		 * Environment variables to set when running the command via Wine. Supports replacement tokens in values.
 		 */
 		wineEnvironment?: {
 			[k: string]: string;
