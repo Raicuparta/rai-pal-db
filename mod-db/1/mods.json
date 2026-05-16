@@ -33,9 +33,9 @@
         ],
         "wineDllOverrides": [
           "winhttp"
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
@@ -81,9 +81,9 @@
         ],
         "wineDllOverrides": [
           "winhttp"
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
@@ -125,9 +125,9 @@
         ],
         "wineDllOverrides": [
           "winhttp"
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
@@ -169,9 +169,9 @@
         ],
         "wineDllOverrides": [
           "winhttp"
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
@@ -194,9 +194,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
       "dependencies": [
         {
           "modId": "bepinex-il2cpp-x64"
@@ -224,9 +224,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
       "dependencies": [
         {
           "modId": "bepinex-mono-x64"
@@ -267,9 +267,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
         "destinationType": "File"
@@ -301,9 +301,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
         "destinationType": "File"
@@ -340,9 +340,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
         "destinationType": "File"
@@ -379,9 +379,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
       "dependencies": [
         {
           "modId": "bepinex-mono-x64"
@@ -477,9 +477,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp",
       "dependencies": [
         {
           "modId": "bepinex-il2cpp-x64"
@@ -507,9 +507,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono",
       "dependencies": [
         {
           "modId": "bepinex-mono-x64"
@@ -537,9 +537,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
         "destinationType": "File"
@@ -576,9 +576,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
         "destinationType": "File"
@@ -615,9 +615,9 @@
             "source": "plugins",
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern"
           }
-        ]
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern"
       },
-      "installedModPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
         "destinationType": "File"

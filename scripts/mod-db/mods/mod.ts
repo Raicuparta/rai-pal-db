@@ -115,6 +115,11 @@ export interface Mod {
 		 * Dll file names without extension, that will get the Wine DLL override flags set to "native,builtin".
 		 */
 		wineDllOverrides?: string[];
+
+		/**
+		 * Supports replacement tokens. Folder that opens when pressing the 'Open Mod Folder' button for a mod installed in a game.
+		 */
+		mainInstalledFolderPath?: string;
 	};
 
 	runForGame?: {
@@ -155,11 +160,6 @@ export interface Mod {
 		 */
 		modIdOverride?: string;
 	};
-
-	/**
-	 * Supports replacement tokens. Folder that opens when pressing the 'Open Mod Folder' button for a mod installed in a game.
-	 */
-	installedModPath?: string;
 }
 
 export type UnityBackend = "Il2Cpp" | "Mono";

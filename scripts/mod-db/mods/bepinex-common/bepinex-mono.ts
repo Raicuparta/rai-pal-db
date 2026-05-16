@@ -44,8 +44,8 @@ Enabled = true`,
 				},
 			],
 			wineDllOverrides: ["winhttp"],
+			mainInstalledFolderPath: `${token.InstalledModsPath}/bepinex/BepInEx`,
 		},
-		installedModPath: `${token.InstalledModsPath}/bepinex/BepInEx`,
 		config: {
 			// TODO: legacy (unity < 5) version cfg
 			destinationPath: `${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,

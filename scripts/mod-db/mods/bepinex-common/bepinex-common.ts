@@ -20,8 +20,8 @@ export function bepinexModBase(
 					destination: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
 				},
 			],
+			mainInstalledFolderPath: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
 		},
-		installedModPath: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
 		config: configFileName
 			? {
 					destinationPath: `${token.InstalledModsPath}/bepinex/BepInEx/config/${configFileName}`,
