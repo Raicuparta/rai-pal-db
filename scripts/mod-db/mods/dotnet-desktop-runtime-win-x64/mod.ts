@@ -12,8 +12,4 @@ export default {
 	},
 	gameOs: "Windows",
 	hostOs: "Linux",
-	install: {
-		// Install defined but empty so it's installable as a dependency,
-		// but no need to do anything specific to each game (just needs to be downloaded locally).
-	},
 } satisfies Mod;
