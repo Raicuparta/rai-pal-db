@@ -402,8 +402,9 @@
     },
     {
       "id": "uevr",
-      "engine": "Unreal",
       "author": "praydog",
+      "engine": "Unreal",
+      "gameOs": "Windows",
       "sourceCode": "https://github.com/praydog/UEVR",
       "dependencies": [
         {
@@ -431,8 +432,9 @@
     },
     {
       "id": "uevr-nightly",
-      "engine": "Unreal",
       "author": "praydog",
+      "engine": "Unreal",
+      "gameOs": "Windows",
       "sourceCode": "https://github.com/praydog/UEVR",
       "dependencies": [
         {

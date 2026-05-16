@@ -4,8 +4,9 @@ import { Mod } from "../mod.ts";
 export function uevrBaseMod(id: string): Omit<Mod, "title" | "description"> {
 	return {
 		id,
-		engine: "Unreal",
 		author: "praydog",
+		engine: "Unreal",
+		gameOs: "Windows",
 		sourceCode: "https://github.com/praydog/UEVR",
 		dependencies: [
 			{
