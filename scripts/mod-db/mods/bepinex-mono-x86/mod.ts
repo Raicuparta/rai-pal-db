@@ -15,7 +15,6 @@ export default {
 	},
 	actions: {
 		install: {
-			overrideModFolder: "bepinex",
 			extract: [
 				{
 					source: "BepInEx",
@@ -28,11 +27,12 @@ export default {
 			],
 			write: [
 				{
-					source: "doorstop_config.ini",
+					// TODO: needs relative path.
+					content: Deno.readTextFileSync("doorstop_config.ini"),
 					destination: "{{GameExecutableFolder}}/doorstop_config.ini",
 				},
 				{
-					source: "BepInEx.cfg",
+					content: Deno.readTextFileSync("BepInEx.cfg"),
 					destination: "{{InstaleldModPath}}/BepInEx/config/BepInEx.cfg",
 				},
 			],

@@ -91,9 +91,9 @@ export interface ModAction {
 		 */
 		write?: {
 			/**
-			 * Relative path of the source file within this mod's folder in the mod-db repo. The contents of the file may contain replacement tokens.
+			 * Supports replacement tokens. Plain text content to write to the file.
 			 */
-			source: string;
+			content: string;
 			/**
 			 * Supports replacement tokens. Destination path to write this file to.
 			 */

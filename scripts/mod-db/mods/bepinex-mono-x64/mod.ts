@@ -28,11 +28,12 @@ export default {
 			],
 			write: [
 				{
-					source: "doorstop_config.ini",
+					// TODO: needs relative path.
+					content: Deno.readTextFileSync("doorstop_config.ini"),
 					destination: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
 				},
 				{
-					source: "BepInEx.cfg",
+					content: Deno.readTextFileSync("BepInEx.cfg"),
 					destination: `${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 				},
 			],
