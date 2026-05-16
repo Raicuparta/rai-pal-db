@@ -11,6 +11,5 @@ export default {
 	latestVersion: {
 		id: "5.2.1",
 		url: "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip",
-		root: "BepInEx",
 	},
 } satisfies Mod;

@@ -180,11 +180,6 @@ export interface Release {
 	 * Direct download url for the release zip.
 	 */
 	url: string;
-
-	/**
-	 * Optional, path of the root folder within the zip.
-	 */
-	root?: string;
 }
 
 export interface EngineVersion {
