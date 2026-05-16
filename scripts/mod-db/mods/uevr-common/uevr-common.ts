@@ -24,5 +24,9 @@ export function uevrBaseMod(id: string): Omit<Mod, "title" | "description"> {
 			destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
 			destinationType: "Folder",
 		},
+		latestVersion: {
+			id: "TODO",
+			url: "RAI SUCKS",
+		},
 	};
 }

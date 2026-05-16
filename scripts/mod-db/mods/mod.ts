@@ -10,11 +10,6 @@ export interface Mod {
 	deprecated?: boolean;
 
 	/**
-	 * Increment this number to force clients to redownload this mod. Useful when a mod needs to be redownloaded without a new version being released.
-	 */
-	redownloadId?: number;
-
-	/**
 	 * Game engine that this mod supports.
 	 */
 	engine?: Engine;
@@ -64,7 +59,12 @@ export interface Mod {
 	 * Short description that explains what the mod does.
 	 */
 	description: string;
-	latestVersion?: Release;
+
+	/**
+	 * Latest downloadable version of the mod.
+	 */
+	latestVersion: Release;
+
 	engineVersionRange?: {
 		minimum?: EngineVersion;
 		maximum?: EngineVersion;

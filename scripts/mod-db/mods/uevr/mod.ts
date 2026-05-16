@@ -3,7 +3,6 @@ import { uevrBaseMod } from "../uevr-common/uevr-common.ts";
 
 export default {
 	...uevrBaseMod("uevr"),
-	redownloadId: 1,
 	title: "UEVR",
 	// github: {
 	// 	assetName: "UEVR.zip",

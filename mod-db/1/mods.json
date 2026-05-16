@@ -435,7 +435,10 @@
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
       },
-      "redownloadId": 1,
+      "latestVersion": {
+        "id": "TODO",
+        "url": "RAI SUCKS"
+      },
       "title": "UEVR",
       "description": "Universal VR mod for Unreal Engine games."
     },
@@ -462,6 +465,10 @@
       "config": {
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
+      },
+      "latestVersion": {
+        "id": "TODO",
+        "url": "RAI SUCKS"
       },
       "title": "UEVR Nightly",
       "description": "UEVR automatically built from the latest, potentially untested code changes."
