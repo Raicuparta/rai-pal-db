@@ -65,7 +65,6 @@ export interface Mod {
 	 */
 	description: string;
 	latestVersion?: Release;
-	actions?: ModActions;
 	engineVersionRange?: {
 		minimum?: EngineVersion;
 		maximum?: EngineVersion;
@@ -80,34 +79,7 @@ export interface Mod {
 		 */
 		modId?: string;
 	}[];
-}
 
-export type UnityBackend = "Il2Cpp" | "Mono";
-
-export type Architecture = "X64" | "X86";
-
-export type Engine = "Unity" | "Unreal" | "Godot";
-
-export type OperatingSystem = "Windows" | "Linux";
-
-export interface Release {
-	/**
-	 * String that uniquely identifies this release when compared with other releases of the same mod.
-	 */
-	id: string;
-
-	/**
-	 * Direct download url for the release zip.
-	 */
-	url: string;
-
-	/**
-	 * Optional, path of the root folder within the zip.
-	 */
-	root?: string;
-}
-
-export interface ModActions {
 	install?: {
 		/**
 		 * Files and folders to extract from the downloaded mod zip
@@ -144,6 +116,7 @@ export interface ModActions {
 		 */
 		wineDllOverrides?: string[];
 	};
+
 	runForGame?: {
 		/**
 		 * Path relative to the mod folder, pointing to the executable/script to run
@@ -192,6 +165,31 @@ export interface ModActions {
 		 */
 		path?: string;
 	};
+}
+
+export type UnityBackend = "Il2Cpp" | "Mono";
+
+export type Architecture = "X64" | "X86";
+
+export type Engine = "Unity" | "Unreal" | "Godot";
+
+export type OperatingSystem = "Windows" | "Linux";
+
+export interface Release {
+	/**
+	 * String that uniquely identifies this release when compared with other releases of the same mod.
+	 */
+	id: string;
+
+	/**
+	 * Direct download url for the release zip.
+	 */
+	url: string;
+
+	/**
+	 * Optional, path of the root folder within the zip.
+	 */
+	root?: string;
 }
 
 export interface EngineVersion {

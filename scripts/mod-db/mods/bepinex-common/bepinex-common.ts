@@ -13,25 +13,23 @@ export function bepinexModBase(
 		id: modId,
 		engine: "Unity",
 		unityBackend,
-		actions: {
-			install: {
-				extract: [
-					{
-						source: "plugins",
-						destination: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
-					},
-				],
-			},
-			getModFolderForGame: {
-				path: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
-			},
-			getConfig: configFileName
-				? {
-						destinationPath: `${token.InstalledModsPath}/bepinex/BepInEx/config/${configFileName}`,
-						destinationType: "File",
-					}
-				: undefined,
+		install: {
+			extract: [
+				{
+					source: "plugins",
+					destination: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
+				},
+			],
 		},
+		getModFolderForGame: {
+			path: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
+		},
+		getConfig: configFileName
+			? {
+					destinationPath: `${token.InstalledModsPath}/bepinex/BepInEx/config/${configFileName}`,
+					destinationType: "File",
+				}
+			: undefined,
 		dependencies:
 			unityBackend === "Mono"
 				? [

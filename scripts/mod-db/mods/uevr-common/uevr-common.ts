@@ -13,18 +13,16 @@ export function uevrBaseMod(id: string): Omit<Mod, "title" | "description"> {
 				modId: "dotnet-desktop-runtime-win-x64",
 			},
 		],
-		actions: {
-			runForGame: {
-				path: "UEVRInjector.exe",
-				args: [`--attach=${token.GameExecutableName}`],
-				wineEnvironment: {
-					DOTNET_ROOT: `${token.LocalModsPath}/dotnet-desktop-runtime-win-x64`,
-				},
+		runForGame: {
+			path: "UEVRInjector.exe",
+			args: [`--attach=${token.GameExecutableName}`],
+			wineEnvironment: {
+				DOTNET_ROOT: `${token.LocalModsPath}/dotnet-desktop-runtime-win-x64`,
 			},
-			getConfig: {
-				destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
-				destinationType: "Folder",
-			},
+		},
+		getConfig: {
+			destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
+			destinationType: "Folder",
 		},
 	};
 }
