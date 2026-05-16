@@ -21,10 +21,8 @@ export function bepinexModBase(
 				},
 			],
 		},
-		getModFolderForGame: {
-			path: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
-		},
-		getConfig: configFileName
+		installedModPath: `${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
+		config: configFileName
 			? {
 					destinationPath: `${token.InstalledModsPath}/bepinex/BepInEx/config/${configFileName}`,
 					destinationType: "File",

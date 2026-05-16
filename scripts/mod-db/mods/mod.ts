@@ -139,7 +139,7 @@ export interface Mod {
 	/**
 	 * Information used to find local mod configs, and also for downloading configs from the database.
 	 */
-	getConfig?: {
+	config?: {
 		/**
 		 * Path in the user's PC where the config is installed to. This path can be relative to something, depending on the mod loader.
 		 */
@@ -157,14 +157,9 @@ export interface Mod {
 	};
 
 	/**
-	 * How to get the folder that opens when pressing the 'Open Mod Folder' button.
+	 * Supports replacement tokens. Folder that opens when pressing the 'Open Mod Folder' button for a mod installed in a game.
 	 */
-	getModFolderForGame?: {
-		/**
-		 * Supports replacement tokens. This is the folder path that opens.
-		 */
-		path?: string;
-	};
+	installedModPath?: string;
 }
 
 export type UnityBackend = "Il2Cpp" | "Mono";

@@ -51,10 +51,8 @@ Enabled = true`,
 			],
 			wineDllOverrides: ["winhttp"],
 		},
-		getModFolderForGame: {
-			path: `${token.InstalledModsPath}/bepinex/BepInEx`,
-		},
-		getConfig: {
+		installedModPath: `${token.InstalledModsPath}/bepinex/BepInEx`,
+		config: {
 			destinationPath: `${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 			destinationType: "File",
 		},
