@@ -1,8 +1,6 @@
 {
 	"$schema": "../../schema/mod-schema.json",
 	"id": "bepinex-mono-x64",
-	"loaderId": "bepinex",
-	"isLoader": true,
 	"engine": "Unity",
 	"architecture": "X64",
 	"unityBackend": "Mono",
@@ -16,11 +14,10 @@
 	},
 	"actions": {
 		"install": {
-			"overrideModFolder": "bepinex",
 			"extract": [
 				{
 					"source": "BepInEx",
-					"destination": "{{InstalledModPath}}/BepInEx"
+					"destination": "{{InstalledModsPath}}/bepinex/BepInEx"
 				},
 				{
 					"source": "winhttp.dll",
@@ -38,6 +35,13 @@
 				}
 			],
 			"wineDllOverrides": ["winhttp"]
+		},
+		"getModFolderForGame": {
+			"path": "{{InstalledModsPath}}/bepinex/BepInEx"
+		},
+		"getConfig": {
+			"destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+			"destinationType": "File"
 		}
 	}
 }

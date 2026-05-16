@@ -9,15 +9,6 @@
 			"type": "string",
 			"description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
 		},
-		"loaderId": {
-			"type": "string",
-			"enum": ["bepinex", "ue4ss", "runnable", "package"],
-			"description": "ID of the mod loader required to use this mod. If not set, assumed to be compatible with any loader."
-		},
-		"isLoader": {
-			"type": "boolean",
-			"description": "Whether this mod is a mod loader, meaning it is required to install one of these to be able to use any of the mods in this library."
-		},
 		"deprecated": {
 			"type": "boolean",
 			"description": "If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement."
@@ -67,10 +58,6 @@
 		"actions": {
 			"$ref": "./mod-action-schema.json"
 		},
-		"root": {
-			"type": "string",
-			"description": "Optional, path of the root folder within the zip."
-		},
 		"engineVersionRange": {
 			"type": "object",
 			"properties": {
@@ -82,27 +69,6 @@
 				}
 			}
 		},
-		"configs": {
-			"type": "object",
-			"description": "Information used to find local mod configs, and also for downloading configs from the database.",
-			"properties": {
-				"destinationPath": {
-					"type": "string",
-					"description": "Path in the user's PC where the config is installed to. This path can be relative to something, depending on the mod loader."
-				},
-				"destinationType": {
-					"type": "string",
-					"description": "If file, the downloaded config will be placed directly in the installTo path. If folder, the downloaded file must be a zip, and gets extracted to the destination path, which must be a folder.",
-					"enum": ["File", "Folder"]
-				},
-				"modIdOverride": {
-					"type": "string",
-					"description": "If set, overrides the mod ID used for finding config files. Useful when multiple mods use the same configs."
-				}
-			},
-			"required": ["destinationPath", "destinationType"],
-			"additionalProperties": false
-		},
 		"dependencies": {
 			"type": "array",
 			"description": "Mods that need to be installed before this one.",
@@ -112,19 +78,11 @@
 					"modId": {
 						"type": "string",
 						"description": "ID of the mod to depend on."
-					},
-					"operatingSystems": {
-						"type": "array",
-						"description": "Dependency only gets installed if the user is on one of these operating systems. If not set, assumed to be required for all.",
-						"items": {
-							"type": "string",
-							"enum": ["Windows", "Linux"]
-						}
 					}
 				}
 			}
 		}
 	},
 	"additionalProperties": false,
-	"required": ["id", "loaderId", "title", "author", "sourceCode", "description"]
+	"required": ["id", "title", "author", "sourceCode", "description"]
 }

@@ -5,10 +5,6 @@
 		"install": {
 			"type": "object",
 			"properties": {
-				"overrideModFolder": {
-					"type": "string",
-					"description": "Use this as the folder name for an installed mod, instead of the mod ID"
-				},
 				"extract": {
 					"type": "array",
 					"description": "Files and folders to extract from the downloaded mod zip",
@@ -72,6 +68,38 @@
 					}
 				}
 			}
+		},
+		"getConfig": {
+			"type": "object",
+			"description": "Information used to find local mod configs, and also for downloading configs from the database.",
+			"properties": {
+				"destinationPath": {
+					"type": "string",
+					"description": "Path in the user's PC where the config is installed to. This path can be relative to something, depending on the mod loader."
+				},
+				"destinationType": {
+					"type": "string",
+					"description": "If file, the downloaded config will be placed directly in destinationPath. If folder, the downloaded file must be a zip, and gets extracted to the destination path, which must be a folder.",
+					"enum": ["File", "Folder"]
+				},
+				"modIdOverride": {
+					"type": "string",
+					"description": "If set, overrides the mod ID used for finding config files. Useful when multiple mods use the same configs."
+				}
+			},
+			"required": ["destinationPath", "destinationType"],
+			"additionalProperties": false
+		},
+		"getModFolderForGame": {
+			"type": "object",
+			"description": "How to get the folder that opens when pressing the 'Open Mod Folder' button.",
+			"properties": {
+				"path": {
+					"type": "string",
+					"description": "Supports replacement tokens. This is the folder path that opens."
+				}
+			},
+			"additionalProperties": false
 		}
 	},
 	"additionalProperties": false

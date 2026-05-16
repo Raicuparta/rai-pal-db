@@ -1,7 +1,6 @@
 {
 	"$schema": "../../schema/mod-schema.json",
 	"id": "everyone-mono",
-	"loaderId": "bepinex",
 	"engine": "Unity",
 	"unityBackend": "Mono",
 	"engineVersionRange": {
@@ -17,8 +16,29 @@
 		"id": "0.1.0",
 		"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
 	},
-	"configs": {
-		"destinationPath": "config/raicuparta.everyone.json",
-		"destinationType": "File"
-	}
+	"actions": {
+		"install": {
+			"extract": [
+				{
+					"source": "plugins",
+					"destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/{{ModId}}"
+				}
+			]
+		},
+		"getModFolderForGame": {
+			"path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/{{ModId}}"
+		},
+		"getConfig": {
+			"destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+			"destinationType": "File"
+		}
+	},
+	"dependencies": [
+		{
+			"modId": "bepinex-mono-x64"
+		},
+		{
+			"modId": "bepinex-mono-x86"
+		}
+	]
 }
