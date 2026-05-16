@@ -28,8 +28,12 @@ export const token = makeTokens({
 	/** The name of the game executable, WITHOUT the extension. (e.g., MyGame) */
 	GameExecutableNameWithoutExtension: "",
 
-	/** Unique ID of the mod being acted upon. */
-	ModId: "",
+	/** Entire json of the game as provided by Rai Pal */
+	GameJson: "",
+
+	GameStartCommand: "",
+
+	GameStartCommandArgs: "",
 
 	/**
 	 * On Windows, this would be %APPDATA% (e.g., C:\Users\Username\AppData\Roaming).
