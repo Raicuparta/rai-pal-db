@@ -1,0 +1,29 @@
+import { token } from "../../replacement-tokens.ts";
+import { Mod } from "../mod.ts";
+
+export function uevrBaseMod(id: string): Omit<Mod, "title" | "description"> {
+	return {
+		id,
+		engine: "Unreal",
+		author: "praydog",
+		sourceCode: "https://github.com/praydog/UEVR",
+		dependencies: [
+			{
+				modId: "dotnet-desktop-runtime-win-x64",
+			},
+		],
+		actions: {
+			runForGame: {
+				path: "UEVRInjector.exe",
+				args: [`--attach=${token.GameExecutableName}`],
+				wineEnvironment: {
+					DOTNET_ROOT: `${token.LocalModsPath}/dotnet-desktop-runtime-win-x64`,
+				},
+			},
+			getConfig: {
+				destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
+				destinationType: "Folder",
+			},
+		},
+	};
+}

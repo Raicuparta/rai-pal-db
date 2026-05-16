@@ -13,18 +13,27 @@ export const token = makeTokens({
 	/** Path to the folder where mods are installed for the current game. */
 	InstalledModsPath: "",
 
+	/** Path to the folder where Rai Pal stores downloaded (but not installed) mods */
+	LocalModsPath: "",
+
 	/** The folder containing the game executable. */
 	GameExecutableFolderPath: "",
 
 	/** The full path to the game executable. */
 	GameExecutablePath: "",
 
-	/** The name of the game executable, without the extension. */
+	/** The name of the game executable, with the extension. (e.g., MyGame.exe) */
 	GameExecutableName: "",
 
-	/** The extension of the game executable (e.g., .exe). */
-	GameExecutableExtension: "",
+	/** The name of the game executable, WITHOUT the extension. (e.g., MyGame) */
+	GameExecutableNameWithoutExtension: "",
 
 	/** Unique ID of the mod being acted upon. */
 	ModId: "",
+
+	/**
+	 * On Windows, this would be %APPDATA% (e.g., C:\Users\Username\AppData\Roaming).
+	 * On Linux, this would be $XDG_CONFIG_HOME (e.g., /home/username/.config)
+	 */
+	RoamingAppData: "",
 } as const);
