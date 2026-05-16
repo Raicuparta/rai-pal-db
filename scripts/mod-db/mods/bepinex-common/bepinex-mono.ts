@@ -1,4 +1,4 @@
-import { ModActions } from "../../mod.ts";
+import { ModActions } from "../mod.ts";
 import { token } from "../../replacement-tokens.ts";
 
 /**

@@ -1,26 +1,7 @@
 {
-  "$schema": "./schema/db-schema.json",
   "mods": [
     {
-      "id": "bepinex-il2cpp-x64",
-      "loaderId": "bepinex",
-      "isLoader": true,
-      "engine": "Unity",
-      "architecture": "X64",
-      "unityBackend": "Il2Cpp",
-      "title": "BepInEx Il2Cpp X64",
-      "author": "BepInEx",
-      "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "description": "BepInEx bleeding-edge Il2Cpp build for X64 games.",
-      "latestVersion": {
-        "id": "6.0.0-be.755",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip"
-      }
-    },
-    {
       "id": "bepinex-il2cpp-x86",
-      "loaderId": "bepinex",
-      "isLoader": true,
       "engine": "Unity",
       "architecture": "X86",
       "unityBackend": "Il2Cpp",
@@ -31,12 +12,48 @@
       "latestVersion": {
         "id": "6.0.0-be.755",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip"
+      },
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "BepInEx",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx"
+            },
+            {
+              "source": "dotnet",
+              "destination": "{{InstalledModsPath}}/bepinex/dotnet"
+            },
+            {
+              "source": "winhttp.dll",
+              "destination": "{{GameExecutableFolderPath}}/winhttp.dll"
+            }
+          ],
+          "write": [
+            {
+              "content": "[General]\nenabled = true\ntarget_assembly = {{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{InstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{InstalledModsPath}}/bepinex/dotnet\n",
+              "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+            },
+            {
+              "content": "[Logging.Console]\nEnabled = true",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+            }
+          ],
+          "wineDllOverrides": [
+            "winhttp"
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+          "destinationType": "File"
+        }
       }
     },
     {
       "id": "bepinex-mono-x64",
-      "loaderId": "bepinex",
-      "isLoader": true,
       "engine": "Unity",
       "architecture": "X64",
       "unityBackend": "Mono",
@@ -47,12 +64,44 @@
       "latestVersion": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
+      },
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "BepInEx",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx"
+            },
+            {
+              "source": "winhttp.dll",
+              "destination": "{{GameExecutableFolderPath}}/winhttp.dll"
+            }
+          ],
+          "write": [
+            {
+              "content": "[General]\nenabled=true\ntarget_assembly={{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
+              "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+            },
+            {
+              "content": "[Logging.Console]\nEnabled = true",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+            }
+          ],
+          "wineDllOverrides": [
+            "winhttp"
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+          "destinationType": "File"
+        }
       }
     },
     {
       "id": "bepinex-mono-x86",
-      "loaderId": "bepinex",
-      "isLoader": true,
       "engine": "Unity",
       "architecture": "X86",
       "unityBackend": "Mono",
@@ -63,13 +112,67 @@
       "latestVersion": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
+      },
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "BepInEx",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx"
+            },
+            {
+              "source": "winhttp.dll",
+              "destination": "{{GameExecutableFolderPath}}/winhttp.dll"
+            }
+          ],
+          "write": [
+            {
+              "content": "[General]\nenabled=true\ntarget_assembly={{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
+              "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+            },
+            {
+              "content": "[Logging.Console]\nEnabled = true",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+            }
+          ],
+          "wineDllOverrides": [
+            "winhttp"
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+          "destinationType": "File"
+        }
       }
     },
     {
-      "id": "config-manager-il2cpp",
-      "loaderId": "bepinex",
+      "id": "config-manager-mono",
       "engine": "Unity",
       "unityBackend": "Il2Cpp",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "title": "Config Manager IL2CPP",
       "author": "sinai",
       "sourceCode": "https://github.com/Vapok/BepInExConfigManager",
@@ -81,9 +184,29 @@
     },
     {
       "id": "config-manager-mono",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Mono",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "title": "Config Manager Mono",
       "author": "sinai",
       "sourceCode": "https://github.com/sinai-dev/BepInExConfigManager",
@@ -99,7 +222,6 @@
       "author": "bill gates himself",
       "description": "Required for running UEVR via Wine",
       "sourceCode": "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
-      "loaderId": "package",
       "latestVersion": {
         "id": "6.0.36",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
@@ -107,9 +229,33 @@
     },
     {
       "id": "everyone-il2cpp",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Il2Cpp",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+          "destinationType": "File"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "title": "Everyone",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/everyone",
@@ -117,17 +263,37 @@
       "latestVersion": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
-      },
-      "configs": {
-        "destinationPath": "config/raicuparta.everyone.json",
-        "destinationType": "File"
       }
     },
     {
       "id": "everyone-mono",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Mono",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+          "destinationType": "File"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "engineVersionRange": {
         "minimum": {
           "major": 5
@@ -140,22 +306,42 @@
       "latestVersion": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
-      },
-      "configs": {
-        "destinationPath": "config/raicuparta.everyone.json",
-        "destinationType": "File"
       }
     },
     {
-      "id": "everyone-mono-legacy",
-      "loaderId": "bepinex",
+      "id": "everyone-il2cpp",
       "engine": "Unity",
+      "unityBackend": "Il2Cpp",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+          "destinationType": "File"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "engineVersionRange": {
         "maximum": {
           "major": 5
         }
       },
-      "unityBackend": "Mono",
       "title": "Everyone (Legacy)",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/everyone",
@@ -163,17 +349,33 @@
       "latestVersion": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
-      },
-      "configs": {
-        "destinationPath": "config/raicuparta.everyone.json",
-        "destinationType": "File"
       }
     },
     {
       "id": "runtime-unity-editor-mono",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Mono",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "title": "Runtime Unity Editor",
       "author": "ManlyMarco",
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
@@ -186,8 +388,6 @@
     },
     {
       "id": "ue4ss",
-      "loaderId": "ue4ss",
-      "isLoader": true,
       "engine": "Unreal",
       "title": "UE4SS",
       "author": "UE4SS-RE",
@@ -200,81 +400,87 @@
     },
     {
       "id": "uevr",
-      "loaderId": "runnable",
       "redownloadId": 1,
       "engine": "Unreal",
       "title": "UEVR",
       "author": "praydog",
-      "github": {
-        "assetName": "UEVR.zip",
-        "repo": "UEVR",
-        "user": "praydog",
-        "runnable": {
+      "sourceCode": "https://github.com/praydog/UEVR",
+      "description": "Universal VR mod for Unreal Engine games.",
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "actions": {
+        "runForGame": {
           "path": "UEVRInjector.exe",
           "args": [
-            "--attach={{ExecutableName}}"
+            "--attach={{GameExecutableName}}"
           ],
           "wineEnvironment": {
             "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
           }
+        },
+        "getConfig": {
+          "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
+          "destinationType": "Folder"
         }
-      },
-      "sourceCode": "https://github.com/praydog/UEVR",
-      "description": "Universal VR mod for Unreal Engine games.",
-      "configs": {
-        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
-        "destinationType": "Folder"
-      },
-      "dependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64",
-          "operatingSystems": [
-            "Linux"
-          ]
-        }
-      ]
+      }
     },
     {
       "id": "uevr-nightly",
-      "loaderId": "runnable",
       "engine": "Unreal",
       "title": "UEVR Nightly",
       "author": "praydog",
-      "github": {
-        "assetName": "uevr.zip",
-        "repo": "UEVR-nightly",
-        "user": "praydog",
-        "runnable": {
+      "sourceCode": "https://github.com/praydog/UEVR",
+      "description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes.",
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "actions": {
+        "runForGame": {
           "path": "UEVRInjector.exe",
           "args": [
-            "--attach={{ExecutableName}}"
+            "--attach={{GameExecutableName}}"
           ],
           "wineEnvironment": {
             "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
           }
+        },
+        "getConfig": {
+          "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
+          "destinationType": "Folder",
+          "modIdOverride": "uevr"
         }
-      },
-      "sourceCode": "https://github.com/praydog/UEVR",
-      "description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes.",
-      "configs": {
-        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
-        "destinationType": "Folder",
-        "modIdOverride": "uevr"
-      },
-      "dependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64",
-          "operatingSystems": [
-            "Linux"
-          ]
-        }
-      ]
+      }
     },
     {
       "id": "unity-explorer-il2cpp",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Il2Cpp",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "title": "UnityExplorer Il2Cpp",
       "author": "Sinai",
       "sourceCode": "https://github.com/sinai-dev/UnityExplorer",
@@ -286,9 +492,29 @@
     },
     {
       "id": "unity-explorer-mono",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Mono",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "title": "UnityExplorer Mono",
       "author": "Sinai",
       "sourceCode": "https://github.com/sinai-dev/UnityExplorer",
@@ -299,25 +525,34 @@
       }
     },
     {
-      "id": "uuvr-il2cpp",
-      "loaderId": "bepinex",
-      "deprecated": true,
-      "engine": "Unity",
-      "unityBackend": "Il2Cpp",
-      "title": "DEPRECATED UUVR IL2CPP",
-      "author": "Raicuparta",
-      "sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-      "description": "F3: Toggle VR. F4: Reparent Camera. F5: Fix UI. Unity 5-2019 only",
-      "latestVersion": {
-        "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.1/uuvr-il2cpp.zip"
-      }
-    },
-    {
       "id": "uuvr-il2cpp-legacy",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Il2Cpp",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
+          "destinationType": "File"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "title": "UUVR Il2Cpp Legacy",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/uuvr",
@@ -333,25 +568,34 @@
       }
     },
     {
-      "id": "uuvr-mono",
-      "loaderId": "bepinex",
-      "deprecated": true,
-      "engine": "Unity",
-      "unityBackend": "Mono",
-      "title": "DEPRECATED UUVR Mono",
-      "author": "Raicuparta",
-      "sourceCode": "https://github.com/Raicuparta/universal-unity-vr",
-      "description": "F3: Toggle VR. F4: Reparent Camera. F5: Fix UI. Unity 5-2019 only",
-      "latestVersion": {
-        "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/universal-unity-vr/releases/download/v0.2.1/uuvr-mono.zip"
-      }
-    },
-    {
       "id": "uuvr-mono-legacy",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Mono",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
+          "destinationType": "File"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "title": "UUVR Mono Legacy",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/uuvr",
@@ -368,9 +612,33 @@
     },
     {
       "id": "uuvr-mono-modern",
-      "loaderId": "bepinex",
       "engine": "Unity",
       "unityBackend": "Mono",
+      "actions": {
+        "install": {
+          "extract": [
+            {
+              "source": "plugins",
+              "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern"
+            }
+          ]
+        },
+        "getModFolderForGame": {
+          "path": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern"
+        },
+        "getConfig": {
+          "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
+          "destinationType": "File"
+        }
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "title": "UUVR Mono Modern",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/uuvr",
@@ -384,10 +652,6 @@
       "latestVersion": {
         "id": "0.4.0",
         "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip"
-      },
-      "configs": {
-        "destinationPath": "config/raicuparta.uuvr-modern.cfg",
-        "destinationType": "File"
       }
     }
   ]

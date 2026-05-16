@@ -1,4 +1,4 @@
-import { Mod } from "../../mod.ts";
+import { Mod } from "../mod.ts";
 import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {

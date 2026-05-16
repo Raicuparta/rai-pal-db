@@ -1,4 +1,4 @@
-import { Mod } from "../../mod.ts";
+import { Mod } from "../mod.ts";
 
 export default {
 	id: "dotnet-desktop-runtime-win-x64",

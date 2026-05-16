@@ -1,5 +1,4 @@
-import { UnityBackend } from "#loader-db/main.ts";
-import { Mod } from "../../mod.ts";
+import { Mod, UnityBackend } from "../mod.ts";
 import { token } from "../../replacement-tokens.ts";
 
 /**

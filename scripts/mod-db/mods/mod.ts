@@ -14,15 +14,15 @@ export interface Mod {
 	/**
 	 * Game engine that this mod supports.
 	 */
-	engine?: "Unity" | "Unreal" | "Godot";
+	engine?: Engine;
 	/**
 	 * Whether this mod is only compatible with 64-bit or 32-bit (x86) games. If not set, assumed to be compatible with both.
 	 */
-	architecture?: "X64" | "X86";
+	architecture?: Architecture;
 	/**
 	 * Only relevant if engine=Unity. Scripting backend used by the game.
 	 */
-	unityBackend?: "Il2Cpp" | "Mono";
+	unityBackend?: UnityBackend;
 	/**
 	 * Mod's display name.
 	 */
@@ -55,6 +55,12 @@ export interface Mod {
 		modId?: string;
 	}[];
 }
+
+export type UnityBackend = "Il2Cpp" | "Mono";
+
+export type Architecture = "X64" | "X86";
+
+export type Engine = "Unity" | "Unreal" | "Godot";
 
 export interface Release {
 	/**

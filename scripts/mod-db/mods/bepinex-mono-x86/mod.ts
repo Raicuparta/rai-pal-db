@@ -1,4 +1,4 @@
-import { Mod } from "../../mod.ts";
+import { Mod } from "../mod.ts";
 import { bepinexMonoActions } from "../bepinex-common/bepinex-mono.ts";
 
 export default {

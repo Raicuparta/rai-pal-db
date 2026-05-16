@@ -1,4 +1,4 @@
-import { Mod } from "../../mod.ts";
+import { Mod } from "../mod.ts";
 
 export default {
 	id: "ue4ss",

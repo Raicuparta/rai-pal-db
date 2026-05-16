@@ -1,4 +1,4 @@
-import { Mod } from "../../mod.ts";
+import { Mod } from "../mod.ts";
 import { bepinexIl2cppActions } from "../bepinex-common/bepinex-il2cpp.ts";
 
 export default {
