@@ -255,7 +255,8 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
       },
       "gameOs": "Windows",
-      "hostOs": "Linux"
+      "hostOs": "Linux",
+      "install": {}
     },
     {
       "id": "everyone-il2cpp",
