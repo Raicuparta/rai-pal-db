@@ -1,0 +1,17 @@
+import { Mod } from "../../mod.ts";
+
+export default {
+	id: "runtime-unity-editor-mono",
+	engine: "Unity",
+	unityBackend: "Mono",
+	title: "Runtime Unity Editor",
+	author: "ManlyMarco",
+	sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
+	description:
+		"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
+	latestVersion: {
+		id: "5.2.1",
+		url: "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip",
+		root: "BepInEx",
+	},
+} satisfies Mod;

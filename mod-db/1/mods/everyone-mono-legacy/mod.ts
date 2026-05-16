@@ -1,0 +1,24 @@
+import { Mod } from "../../mod.ts";
+
+export default {
+	id: "everyone-mono-legacy",
+	engine: "Unity",
+	engineVersionRange: {
+		maximum: {
+			major: 5,
+		},
+	},
+	unityBackend: "Mono",
+	title: "Everyone (Legacy)",
+	author: "Raicuparta",
+	sourceCode: "https://github.com/Raicuparta/everyone",
+	description: "Mono Legacy version. Work in progress! F3 to chat.",
+	latestVersion: {
+		id: "0.1.0",
+		url: "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip",
+	},
+	configs: {
+		destinationPath: "config/raicuparta.everyone.json",
+		destinationType: "File",
+	},
+} satisfies Mod;

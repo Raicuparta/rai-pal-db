@@ -1,0 +1,26 @@
+import { Mod } from "../../mod.ts";
+
+export default {
+	id: "uuvr-mono-modern",
+	engine: "Unity",
+	unityBackend: "Mono",
+	title: "UUVR Mono Modern",
+	author: "Raicuparta",
+	sourceCode: "https://github.com/Raicuparta/uuvr",
+	description:
+		"Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
+	engineVersionRange: {
+		minimum: {
+			major: 2018,
+			minor: 4,
+		},
+	},
+	latestVersion: {
+		id: "0.4.0",
+		url: "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip",
+	},
+	configs: {
+		destinationPath: "config/raicuparta.uuvr-modern.cfg",
+		destinationType: "File",
+	},
+} satisfies Mod;

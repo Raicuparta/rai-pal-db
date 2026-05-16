@@ -49,9 +49,6 @@
 			"type": "string",
 			"description": "Short description that explains what the mod does."
 		},
-		"github": {
-			"$ref": "./github-schema.json"
-		},
 		"latestVersion": {
 			"$ref": "./release-schema.json"
 		},

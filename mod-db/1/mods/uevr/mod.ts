@@ -1,0 +1,43 @@
+import { Mod } from "../../mod.ts";
+
+export default {
+	id: "uevr",
+	redownloadId: 1,
+	engine: "Unreal",
+	title: "UEVR",
+	author: "praydog",
+	github: {
+		assetName: "UEVR.zip",
+		repo: "UEVR",
+		user: "praydog",
+		runnable: {
+			path: "UEVRInjector.exe",
+			args: ["--attach={{ExecutableName}}"],
+			wineEnvironment: {
+				DOTNET_ROOT: "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64",
+			},
+		},
+	},
+	sourceCode: "https://github.com/praydog/UEVR",
+	description: "Universal VR mod for Unreal Engine games.",
+	configs: {
+		destinationPath:
+			"{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
+		destinationType: "Folder",
+	},
+	dependencies: [
+		{
+			modId: "dotnet-desktop-runtime-win-x64",
+			operatingSystems: ["Linux"],
+		},
+	],
+	actions: {
+		runForGame: {
+			path: "UEVRInjector.exe",
+			args: ["--attach={{GameExecutableName}}"],
+			wineEnvironment: {
+				DOTNET_ROOT: "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64",
+			},
+		},
+	},
+} satisfies Mod;
