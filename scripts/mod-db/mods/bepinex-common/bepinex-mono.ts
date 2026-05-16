@@ -6,7 +6,7 @@ import { Mod } from "../mod.ts";
  */
 export function bepinexMonoLoaderBase(
 	modId: string,
-): Omit<Mod, "title" | "description"> {
+): Omit<Mod, "title" | "description" | "latestVersion"> {
 	return {
 		id: modId,
 		engine: "Unity",

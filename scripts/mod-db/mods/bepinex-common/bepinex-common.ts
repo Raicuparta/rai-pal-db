@@ -8,7 +8,10 @@ export function bepinexModBase(
 	modId: string,
 	unityBackend: UnityBackend,
 	configFileName?: string,
-): Omit<Mod, "title" | "author" | "sourceCode" | "description"> {
+): Omit<
+	Mod,
+	"title" | "author" | "sourceCode" | "description" | "latestVersion"
+> {
 	return {
 		id: modId,
 		engine: "Unity",

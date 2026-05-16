@@ -6,7 +6,7 @@ import { token } from "../../replacement-tokens.ts";
  */
 export function bepinexIl2cppLoaderBase(
 	modId: string,
-): Omit<Mod, "title" | "description"> {
+): Omit<Mod, "title" | "description" | "latestVersion"> {
 	return {
 		id: modId,
 		engine: "Unity",
