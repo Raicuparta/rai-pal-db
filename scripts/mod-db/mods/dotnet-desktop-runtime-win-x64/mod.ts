@@ -10,4 +10,6 @@ export default {
 		id: "6.0.36",
 		url: "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
 	},
+	gameOs: "Windows",
+	hostOs: "Linux",
 } satisfies Mod;

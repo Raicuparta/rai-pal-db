@@ -225,7 +225,9 @@
       "latestVersion": {
         "id": "6.0.36",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
-      }
+      },
+      "gameOs": "Windows",
+      "hostOs": "Linux"
     },
     {
       "id": "everyone-il2cpp",
@@ -400,12 +402,9 @@
     },
     {
       "id": "uevr",
-      "redownloadId": 1,
       "engine": "Unreal",
-      "title": "UEVR",
       "author": "praydog",
       "sourceCode": "https://github.com/praydog/UEVR",
-      "description": "Universal VR mod for Unreal Engine games.",
       "dependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
@@ -422,18 +421,19 @@
           }
         },
         "getConfig": {
-          "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
+          "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
           "destinationType": "Folder"
         }
-      }
+      },
+      "redownloadId": 1,
+      "title": "UEVR",
+      "description": "Universal VR mod for Unreal Engine games."
     },
     {
       "id": "uevr-nightly",
       "engine": "Unreal",
-      "title": "UEVR Nightly",
       "author": "praydog",
       "sourceCode": "https://github.com/praydog/UEVR",
-      "description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes.",
       "dependencies": [
         {
           "modId": "dotnet-desktop-runtime-win-x64"
@@ -450,11 +450,12 @@
           }
         },
         "getConfig": {
-          "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
-          "destinationType": "Folder",
-          "modIdOverride": "uevr"
+          "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+          "destinationType": "Folder"
         }
-      }
+      },
+      "title": "UEVR Nightly",
+      "description": "UEVR automatically built from the latest, potentially untested code changes."
     },
     {
       "id": "unity-explorer-il2cpp",
