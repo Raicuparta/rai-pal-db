@@ -99,7 +99,7 @@
     {
       "id": "bepinex-mono-x64",
       "engine": "Unity",
-      "unityBackend": "Il2Cpp",
+      "unityBackend": "Mono",
       "author": "BepInEx",
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "install": {
@@ -143,7 +143,7 @@
     {
       "id": "bepinex-mono-x86",
       "engine": "Unity",
-      "unityBackend": "Il2Cpp",
+      "unityBackend": "Mono",
       "author": "BepInEx",
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "install": {

@@ -10,7 +10,7 @@ export function bepinexMonoLoaderBase(
 	return {
 		id: modId,
 		engine: "Unity",
-		unityBackend: "Il2Cpp",
+		unityBackend: "Mono",
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: {
