@@ -10,4 +10,8 @@ export default {
 	// 	user: "praydog",
 	// },
 	description: "Universal VR mod for Unreal Engine games.",
+	latestVersion: {
+		id: "1.05",
+		url: "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip",
+	},
 } satisfies Mod;
