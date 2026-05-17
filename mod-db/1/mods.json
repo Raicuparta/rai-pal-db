@@ -435,12 +435,12 @@
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
       },
-      "latestVersion": {
-        "id": "TODO",
-        "url": "RAI SUCKS"
-      },
       "title": "UEVR",
-      "description": "Universal VR mod for Unreal Engine games."
+      "description": "Universal VR mod for Unreal Engine games.",
+      "latestVersion": {
+        "id": "1.05",
+        "url": "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip"
+      }
     },
     {
       "id": "uevr-nightly",
@@ -466,12 +466,12 @@
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
       },
-      "latestVersion": {
-        "id": "TODO",
-        "url": "RAI SUCKS"
-      },
       "title": "UEVR Nightly",
-      "description": "UEVR automatically built from the latest, potentially untested code changes."
+      "description": "UEVR automatically built from the latest, potentially untested code changes.",
+      "latestVersion": {
+        "id": "nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26/uevr.zip"
+      }
     },
     {
       "id": "unity-explorer-il2cpp",

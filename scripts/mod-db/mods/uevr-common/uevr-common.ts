@@ -1,7 +1,9 @@
 import { token } from "../../replacement-tokens.ts";
 import { Mod } from "../mod.ts";
 
-export function uevrBaseMod(id: string): Omit<Mod, "title" | "description"> {
+export function uevrBaseMod(
+	id: string,
+): Omit<Mod, "title" | "description" | "latestVersion"> {
 	return {
 		id,
 		author: "praydog",
@@ -23,10 +25,6 @@ export function uevrBaseMod(id: string): Omit<Mod, "title" | "description"> {
 		config: {
 			destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
 			destinationType: "Folder",
-		},
-		latestVersion: {
-			id: "TODO",
-			url: "RAI SUCKS",
 		},
 	};
 }
