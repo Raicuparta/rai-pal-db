@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 
 export default {
 	id: "ue4ss",
@@ -11,4 +11,4 @@ export default {
 		id: "v3.0.1-949",
 		url: "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-949-gdd6777a8.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

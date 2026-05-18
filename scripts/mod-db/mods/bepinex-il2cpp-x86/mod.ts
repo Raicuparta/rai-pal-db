@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { bepinexIl2cppLoaderBase } from "../bepinex-common/bepinex-il2cpp.ts";
 
 export default {
@@ -10,4 +10,4 @@ export default {
 		id: "6.0.0-be.755",
 		url: "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

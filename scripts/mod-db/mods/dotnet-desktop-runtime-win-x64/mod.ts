@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 
 export default {
 	id: "dotnet-desktop-runtime-win-x64",
@@ -12,4 +12,4 @@ export default {
 	},
 	gameOs: "Windows",
 	hostOs: "Linux",
-} satisfies Mod;
+} satisfies ModBase;

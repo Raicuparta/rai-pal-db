@@ -1,9 +1,9 @@
 import { token } from "../../replacement-tokens.ts";
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 
 export function uevrBaseMod(
 	id: string,
-): Omit<Mod, "title" | "description" | "latestVersion"> {
+): Omit<ModBase, "title" | "description" | "latestVersion"> {
 	return {
 		id,
 		author: "praydog",

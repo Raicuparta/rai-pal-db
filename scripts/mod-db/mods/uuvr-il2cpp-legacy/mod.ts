@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
@@ -17,4 +17,4 @@ export default {
 		id: "0.3.1",
 		url: "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

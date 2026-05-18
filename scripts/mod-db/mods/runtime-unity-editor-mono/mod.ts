@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
@@ -12,4 +12,4 @@ export default {
 		id: "5.2.1",
 		url: "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

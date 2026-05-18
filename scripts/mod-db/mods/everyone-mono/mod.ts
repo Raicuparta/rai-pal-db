@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
@@ -16,4 +16,4 @@ export default {
 		id: "0.1.0",
 		url: "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

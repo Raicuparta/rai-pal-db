@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { uevrBaseMod } from "../uevr-common/uevr-common.ts";
 
 export default {
@@ -14,4 +14,4 @@ export default {
 		id: "1.05",
 		url: "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

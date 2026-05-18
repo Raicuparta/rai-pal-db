@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { token } from "../../replacement-tokens.ts";
 
 /**
@@ -6,7 +6,7 @@ import { token } from "../../replacement-tokens.ts";
  */
 export function bepinexIl2cppLoaderBase(
 	modId: string,
-): Omit<Mod, "title" | "description" | "latestVersion"> {
+): Omit<ModBase, "title" | "description" | "latestVersion"> {
 	return {
 		id: modId,
 		engine: "Unity",

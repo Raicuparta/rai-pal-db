@@ -1,4 +1,4 @@
-import { Mod, UnityBackend } from "../mod.ts";
+import { ModBase, UnityBackend } from "../mod.ts";
 import { token } from "../../replacement-tokens.ts";
 
 /**
@@ -9,7 +9,7 @@ export function bepinexModBase(
 	unityBackend: UnityBackend,
 	configFileName?: string,
 ): Omit<
-	Mod,
+	ModBase,
 	"title" | "author" | "sourceCode" | "description" | "latestVersion"
 > {
 	return {

@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { bepinexModBase } from "../bepinex-common/bepinex-common.ts";
 
 export default {
@@ -12,4 +12,4 @@ export default {
 		id: "4.9.0",
 		url: "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

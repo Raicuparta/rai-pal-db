@@ -1,4 +1,4 @@
-import type { Mod } from "./mod.ts";
+import type { ModBase, Mod } from "./mod.ts";
 
 export async function getMods(): Promise<Mod[]> {
 	const entries: string[] = [];
@@ -7,18 +7,24 @@ export async function getMods(): Promise<Mod[]> {
 		if (entry.isDirectory) entries.push(entry.name);
 	}
 
-	const modules = await Promise.all(
+	const mods: Mod[] = [];
+
+	await Promise.all(
 		entries.sort().map(async (name) => {
 			try {
-				const mod = await import(
-					new URL(`./${name}/mod.ts`, import.meta.url).href
-				);
-				return mod.default as Mod;
+				const mod = (
+					await import(new URL(`./${name}/mod.ts`, import.meta.url).href)
+				).default as ModBase;
+
+				mods.push({
+					...mod,
+					manifestUpdatedAt: Date.now(),
+				});
 			} catch {
 				return null;
 			}
 		}),
 	);
 
-	return modules.filter((m): m is Mod => m !== null);
+	return mods;
 }

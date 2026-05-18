@@ -1,12 +1,12 @@
 import { token } from "../../replacement-tokens.ts";
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 
 /**
  * Base mod object for BepInEx itself, mono version.
  */
 export function bepinexMonoLoaderBase(
 	modId: string,
-): Omit<Mod, "title" | "description" | "latestVersion"> {
+): Omit<ModBase, "title" | "description" | "latestVersion"> {
 	return {
 		id: modId,
 		engine: "Unity",

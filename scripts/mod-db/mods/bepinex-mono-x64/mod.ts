@@ -1,4 +1,4 @@
-import { Mod } from "../mod.ts";
+import { ModBase } from "../mod.ts";
 import { bepinexMonoLoaderBase } from "../bepinex-common/bepinex-mono.ts";
 
 export default {
@@ -10,4 +10,4 @@ export default {
 		id: "5.4.23.5",
 		url: "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip",
 	},
-} satisfies Mod;
+} satisfies ModBase;

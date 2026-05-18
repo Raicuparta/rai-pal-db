@@ -1,4 +1,4 @@
-export interface Mod {
+export interface ModBase {
 	/**
 	 * Unique identifier for this mod. Must be globally unique within all mods from all loaders.
 	 */
@@ -166,6 +166,13 @@ export interface Mod {
 		 */
 		modIdOverride?: string;
 	};
+}
+
+export interface Mod extends ModBase {
+	/**
+	 * Timestamp of when the mod manifest was last updated. Gets updated automatically.
+	 */
+	manifestUpdatedAt: number;
 }
 
 export type UnityBackend = "Il2Cpp" | "Mono";
