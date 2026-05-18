@@ -1,4 +1,5 @@
 import type { ModBase, Mod } from "./mod.ts";
+import { hash } from "canonical-json/hash";
 
 export async function getMods(): Promise<Mod[]> {
 	const entries: string[] = [];
@@ -10,21 +11,25 @@ export async function getMods(): Promise<Mod[]> {
 	const mods: Mod[] = [];
 
 	await Promise.all(
-		entries.sort().map(async (name) => {
+		entries.map(async (name) => {
+			let mod: ModBase | undefined;
 			try {
-				const mod = (
-					await import(new URL(`./${name}/mod.ts`, import.meta.url).href)
-				).default as ModBase;
-
-				mods.push({
-					...mod,
-					manifestUpdatedAt: Date.now(),
-				});
+				mod = (await import(new URL(`./${name}/mod.ts`, import.meta.url).href))
+					.default;
 			} catch {
-				return null;
+				return;
 			}
+
+			if (!mod) {
+				throw new Error(`Mod came up empty for ${name}.`);
+			}
+
+			mods.push({
+				...mod,
+				hash: hash(mod),
+			});
 		}),
 	);
 
-	return mods;
+	return mods.sort((a, b) => a.id.localeCompare(b.id));
 }

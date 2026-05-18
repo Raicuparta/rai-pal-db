@@ -170,9 +170,9 @@ export interface ModBase {
 
 export interface Mod extends ModBase {
 	/**
-	 * Timestamp of when the mod manifest was last updated. Gets updated automatically.
+	 * Hash of the mod manifest. If this changes then the manifest changed in some way and should be redownloaded.
 	 */
-	manifestUpdatedAt: number;
+	hash: string;
 }
 
 export type UnityBackend = "Il2Cpp" | "Mono";

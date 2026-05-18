@@ -46,7 +46,8 @@
       "latestVersion": {
         "id": "6.0.0-be.755",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip"
-      }
+      },
+      "hash": "bc34e2477bdfcb0f638a35d98645e651d01a998c051641f182a8bd3292934505"
     },
     {
       "id": "bepinex-il2cpp-x86",
@@ -94,7 +95,8 @@
       "latestVersion": {
         "id": "6.0.0-be.755",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip"
-      }
+      },
+      "hash": "cb9f1a15245e8347fc40bd9876a83a5fc066b7872848db24e194361f633a511a"
     },
     {
       "id": "bepinex-mono-x64",
@@ -138,7 +140,8 @@
       "latestVersion": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
-      }
+      },
+      "hash": "e49924a89dad86380b7489bf263dfe22c5ab2562c7e365ee7a770fdcb832dcd7"
     },
     {
       "id": "bepinex-mono-x86",
@@ -182,7 +185,8 @@
       "latestVersion": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
-      }
+      },
+      "hash": "9d43efcc48f5d82c01218da8f6fa8dc0ba811a8c9475a00752898b82bd4a2232"
     },
     {
       "id": "config-manager-mono",
@@ -212,7 +216,8 @@
       "latestVersion": {
         "id": "1.0.0",
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
-      }
+      },
+      "hash": "68aabfc33d3af7b8bed2e84f3a5814dec9efc6aceebc85255fbecf4517f62db9"
     },
     {
       "id": "config-manager-mono",
@@ -242,7 +247,8 @@
       "latestVersion": {
         "id": "1.3.0",
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
-      }
+      },
+      "hash": "ff71f4551e2ce07282a5763b8cfecdce2221c907a492f86b9bf7e2da4b08a548"
     },
     {
       "id": "dotnet-desktop-runtime-win-x64",
@@ -255,7 +261,8 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
       },
       "gameOs": "Windows",
-      "hostOs": "Linux"
+      "hostOs": "Linux",
+      "hash": "6118d06dc82464c9346710c88c9001a9a857b67215bb224d8edc95b8c275cbb9"
     },
     {
       "id": "everyone-il2cpp",
@@ -289,46 +296,8 @@
       "latestVersion": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
-      }
-    },
-    {
-      "id": "everyone-mono",
-      "engine": "Unity",
-      "unityBackend": "Mono",
-      "install": {
-        "extract": [
-          {
-            "source": "plugins",
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
       },
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-        "destinationType": "File"
-      },
-      "dependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
-      "engineVersionRange": {
-        "minimum": {
-          "major": 5
-        }
-      },
-      "title": "Everyone",
-      "author": "Raicuparta",
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "description": "Mono version. Work in progress! F3 to chat.",
-      "latestVersion": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
-      }
+      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883"
     },
     {
       "id": "everyone-il2cpp",
@@ -367,7 +336,48 @@
       "latestVersion": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
-      }
+      },
+      "hash": "8d7a304006cfffb4572dba953623391ecae555c7729eaadef5f40352d66eaa91"
+    },
+    {
+      "id": "everyone-mono",
+      "engine": "Unity",
+      "unityBackend": "Mono",
+      "install": {
+        "extract": [
+          {
+            "source": "plugins",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
+      },
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+        "destinationType": "File"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
+      "engineVersionRange": {
+        "minimum": {
+          "major": 5
+        }
+      },
+      "title": "Everyone",
+      "author": "Raicuparta",
+      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "description": "Mono version. Work in progress! F3 to chat.",
+      "latestVersion": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
+      },
+      "hash": "1892eed9ef2f53bb248c5c5ad6e258e2f74fddcb74f357fbc1252078c69d6648"
     },
     {
       "id": "runtime-unity-editor-mono",
@@ -397,7 +407,8 @@
       "latestVersion": {
         "id": "5.2.1",
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip"
-      }
+      },
+      "hash": "3ae51aff0852abcbeb8649ca9c51ea90d179eb21032067a615b617053a657fc2"
     },
     {
       "id": "ue4ss",
@@ -409,7 +420,8 @@
       "latestVersion": {
         "id": "v3.0.1-949",
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-949-gdd6777a8.zip"
-      }
+      },
+      "hash": "cd528f9cb71be1c4d2bb351b359115bcd2cf88a087369e8d68a8487481067196"
     },
     {
       "id": "uevr",
@@ -441,7 +453,8 @@
       "latestVersion": {
         "id": "1.05",
         "url": "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip"
-      }
+      },
+      "hash": "9d15f2f929340aec087439d7a00616011ee627f231c2bb50d010700fbdcfd761"
     },
     {
       "id": "uevr-nightly",
@@ -473,7 +486,8 @@
       "latestVersion": {
         "id": "nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26",
         "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26/uevr.zip"
-      }
+      },
+      "hash": "b435e9b14da15754b9583c5c7ecc0bead725c5a2aa3b44fbfb49088c44239961"
     },
     {
       "id": "unity-explorer-il2cpp",
@@ -503,7 +517,8 @@
       "latestVersion": {
         "id": "4.12.1",
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.12.1/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
-      }
+      },
+      "hash": "22ac31cb915bc94b9a91607ee3b4ea4151f13d92389eaff08d2b12e250bda23b"
     },
     {
       "id": "unity-explorer-mono",
@@ -533,7 +548,8 @@
       "latestVersion": {
         "id": "4.9.0",
         "url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
-      }
+      },
+      "hash": "ef53ec2ca5399de579f6ea56a42f9782f06570699fb4fa3aa5b64481ad63350e"
     },
     {
       "id": "uuvr-il2cpp-legacy",
@@ -572,7 +588,8 @@
       "latestVersion": {
         "id": "0.3.1",
         "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip"
-      }
+      },
+      "hash": "1c210a61aa2b9af1a8ae97469c6d9a6073ebc1b602d7c45edc14556835b0ce33"
     },
     {
       "id": "uuvr-mono-legacy",
@@ -611,7 +628,8 @@
       "latestVersion": {
         "id": "0.3.1",
         "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip"
-      }
+      },
+      "hash": "97bcbb8f7470824313f60058c97a011eb6cb046bf7fb4c192ed1c117450af513"
     },
     {
       "id": "uuvr-mono-modern",
@@ -651,7 +669,8 @@
       "latestVersion": {
         "id": "0.4.0",
         "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip"
-      }
+      },
+      "hash": "c1c1c7be420536d4e7d1c8d4a4fa88927a7756e852b9c43f98f1a81b382ccef1"
     }
   ]
 }
