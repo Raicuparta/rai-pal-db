@@ -429,7 +429,8 @@
         ],
         "wineEnvironment": {
           "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
-        }
+        },
+        "os": "Windows"
       },
       "config": {
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
@@ -460,7 +461,8 @@
         ],
         "wineEnvironment": {
           "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
-        }
+        },
+        "os": "Windows"
       },
       "config": {
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",

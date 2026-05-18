@@ -139,6 +139,12 @@ export interface Mod {
 		wineEnvironment?: {
 			[k: string]: string;
 		};
+
+		/**
+		 * Operating system the mod itself is built for. So a .exe would be Windows.
+		 * Unspecified means it somehow works for all.
+		 */
+		os?: OperatingSystem;
 	};
 
 	/**

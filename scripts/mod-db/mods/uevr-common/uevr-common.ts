@@ -21,6 +21,7 @@ export function uevrBaseMod(
 			wineEnvironment: {
 				DOTNET_ROOT: `${token.LocalModsPath}/dotnet-desktop-runtime-win-x64`,
 			},
+			os: "Windows",
 		},
 		config: {
 			destinationPath: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
