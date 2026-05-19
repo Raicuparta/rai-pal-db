@@ -289,15 +289,20 @@
           "modId": "bepinex-il2cpp-x86"
         }
       ],
-      "title": "Everyone",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 5
+        }
+      },
+      "title": "Everyone (Legacy)",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/everyone",
-      "description": "IL2CPP version. Work in progress! F3 to chat.",
+      "description": "Mono Legacy version. Work in progress! F3 to chat.",
       "latestVersion": {
         "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
       },
-      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883"
+      "hash": "8d7a304006cfffb4572dba953623391ecae555c7729eaadef5f40352d66eaa91"
     },
     {
       "id": "everyone-il2cpp",
@@ -324,20 +329,15 @@
           "modId": "bepinex-il2cpp-x86"
         }
       ],
-      "engineVersionRange": {
-        "maximum": {
-          "major": 5
-        }
-      },
-      "title": "Everyone (Legacy)",
+      "title": "Everyone",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/everyone",
-      "description": "Mono Legacy version. Work in progress! F3 to chat.",
+      "description": "IL2CPP version. Work in progress! F3 to chat.",
       "latestVersion": {
         "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
-      "hash": "8d7a304006cfffb4572dba953623391ecae555c7729eaadef5f40352d66eaa91"
+      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883"
     },
     {
       "id": "everyone-mono",
