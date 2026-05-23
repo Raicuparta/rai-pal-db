@@ -191,37 +191,6 @@
     {
       "id": "config-manager-mono",
       "engine": "Unity",
-      "unityBackend": "Il2Cpp",
-      "install": {
-        "extract": [
-          {
-            "source": "plugins",
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
-      },
-      "dependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
-      "title": "Config Manager IL2CPP",
-      "author": "sinai",
-      "sourceCode": "https://github.com/Vapok/BepInExConfigManager",
-      "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
-      "latestVersion": {
-        "id": "1.0.0",
-        "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
-      },
-      "hash": "68aabfc33d3af7b8bed2e84f3a5814dec9efc6aceebc85255fbecf4517f62db9"
-    },
-    {
-      "id": "config-manager-mono",
-      "engine": "Unity",
       "unityBackend": "Mono",
       "install": {
         "extract": [
@@ -249,6 +218,37 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "hash": "ff71f4551e2ce07282a5763b8cfecdce2221c907a492f86b9bf7e2da4b08a548"
+    },
+    {
+      "id": "config-manager-mono",
+      "engine": "Unity",
+      "unityBackend": "Il2Cpp",
+      "install": {
+        "extract": [
+          {
+            "source": "plugins",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
+      "title": "Config Manager IL2CPP",
+      "author": "sinai",
+      "sourceCode": "https://github.com/Vapok/BepInExConfigManager",
+      "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
+      "latestVersion": {
+        "id": "1.0.0",
+        "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
+      },
+      "hash": "68aabfc33d3af7b8bed2e84f3a5814dec9efc6aceebc85255fbecf4517f62db9"
     },
     {
       "id": "dotnet-desktop-runtime-win-x64",
@@ -289,15 +289,20 @@
           "modId": "bepinex-il2cpp-x86"
         }
       ],
-      "title": "Everyone",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 5
+        }
+      },
+      "title": "Everyone (Legacy)",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/everyone",
-      "description": "IL2CPP version. Work in progress! F3 to chat.",
+      "description": "Mono Legacy version. Work in progress! F3 to chat.",
       "latestVersion": {
         "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
       },
-      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883"
+      "hash": "8d7a304006cfffb4572dba953623391ecae555c7729eaadef5f40352d66eaa91"
     },
     {
       "id": "everyone-il2cpp",
@@ -324,20 +329,15 @@
           "modId": "bepinex-il2cpp-x86"
         }
       ],
-      "engineVersionRange": {
-        "maximum": {
-          "major": 5
-        }
-      },
-      "title": "Everyone (Legacy)",
+      "title": "Everyone",
       "author": "Raicuparta",
       "sourceCode": "https://github.com/Raicuparta/everyone",
-      "description": "Mono Legacy version. Work in progress! F3 to chat.",
+      "description": "IL2CPP version. Work in progress! F3 to chat.",
       "latestVersion": {
         "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
-      "hash": "8d7a304006cfffb4572dba953623391ecae555c7729eaadef5f40352d66eaa91"
+      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883"
     },
     {
       "id": "everyone-mono",
