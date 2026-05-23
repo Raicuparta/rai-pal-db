@@ -46,7 +46,7 @@
 				}
 			},
 			"sourceCode": "https://github.com/praydog/UEVR",
-			"description": "⚠️ Unstable ⚠️ UEVR automatically built from the latest, potentially untested code changes.",
+			"description": "UEVR automatically built from the latest, potentially untested code changes.",
 			"configs": {
 				"destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{ExecutableNameWithoutExtension}}",
 				"destinationType": "Folder",
