@@ -1,37 +1,228 @@
-// import { getBepInExBleedingReleases } from "./bepinex-bleeding.ts";
-// import { getBepInExStableReleases } from "./bepinex-stable.ts";
-// import { ModSchema } from "#types/db-schema.ts";
+import { ModBase } from "../mod.ts";
+import { bepinexIl2cppLoaderBase } from "./bepinex-il2cpp.ts";
+import { bepinexModBase } from "./bepinex-mod.ts";
+import { bepinexMonoLoaderBase } from "./bepinex-mono.ts";
 
-// function pickMod(
-// 	mods: ModSchema[],
-// 	architecture: "X86" | "X64",
-// 	unityBackend: "Mono" | "Il2Cpp",
-// ): ModSchema {
-// 	const mod = mods.find(
-// 		(candidate) =>
-// 			candidate.architecture === architecture &&
-// 			candidate.unityBackend === unityBackend,
-// 	);
-
-// 	if (!mod) {
-// 		throw new Error(
-// 			`Missing BepInEx mod for architecture=${architecture} backend=${unityBackend}`,
-// 		);
-// 	}
-
-// 	return mod;
-// }
-
-// export async function getBepInExDatabase(): Promise<ModSchema[]> {
-// 	const [stableMods, bleedingMods] = await Promise.all([
-// 		getBepInExStableReleases(),
-// 		getBepInExBleedingReleases(),
-// 	]);
-
-// 	return [
-// 		pickMod(stableMods, "X86", "Mono"),
-// 		pickMod(stableMods, "X64", "Mono"),
-// 		pickMod(bleedingMods, "X86", "Il2Cpp"),
-// 		pickMod(bleedingMods, "X64", "Il2Cpp"),
-// 	];
-// }
+// deno-lint-ignore require-await
+export async function getBepinexMods(): Promise<ModBase[]> {
+  return [
+    {
+      ...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64"),
+      architecture: "X64",
+      title: "BepInEx Il2Cpp X64",
+      description: "BepInEx bleeding-edge Il2Cpp build for X64 games.",
+      latestVersion: {
+        id: "6.0.0-be.755",
+        url:
+          "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip",
+      },
+    },
+    {
+      ...bepinexMonoLoaderBase("bepinex-mono-x64"),
+      architecture: "X64",
+      title: "BepInEx Mono X64",
+      description: "BepInEx stable Mono build for X64 games.",
+      latestVersion: {
+        id: "5.4.23.5",
+        url:
+          "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip",
+      },
+    },
+    {
+      ...bepinexMonoLoaderBase("bepinex-mono-x86"),
+      architecture: "X86",
+      title: "BepInEx Mono X86",
+      description: "BepInEx stable Mono build for X86 games.",
+      latestVersion: {
+        id: "5.4.23.5",
+        url:
+          "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip",
+      },
+    },
+    {
+      ...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86"),
+      architecture: "X86",
+      title: "BepInEx Il2Cpp X86",
+      description: "BepInEx bleeding-edge Il2Cpp build for X86 games.",
+      latestVersion: {
+        id: "6.0.0-be.755",
+        url:
+          "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip",
+      },
+    },
+    {
+      ...bepinexModBase("everyone-mono", "Mono", "raicuparta.everyone.json"),
+      engineVersionRange: {
+        minimum: {
+          major: 5,
+        },
+      },
+      title: "Everyone",
+      author: "Raicuparta",
+      sourceCode: "https://github.com/Raicuparta/everyone",
+      description: "Mono version. Work in progress! F3 to chat.",
+      latestVersion: {
+        id: "0.1.0",
+        url:
+          "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip",
+      },
+    },
+    {
+      ...bepinexModBase(
+        "everyone-il2cpp",
+        "Il2Cpp",
+        "raicuparta.everyone.json",
+      ),
+      title: "Everyone",
+      author: "Raicuparta",
+      sourceCode: "https://github.com/Raicuparta/everyone",
+      description: "IL2CPP version. Work in progress! F3 to chat.",
+      latestVersion: {
+        id: "0.1.0",
+        url:
+          "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+      },
+    },
+    {
+      ...bepinexModBase("config-manager-mono", "Il2Cpp"),
+      title: "Config Manager IL2CPP",
+      author: "sinai",
+      sourceCode: "https://github.com/Vapok/BepInExConfigManager",
+      description:
+        "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
+      latestVersion: {
+        id: "1.0.0",
+        url:
+          "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip",
+      },
+    },
+    {
+      ...bepinexModBase("config-manager-mono", "Mono"),
+      title: "Config Manager Mono",
+      author: "sinai",
+      sourceCode: "https://github.com/sinai-dev/BepInExConfigManager",
+      description:
+        "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR.",
+      latestVersion: {
+        id: "1.3.0",
+        url:
+          "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip",
+      },
+    },
+    {
+      ...bepinexModBase(
+        "everyone-il2cpp",
+        "Il2Cpp",
+        "raicuparta.everyone.json",
+      ),
+      engineVersionRange: {
+        maximum: {
+          major: 5,
+        },
+      },
+      title: "Everyone (Legacy)",
+      author: "Raicuparta",
+      sourceCode: "https://github.com/Raicuparta/everyone",
+      description: "Mono Legacy version. Work in progress! F3 to chat.",
+      latestVersion: {
+        id: "0.1.0",
+        url:
+          "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip",
+      },
+    },
+    {
+      ...bepinexModBase("runtime-unity-editor-mono", "Mono"),
+      title: "Runtime Unity Editor",
+      author: "ManlyMarco",
+      sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
+      description:
+        "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
+      latestVersion: {
+        id: "5.2.1",
+        url:
+          "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip",
+      },
+    },
+    {
+      ...bepinexModBase("unity-explorer-il2cpp", "Il2Cpp"),
+      title: "UnityExplorer Il2Cpp",
+      author: "Sinai",
+      sourceCode: "https://github.com/sinai-dev/UnityExplorer",
+      description:
+        "An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
+      latestVersion: {
+        id: "4.12.1",
+        url:
+          "https://github.com/yukieiji/UnityExplorer/releases/download/v4.12.1/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+      },
+    },
+    {
+      ...bepinexModBase("unity-explorer-mono", "Mono"),
+      title: "UnityExplorer Mono",
+      author: "Sinai",
+      sourceCode: "https://github.com/sinai-dev/UnityExplorer",
+      description:
+        "An in-game UI for exploring, debugging and modifying Unity games.",
+      latestVersion: {
+        id: "4.9.0",
+        url:
+          "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip",
+      },
+    },
+    {
+      ...bepinexModBase("uuvr-il2cpp-legacy", "Il2Cpp", "raicuparta.uuvr.json"),
+      title: "UUVR Il2Cpp Legacy",
+      author: "Raicuparta",
+      sourceCode: "https://github.com/Raicuparta/uuvr",
+      description:
+        "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
+      engineVersionRange: {
+        maximum: {
+          major: 2019,
+        },
+      },
+      latestVersion: {
+        id: "0.3.1",
+        url:
+          "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip",
+      },
+    },
+    {
+      ...bepinexModBase("uuvr-mono-legacy", "Mono", "raicuparta.uuvr.json"),
+      title: "UUVR Mono Legacy",
+      author: "Raicuparta",
+      sourceCode: "https://github.com/Raicuparta/uuvr",
+      description:
+        "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
+      engineVersionRange: {
+        maximum: {
+          major: 2019,
+        },
+      },
+      latestVersion: {
+        id: "0.3.1",
+        url:
+          "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip",
+      },
+    },
+    {
+      ...bepinexModBase("uuvr-mono-modern", "Mono", "raicuparta.uuvr.json"),
+      title: "UUVR Mono Modern",
+      author: "Raicuparta",
+      sourceCode: "https://github.com/Raicuparta/uuvr",
+      description:
+        "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
+      engineVersionRange: {
+        minimum: {
+          major: 2018,
+          minor: 4,
+        },
+      },
+      latestVersion: {
+        id: "0.4.0",
+        url:
+          "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip",
+      },
+    },
+  ];
+}

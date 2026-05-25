@@ -50,55 +50,6 @@
       "unityBackend": "Il2Cpp"
     },
     {
-      "architecture": "X86",
-      "author": "BepInEx",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-        "destinationType": "File"
-      },
-      "description": "BepInEx bleeding-edge Il2Cpp build for X86 games.",
-      "engine": "Unity",
-      "hash": "cb9f1a15245e8347fc40bd9876a83a5fc066b7872848db24e194361f633a511a",
-      "id": "bepinex-il2cpp-x86",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
-          },
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/dotnet",
-            "source": "dotnet"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
-            "source": "winhttp.dll"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
-        "wineDllOverrides": [
-          "winhttp"
-        ],
-        "write": [
-          {
-            "content": "[General]\nenabled = true\ntarget_assembly = {{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{InstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{InstalledModsPath}}/bepinex/dotnet\n",
-            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
-          },
-          {
-            "content": "[Logging.Console]\nEnabled = true",
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
-          }
-        ]
-      },
-      "latestVersion": {
-        "id": "6.0.0-be.755",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip"
-      },
-      "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Il2Cpp X86",
-      "unityBackend": "Il2Cpp"
-    },
-    {
       "architecture": "X64",
       "author": "BepInEx",
       "config": {
@@ -189,6 +140,130 @@
       "unityBackend": "Mono"
     },
     {
+      "architecture": "X86",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "BepInEx bleeding-edge Il2Cpp build for X86 games.",
+      "engine": "Unity",
+      "hash": "cb9f1a15245e8347fc40bd9876a83a5fc066b7872848db24e194361f633a511a",
+      "id": "bepinex-il2cpp-x86",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/dotnet",
+            "source": "dotnet"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
+            "source": "winhttp.dll"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
+        "wineDllOverrides": [
+          "winhttp"
+        ],
+        "write": [
+          {
+            "content": "[General]\nenabled = true\ntarget_assembly = {{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{InstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{InstalledModsPath}}/bepinex/dotnet\n",
+            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+          },
+          {
+            "content": "[Logging.Console]\nEnabled = true",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+          }
+        ]
+      },
+      "latestVersion": {
+        "id": "6.0.0-be.755",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip"
+      },
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Il2Cpp X86",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "author": "Raicuparta",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+        "destinationType": "File"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
+      "description": "Mono version. Work in progress! F3 to chat.",
+      "engine": "Unity",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 5
+        }
+      },
+      "hash": "1892eed9ef2f53bb248c5c5ad6e258e2f74fddcb74f357fbc1252078c69d6648",
+      "id": "everyone-mono",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
+      },
+      "latestVersion": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
+      },
+      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "title": "Everyone",
+      "unityBackend": "Mono"
+    },
+    {
+      "author": "Raicuparta",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+        "destinationType": "File"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
+      "description": "IL2CPP version. Work in progress! F3 to chat.",
+      "engine": "Unity",
+      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883",
+      "id": "everyone-il2cpp",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
+      },
+      "latestVersion": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+      },
+      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "title": "Everyone",
+      "unityBackend": "Il2Cpp"
+    },
+    {
       "author": "sinai",
       "dependencies": [
         {
@@ -251,55 +326,6 @@
       "unityBackend": "Mono"
     },
     {
-      "author": "bill gates himself",
-      "description": "Required for running UEVR via Wine",
-      "gameOs": "Windows",
-      "hash": "6118d06dc82464c9346710c88c9001a9a857b67215bb224d8edc95b8c275cbb9",
-      "hostOs": "Linux",
-      "id": "dotnet-desktop-runtime-win-x64",
-      "latestVersion": {
-        "id": "6.0.36",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
-      },
-      "sourceCode": "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
-      "title": ".NET Desktop Runtime"
-    },
-    {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-        "destinationType": "File"
-      },
-      "dependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
-      "description": "IL2CPP version. Work in progress! F3 to chat.",
-      "engine": "Unity",
-      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883",
-      "id": "everyone-il2cpp",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
-      },
-      "latestVersion": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
-      },
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone",
-      "unityBackend": "Il2Cpp"
-    },
-    {
       "author": "Raicuparta",
       "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
@@ -340,46 +366,6 @@
       "unityBackend": "Il2Cpp"
     },
     {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-        "destinationType": "File"
-      },
-      "dependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
-      "description": "Mono version. Work in progress! F3 to chat.",
-      "engine": "Unity",
-      "engineVersionRange": {
-        "minimum": {
-          "major": 5
-        }
-      },
-      "hash": "1892eed9ef2f53bb248c5c5ad6e258e2f74fddcb74f357fbc1252078c69d6648",
-      "id": "everyone-mono",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
-      },
-      "latestVersion": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
-      },
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone",
-      "unityBackend": "Mono"
-    },
-    {
       "author": "ManlyMarco",
       "dependencies": [
         {
@@ -409,85 +395,6 @@
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",
       "unityBackend": "Mono"
-    },
-    {
-      "author": "UE4SS-RE",
-      "description": "Scripting and modding framework for Unreal Engine games.",
-      "engine": "Unreal",
-      "hash": "cd528f9cb71be1c4d2bb351b359115bcd2cf88a087369e8d68a8487481067196",
-      "id": "ue4ss",
-      "latestVersion": {
-        "id": "v3.0.1-949",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-949-gdd6777a8.zip"
-      },
-      "sourceCode": "https://github.com/UE4SS-RE/RE-UE4SS",
-      "title": "UE4SS"
-    },
-    {
-      "author": "praydog",
-      "config": {
-        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-        "destinationType": "Folder"
-      },
-      "dependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64"
-        }
-      ],
-      "description": "Universal VR mod for Unreal Engine games.",
-      "engine": "Unreal",
-      "gameOs": "Windows",
-      "hash": "9d15f2f929340aec087439d7a00616011ee627f231c2bb50d010700fbdcfd761",
-      "id": "uevr",
-      "latestVersion": {
-        "id": "1.05",
-        "url": "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip"
-      },
-      "runForGame": {
-        "args": [
-          "--attach={{GameExecutableName}}"
-        ],
-        "os": "Windows",
-        "path": "UEVRInjector.exe",
-        "wineEnvironment": {
-          "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
-        }
-      },
-      "sourceCode": "https://github.com/praydog/UEVR",
-      "title": "UEVR"
-    },
-    {
-      "author": "praydog",
-      "config": {
-        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
-        "destinationType": "Folder"
-      },
-      "dependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64"
-        }
-      ],
-      "description": "UEVR automatically built from the latest, potentially untested code changes.",
-      "engine": "Unreal",
-      "gameOs": "Windows",
-      "hash": "b435e9b14da15754b9583c5c7ecc0bead725c5a2aa3b44fbfb49088c44239961",
-      "id": "uevr-nightly",
-      "latestVersion": {
-        "id": "nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26",
-        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26/uevr.zip"
-      },
-      "runForGame": {
-        "args": [
-          "--attach={{GameExecutableName}}"
-        ],
-        "os": "Windows",
-        "path": "UEVRInjector.exe",
-        "wineEnvironment": {
-          "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
-        }
-      },
-      "sourceCode": "https://github.com/praydog/UEVR",
-      "title": "UEVR Nightly"
     },
     {
       "author": "Sinai",
@@ -671,6 +578,99 @@
       "sourceCode": "https://github.com/Raicuparta/uuvr",
       "title": "UUVR Mono Modern",
       "unityBackend": "Mono"
+    },
+    {
+      "author": "praydog",
+      "config": {
+        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+        "destinationType": "Folder"
+      },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "description": "Universal VR mod for Unreal Engine games.",
+      "engine": "Unreal",
+      "gameOs": "Windows",
+      "hash": "9d15f2f929340aec087439d7a00616011ee627f231c2bb50d010700fbdcfd761",
+      "id": "uevr",
+      "latestVersion": {
+        "id": "1.05",
+        "url": "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip"
+      },
+      "runForGame": {
+        "args": [
+          "--attach={{GameExecutableName}}"
+        ],
+        "os": "Windows",
+        "path": "UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "sourceCode": "https://github.com/praydog/UEVR",
+      "title": "UEVR"
+    },
+    {
+      "author": "praydog",
+      "config": {
+        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+        "destinationType": "Folder"
+      },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "description": "UEVR automatically built from the latest, potentially untested code changes.",
+      "engine": "Unreal",
+      "gameOs": "Windows",
+      "hash": "b435e9b14da15754b9583c5c7ecc0bead725c5a2aa3b44fbfb49088c44239961",
+      "id": "uevr-nightly",
+      "latestVersion": {
+        "id": "nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26/uevr.zip"
+      },
+      "runForGame": {
+        "args": [
+          "--attach={{GameExecutableName}}"
+        ],
+        "os": "Windows",
+        "path": "UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "sourceCode": "https://github.com/praydog/UEVR",
+      "title": "UEVR Nightly"
+    },
+    {
+      "author": "bill gates himself",
+      "description": "Required for running UEVR via Wine",
+      "gameOs": "Windows",
+      "hash": "6118d06dc82464c9346710c88c9001a9a857b67215bb224d8edc95b8c275cbb9",
+      "hostOs": "Linux",
+      "id": "dotnet-desktop-runtime-win-x64",
+      "latestVersion": {
+        "id": "6.0.36",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
+      },
+      "sourceCode": "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
+      "title": ".NET Desktop Runtime"
+    },
+    {
+      "author": "UE4SS-RE",
+      "description": "Scripting and modding framework for Unreal Engine games.",
+      "engine": "Unreal",
+      "hash": "cd528f9cb71be1c4d2bb351b359115bcd2cf88a087369e8d68a8487481067196",
+      "id": "ue4ss",
+      "latestVersion": {
+        "id": "v3.0.1-949",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-949-gdd6777a8.zip"
+      },
+      "sourceCode": "https://github.com/UE4SS-RE/RE-UE4SS",
+      "title": "UE4SS"
     }
   ]
 }
