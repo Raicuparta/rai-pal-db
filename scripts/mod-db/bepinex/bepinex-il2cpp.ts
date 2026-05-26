@@ -1,6 +1,7 @@
 import { DOMParser } from "@b-fuze/deno-dom";
 import { Architecture, isArchitecture, ModBase, Release } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
+import { getBepinexConfigContent } from "./bepinex-config.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE =
@@ -11,11 +12,13 @@ const BLEEDING_BUILD_URL_BASE =
  */
 function bepinexIl2cppLoaderBase(
 	modId: string,
-): Omit<ModBase, "title" | "description" | "latestVersion"> {
+	isLegacy: boolean,
+): Omit<ModBase, "title" | "latestVersion"> {
 	return {
 		id: modId,
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
+		description: "Mod loader for Unity mods.",
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: {
@@ -49,8 +52,7 @@ corlib_dir = ${token.InstalledModsPath}/bepinex/dotnet
 					destination: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
 				},
 				{
-					content: `[Logging.Console]
-Enabled = true`,
+					content: getBepinexConfigContent(isLegacy),
 					destination:
 						`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 				},
@@ -145,18 +147,52 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 
 	return [
 		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64"),
+			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64", false),
 			architecture: "X64",
 			title: "BepInEx Il2Cpp X64",
-			description: "BepInEx bleeding-edge Il2Cpp build for X64 games.",
 			latestVersion: latestX64.release,
+			engineVersionRange: {
+				minimum: {
+					major: 5,
+					minor: 5,
+				},
+			},
 		},
 		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86"),
+			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86", false),
 			architecture: "X86",
 			title: "BepInEx Il2Cpp X86",
-			description: "BepInEx bleeding-edge Il2Cpp build for X86 games.",
 			latestVersion: latestX86.release,
+			engineVersionRange: {
+				minimum: {
+					major: 5,
+					minor: 5,
+				},
+			},
+		},
+		{
+			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64-legacy", true),
+			architecture: "X64",
+			title: "BepInEx Il2Cpp X64 Legacy",
+			latestVersion: latestX64.release,
+			engineVersionRange: {
+				maximum: {
+					major: 5,
+					minor: 4,
+				},
+			},
+		},
+		{
+			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86-legacy", true),
+			architecture: "X86",
+			title: "BepInEx Il2Cpp X86 Legacy",
+			latestVersion: latestX86.release,
+			engineVersionRange: {
+				minimum: {
+					major: 5,
+					minor: 4,
+				},
+			},
 		},
 	];
 }

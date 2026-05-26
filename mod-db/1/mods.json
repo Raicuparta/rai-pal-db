@@ -7,9 +7,15 @@
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "BepInEx bleeding-edge Il2Cpp build for X64 games.",
+      "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "bc34e2477bdfcb0f638a35d98645e651d01a998c051641f182a8bd3292934505",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 5,
+          "minor": 5
+        }
+      },
+      "hash": "821021e4427a1e1157135f215bb9ef3e36fb3e517fafe35f52c0c3a030316f49",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -56,9 +62,15 @@
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "BepInEx bleeding-edge Il2Cpp build for X86 games.",
+      "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "cb9f1a15245e8347fc40bd9876a83a5fc066b7872848db24e194361f633a511a",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 5,
+          "minor": 5
+        }
+      },
+      "hash": "bf7a843ea6e253b6f1e64bcded48be5d2a16316ec6c7747878f11149dc372db2",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -96,6 +108,116 @@
       },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X86",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "architecture": "X64",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "Mod loader for Unity mods.",
+      "engine": "Unity",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 5,
+          "minor": 4
+        }
+      },
+      "hash": "94124b0455df536ebc5726bf07fc5fe5c3190baf78167ed547a0bcfa7771a1e2",
+      "id": "bepinex-il2cpp-x64-legacy",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/dotnet",
+            "source": "dotnet"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
+            "source": "winhttp.dll"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
+        "wineDllOverrides": [
+          "winhttp"
+        ],
+        "write": [
+          {
+            "content": "[General]\nenabled = true\ntarget_assembly = {{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{InstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{InstalledModsPath}}/bepinex/dotnet\n",
+            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+          },
+          {
+            "content": "[Logging.Console]\nEnabled = true\n\n[Preloader.Entrypoint]\nAssembly = UnityEngine.dll\nType = MonoBehaviour\nMethod = .cctor",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+          }
+        ]
+      },
+      "latestVersion": {
+        "id": "6.0.0-be.755",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip"
+      },
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Il2Cpp X64 Legacy",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "architecture": "X86",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "Mod loader for Unity mods.",
+      "engine": "Unity",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 5,
+          "minor": 4
+        }
+      },
+      "hash": "6b5c34a3f61765842dfd104842f4d3f833d6dda52486b18b8882dd6ff6c8a451",
+      "id": "bepinex-il2cpp-x86-legacy",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/dotnet",
+            "source": "dotnet"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
+            "source": "winhttp.dll"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
+        "wineDllOverrides": [
+          "winhttp"
+        ],
+        "write": [
+          {
+            "content": "[General]\nenabled = true\ntarget_assembly = {{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{InstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{InstalledModsPath}}/bepinex/dotnet\n",
+            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+          },
+          {
+            "content": "[Logging.Console]\nEnabled = true\n\n[Preloader.Entrypoint]\nAssembly = UnityEngine.dll\nType = MonoBehaviour\nMethod = .cctor",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+          }
+        ]
+      },
+      "latestVersion": {
+        "id": "6.0.0-be.755",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip"
+      },
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Il2Cpp X86 Legacy",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -583,15 +705,15 @@
       "author": "ManlyMarco",
       "dependencies": [
         {
-          "modId": "bepinex-mono-x64"
+          "modId": "bepinex-il2cpp-x64"
         },
         {
-          "modId": "bepinex-mono-x86"
+          "modId": "bepinex-il2cpp-x86"
         }
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "hash": "d942e32d99803522e33f581e2a5b4280dbca14c0cb8385d560b0239594a29734",
+      "hash": "5544656dee6ef350209b36e3e669c62639c8e5dfa2fa81074c3e459bfb84a388",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -608,7 +730,7 @@
       },
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",
-      "unityBackend": "Mono"
+      "unityBackend": "Il2Cpp"
     },
     {
       "author": "praydog",
