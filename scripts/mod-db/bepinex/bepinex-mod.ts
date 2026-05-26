@@ -41,6 +41,12 @@ export function bepinexMod(
 				{
 					modId: "bepinex-mono-x86",
 				},
+				{
+					modId: "bepinex-mono-x64-legacy",
+				},
+				{
+					modId: "bepinex-mono-x86-legacy",
+				},
 			]
 			: [
 				{
@@ -48,6 +54,12 @@ export function bepinexMod(
 				},
 				{
 					modId: "bepinex-il2cpp-x86",
+				},
+				{
+					modId: "bepinex-il2cpp-x64-legacy",
+				},
+				{
+					modId: "bepinex-il2cpp-x86-legacy",
 				},
 			],
 	};

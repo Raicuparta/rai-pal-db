@@ -166,24 +166,48 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 			architecture: "X64",
 			title: "BepInEx Mono X64",
 			latestVersion: latestX64.release,
+			engineVersionRange: {
+				minimum: {
+					major: 5,
+					minor: 5,
+				},
+			},
 		},
 		{
 			...bepinexMonoLoaderBase("bepinex-mono-x86", false),
 			architecture: "X86",
 			title: "BepInEx Mono X86",
 			latestVersion: latestX86.release,
+			engineVersionRange: {
+				minimum: {
+					major: 5,
+					minor: 5,
+				},
+			},
 		},
 		{
 			...bepinexMonoLoaderBase("bepinex-mono-x64-legacy", true),
 			architecture: "X64",
 			title: "BepInEx Mono X64 Legacy",
 			latestVersion: latestX64.release,
+			engineVersionRange: {
+				maximum: {
+					major: 5,
+					minor: 4,
+				},
+			},
 		},
 		{
 			...bepinexMonoLoaderBase("bepinex-mono-x86-legacy", true),
 			architecture: "X86",
 			title: "BepInEx Mono X86 Legacy",
 			latestVersion: latestX86.release,
+			engineVersionRange: {
+				maximum: {
+					major: 5,
+					minor: 4,
+				},
+			},
 		},
 	];
 }

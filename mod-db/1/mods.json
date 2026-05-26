@@ -229,7 +229,13 @@
       },
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "65a1ead174cba488ffedecf15485c730c91466c2dab6656a65900c71fc873119",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 5,
+          "minor": 5
+        }
+      },
+      "hash": "9ae4e2edecfe74fb1d07772db97b195795622afd2fa74e24c9795469ba4f8b79",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -274,7 +280,13 @@
       },
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "dac37c631ae7fde5e96b31ab7cb84d6f19b1fdb4137f0d52ca368aaecab77cbb",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 5,
+          "minor": 5
+        }
+      },
+      "hash": "43fb17dc589af2aceb9936f7f9a574c0a17e058fe616b747e3813c0c2f7b535b",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -319,7 +331,13 @@
       },
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "49a34772c2568145962eff9696da109627acb5eb03609fd84117965918790a10",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 5,
+          "minor": 4
+        }
+      },
+      "hash": "2793f13ce15275073ad865f49bf3099b17f5e4490e5d85d397d0f14373dc9731",
       "id": "bepinex-mono-x64-legacy",
       "install": {
         "extract": [
@@ -364,7 +382,13 @@
       },
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "5b231b38668782a1d2fe034c3202c203abafd2a34c2cd69beae22a8ea5ad5972",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 5,
+          "minor": 4
+        }
+      },
+      "hash": "37b2cb1637d05e8f63d437791e6f26b2de63cb8c4b7b12d6727da1704c1ba358",
       "id": "bepinex-mono-x86-legacy",
       "install": {
         "extract": [
@@ -412,6 +436,12 @@
         },
         {
           "modId": "bepinex-il2cpp-x86"
+        },
+        {
+          "modId": "bepinex-il2cpp-x64-legacy"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86-legacy"
         }
       ],
       "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
@@ -421,7 +451,7 @@
           "major": 2019
         }
       },
-      "hash": "9fdbd827ada75514c0a164ab6a5926ee85949fb24742b75aba15a22d46a339fb",
+      "hash": "3dc198dec14b8c1676740f06eaa735956e8d187ed5682f3bf8104a8d561d06ca",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -452,6 +482,12 @@
         },
         {
           "modId": "bepinex-mono-x86"
+        },
+        {
+          "modId": "bepinex-mono-x64-legacy"
+        },
+        {
+          "modId": "bepinex-mono-x86-legacy"
         }
       ],
       "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
@@ -461,7 +497,7 @@
           "major": 2019
         }
       },
-      "hash": "26d01ab0815722b29dfff6eea841753d8a4704b3ff4b481aed785927fa56e41d",
+      "hash": "343d1f5531ccdf71afb0395b97d1dd57ae4b55d68030e5665858e595970f68d8",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -492,6 +528,12 @@
         },
         {
           "modId": "bepinex-mono-x86"
+        },
+        {
+          "modId": "bepinex-mono-x64-legacy"
+        },
+        {
+          "modId": "bepinex-mono-x86-legacy"
         }
       ],
       "description": "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
@@ -502,7 +544,7 @@
           "minor": 4
         }
       },
-      "hash": "92fa3d8bed87ab1a5efd8bc58f242df4f103586eae7e0f5423fa4d72be1b5430",
+      "hash": "9e9c3a305f292a2c1cdd7c22594ec44eab90011b5919a8473a7f33c9ed54776f",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -533,6 +575,12 @@
         },
         {
           "modId": "bepinex-mono-x86"
+        },
+        {
+          "modId": "bepinex-mono-x64-legacy"
+        },
+        {
+          "modId": "bepinex-mono-x86-legacy"
         }
       ],
       "description": "Mono version. Work in progress! F3 to chat.",
@@ -542,7 +590,7 @@
           "major": 5
         }
       },
-      "hash": "1892eed9ef2f53bb248c5c5ad6e258e2f74fddcb74f357fbc1252078c69d6648",
+      "hash": "cccc8a0557eed76e091f08f78c5a1cd1ff99057771a1887838526db6156ad316",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -573,11 +621,17 @@
         },
         {
           "modId": "bepinex-il2cpp-x86"
+        },
+        {
+          "modId": "bepinex-il2cpp-x64-legacy"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86-legacy"
         }
       ],
       "description": "IL2CPP version. Work in progress! F3 to chat.",
       "engine": "Unity",
-      "hash": "ac75855f804bd1400a1f42ef7cb852b7eb788e39c6bf475a25d16671c4417883",
+      "hash": "da2c8a9ed6048599dc8170bc391259c3a10b837f15534b061e75f971b373040c",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -608,6 +662,12 @@
         },
         {
           "modId": "bepinex-mono-x86"
+        },
+        {
+          "modId": "bepinex-mono-x64-legacy"
+        },
+        {
+          "modId": "bepinex-mono-x86-legacy"
         }
       ],
       "description": "Mono Legacy version. Work in progress! F3 to chat.",
@@ -617,7 +677,7 @@
           "major": 5
         }
       },
-      "hash": "7d9b0f43dcb7ee1c2b1a8dd662a62d3112e95a55722fe528f51257c89b893d46",
+      "hash": "1a22b43c774ef637db49470a2435084c199ec6eeb50f58e7c2c87f23e3830456",
       "id": "everyone-mono-legacy",
       "install": {
         "extract": [
@@ -644,11 +704,17 @@
         },
         {
           "modId": "bepinex-il2cpp-x86"
+        },
+        {
+          "modId": "bepinex-il2cpp-x64-legacy"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86-legacy"
         }
       ],
       "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
       "engine": "Unity",
-      "hash": "499cc022ab061b08fe6979bd1c7613e517db399b775f6d7db086a655c53234e2",
+      "hash": "8bba96bc98757e2a966e2fda9adf7db72f22563937ae75467ec6fb26f950f81b",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -675,11 +741,17 @@
         },
         {
           "modId": "bepinex-mono-x86"
+        },
+        {
+          "modId": "bepinex-mono-x64-legacy"
+        },
+        {
+          "modId": "bepinex-mono-x86-legacy"
         }
       ],
       "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR.",
       "engine": "Unity",
-      "hash": "ff71f4551e2ce07282a5763b8cfecdce2221c907a492f86b9bf7e2da4b08a548",
+      "hash": "e3b2fa2f14650471c4d95b6b2cc8ff4c5ec70721498b5e74daa2641b90da362d",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -706,11 +778,17 @@
         },
         {
           "modId": "bepinex-il2cpp-x86"
+        },
+        {
+          "modId": "bepinex-il2cpp-x64-legacy"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86-legacy"
         }
       ],
       "description": "An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
       "engine": "Unity",
-      "hash": "4db8ffdb3b022492408d96c486bf61c356adf519e84b06fab0b2546141d0fe79",
+      "hash": "3c0126a9d1bafcdc3360da7fa2eabdbfc2c72b5a6fd97701faf81e090a30a03d",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -737,11 +815,17 @@
         },
         {
           "modId": "bepinex-mono-x86"
+        },
+        {
+          "modId": "bepinex-mono-x64-legacy"
+        },
+        {
+          "modId": "bepinex-mono-x86-legacy"
         }
       ],
       "description": "An in-game UI for exploring, debugging and modifying Unity games.",
       "engine": "Unity",
-      "hash": "ab6797ac4f8e4052e2cef66a096159b92f4fd130233513db8ce5883cfd259998",
+      "hash": "c352e0c345d50dd2af859eccd1a27a5529cc541f4a9a623bb635477fe61034ce",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -768,11 +852,17 @@
         },
         {
           "modId": "bepinex-mono-x86"
+        },
+        {
+          "modId": "bepinex-mono-x64-legacy"
+        },
+        {
+          "modId": "bepinex-mono-x86-legacy"
         }
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "hash": "b443eda5f9016f79a595431542243919496f6d4d8b44c2ac969b0731c0be5321",
+      "hash": "6d874033881f4a9ce7112a5ba55ba812e51a6c385397af37f130ae62590f07b5",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -799,11 +889,17 @@
         },
         {
           "modId": "bepinex-il2cpp-x86"
+        },
+        {
+          "modId": "bepinex-il2cpp-x64-legacy"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86-legacy"
         }
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "hash": "5544656dee6ef350209b36e3e669c62639c8e5dfa2fa81074c3e459bfb84a388",
+      "hash": "6c2624f53c8121baa569607b0d69201fc66a03b45d25c64870ed88cfbf7dbca0",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
