@@ -18,6 +18,8 @@ export async function getRuntimeUnityEditorMods() {
 					assetName.startsWith("RuntimeUnityEditor.Bepin5_") &&
 					assetName.endsWith(".zip"),
 			}),
+		}, {
+			zipRoot: "BepInEx",
 		}),
 		bepinexMod({
 			id: "runtime-unity-editor-il2cpp",
@@ -34,6 +36,8 @@ export async function getRuntimeUnityEditorMods() {
 					assetName.startsWith("RuntimeUnityEditor.Bepin6.IL2CPP_") &&
 					assetName.endsWith(".zip"),
 			}),
+		}, {
+			zipRoot: "BepInEx",
 		}),
 	];
 }

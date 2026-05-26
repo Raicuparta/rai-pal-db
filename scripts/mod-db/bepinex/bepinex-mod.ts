@@ -10,6 +10,7 @@ export function bepinexMod(
 	},
 	params?: {
 		configFileName?: string;
+		zipRoot?: string;
 	},
 ): ModBase {
 	return {
@@ -18,7 +19,7 @@ export function bepinexMod(
 		install: {
 			extract: [
 				{
-					source: "plugins",
+					source: `${params?.zipRoot ? `${params.zipRoot}/` : ""}plugins`,
 					destination:
 						`${token.InstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
 				},

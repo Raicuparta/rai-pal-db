@@ -862,13 +862,13 @@
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "hash": "6d874033881f4a9ce7112a5ba55ba812e51a6c385397af37f130ae62590f07b5",
+      "hash": "1b4797eb21326a166f5c1069c79192e22a9362aace396eb40ba3d4e03cd89138",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
           {
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
-            "source": "plugins"
+            "source": "BepInEx/plugins"
           }
         ],
         "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
@@ -899,13 +899,13 @@
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "hash": "6c2624f53c8121baa569607b0d69201fc66a03b45d25c64870ed88cfbf7dbca0",
+      "hash": "b3d7da9968cf76b1e4fa97c82c08e92ec67b1da41eda92ec000d1fbabbfa66ef",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
           {
             "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp",
-            "source": "plugins"
+            "source": "BepInEx/plugins"
           }
         ],
         "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp"
