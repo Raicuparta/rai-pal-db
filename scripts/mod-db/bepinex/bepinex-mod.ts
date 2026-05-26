@@ -4,37 +4,36 @@ import { token } from "../replacement-tokens.ts";
 /**
  * Base mod object for BepInEx mods.
  */
-export function bepinexModBase(
-	modId: string,
-	unityBackend: UnityBackend,
-	configFileName?: string,
-): Omit<
-	ModBase,
-	"title" | "author" | "sourceCode" | "description" | "latestVersion"
-> {
+export function bepinexMod(
+	mod: Omit<ModBase, "engine" | "install" | "config" | "dependencies"> & {
+		unityBackend: UnityBackend;
+	},
+	params?: {
+		configFileName?: string;
+	},
+): ModBase {
 	return {
-		id: modId,
+		...mod,
 		engine: "Unity",
-		unityBackend,
 		install: {
 			extract: [
 				{
 					source: "plugins",
 					destination:
-						`${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
+						`${token.InstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
 				},
 			],
 			mainInstalledFolderPath:
-				`${token.InstalledModsPath}/bepinex/BepInEx/plugins/${modId}`,
+				`${token.InstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
 		},
-		config: configFileName
+		config: params?.configFileName
 			? {
 				destinationPath:
-					`${token.InstalledModsPath}/bepinex/BepInEx/config/${configFileName}`,
+					`${token.InstalledModsPath}/bepinex/BepInEx/config/${params.configFileName}`,
 				destinationType: "File",
 			}
 			: undefined,
-		dependencies: unityBackend === "Mono"
+		dependencies: mod.unityBackend === "Mono"
 			? [
 				{
 					modId: "bepinex-mono-x64",

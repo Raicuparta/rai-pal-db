@@ -275,16 +275,16 @@
       ],
       "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
       "engine": "Unity",
-      "hash": "68aabfc33d3af7b8bed2e84f3a5814dec9efc6aceebc85255fbecf4517f62db9",
-      "id": "config-manager-mono",
+      "hash": "499cc022ab061b08fe6979bd1c7613e517db399b775f6d7db086a655c53234e2",
+      "id": "config-manager-il2cpp",
       "install": {
         "extract": [
           {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp"
       },
       "latestVersion": {
         "id": "1.0.0",

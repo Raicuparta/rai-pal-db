@@ -1,15 +1,16 @@
 import { getLatestFromGitHub } from "../github.ts";
 import { ModBase } from "../mod.ts";
 import { getBepInExIl2cppLoaders } from "./bepinex-il2cpp.ts";
-import { bepinexModBase } from "./bepinex-mod.ts";
+import { bepinexMod } from "./bepinex-mod.ts";
 import { getBepInExMonoLoaders } from "./bepinex-mono.ts";
 
 export async function getBepinexMods(): Promise<ModBase[]> {
 	return [
 		...await getBepInExIl2cppLoaders(),
 		...await getBepInExMonoLoaders(),
-		{
-			...bepinexModBase("everyone-mono", "Mono", "raicuparta.everyone.json"),
+		bepinexMod({
+			id: "everyone-mono",
+			unityBackend: "Mono",
 			engineVersionRange: {
 				minimum: {
 					major: 5,
@@ -24,13 +25,12 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip",
 			},
-		},
-		{
-			...bepinexModBase(
-				"everyone-il2cpp",
-				"Il2Cpp",
-				"raicuparta.everyone.json",
-			),
+		}, {
+			configFileName: "raicuparta.everyone.json",
+		}),
+		bepinexMod({
+			id: "everyone-il2cpp",
+			unityBackend: "Il2Cpp",
 			title: "Everyone",
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/everyone",
@@ -40,9 +40,12 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
 			},
-		},
-		{
-			...bepinexModBase("config-manager-mono", "Il2Cpp"),
+		}, {
+			configFileName: "raicuparta.everyone.json",
+		}),
+		bepinexMod({
+			id: "config-manager-il2cpp",
+			unityBackend: "Il2Cpp",
 			title: "Config Manager IL2CPP",
 			author: "sinai",
 			sourceCode: "https://github.com/Vapok/BepInExConfigManager",
@@ -53,9 +56,10 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip",
 			},
-		},
-		{
-			...bepinexModBase("config-manager-mono", "Mono"),
+		}),
+		bepinexMod({
+			id: "config-manager-mono",
+			unityBackend: "Mono",
 			title: "Config Manager Mono",
 			author: "sinai",
 			sourceCode: "https://github.com/sinai-dev/BepInExConfigManager",
@@ -66,13 +70,10 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip",
 			},
-		},
-		{
-			...bepinexModBase(
-				"everyone-il2cpp",
-				"Il2Cpp",
-				"raicuparta.everyone.json",
-			),
+		}),
+		bepinexMod({
+			id: "everyone-il2cpp",
+			unityBackend: "Il2Cpp",
 			engineVersionRange: {
 				maximum: {
 					major: 5,
@@ -87,9 +88,12 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip",
 			},
-		},
-		{
-			...bepinexModBase("runtime-unity-editor-mono", "Mono"),
+		}, {
+			configFileName: "raicuparta.everyone.json",
+		}),
+		bepinexMod({
+			id: "runtime-unity-editor-mono",
+			unityBackend: "Mono",
 			title: "Runtime Unity Editor",
 			author: "ManlyMarco",
 			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
@@ -102,9 +106,10 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 					assetName.startsWith("RuntimeUnityEditor.Bepin5_") &&
 					assetName.endsWith(".zip"),
 			}),
-		},
-		{
-			...bepinexModBase("unity-explorer-il2cpp", "Il2Cpp"),
+		}),
+		bepinexMod({
+			id: "unity-explorer-il2cpp",
+			unityBackend: "Il2Cpp",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",
 			sourceCode: "https://github.com/yukieiji/UnityExplorer",
@@ -116,9 +121,10 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				selectAssetName: (assetName) =>
 					assetName === "UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
 			}),
-		},
-		{
-			...bepinexModBase("unity-explorer-mono", "Mono"),
+		}),
+		bepinexMod({
+			id: "unity-explorer-mono",
+			unityBackend: "Mono",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",
 			sourceCode: "https://github.com/yukieiji/UnityExplorer",
@@ -130,9 +136,10 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				selectAssetName: (assetName) =>
 					assetName === "UnityExplorer.BepInEx5.Mono.zip",
 			}),
-		},
-		{
-			...bepinexModBase("uuvr-il2cpp-legacy", "Il2Cpp", "raicuparta.uuvr.json"),
+		}),
+		bepinexMod({
+			id: "uuvr-il2cpp-legacy",
+			unityBackend: "Il2Cpp",
 			title: "UUVR Il2Cpp Legacy",
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/uuvr",
@@ -148,9 +155,12 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip",
 			},
-		},
-		{
-			...bepinexModBase("uuvr-mono-legacy", "Mono", "raicuparta.uuvr.json"),
+		}, {
+			configFileName: "raicuparta.uuvr.json",
+		}),
+		bepinexMod({
+			id: "uuvr-mono-legacy",
+			unityBackend: "Mono",
 			title: "UUVR Mono Legacy",
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/uuvr",
@@ -166,9 +176,12 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip",
 			},
-		},
-		{
-			...bepinexModBase("uuvr-mono-modern", "Mono", "raicuparta.uuvr.json"),
+		}, {
+			configFileName: "raicuparta.uuvr.json",
+		}),
+		bepinexMod({
+			id: "uuvr-mono-modern",
+			unityBackend: "Mono",
 			title: "UUVR Mono Modern",
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/uuvr",
@@ -185,6 +198,8 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 				url:
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip",
 			},
-		},
+		}, {
+			configFileName: "raicuparta.uuvr.json",
+		}),
 	];
 }
