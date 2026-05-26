@@ -105,29 +105,31 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 		},
 		{
 			...bepinexModBase("unity-explorer-il2cpp", "Il2Cpp"),
-			title: "UnityExplorer Il2Cpp",
-			author: "Sinai",
-			sourceCode: "https://github.com/sinai-dev/UnityExplorer",
+			title: "UnityExplorer",
+			author: "Sinai + yukieiji",
+			sourceCode: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
-			latestVersion: {
-				id: "4.12.1",
-				url:
-					"https://github.com/yukieiji/UnityExplorer/releases/download/v4.12.1/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
-			},
+			latestVersion: await getLatestFromGitHub({
+				owner: "yukieiji",
+				repo: "UnityExplorer",
+				selectAssetName: (assetName) =>
+					assetName === "UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+			}),
 		},
 		{
 			...bepinexModBase("unity-explorer-mono", "Mono"),
-			title: "UnityExplorer Mono",
-			author: "Sinai",
-			sourceCode: "https://github.com/sinai-dev/UnityExplorer",
+			title: "UnityExplorer",
+			author: "Sinai + yukieiji",
+			sourceCode: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games.",
-			latestVersion: {
-				id: "4.9.0",
-				url:
-					"https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip",
-			},
+			latestVersion: await getLatestFromGitHub({
+				owner: "yukieiji",
+				repo: "UnityExplorer",
+				selectAssetName: (assetName) =>
+					assetName === "UnityExplorer.BepInEx5.Mono.zip",
+			}),
 		},
 		{
 			...bepinexModBase("uuvr-il2cpp-legacy", "Il2Cpp", "raicuparta.uuvr.json"),

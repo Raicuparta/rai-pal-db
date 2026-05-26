@@ -397,7 +397,7 @@
       "unityBackend": "Mono"
     },
     {
-      "author": "Sinai",
+      "author": "Sinai + yukieiji",
       "dependencies": [
         {
           "modId": "bepinex-il2cpp-x64"
@@ -408,7 +408,7 @@
       ],
       "description": "An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
       "engine": "Unity",
-      "hash": "22ac31cb915bc94b9a91607ee3b4ea4151f13d92389eaff08d2b12e250bda23b",
+      "hash": "4db8ffdb3b022492408d96c486bf61c356adf519e84b06fab0b2546141d0fe79",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -420,15 +420,15 @@
         "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp"
       },
       "latestVersion": {
-        "id": "4.12.1",
-        "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.12.1/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+        "id": "v4.13.6",
+        "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
-      "sourceCode": "https://github.com/sinai-dev/UnityExplorer",
-      "title": "UnityExplorer Il2Cpp",
+      "sourceCode": "https://github.com/yukieiji/UnityExplorer",
+      "title": "UnityExplorer",
       "unityBackend": "Il2Cpp"
     },
     {
-      "author": "Sinai",
+      "author": "Sinai + yukieiji",
       "dependencies": [
         {
           "modId": "bepinex-mono-x64"
@@ -439,7 +439,7 @@
       ],
       "description": "An in-game UI for exploring, debugging and modifying Unity games.",
       "engine": "Unity",
-      "hash": "ef53ec2ca5399de579f6ea56a42f9782f06570699fb4fa3aa5b64481ad63350e",
+      "hash": "ab6797ac4f8e4052e2cef66a096159b92f4fd130233513db8ce5883cfd259998",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -451,11 +451,11 @@
         "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono"
       },
       "latestVersion": {
-        "id": "4.9.0",
-        "url": "https://github.com/sinai-dev/UnityExplorer/releases/download/4.9.0/UnityExplorer.BepInEx5.Mono.zip"
+        "id": "v4.13.6",
+        "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx5.Mono.zip"
       },
-      "sourceCode": "https://github.com/sinai-dev/UnityExplorer",
-      "title": "UnityExplorer Mono",
+      "sourceCode": "https://github.com/yukieiji/UnityExplorer",
+      "title": "UnityExplorer",
       "unityBackend": "Mono"
     },
     {
