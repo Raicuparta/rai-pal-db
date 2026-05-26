@@ -23,6 +23,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 				owner: "praydog",
 				repo: "UEVR-nightly",
 				assetName: "uevr.zip",
+				formatId: (tag) => tag.split("-")[1] || tag,
 			}),
 		},
 		{

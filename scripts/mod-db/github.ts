@@ -5,6 +5,7 @@ type Params = {
 	owner: string;
 	repo: string;
 	assetName: string;
+	formatId?: (tag: string) => string;
 };
 
 const octokit = new Octokit();
@@ -25,8 +26,20 @@ export async function getLatestFromGitHub(params: Params): Promise<Release> {
 		);
 	}
 
+	let id = response.data.tag_name;
+	if (params.formatId) {
+		try {
+			id = params.formatId(response.data.tag_name) ?? response.data.tag_name;
+		} catch (error) {
+			console.warn(
+				`Error formatting tag name "${response.data.tag_name}" with provided formatId function:`,
+				error,
+			);
+		}
+	}
+
 	return {
-		id: response.data.tag_name,
+		id,
 		url: asset.browser_download_url,
 	};
 }
