@@ -191,6 +191,127 @@
     {
       "author": "Raicuparta",
       "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
+        "destinationType": "File"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
+      "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
+      "engine": "Unity",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 2019
+        }
+      },
+      "hash": "9fdbd827ada75514c0a164ab6a5926ee85949fb24742b75aba15a22d46a339fb",
+      "id": "uuvr-il2cpp-legacy",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy"
+      },
+      "latestVersion": {
+        "id": "0.3.1",
+        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip"
+      },
+      "sourceCode": "https://github.com/Raicuparta/uuvr",
+      "title": "UUVR Il2Cpp Legacy",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "author": "Raicuparta",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
+        "destinationType": "File"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
+      "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
+      "engine": "Unity",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 2019
+        }
+      },
+      "hash": "26d01ab0815722b29dfff6eea841753d8a4704b3ff4b481aed785927fa56e41d",
+      "id": "uuvr-mono-legacy",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy"
+      },
+      "latestVersion": {
+        "id": "0.3.1",
+        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip"
+      },
+      "sourceCode": "https://github.com/Raicuparta/uuvr",
+      "title": "UUVR Mono Legacy",
+      "unityBackend": "Mono"
+    },
+    {
+      "author": "Raicuparta",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg",
+        "destinationType": "File"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
+      "description": "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
+      "engine": "Unity",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 2018,
+          "minor": 4
+        }
+      },
+      "hash": "92fa3d8bed87ab1a5efd8bc58f242df4f103586eae7e0f5423fa4d72be1b5430",
+      "id": "uuvr-mono-modern",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern"
+      },
+      "latestVersion": {
+        "id": "0.4.0",
+        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip"
+      },
+      "sourceCode": "https://github.com/Raicuparta/uuvr",
+      "title": "UUVR Mono Modern",
+      "unityBackend": "Mono"
+    },
+    {
+      "author": "Raicuparta",
+      "config": {
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
         "destinationType": "File"
       },
@@ -264,6 +385,46 @@
       "unityBackend": "Il2Cpp"
     },
     {
+      "author": "Raicuparta",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+        "destinationType": "File"
+      },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
+      "description": "Mono Legacy version. Work in progress! F3 to chat.",
+      "engine": "Unity",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 5
+        }
+      },
+      "hash": "7d9b0f43dcb7ee1c2b1a8dd662a62d3112e95a55722fe528f51257c89b893d46",
+      "id": "everyone-mono-legacy",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono-legacy",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono-legacy"
+      },
+      "latestVersion": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
+      },
+      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "title": "Everyone (Legacy)",
+      "unityBackend": "Mono"
+    },
+    {
       "author": "sinai",
       "dependencies": [
         {
@@ -323,77 +484,6 @@
       },
       "sourceCode": "https://github.com/sinai-dev/BepInExConfigManager",
       "title": "Config Manager Mono",
-      "unityBackend": "Mono"
-    },
-    {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-        "destinationType": "File"
-      },
-      "dependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
-      "description": "Mono Legacy version. Work in progress! F3 to chat.",
-      "engine": "Unity",
-      "engineVersionRange": {
-        "maximum": {
-          "major": 5
-        }
-      },
-      "hash": "8d7a304006cfffb4572dba953623391ecae555c7729eaadef5f40352d66eaa91",
-      "id": "everyone-il2cpp",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
-      },
-      "latestVersion": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
-      },
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Legacy)",
-      "unityBackend": "Il2Cpp"
-    },
-    {
-      "author": "ManlyMarco",
-      "dependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
-      "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
-      "engine": "Unity",
-      "hash": "b443eda5f9016f79a595431542243919496f6d4d8b44c2ac969b0731c0be5321",
-      "id": "runtime-unity-editor-mono",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
-      },
-      "latestVersion": {
-        "id": "v6.3",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin5_v6.3.zip"
-      },
-      "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
-      "title": "Runtime Unity Editor",
       "unityBackend": "Mono"
     },
     {
@@ -459,51 +549,7 @@
       "unityBackend": "Mono"
     },
     {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
-        "destinationType": "File"
-      },
-      "dependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
-      "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
-      "engine": "Unity",
-      "engineVersionRange": {
-        "maximum": {
-          "major": 2019
-        }
-      },
-      "hash": "1c210a61aa2b9af1a8ae97469c6d9a6073ebc1b602d7c45edc14556835b0ce33",
-      "id": "uuvr-il2cpp-legacy",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy"
-      },
-      "latestVersion": {
-        "id": "0.3.1",
-        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip"
-      },
-      "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Il2Cpp Legacy",
-      "unityBackend": "Il2Cpp"
-    },
-    {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
-        "destinationType": "File"
-      },
+      "author": "ManlyMarco",
       "dependencies": [
         {
           "modId": "bepinex-mono-x64"
@@ -512,38 +558,29 @@
           "modId": "bepinex-mono-x86"
         }
       ],
-      "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
+      "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "engineVersionRange": {
-        "maximum": {
-          "major": 2019
-        }
-      },
-      "hash": "97bcbb8f7470824313f60058c97a011eb6cb046bf7fb4c192ed1c117450af513",
-      "id": "uuvr-mono-legacy",
+      "hash": "b443eda5f9016f79a595431542243919496f6d4d8b44c2ac969b0731c0be5321",
+      "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
           {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy"
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
       },
       "latestVersion": {
-        "id": "0.3.1",
-        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip"
+        "id": "v6.3",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin5_v6.3.zip"
       },
-      "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Mono Legacy",
+      "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
+      "title": "Runtime Unity Editor",
       "unityBackend": "Mono"
     },
     {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr.json",
-        "destinationType": "File"
-      },
+      "author": "ManlyMarco",
       "dependencies": [
         {
           "modId": "bepinex-mono-x64"
@@ -552,31 +589,25 @@
           "modId": "bepinex-mono-x86"
         }
       ],
-      "description": "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
+      "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "engineVersionRange": {
-        "minimum": {
-          "major": 2018,
-          "minor": 4
-        }
-      },
-      "hash": "c1c1c7be420536d4e7d1c8d4a4fa88927a7756e852b9c43f98f1a81b382ccef1",
-      "id": "uuvr-mono-modern",
+      "hash": "d942e32d99803522e33f581e2a5b4280dbca14c0cb8385d560b0239594a29734",
+      "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
           {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp",
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern"
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp"
       },
       "latestVersion": {
-        "id": "0.4.0",
-        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip"
+        "id": "v6.3",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.zip"
       },
-      "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Mono Modern",
+      "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
+      "title": "Runtime Unity Editor",
       "unityBackend": "Mono"
     },
     {

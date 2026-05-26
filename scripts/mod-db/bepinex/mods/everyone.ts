@@ -1,0 +1,63 @@
+import { bepinexMod } from "../bepinex-mod.ts";
+
+// deno-lint-ignore require-await
+export async function getEveryoneMods() {
+	return [
+		bepinexMod({
+			id: "everyone-mono",
+			unityBackend: "Mono",
+			engineVersionRange: {
+				minimum: {
+					major: 5,
+				},
+			},
+			title: "Everyone",
+			author: "Raicuparta",
+			sourceCode: "https://github.com/Raicuparta/everyone",
+			description: "Mono version. Work in progress! F3 to chat.",
+			latestVersion: {
+				id: "0.1.0",
+				url:
+					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip",
+			},
+		}, {
+			configFileName: "raicuparta.everyone.json",
+		}),
+		bepinexMod({
+			id: "everyone-il2cpp",
+			unityBackend: "Il2Cpp",
+			title: "Everyone",
+			author: "Raicuparta",
+			sourceCode: "https://github.com/Raicuparta/everyone",
+			description: "IL2CPP version. Work in progress! F3 to chat.",
+			latestVersion: {
+				id: "0.1.0",
+				url:
+					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+			},
+		}, {
+			configFileName: "raicuparta.everyone.json",
+		}),
+
+		bepinexMod({
+			id: "everyone-mono-legacy",
+			unityBackend: "Mono",
+			engineVersionRange: {
+				maximum: {
+					major: 5,
+				},
+			},
+			title: "Everyone (Legacy)",
+			author: "Raicuparta",
+			sourceCode: "https://github.com/Raicuparta/everyone",
+			description: "Mono Legacy version. Work in progress! F3 to chat.",
+			latestVersion: {
+				id: "0.1.0",
+				url:
+					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip",
+			},
+		}, {
+			configFileName: "raicuparta.everyone.json",
+		}),
+	];
+}
