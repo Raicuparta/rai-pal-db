@@ -1,3 +1,4 @@
+import { getLatestFromGitHub } from "../github.ts";
 import { ModBase } from "../mod.ts";
 import { getBepInExIl2cppLoaders } from "./bepinex-il2cpp.ts";
 import { bepinexModBase } from "./bepinex-mod.ts";
@@ -94,11 +95,13 @@ export async function getBepinexMods(): Promise<ModBase[]> {
 			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
-			latestVersion: {
-				id: "5.2.1",
-				url:
-					"https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip",
-			},
+			latestVersion: await getLatestFromGitHub({
+				owner: "ManlyMarco",
+				repo: "RuntimeUnityEditor",
+				selectAssetName: (assetName) =>
+					assetName.startsWith("RuntimeUnityEditor.Bepin5_") &&
+					assetName.endsWith(".zip"),
+			}),
 		},
 		{
 			...bepinexModBase("unity-explorer-il2cpp", "Il2Cpp"),

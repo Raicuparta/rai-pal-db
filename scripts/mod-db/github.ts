@@ -4,7 +4,7 @@ import { Release } from "./mod.ts";
 type Params = {
 	owner: string;
 	repo: string;
-	assetName: string;
+	selectAssetName: (assetName: string) => boolean;
 	formatId?: (tag: string) => string;
 };
 
@@ -17,12 +17,12 @@ export async function getLatestFromGitHub(params: Params): Promise<Release> {
 	});
 
 	const asset = response.data.assets.find((asset) =>
-		asset.name === params.assetName
+		params.selectAssetName(asset.name)
 	);
 
 	if (!asset) {
 		throw new Error(
-			`Asset with name "${params.assetName}" not found in the latest release of ${params.owner}/${params.repo}`,
+			`Asset not found in the latest release of ${params.owner}/${params.repo}`,
 		);
 	}
 

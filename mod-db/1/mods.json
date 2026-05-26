@@ -377,7 +377,7 @@
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "hash": "3ae51aff0852abcbeb8649ca9c51ea90d179eb21032067a615b617053a657fc2",
+      "hash": "b443eda5f9016f79a595431542243919496f6d4d8b44c2ac969b0731c0be5321",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -389,8 +389,8 @@
         "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
       },
       "latestVersion": {
-        "id": "5.2.1",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v5.2.1/RuntimeUnityEditor_BepInEx5_v5.2.1.zip"
+        "id": "v6.3",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin5_v6.3.zip"
       },
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",

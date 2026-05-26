@@ -11,7 +11,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			latestVersion: await getLatestFromGitHub({
 				owner: "praydog",
 				repo: "UEVR",
-				assetName: "UEVR.zip",
+				selectAssetName: (assetName) => assetName === "UEVR.zip",
 			}),
 		},
 		{
@@ -22,7 +22,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			latestVersion: await getLatestFromGitHub({
 				owner: "praydog",
 				repo: "UEVR-nightly",
-				assetName: "uevr.zip",
+				selectAssetName: (assetName) => assetName === "uevr.zip",
 				formatId: (tag) => tag.split("-")[1] || tag,
 			}),
 		},
