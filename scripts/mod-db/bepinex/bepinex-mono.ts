@@ -1,6 +1,7 @@
 import { Architecture, isArchitecture, ModBase, Release } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { Octokit } from "octokit";
+import { getBepinexConfigContent } from "./bepinex-config.ts";
 
 const repository = "BepInEx/BepInEx";
 const [owner, repo] = repository.split("/");
@@ -11,6 +12,7 @@ const octokit = new Octokit();
  */
 function bepinexMonoLoaderBase(
 	modId: string,
+	isLegacy: boolean,
 ): Omit<ModBase, "title" | "latestVersion"> {
 	return {
 		id: modId,
@@ -44,8 +46,7 @@ dll_search_path_override=
 					destination: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
 				},
 				{
-					content: `[Logging.Console]
-Enabled = true`,
+					content: getBepinexConfigContent(isLegacy),
 					destination:
 						`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 				},
@@ -161,15 +162,27 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 
 	return [
 		{
-			...bepinexMonoLoaderBase("bepinex-mono-x64"),
+			...bepinexMonoLoaderBase("bepinex-mono-x64", false),
 			architecture: "X64",
 			title: "BepInEx Mono X64",
 			latestVersion: latestX64.release,
 		},
 		{
-			...bepinexMonoLoaderBase("bepinex-mono-x86"),
+			...bepinexMonoLoaderBase("bepinex-mono-x86", false),
 			architecture: "X86",
 			title: "BepInEx Mono X86",
+			latestVersion: latestX86.release,
+		},
+		{
+			...bepinexMonoLoaderBase("bepinex-mono-x64-legacy", true),
+			architecture: "X64",
+			title: "BepInEx Mono X64 Legacy",
+			latestVersion: latestX64.release,
+		},
+		{
+			...bepinexMonoLoaderBase("bepinex-mono-x86-legacy", true),
+			architecture: "X86",
+			title: "BepInEx Mono X86 Legacy",
 			latestVersion: latestX86.release,
 		},
 	];
