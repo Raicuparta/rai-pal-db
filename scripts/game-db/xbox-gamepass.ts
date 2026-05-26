@@ -261,7 +261,7 @@ type IdsResponse = [
 	{
 		sigId: (typeof APIIds)["pc"];
 	},
-	...IdsResponseItem[]
+	...IdsResponseItem[],
 ];
 
 type PropertiesResponse = {
@@ -283,19 +283,22 @@ type PropertiesResponse = {
 
 async function fetchGameIDs(
 	passType: PassType,
-	market: Market
+	market: Market,
 ): Promise<string[]> {
 	console.log(
-		`Fetching ${passType} Game Pass game IDs for market "${market}"...`
+		`Fetching ${passType} Game Pass game IDs for market "${market}"...`,
 	);
 	return await fetch(
-		`https://catalog.gamepass.com/sigls/v2?id=${APIIds[passType]}&language=en-us&market=${market}`
+		`https://catalog.gamepass.com/sigls/v2?id=${
+			APIIds[passType]
+		}&language=en-us&market=${market}`,
 	)
 		.then((response) => response.json())
 		.then((data: IdsResponse) =>
 			data
 				.filter(
-					(entry) => entry != null && typeof entry === "object" && "id" in entry
+					(entry) =>
+						entry != null && typeof entry === "object" && "id" in entry,
 				)
 				.map((entry) => entry.id)
 		);
@@ -304,13 +307,13 @@ async function fetchGameIDs(
 async function fetchGameProperties(
 	gameIds: string[],
 	passType: PassType,
-	market: Market
+	market: Market,
 ) {
 	console.log(
-		`Fetching game properties for ${gameIds.length} ${passType} games for market "${market}"...`
+		`Fetching game properties for ${gameIds.length} ${passType} games for market "${market}"...`,
 	);
 	return await fetch(
-		`https://displaycatalog.mp.microsoft.com/v7.0/products?bigIds=${gameIds}&market=${market}&languages=en-us`
+		`https://displaycatalog.mp.microsoft.com/v7.0/products?bigIds=${gameIds}&market=${market}&languages=en-us`,
 	)
 		.then((response) => response.json())
 		.then((data: PropertiesResponse) => {
@@ -320,7 +323,7 @@ async function fetchGameProperties(
 
 async function fetchGames(
 	passType: PassType,
-	subscription: GameSubscription
+	subscription: GameSubscription,
 ): Promise<Game[]> {
 	const ids = await fetchGameIDs(passType, "US");
 	const properties = await fetchGameProperties(ids, passType, "US");
@@ -331,7 +334,7 @@ async function fetchGames(
 				Xbox: new Set([product.ProductId]),
 			},
 			subscriptions: [subscription],
-		})
+		}),
 	);
 }
 

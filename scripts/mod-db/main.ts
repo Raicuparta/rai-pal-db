@@ -9,28 +9,30 @@ import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
 type ModGetter = () => Promise<ModBase[]>;
 
 const modGetters: ModGetter[] = [
-  getBepinexMods,
-  getUevrMods,
-  getUe4ssMods,
+	getBepinexMods,
+	getUevrMods,
+	getUe4ssMods,
 ];
 
 const mods: Mod[] = (await Promise.all(modGetters.map((getter) => getter())))
-  .flat()
-  .map((modBase) => ({ ...modBase, hash: hash(modBase) }));
+	.flat()
+	.map((modBase) => ({ ...modBase, hash: hash(modBase) }));
 
 const json = stringify(
-  {
-    mods,
-  },
-  undefined,
-  2,
+	{
+		mods,
+	},
+	undefined,
+	2,
 );
 
 if (!json) {
-  throw new Error("Failed to convert mods output to JSON");
+	throw new Error("Failed to convert mods output to JSON");
 }
 
 await Deno.writeTextFile(
-  `../mod-db/${MOD_DATABASE_VERSION}/mods.json`,
-  json,
+	`../mod-db/${MOD_DATABASE_VERSION}/mods.json`,
+	json,
 );
+
+Deno.exit(0);

@@ -37,7 +37,7 @@ export function createDatabase(path: string, games: Game[]) {
 					externalId,
 					engine?.brand ?? null,
 					engine?.version ?? null,
-					game.subscriptions?.join(",") ?? null
+					game.subscriptions?.join(",") ?? null,
 				);
 			});
 		}

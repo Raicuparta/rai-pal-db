@@ -80,7 +80,7 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 
 	while (true) {
 		console.log(
-			`Fetching games for engine ${engineName} with offset ${offset}...`
+			`Fetching games for engine ${engineName} with offset ${offset}...`,
 		);
 
 		const params = new URLSearchParams({

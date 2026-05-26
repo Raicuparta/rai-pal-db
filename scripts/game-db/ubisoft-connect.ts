@@ -34,10 +34,10 @@ async function getApiURL(): Promise<URL> {
 	});
 
 	console.log(
-		`Found Algolia app ID: ${algoliaAppId} and API key: ${algoliaApiKey}`
+		`Found Algolia app ID: ${algoliaAppId} and API key: ${algoliaApiKey}`,
 	);
 	return new URL(
-		`https://${algoliaAppId}-dsn.algolia.net/1/indexes/production__us_ubisoft__products__en_US__release_date/query?&${params}`
+		`https://${algoliaAppId}-dsn.algolia.net/1/indexes/production__us_ubisoft__products__en_US__release_date/query?&${params}`,
 	);
 }
 
@@ -85,8 +85,8 @@ export async function fetchUbisoftGames(): Promise<Game[]> {
 				Ubisoft: new Set([hit.id]),
 			},
 			subscriptions: filterFalsy(
-				hit.partofSubscriptionOffer.map(getSubscription)
+				hit.partofSubscriptionOffer.map(getSubscription),
 			),
-		})
+		}),
 	);
 }

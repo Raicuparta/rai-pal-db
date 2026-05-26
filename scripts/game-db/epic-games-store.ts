@@ -14,7 +14,7 @@ export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
 	const items = (await response.json()) as Partial<EpicGamesStoreItem>[];
 	// The guy who put these on github added a funny {} item at the end, so it killed my script.
 	const nonNullItems = items.filter(
-		(item) => item !== null
+		(item) => item !== null,
 	) as EpicGamesStoreItem[];
 
 	return nonNullItems.map(
@@ -23,6 +23,6 @@ export async function fetchEpicGamesStoreGames(): Promise<Game[]> {
 			ids: {
 				Epic: new Set([item.id!]),
 			},
-		})
+		}),
 	);
 }

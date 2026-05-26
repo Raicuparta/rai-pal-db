@@ -2,19 +2,19 @@ import { ModBase } from "../mod.ts";
 
 // deno-lint-ignore require-await
 export async function getUe4ssMods(): Promise<ModBase[]> {
-  return [
-    {
-      id: "ue4ss",
-      engine: "Unreal",
-      title: "UE4SS",
-      author: "UE4SS-RE",
-      sourceCode: "https://github.com/UE4SS-RE/RE-UE4SS",
-      description: "Scripting and modding framework for Unreal Engine games.",
-      latestVersion: {
-        id: "v3.0.1-949",
-        url:
-          "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-949-gdd6777a8.zip",
-      },
-    },
-  ];
+	return [
+		{
+			id: "ue4ss",
+			engine: "Unreal",
+			title: "UE4SS",
+			author: "UE4SS-RE",
+			sourceCode: "https://github.com/UE4SS-RE/RE-UE4SS",
+			description: "Scripting and modding framework for Unreal Engine games.",
+			latestVersion: {
+				id: "v3.0.1-949",
+				url:
+					"https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-949-gdd6777a8.zip",
+			},
+		},
+	];
 }

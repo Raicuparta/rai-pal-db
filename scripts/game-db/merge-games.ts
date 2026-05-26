@@ -1,4 +1,4 @@
-import { Game, IdMap, ProviderId, Engine, GameSubscription } from "./main.ts";
+import { Engine, Game, GameSubscription, IdMap, ProviderId } from "./main.ts";
 import { addNormalizedTitles } from "./normalized-title.ts";
 
 function findConnectedComponents(games: Game[]): Game[][] {
@@ -48,10 +48,12 @@ function findConnectedComponents(games: Game[]): Game[][] {
 
 function mergeIds(idsA: IdMap, idsB: IdMap): IdMap {
 	const mergedIds: IdMap = {};
-	for (const idKind of new Set([
-		...Object.keys(idsA),
-		...Object.keys(idsB),
-	] as ProviderId[])) {
+	for (
+		const idKind of new Set([
+			...Object.keys(idsA),
+			...Object.keys(idsB),
+		] as ProviderId[])
+	) {
 		const idSetA = idsA[idKind] || new Set();
 		const idSetB = idsB[idKind] || new Set();
 		mergedIds[idKind] = new Set([...idSetA, ...idSetB]);
@@ -61,7 +63,7 @@ function mergeIds(idsA: IdMap, idsB: IdMap): IdMap {
 
 function mergeAllEngines(
 	enginesA: Engine[] | undefined,
-	enginesB: Engine[] | undefined
+	enginesB: Engine[] | undefined,
 ): Engine[] | undefined {
 	const mergedEngines: Engine[] = [];
 	const allEngines = [...(enginesA ?? []), ...(enginesB ?? [])];
@@ -70,7 +72,7 @@ function mergeAllEngines(
 			mergedEngines.some(
 				(mergedEngine) =>
 					mergedEngine.brand === engine.brand &&
-					mergedEngine.version === engine.version
+					mergedEngine.version === engine.version,
 			)
 		) {
 			continue;
@@ -85,7 +87,7 @@ function mergeAllEngines(
 
 		const engineWithSameBrand = mergedEngines.find(
 			(mergedEngine) =>
-				mergedEngine.brand === engine.brand && !mergedEngine.version
+				mergedEngine.brand === engine.brand && !mergedEngine.version,
 		);
 		if (engineWithSameBrand) {
 			engineWithSameBrand.version = engine.version;
@@ -102,7 +104,7 @@ function mergeAllEngines(
 
 export function mergeSubscriptions(
 	subscriptionsA?: GameSubscription[],
-	subscriptionsB?: GameSubscription[]
+	subscriptionsB?: GameSubscription[],
 ): GameSubscription[] | undefined {
 	if (!subscriptionsA) return subscriptionsB;
 	if (!subscriptionsB) return subscriptionsA;
@@ -123,7 +125,7 @@ export function mergeGames(games: Game[]): Game[] {
 				engines: mergeAllEngines(mergedGame.engines, game.engines),
 				subscriptions: mergeSubscriptions(
 					mergedGame.subscriptions,
-					game.subscriptions
+					game.subscriptions,
 				),
 			};
 		}

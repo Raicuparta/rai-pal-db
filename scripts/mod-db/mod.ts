@@ -177,7 +177,13 @@ export interface Mod extends ModBase {
 
 export type UnityBackend = "Il2Cpp" | "Mono";
 
-export type Architecture = "X64" | "X86";
+const ARCHITECTURES = ["X64", "X86"] as const;
+
+export type Architecture = typeof ARCHITECTURES[number];
+
+export function isArchitecture(value: string): value is Architecture {
+	return ARCHITECTURES.includes(value as Architecture);
+}
 
 export type Engine = "Unity" | "Unreal" | "Godot";
 

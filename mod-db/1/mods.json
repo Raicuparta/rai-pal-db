@@ -50,96 +50,6 @@
       "unityBackend": "Il2Cpp"
     },
     {
-      "architecture": "X64",
-      "author": "BepInEx",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-        "destinationType": "File"
-      },
-      "description": "BepInEx stable Mono build for X64 games.",
-      "engine": "Unity",
-      "hash": "e49924a89dad86380b7489bf263dfe22c5ab2562c7e365ee7a770fdcb832dcd7",
-      "id": "bepinex-mono-x64",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
-            "source": "winhttp.dll"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
-        "wineDllOverrides": [
-          "winhttp"
-        ],
-        "write": [
-          {
-            "content": "[General]\nenabled=true\ntarget_assembly={{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
-            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
-          },
-          {
-            "content": "[Logging.Console]\nEnabled = true",
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
-          }
-        ]
-      },
-      "latestVersion": {
-        "id": "5.4.23.5",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
-      },
-      "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Mono X64",
-      "unityBackend": "Mono"
-    },
-    {
-      "architecture": "X86",
-      "author": "BepInEx",
-      "config": {
-        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
-        "destinationType": "File"
-      },
-      "description": "BepInEx stable Mono build for X86 games.",
-      "engine": "Unity",
-      "hash": "9d43efcc48f5d82c01218da8f6fa8dc0ba811a8c9475a00752898b82bd4a2232",
-      "id": "bepinex-mono-x86",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
-            "source": "winhttp.dll"
-          }
-        ],
-        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
-        "wineDllOverrides": [
-          "winhttp"
-        ],
-        "write": [
-          {
-            "content": "[General]\nenabled=true\ntarget_assembly={{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
-            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
-          },
-          {
-            "content": "[Logging.Console]\nEnabled = true",
-            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
-          }
-        ]
-      },
-      "latestVersion": {
-        "id": "5.4.23.5",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
-      },
-      "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Mono X86",
-      "unityBackend": "Mono"
-    },
-    {
       "architecture": "X86",
       "author": "BepInEx",
       "config": {
@@ -187,6 +97,96 @@
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X86",
       "unityBackend": "Il2Cpp"
+    },
+    {
+      "architecture": "X64",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "Mod loader for Unity mods.",
+      "engine": "Unity",
+      "hash": "65a1ead174cba488ffedecf15485c730c91466c2dab6656a65900c71fc873119",
+      "id": "bepinex-mono-x64",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
+            "source": "winhttp.dll"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
+        "wineDllOverrides": [
+          "winhttp"
+        ],
+        "write": [
+          {
+            "content": "[General]\nenabled=true\ntarget_assembly={{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
+            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+          },
+          {
+            "content": "[Logging.Console]\nEnabled = true",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+          }
+        ]
+      },
+      "latestVersion": {
+        "id": "5.4.23.5",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
+      },
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Mono X64",
+      "unityBackend": "Mono"
+    },
+    {
+      "architecture": "X86",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "Mod loader for Unity mods.",
+      "engine": "Unity",
+      "hash": "dac37c631ae7fde5e96b31ab7cb84d6f19b1fdb4137f0d52ca368aaecab77cbb",
+      "id": "bepinex-mono-x86",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
+            "source": "winhttp.dll"
+          }
+        ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/bepinex/BepInEx",
+        "wineDllOverrides": [
+          "winhttp"
+        ],
+        "write": [
+          {
+            "content": "[General]\nenabled=true\ntarget_assembly={{InstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
+            "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
+          },
+          {
+            "content": "[Logging.Console]\nEnabled = true",
+            "destination": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
+          }
+        ]
+      },
+      "latestVersion": {
+        "id": "5.4.23.5",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
+      },
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Mono X86",
+      "unityBackend": "Mono"
     },
     {
       "author": "Raicuparta",

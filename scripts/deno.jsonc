@@ -19,4 +19,8 @@
 		"update-mod-db": "deno check && deno run --allow-net --allow-read --allow-write mod-db/main.ts",
 		"test": "deno run --allow-net --allow-read --allow-write test.ts",
 	},
+
+	"fmt": {
+		"useTabs": true,
+	},
 }

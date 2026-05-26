@@ -73,7 +73,7 @@ async function main(pretty: boolean) {
 			}
 
 			console.error(
-				`Failed to fetch games: ${result.reason} ${result.reason.stack}`
+				`Failed to fetch games: ${result.reason} ${result.reason.stack}`,
 			);
 			return [];
 		})
@@ -82,14 +82,14 @@ async function main(pretty: boolean) {
 	const mergedGames = mergeGames(games);
 
 	const gamesWithEngines = mergedGames.filter(
-		(game) => game.engines && game.engines.length > 0
+		(game) => game.engines && game.engines.length > 0,
 	);
 
 	createDatabase(join(folder, "games.db"), gamesWithEngines);
 
 	await Deno.writeTextFile(
 		outputPath,
-		JSON.stringify(gamesWithEngines, jsonReplacer, pretty ? 2 : undefined)
+		JSON.stringify(gamesWithEngines, jsonReplacer, pretty ? 2 : undefined),
 	);
 }
 

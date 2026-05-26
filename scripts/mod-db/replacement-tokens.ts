@@ -8,36 +8,38 @@ function makeTokens<const T extends Record<string, string>>(obj: T) {
 /**
  * Tokens used for string replacement.
  * Rai Pal replaces these tokens with values depending on current game, mod, system, etc.
- * */
-export const token = makeTokens({
-	/** Path to the folder where mods are installed for the current game. */
-	InstalledModsPath: "",
+ */
+export const token = makeTokens(
+	{
+		/** Path to the folder where mods are installed for the current game. */
+		InstalledModsPath: "",
 
-	/** Path to the folder where Rai Pal stores downloaded (but not installed) mods */
-	LocalModsPath: "",
+		/** Path to the folder where Rai Pal stores downloaded (but not installed) mods */
+		LocalModsPath: "",
 
-	/** The folder containing the game executable. */
-	GameExecutableFolderPath: "",
+		/** The folder containing the game executable. */
+		GameExecutableFolderPath: "",
 
-	/** The full path to the game executable. */
-	GameExecutablePath: "",
+		/** The full path to the game executable. */
+		GameExecutablePath: "",
 
-	/** The name of the game executable, with the extension. (e.g., MyGame.exe) */
-	GameExecutableName: "",
+		/** The name of the game executable, with the extension. (e.g., MyGame.exe) */
+		GameExecutableName: "",
 
-	/** The name of the game executable, WITHOUT the extension. (e.g., MyGame) */
-	GameExecutableNameWithoutExtension: "",
+		/** The name of the game executable, WITHOUT the extension. (e.g., MyGame) */
+		GameExecutableNameWithoutExtension: "",
 
-	/** Entire json of the game as provided by Rai Pal */
-	GameJson: "",
+		/** Entire json of the game as provided by Rai Pal */
+		GameJson: "",
 
-	GameStartCommand: "",
+		GameStartCommand: "",
 
-	GameStartCommandArgs: "",
+		GameStartCommandArgs: "",
 
-	/**
-	 * On Windows, this would be %APPDATA% (e.g., C:\Users\Username\AppData\Roaming).
-	 * On Linux, this would be $XDG_CONFIG_HOME (e.g., /home/username/.config)
-	 */
-	RoamingAppData: "",
-} as const);
+		/**
+		 * On Windows, this would be %APPDATA% (e.g., C:\Users\Username\AppData\Roaming).
+		 * On Linux, this would be $XDG_CONFIG_HOME (e.g., /home/username/.config)
+		 */
+		RoamingAppData: "",
+	} as const,
+);
