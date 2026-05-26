@@ -583,15 +583,15 @@
       "author": "ManlyMarco",
       "dependencies": [
         {
-          "modId": "bepinex-mono-x64"
+          "modId": "bepinex-il2cpp-x64"
         },
         {
-          "modId": "bepinex-mono-x86"
+          "modId": "bepinex-il2cpp-x86"
         }
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "engine": "Unity",
-      "hash": "d942e32d99803522e33f581e2a5b4280dbca14c0cb8385d560b0239594a29734",
+      "hash": "5544656dee6ef350209b36e3e669c62639c8e5dfa2fa81074c3e459bfb84a388",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -608,7 +608,7 @@
       },
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",
-      "unityBackend": "Mono"
+      "unityBackend": "Il2Cpp"
     },
     {
       "author": "praydog",
