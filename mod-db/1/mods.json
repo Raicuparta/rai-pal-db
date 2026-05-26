@@ -626,11 +626,11 @@
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "b435e9b14da15754b9583c5c7ecc0bead725c5a2aa3b44fbfb49088c44239961",
+      "hash": "d9bc8abbfdf9d7821f8062c1b1c7a233ac794bfc9fd2dbae47b02daa1eac462e",
       "id": "uevr-nightly",
       "latestVersion": {
-        "id": "nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26",
-        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26/uevr.zip"
+        "id": "nightly-01133-38c73f314ac61a1b6fabc37fba75c4149d3a8823",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01133-38c73f314ac61a1b6fabc37fba75c4149d3a8823/uevr.zip"
       },
       "runForGame": {
         "args": [

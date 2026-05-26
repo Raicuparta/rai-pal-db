@@ -1,38 +1,29 @@
+import { getLatestFromGitHub } from "../github.ts";
 import { ModBase } from "../mod.ts";
 import { uevrBase } from "./uevr-base.ts";
 
-// deno-lint-ignore require-await
 export async function getUevrMods(): Promise<ModBase[]> {
 	return [
 		{
 			...uevrBase("uevr"),
 			title: "UEVR",
-			// github: {
-			// 	assetName: "UEVR.zip",
-			// 	repo: "UEVR",
-			// 	user: "praydog",
-			// },
 			description: "Universal VR mod for Unreal Engine games.",
-			latestVersion: {
-				id: "1.05",
-				url: "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip",
-			},
+			latestVersion: await getLatestFromGitHub({
+				owner: "praydog",
+				repo: "UEVR",
+				assetName: "UEVR.zip",
+			}),
 		},
 		{
 			...uevrBase("uevr-nightly"),
 			title: "UEVR Nightly",
-			// github: {
-			// 	assetName: "uevr.zip",
-			// 	repo: "UEVR-nightly",
-			// 	user: "praydog",
-			// },
 			description:
 				"UEVR automatically built from the latest, potentially untested code changes.",
-			latestVersion: {
-				id: "nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26",
-				url:
-					"https://github.com/praydog/UEVR-nightly/releases/download/nightly-01127-6f66affc01cea22e4b1b5a47986e1ade80ccbd26/uevr.zip",
-			},
+			latestVersion: await getLatestFromGitHub({
+				owner: "praydog",
+				repo: "UEVR-nightly",
+				assetName: "uevr.zip",
+			}),
 		},
 		{
 			id: "dotnet-desktop-runtime-win-x64",
