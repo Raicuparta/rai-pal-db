@@ -7,9 +7,17 @@
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "970e3938bb3dbe60996997b752c6deb76353160654ce44e81457d27ade8589de",
+      "hash": "d61d06f966f17f784c6e2021fa5b6c6074b9ace7ce9035c862d954bcbc859662",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -52,9 +60,17 @@
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "0ccd01288e341e35bc4ddd472a0e849c03074db7abe0ce92af221d878dd7eccd",
+      "hash": "2323563bb3519c8769aca666292c1b5a95c75153768b08658114864fa84e1fd1",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -97,9 +113,17 @@
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "7b3c726c269182bf030a30134eb4f244e33a41b79b45c10a5063268104f3be68",
+      "hash": "5facab633940e1c218d87416668c7ee9f6b4b59f2ea1dd8686e35740bdaeaa5f",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -138,9 +162,17 @@
         "destinationPath": "{{InstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "engine": "Unity",
-      "hash": "8161d948f014446f4e8b237573ee8c63c462625a5db9f96da2aa31c15dffacf5",
+      "hash": "a1e89e7e28121a877634ffc20bc89f3b601da6e5a7f537f4bb2700facfa44284",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
