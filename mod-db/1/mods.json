@@ -1002,8 +1002,29 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "engine": "Unreal",
-      "hash": "526924bf83c8d3008c94d99af1a2a3602a80b2fe2c9c0f74e978248a916f3d52",
+      "hash": "8470b87056ba8c14d4d687a0177da24e2cddf1b9094e1d6f66c936e5007af241",
       "id": "ue4ss",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{InstalledModsPath}}/ue4ss",
+            "source": "ue4ss"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/dwmapi.dll",
+            "source": "dwmapi.dll"
+          }
+        ],
+        "wineDllOverrides": [
+          "dwmapi"
+        ],
+        "write": [
+          {
+            "content": "{{InstalledModsPath}}/ue4ss/UE4SS.dll",
+            "destination": "{{GameExecutableFolderPath}}/override.txt"
+          }
+        ]
+      },
       "latestVersion": {
         "id": "v3.0.1-952",
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-952-ge09d3821.zip"

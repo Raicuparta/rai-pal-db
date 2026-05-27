@@ -1,5 +1,6 @@
 import { ModBase, Release } from "../mod.ts";
 import { Octokit } from "octokit";
+import { token } from "../replacement-tokens.ts";
 
 export async function getUe4ssMods(): Promise<ModBase[]> {
 	return [
@@ -11,6 +12,25 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 			sourceCode: "https://github.com/UE4SS-RE/RE-UE4SS",
 			description: "Scripting and modding framework for Unreal Engine games.",
 			latestVersion: await getLatestUe4ss(),
+			install: {
+				extract: [
+					{
+						source: "ue4ss",
+						destination: `${token.InstalledModsPath}/ue4ss`,
+					},
+					{
+						source: "dwmapi.dll",
+						destination: `${token.GameExecutableFolderPath}/dwmapi.dll`,
+					},
+				],
+				write: [
+					{
+						content: `${token.InstalledModsPath}/ue4ss/UE4SS.dll`,
+						destination: `${token.GameExecutableFolderPath}/override.txt`,
+					},
+				],
+				wineDllOverrides: ["dwmapi"],
+			},
 		},
 	];
 }
