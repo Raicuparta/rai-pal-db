@@ -1,7 +1,6 @@
 import { DOMParser } from "@b-fuze/deno-dom";
 import { Architecture, isArchitecture, ModBase, Release } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { getBepinexConfigContent } from "./bepinex-config.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
 const BLEEDING_BUILD_URL_BASE =
@@ -12,7 +11,6 @@ const BLEEDING_BUILD_URL_BASE =
  */
 function bepinexIl2cppLoaderBase(
 	modId: string,
-	isLegacy: boolean,
 ): Omit<ModBase, "title" | "latestVersion"> {
 	return {
 		id: modId,
@@ -50,11 +48,6 @@ coreclr_path = ${token.InstalledModsPath}/bepinex/dotnet/coreclr.dll
 corlib_dir = ${token.InstalledModsPath}/bepinex/dotnet
 `,
 					destination: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
-				},
-				{
-					content: getBepinexConfigContent(isLegacy),
-					destination:
-						`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 				},
 			],
 			wineDllOverrides: ["winhttp"],
@@ -147,52 +140,16 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 
 	return [
 		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64", false),
+			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64"),
 			architecture: "X64",
 			title: "BepInEx Il2Cpp X64",
 			latestVersion: latestX64.release,
-			engineVersionRange: {
-				minimum: {
-					major: 5,
-					minor: 5,
-				},
-			},
 		},
 		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86", false),
+			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86"),
 			architecture: "X86",
 			title: "BepInEx Il2Cpp X86",
 			latestVersion: latestX86.release,
-			engineVersionRange: {
-				minimum: {
-					major: 5,
-					minor: 5,
-				},
-			},
-		},
-		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64-legacy", true),
-			architecture: "X64",
-			title: "BepInEx Il2Cpp X64 Legacy",
-			latestVersion: latestX64.release,
-			engineVersionRange: {
-				maximum: {
-					major: 5,
-					minor: 4,
-				},
-			},
-		},
-		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86-legacy", true),
-			architecture: "X86",
-			title: "BepInEx Il2Cpp X86 Legacy",
-			latestVersion: latestX86.release,
-			engineVersionRange: {
-				minimum: {
-					major: 5,
-					minor: 4,
-				},
-			},
 		},
 	];
 }

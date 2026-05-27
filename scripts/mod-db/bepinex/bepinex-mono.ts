@@ -1,7 +1,6 @@
 import { Architecture, isArchitecture, ModBase, Release } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { Octokit } from "octokit";
-import { getBepinexConfigContent } from "./bepinex-config.ts";
 
 const repository = "BepInEx/BepInEx";
 const [owner, repo] = repository.split("/");
@@ -12,7 +11,6 @@ const octokit = new Octokit();
  */
 function bepinexMonoLoaderBase(
 	modId: string,
-	isLegacy: boolean,
 ): Omit<ModBase, "title" | "latestVersion"> {
 	return {
 		id: modId,
@@ -44,11 +42,6 @@ ignore_disable_switch=true
 dll_search_path_override=
 `,
 					destination: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
-				},
-				{
-					content: getBepinexConfigContent(isLegacy),
-					destination:
-						`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 				},
 			],
 			wineDllOverrides: ["winhttp"],
@@ -162,52 +155,16 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 
 	return [
 		{
-			...bepinexMonoLoaderBase("bepinex-mono-x64", false),
+			...bepinexMonoLoaderBase("bepinex-mono-x64"),
 			architecture: "X64",
 			title: "BepInEx Mono X64",
 			latestVersion: latestX64.release,
-			engineVersionRange: {
-				minimum: {
-					major: 5,
-					minor: 5,
-				},
-			},
 		},
 		{
-			...bepinexMonoLoaderBase("bepinex-mono-x86", false),
+			...bepinexMonoLoaderBase("bepinex-mono-x86"),
 			architecture: "X86",
 			title: "BepInEx Mono X86",
 			latestVersion: latestX86.release,
-			engineVersionRange: {
-				minimum: {
-					major: 5,
-					minor: 5,
-				},
-			},
-		},
-		{
-			...bepinexMonoLoaderBase("bepinex-mono-x64-legacy", true),
-			architecture: "X64",
-			title: "BepInEx Mono X64 Legacy",
-			latestVersion: latestX64.release,
-			engineVersionRange: {
-				maximum: {
-					major: 5,
-					minor: 4,
-				},
-			},
-		},
-		{
-			...bepinexMonoLoaderBase("bepinex-mono-x86-legacy", true),
-			architecture: "X86",
-			title: "BepInEx Mono X86 Legacy",
-			latestVersion: latestX86.release,
-			engineVersionRange: {
-				maximum: {
-					major: 5,
-					minor: 4,
-				},
-			},
 		},
 	];
 }

@@ -63,7 +63,7 @@ export interface ModBase {
 	/**
 	 * Latest downloadable version of the mod.
 	 */
-	latestVersion: Release;
+	latestVersion?: Release;
 
 	engineVersionRange?: {
 		minimum?: EngineVersion;

@@ -11,16 +11,16 @@
 		"#types/": "./types/generated/",
 		"#loader-db/": "./loader-db/",
 		"#game-db/": "./game-db/",
-		"#common/": "./common/",
+		"#common/": "./common/"
 	},
 
 	"tasks": {
 		"update-game-db": "deno check && deno run --allow-net --allow-read --allow-write game-db/main.ts",
 		"update-mod-db": "deno check && deno run --allow-net --allow-read --allow-write mod-db/main.ts",
-		"test": "deno run --allow-net --allow-read --allow-write test.ts",
+		"test": "deno run --allow-net --allow-read --allow-write test.ts"
 	},
 
 	"fmt": {
-		"useTabs": true,
-	},
+		"useTabs": true
+	}
 }
