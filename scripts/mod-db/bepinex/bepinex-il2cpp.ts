@@ -11,7 +11,7 @@ const BLEEDING_BUILD_URL_BASE =
  */
 function bepinexIl2cppLoaderBase(
 	modId: string,
-): Omit<ModBase, "title" | "latestVersion"> {
+): Omit<ModBase, "title" | "download"> {
 	return {
 		id: modId,
 		engine: "Unity",

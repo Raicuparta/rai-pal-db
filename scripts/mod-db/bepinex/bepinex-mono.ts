@@ -11,7 +11,7 @@ const octokit = new Octokit();
  */
 function bepinexMonoLoaderBase(
 	modId: string,
-): Omit<ModBase, "title" | "latestVersion"> {
+): Omit<ModBase, "title" | "download"> {
 	return {
 		id: modId,
 		description: "Mod loader for Unity mods.",

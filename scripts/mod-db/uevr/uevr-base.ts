@@ -3,7 +3,7 @@ import { token } from "../replacement-tokens.ts";
 
 export function uevrBase(
 	id: string,
-): Omit<ModBase, "title" | "description" | "latestVersion"> {
+): Omit<ModBase, "title" | "description" | "download"> {
 	return {
 		id,
 		author: "praydog",
