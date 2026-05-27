@@ -11,6 +11,7 @@ export function getGepInExConfigs(): ModBase[] {
 			author: "BepInEx",
 			description: "Default BepInEx config",
 			sourceCode: "https://github.com/BepInEx/BepInEx",
+			engine: "Unity",
 			engineVersionRange: {
 				minimum: {
 					major: 5,
@@ -34,6 +35,7 @@ Enabled = true`,
 			author: "BepInEx",
 			description: "Default BepInEx config",
 			sourceCode: "https://github.com/BepInEx/BepInEx",
+			engine: "Unity",
 			engineVersionRange: {
 				maximum: {
 					major: 5,
