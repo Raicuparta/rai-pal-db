@@ -11,7 +11,7 @@ export async function getRuntimeUnityEditorMods() {
 			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
-			latestVersion: await getLatestFromGitHub({
+			download: await getLatestFromGitHub({
 				owner: "ManlyMarco",
 				repo: "RuntimeUnityEditor",
 				selectAssetName: (assetName) =>
@@ -29,7 +29,7 @@ export async function getRuntimeUnityEditorMods() {
 			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
-			latestVersion: await getLatestFromGitHub({
+			download: await getLatestFromGitHub({
 				owner: "ManlyMarco",
 				repo: "RuntimeUnityEditor",
 				selectAssetName: (assetName) =>

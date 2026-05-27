@@ -11,7 +11,7 @@ export async function getUnityExplorerMods() {
 			sourceCode: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
-			latestVersion: await getLatestFromGitHub({
+			download: await getLatestFromGitHub({
 				owner: "yukieiji",
 				repo: "UnityExplorer",
 				selectAssetName: (assetName) =>
@@ -26,7 +26,7 @@ export async function getUnityExplorerMods() {
 			sourceCode: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games.",
-			latestVersion: await getLatestFromGitHub({
+			download: await getLatestFromGitHub({
 				owner: "yukieiji",
 				repo: "UnityExplorer",
 				selectAssetName: (assetName) =>

@@ -63,7 +63,7 @@ export interface ModBase {
 	/**
 	 * Latest downloadable version of the mod.
 	 */
-	latestVersion?: Release;
+	download?: ModDownload;
 
 	engineVersionRange?: {
 		minimum?: EngineVersion;
@@ -189,7 +189,7 @@ export type Engine = "Unity" | "Unreal" | "Godot";
 
 export type OperatingSystem = "Windows" | "Linux";
 
-export interface Release {
+export interface ModDownload {
 	/**
 	 * String that uniquely identifies this release when compared with other releases of the same mod.
 	 */

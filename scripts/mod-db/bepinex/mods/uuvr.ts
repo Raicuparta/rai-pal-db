@@ -17,7 +17,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 					major: 2019,
 				},
 			},
-			latestVersion: {
+			download: {
 				id: "0.3.1",
 				url:
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip",
@@ -38,7 +38,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 					major: 2019,
 				},
 			},
-			latestVersion: {
+			download: {
 				id: "0.3.1",
 				url:
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip",
@@ -60,7 +60,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 					minor: 4,
 				},
 			},
-			latestVersion: {
+			download: {
 				id: "0.4.0",
 				url:
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip",

@@ -15,7 +15,7 @@ export async function getEveryoneMods() {
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/everyone",
 			description: "Mono version. Work in progress! F3 to chat.",
-			latestVersion: {
+			download: {
 				id: "0.1.0",
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip",
@@ -30,7 +30,7 @@ export async function getEveryoneMods() {
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/everyone",
 			description: "IL2CPP version. Work in progress! F3 to chat.",
-			latestVersion: {
+			download: {
 				id: "0.1.0",
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
@@ -51,7 +51,7 @@ export async function getEveryoneMods() {
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/everyone",
 			description: "Mono Legacy version. Work in progress! F3 to chat.",
-			latestVersion: {
+			download: {
 				id: "0.1.0",
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip",

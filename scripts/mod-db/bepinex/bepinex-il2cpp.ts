@@ -1,5 +1,5 @@
 import { DOMParser } from "@b-fuze/deno-dom";
-import { Architecture, isArchitecture, ModBase, Release } from "../mod.ts";
+import { Architecture, isArchitecture, ModBase, ModDownload } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
@@ -80,7 +80,7 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 
 	const releaseElements = doc.getElementsByClassName("artifact-item");
 	const latestByArch: Partial<
-		Record<Architecture, { timestamp: number; release: Release }>
+		Record<Architecture, { timestamp: number; release: ModDownload }>
 	> = {};
 
 	for (const releaseElement of releaseElements) {
@@ -151,13 +151,13 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64"),
 			architecture: "X64",
 			title: "BepInEx Il2Cpp X64",
-			latestVersion: latestX64.release,
+			download: latestX64.release,
 		},
 		{
 			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86"),
 			architecture: "X86",
 			title: "BepInEx Il2Cpp X86",
-			latestVersion: latestX86.release,
+			download: latestX86.release,
 		},
 	];
 }

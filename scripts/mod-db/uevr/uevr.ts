@@ -8,7 +8,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			...uevrBase("uevr"),
 			title: "UEVR",
 			description: "Universal VR mod for Unreal Engine games.",
-			latestVersion: await getLatestFromGitHub({
+			download: await getLatestFromGitHub({
 				owner: "praydog",
 				repo: "UEVR",
 				selectAssetName: (assetName) => assetName === "UEVR.zip",
@@ -19,7 +19,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			title: "UEVR Nightly",
 			description:
 				"UEVR automatically built from the latest, potentially untested code changes.",
-			latestVersion: await getLatestFromGitHub({
+			download: await getLatestFromGitHub({
 				owner: "praydog",
 				repo: "UEVR-nightly",
 				selectAssetName: (assetName) => assetName === "uevr.zip",
@@ -32,7 +32,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "bill gates himself",
 			description: "Required for running UEVR via Wine",
 			sourceCode: "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
-			latestVersion: {
+			download: {
 				id: "6.0.36",
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",

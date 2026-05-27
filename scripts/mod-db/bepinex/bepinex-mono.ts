@@ -1,4 +1,4 @@
-import { Architecture, isArchitecture, ModBase, Release } from "../mod.ts";
+import { Architecture, isArchitecture, ModBase, ModDownload } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { Octokit } from "octokit";
 
@@ -122,7 +122,7 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 	const githubReleases = response.data;
 
 	const latestByArch: Partial<
-		Record<Architecture, { timestamp: number; release: Release }>
+		Record<Architecture, { timestamp: number; release: ModDownload }>
 	> = {};
 
 	for (const gitHubRelease of githubReleases) {
@@ -166,13 +166,13 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 			...bepinexMonoLoaderBase("bepinex-mono-x64"),
 			architecture: "X64",
 			title: "BepInEx Mono X64",
-			latestVersion: latestX64.release,
+			download: latestX64.release,
 		},
 		{
 			...bepinexMonoLoaderBase("bepinex-mono-x86"),
 			architecture: "X86",
 			title: "BepInEx Mono X86",
-			latestVersion: latestX86.release,
+			download: latestX86.release,
 		},
 	];
 }

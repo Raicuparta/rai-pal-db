@@ -1,4 +1,4 @@
-import { ModBase, Release } from "../mod.ts";
+import { ModBase, ModDownload } from "../mod.ts";
 import { Octokit } from "octokit";
 import { token } from "../replacement-tokens.ts";
 
@@ -11,7 +11,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 			author: "UE4SS-RE",
 			sourceCode: "https://github.com/UE4SS-RE/RE-UE4SS",
 			description: "Scripting and modding framework for Unreal Engine games.",
-			latestVersion: await getLatestUe4ss(),
+			download: await getLatestUe4ss(),
 			install: {
 				extract: [
 					{
@@ -38,7 +38,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 const octokit = new Octokit();
 const VERSION_PATTERN = /^UE4SS_(v[\d.]+\-\d+)[\-\w]*\.zip$/;
 
-export async function getLatestUe4ss(): Promise<Release> {
+export async function getLatestUe4ss(): Promise<ModDownload> {
 	const response = await octokit.rest.repos.getReleaseByTag({
 		owner: "UE4SS-RE",
 		repo: "RE-UE4SS",

@@ -11,7 +11,7 @@ export async function getConfigManagerMods() {
 			sourceCode: "https://github.com/Vapok/BepInExConfigManager",
 			description:
 				"Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
-			latestVersion: {
+			download: {
 				id: "1.0.0",
 				url:
 					"https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip",
@@ -25,7 +25,7 @@ export async function getConfigManagerMods() {
 			sourceCode: "https://github.com/sinai-dev/BepInExConfigManager",
 			description:
 				"Press F5 to show an in-game menu for changing mod settings. Use this with UUVR.",
-			latestVersion: {
+			download: {
 				id: "1.3.0",
 				url:
 					"https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip",

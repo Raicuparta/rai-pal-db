@@ -1,5 +1,5 @@
 import { Octokit } from "octokit";
-import { Release } from "./mod.ts";
+import { ModDownload } from "./mod.ts";
 
 type Params = {
 	owner: string;
@@ -10,7 +10,9 @@ type Params = {
 
 const octokit = new Octokit();
 
-export async function getLatestFromGitHub(params: Params): Promise<Release> {
+export async function getLatestFromGitHub(
+	params: Params,
+): Promise<ModDownload> {
 	const response = await octokit.rest.repos.getLatestRelease({
 		owner: params.owner,
 		repo: params.repo,
