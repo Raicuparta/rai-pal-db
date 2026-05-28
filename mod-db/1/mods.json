@@ -760,7 +760,7 @@
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-953-gb872ad11.zip"
       },
       "engine": "Unreal",
-      "hash": "31c56783b9cc7559fc43c7cdd506719ea874035a45b190f7472e8f483b9f649b",
+      "hash": "1ea9c010beec384db09be3e9068b8c25960bbd57e7de8bf9edea4919b5e9e594",
       "id": "ue4ss",
       "install": {
         "extract": [
@@ -773,6 +773,7 @@
             "source": "dwmapi.dll"
           }
         ],
+        "mainInstalledFolderPath": "{{InstalledModsPath}}/ue4ss",
         "wineDllOverrides": [
           "dwmapi"
         ],

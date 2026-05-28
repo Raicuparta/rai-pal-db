@@ -30,6 +30,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 					},
 				],
 				wineDllOverrides: ["dwmapi"],
+				mainInstalledFolderPath: `${token.InstalledModsPath}/ue4ss`,
 			},
 		},
 	];
