@@ -207,13 +207,14 @@
     {
       "author": "BepInEx",
       "description": "Default BepInEx config",
+      "engine": "Unity",
       "engineVersionRange": {
         "minimum": {
           "major": 5,
           "minor": 5
         }
       },
-      "hash": "ff7a3882bd3842cf877bcd435b2552022c1fc40fca54bdc0f0dbf12ef00c2c2f",
+      "hash": "721f6a12ba08a7bdd42ea50dc9b801cdaecedaeb7058624a7d35c522107d510a",
       "id": "bepinex-config-modern",
       "install": {
         "write": [
@@ -229,13 +230,14 @@
     {
       "author": "BepInEx",
       "description": "Default BepInEx config",
+      "engine": "Unity",
       "engineVersionRange": {
         "maximum": {
           "major": 5,
           "minor": 4
         }
       },
-      "hash": "f5a1b718edeef71120d15279780a96e87e0d903cd631861bb0052848ed4f48d2",
+      "hash": "11b13859515287b744c1a9e8cbcf154586e3fcccfa05529cc57e14dceb4d3df8",
       "id": "bepinex-config-legacy",
       "install": {
         "write": [
