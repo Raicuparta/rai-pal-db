@@ -690,7 +690,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "59d6ddd9acf1ba186e93439fca59c8550aea42b5de7f71cd7b296dc088f05507",
+      "hash": "727b846ad417cfe0d06c9d337e157b978d94bdd19546183bb77926e1bb243969",
       "id": "uevr",
       "install": {
         "extract": [
@@ -705,7 +705,7 @@
           "--attach={{GameExecutableName}}"
         ],
         "os": "Windows",
-        "path": "UEVRInjector.exe",
+        "path": "{{LocalModsPath}}/UEVRInjector.exe",
         "wineEnvironment": {
           "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
         }
@@ -731,7 +731,7 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "0a8de8dc5ec1386191e8cda97de8741924e0a07ca5c1e4c31a417213956e305d",
+      "hash": "0510eda22a05698f7580185c28f3ad602684d9af1410c002bbc513dd582f5caa",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -746,7 +746,7 @@
           "--attach={{GameExecutableName}}"
         ],
         "os": "Windows",
-        "path": "UEVRInjector.exe",
+        "path": "{{LocalModsPath}}/UEVRInjector.exe",
         "wineEnvironment": {
           "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
         }
