@@ -1,6 +1,9 @@
 import { getLatestFromGitHub } from "../github.ts";
 import { ModBase } from "../mod.ts";
+import { token } from "../replacement-tokens.ts";
 import { uevrBase } from "./uevr-base.ts";
+
+const dotnetId = "dotnet-desktop-runtime-win-x64";
 
 export async function getUevrMods(): Promise<ModBase[]> {
 	return [
@@ -27,7 +30,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			}),
 		},
 		{
-			id: "dotnet-desktop-runtime-win-x64",
+			id: dotnetId,
 			title: ".NET Desktop Runtime",
 			author: "bill gates himself",
 			description: "Required for running UEVR via Wine",
@@ -36,6 +39,15 @@ export async function getUevrMods(): Promise<ModBase[]> {
 				id: "6.0.36",
 				url:
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
+			},
+			install: {
+				extract: [
+					{
+						source: ".",
+						destination: `${token.LocalModsPath}/${dotnetId}`,
+					},
+				],
+				mainInstalledFolderPath: `${token.LocalModsPath}/${dotnetId}`,
 			},
 			gameOs: "Windows",
 			hostOs: "Linux",

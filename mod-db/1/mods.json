@@ -764,9 +764,18 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
       },
       "gameOs": "Windows",
-      "hash": "15f7e8a9fda4cac3837163d16da4622734a577b9198bd0061e00d748b285b013",
+      "hash": "e440375224f4e3d6c1baaabad434cdd2ea98a0786d92162516dbb661bae07849",
       "hostOs": "Linux",
       "id": "dotnet-desktop-runtime-win-x64",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
+      },
       "sourceCode": "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
       "title": ".NET Desktop Runtime"
     },
