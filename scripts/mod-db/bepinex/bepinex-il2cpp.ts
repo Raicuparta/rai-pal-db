@@ -23,11 +23,11 @@ function bepinexIl2cppLoaderBase(
 			extract: [
 				{
 					source: "BepInEx",
-					destination: `${token.InstalledModsPath}/bepinex/BepInEx`,
+					destination: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 				},
 				{
 					source: "dotnet",
-					destination: `${token.InstalledModsPath}/bepinex/dotnet`,
+					destination: `${token.GameInstalledModsPath}/bepinex/dotnet`,
 				},
 				{
 					source: "winhttp.dll",
@@ -38,24 +38,24 @@ function bepinexIl2cppLoaderBase(
 				{
 					content: `[General]
 enabled = true
-target_assembly = ${token.InstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll
+target_assembly = ${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll
 redirect_output_log = false
 boot_config_override =
 ignore_disable_switch = true
 
 [Il2Cpp]
-coreclr_path = ${token.InstalledModsPath}/bepinex/dotnet/coreclr.dll
-corlib_dir = ${token.InstalledModsPath}/bepinex/dotnet
+coreclr_path = ${token.GameInstalledModsPath}/bepinex/dotnet/coreclr.dll
+corlib_dir = ${token.GameInstalledModsPath}/bepinex/dotnet
 `,
 					destination: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
 				},
 			],
 			wineDllOverrides: ["winhttp"],
-			mainInstalledFolderPath: `${token.InstalledModsPath}/bepinex/BepInEx`,
+			mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 		},
 		config: {
 			destinationPath:
-				`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 			destinationType: "File",
 		},
 		dependencies: [

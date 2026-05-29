@@ -24,7 +24,7 @@ export function getGepInExConfigs(): ModBase[] {
 						content: `[Logging.Console]
 Enabled = true`,
 						destination:
-							`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+							`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 					},
 				],
 			},
@@ -52,7 +52,7 @@ Assembly = UnityEngine.dll
 Type = MonoBehaviour
 Method = .cctor`,
 						destination:
-							`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+							`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 					},
 				],
 			},

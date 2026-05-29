@@ -21,16 +21,16 @@ export function bepinexMod(
 				{
 					source: `${params?.zipRoot ? `${params.zipRoot}/` : ""}plugins`,
 					destination:
-						`${token.InstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
+						`${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
 				},
 			],
 			mainInstalledFolderPath:
-				`${token.InstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
+				`${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
 		},
 		config: params?.configFileName
 			? {
 				destinationPath:
-					`${token.InstalledModsPath}/bepinex/BepInEx/config/${params.configFileName}`,
+					`${token.GameInstalledModsPath}/bepinex/BepInEx/config/${params.configFileName}`,
 				destinationType: "File",
 			}
 			: undefined,

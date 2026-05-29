@@ -23,7 +23,7 @@ function bepinexMonoLoaderBase(
 			extract: [
 				{
 					source: "BepInEx",
-					destination: `${token.InstalledModsPath}/bepinex/BepInEx`,
+					destination: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 				},
 				{
 					source: "winhttp.dll",
@@ -34,7 +34,7 @@ function bepinexMonoLoaderBase(
 				{
 					content: `[General]
 enabled=true
-target_assembly=${token.InstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll
+target_assembly=${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll
 redirect_output_log=false
 ignore_disable_switch=true
 
@@ -45,11 +45,11 @@ dll_search_path_override=
 				},
 			],
 			wineDllOverrides: ["winhttp"],
-			mainInstalledFolderPath: `${token.InstalledModsPath}/bepinex/BepInEx`,
+			mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 		},
 		config: {
 			destinationPath:
-				`${token.InstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 			destinationType: "File",
 		},
 		dependencies: [

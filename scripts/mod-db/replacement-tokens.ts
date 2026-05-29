@@ -11,11 +11,11 @@ function makeTokens<const T extends Record<string, string>>(obj: T) {
  */
 export const token = makeTokens(
 	{
-		/** Path to the folder where mods are installed for the current game. */
-		InstalledModsPath: "",
-
 		/** Path to the folder where Rai Pal stores downloaded (but not installed) mods */
 		LocalModsPath: "",
+
+		/** Path to the folder where mods are installed for the current game. */
+		GameInstalledModsPath: "",
 
 		/** The folder containing the game executable. */
 		GameExecutableFolderPath: "",
@@ -32,14 +32,23 @@ export const token = makeTokens(
 		/** Entire json of the game as provided by Rai Pal */
 		GameJson: "",
 
+		/** Command that starts the game via its provider (like steam:// etc) */
 		GameStartCommand: "",
 
+		/** Arguments that get passed to the provider command that starts the game */
 		GameStartCommandArgs: "",
 
 		/**
 		 * On Windows, this would be %APPDATA% (e.g., C:\Users\Username\AppData\Roaming).
-		 * On Linux, this would be $XDG_CONFIG_HOME (e.g., /home/username/.config)
+		 * On Linux, this would be $XDG_CONFIG_HOME (e.g., /home/username/.config).
+		 * For Windows games running on Linux via Wine, that would be the regular Windows Appdata folder but inside the prefix.
 		 */
 		RoamingAppData: "",
+
+		/**
+		 * For Windows games running via Wine on Linux, this would be the virtual drive mapping that points to the Linux root ('Z:', which points to '/').
+		 * In any other scenario, this will be an empty string.
+		 */
+		MaybeWineRoot: "",
 	} as const,
 );
