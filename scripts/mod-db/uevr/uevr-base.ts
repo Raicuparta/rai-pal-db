@@ -23,6 +23,14 @@ export function uevrBase(
 			},
 			os: "Windows",
 		},
+		install: {
+			extract: [
+				{
+					source: ".",
+					destination: `${token.LocalModsPath}/${id}`,
+				},
+			],
+		},
 		config: {
 			destinationPath:
 				`${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,

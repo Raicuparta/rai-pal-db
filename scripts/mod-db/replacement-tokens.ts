@@ -46,6 +46,8 @@ export const token = makeTokens(
 		RoamingAppData: "",
 
 		/**
+		 * It might be necessary to prepend this to some of the other path tokens, depending on which context they will be used in.
+		 * Meaning, if the string will be read by a Windows process, it likely needs this prefix.
 		 * For Windows games running via Wine on Linux, this would be the virtual drive mapping that points to the Linux root ('Z:', which points to '/').
 		 * In any other scenario, this will be an empty string.
 		 */

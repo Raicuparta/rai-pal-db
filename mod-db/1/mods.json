@@ -690,8 +690,16 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "76e94d0b57f9bf832ab5a98ce5dc06cc2ba763571e5bc2156c053a8000968463",
+      "hash": "59d6ddd9acf1ba186e93439fca59c8550aea42b5de7f71cd7b296dc088f05507",
       "id": "uevr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{LocalModsPath}}/uevr",
+            "source": "."
+          }
+        ]
+      },
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
@@ -723,8 +731,16 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "ede6e8581122a9bd44f938181dcb4cc357be5dff155a52c7aff21981df09ced8",
+      "hash": "0a8de8dc5ec1386191e8cda97de8741924e0a07ca5c1e4c31a417213956e305d",
       "id": "uevr-nightly",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{LocalModsPath}}/uevr-nightly",
+            "source": "."
+          }
+        ]
+      },
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
