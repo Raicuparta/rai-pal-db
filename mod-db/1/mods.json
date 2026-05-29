@@ -21,7 +21,7 @@
         "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip"
       },
       "engine": "Unity",
-      "hash": "d59f2b9ba027afaacbe23b9ae584cdb8ad3b71709464ceed266870632042fa2f",
+      "hash": "a446af0509654047e50912a49b583e651251dfd19131925df073e7b358398140",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -44,7 +44,7 @@
         ],
         "write": [
           {
-            "content": "[General]\nenabled = true\ntarget_assembly = {{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{GameInstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{GameInstalledModsPath}}/bepinex/dotnet\n",
+            "content": "[General]\nenabled = true\ntarget_assembly = {{MaybeWineRoot}}{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{GameInstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{GameInstalledModsPath}}/bepinex/dotnet\n",
             "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
           }
         ]
@@ -74,7 +74,7 @@
         "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip"
       },
       "engine": "Unity",
-      "hash": "5e4c5d166a6cd0a0b437e09ab0fed87842edc4a905c8470674625c6b285cef02",
+      "hash": "574cfb04e3027e0bed6ee7c5f84f258a564939bf90204fcad774acc3750ec73c",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -97,7 +97,7 @@
         ],
         "write": [
           {
-            "content": "[General]\nenabled = true\ntarget_assembly = {{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{GameInstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{GameInstalledModsPath}}/bepinex/dotnet\n",
+            "content": "[General]\nenabled = true\ntarget_assembly = {{MaybeWineRoot}}{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\nredirect_output_log = false\nboot_config_override =\nignore_disable_switch = true\n\n[Il2Cpp]\ncoreclr_path = {{GameInstalledModsPath}}/bepinex/dotnet/coreclr.dll\ncorlib_dir = {{GameInstalledModsPath}}/bepinex/dotnet\n",
             "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
           }
         ]
@@ -127,7 +127,7 @@
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
       },
       "engine": "Unity",
-      "hash": "ba9054cb276cb9070ba6d0bbd4c2b86cb8572910a6ea8b5b219303be0920eb16",
+      "hash": "435d82d23e63fe3c71996c817f1286b77bae09b291eb32952569f8e735e4b302",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -146,7 +146,7 @@
         ],
         "write": [
           {
-            "content": "[General]\nenabled=true\ntarget_assembly={{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
+            "content": "[General]\nenabled=true\ntarget_assembly={{MaybeWineRoot}}{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
             "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
           }
         ]
@@ -176,7 +176,7 @@
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
       },
       "engine": "Unity",
-      "hash": "05c7172c6bc8b18937cd4aa6035a0587d4f530e6f0df58b04bbefbdfb80a5368",
+      "hash": "9026a283ef2ee2f0f96f6ef6e27eabc0e8e50463cc28b2d540d2b006feb3465e",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -195,7 +195,7 @@
         ],
         "write": [
           {
-            "content": "[General]\nenabled=true\ntarget_assembly={{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
+            "content": "[General]\nenabled=true\ntarget_assembly={{MaybeWineRoot}}{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\nredirect_output_log=false\nignore_disable_switch=true\n\n[UnityMono]\ndll_search_path_override=\n",
             "destination": "{{GameExecutableFolderPath}}/doorstop_config.ini"
           }
         ]

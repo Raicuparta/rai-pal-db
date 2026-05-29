@@ -34,7 +34,7 @@ function bepinexMonoLoaderBase(
 				{
 					content: `[General]
 enabled=true
-target_assembly=${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll
+target_assembly=${token.MaybeWineRoot}${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll
 redirect_output_log=false
 ignore_disable_switch=true
 

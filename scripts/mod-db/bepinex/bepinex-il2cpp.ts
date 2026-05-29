@@ -38,7 +38,7 @@ function bepinexIl2cppLoaderBase(
 				{
 					content: `[General]
 enabled = true
-target_assembly = ${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll
+target_assembly = ${token.MaybeWineRoot}${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll
 redirect_output_log = false
 boot_config_override =
 ignore_disable_switch = true
