@@ -30,6 +30,7 @@ export function uevrBase(
 					destination: `${token.LocalModsPath}/${id}`,
 				},
 			],
+			mainInstalledFolderPath: `${token.LocalModsPath}/${id}`,
 		},
 		config: {
 			destinationPath:
