@@ -16,7 +16,7 @@ export function uevrBase(
 			},
 		],
 		runForGame: {
-			path: `${token.LocalModsPath}/UEVRInjector.exe`,
+			path: `${token.LocalModsPath}/${id}/UEVRInjector.exe`,
 			args: [`--attach=${token.GameExecutableName}`],
 			wineEnvironment: {
 				DOTNET_ROOT: `${token.LocalModsPath}/dotnet-desktop-runtime-win-x64`,
