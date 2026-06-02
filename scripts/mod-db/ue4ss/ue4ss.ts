@@ -2,10 +2,12 @@ import { ModBase, ModDownload } from "../mod.ts";
 import { Octokit } from "octokit";
 import { token } from "../replacement-tokens.ts";
 
+const id = "ue4ss";
+
 export async function getUe4ssMods(): Promise<ModBase[]> {
 	return [
 		{
-			id: "ue4ss",
+			id,
 			engine: "Unreal",
 			title: "UE4SS",
 			author: "UE4SS-RE",
@@ -13,6 +15,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 			description: "Scripting and modding framework for Unreal Engine games.",
 			download: await getLatestUe4ss(),
 			install: {
+				manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
 				extract: [
 					{
 						source: "ue4ss",

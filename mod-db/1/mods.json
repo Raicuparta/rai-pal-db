@@ -21,7 +21,7 @@
         "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755%2B3fab71a.zip"
       },
       "engine": "Unity",
-      "hash": "a446af0509654047e50912a49b583e651251dfd19131925df073e7b358398140",
+      "hash": "4e3f7ea7c0614afb73f12bbf43b4294679a0a958c2cfa942c00b5d4cbfa4e67f",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -39,6 +39,7 @@
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-il2cpp-x64.json",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -74,7 +75,7 @@
         "url": "https://builds.bepinex.dev/projects/bepinex_be/755/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.755%2B3fab71a.zip"
       },
       "engine": "Unity",
-      "hash": "574cfb04e3027e0bed6ee7c5f84f258a564939bf90204fcad774acc3750ec73c",
+      "hash": "de58037c97cc91065b2b1f79645d44c6c94904c08bb77d1d8876bf0a7f41fea7",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -92,6 +93,7 @@
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-il2cpp-x86.json",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -127,7 +129,7 @@
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
       },
       "engine": "Unity",
-      "hash": "435d82d23e63fe3c71996c817f1286b77bae09b291eb32952569f8e735e4b302",
+      "hash": "f88796c3cac6be3e632244501e25c53c84fb97b0278cbe43a8418cf3cef59f97",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -141,6 +143,7 @@
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-x64.json",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -176,7 +179,7 @@
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
       },
       "engine": "Unity",
-      "hash": "9026a283ef2ee2f0f96f6ef6e27eabc0e8e50463cc28b2d540d2b006feb3465e",
+      "hash": "71e7fddcdb6c7ca4d0c2fab7131937e809c92c5ead50bd904bfea8774ea39c14",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -190,6 +193,7 @@
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-x86.json",
         "wineDllOverrides": [
           "winhttp"
         ],
@@ -214,9 +218,10 @@
           "minor": 5
         }
       },
-      "hash": "ed82ac20667b15ec2f241372b6a81967ce6192fc7732490c5796464dda1c0a7a",
+      "hash": "ff99b28888c8d7ba78837c4299dcc8a6ac03e6fcdc4545cc33fa2e1cf77ec059",
       "id": "bepinex-config-modern",
       "install": {
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-modern.json",
         "write": [
           {
             "content": "[Logging.Console]\nEnabled = true",
@@ -237,9 +242,10 @@
           "minor": 4
         }
       },
-      "hash": "95bcadc65c39a28e8c7ac96f4a9fe4365fd63dabde87d7e73fbc02b938f86739",
+      "hash": "f6f35139bc71b4160ee4484d2733ad70d12147fa1e45acdc77ce7d4726783720",
       "id": "bepinex-config-legacy",
       "install": {
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-legacy.json",
         "write": [
           {
             "content": "[Logging.Console]\nEnabled = true\n[Preloader.Entrypoint]\nAssembly = UnityEngine.dll\nType = MonoBehaviour\nMethod = .cctor",
@@ -275,7 +281,7 @@
           "major": 2019
         }
       },
-      "hash": "6a15218254b8c50a6a6c6f99bf8c15c748de74069963b60d07656dd872d9d0e3",
+      "hash": "40fa2297552d2de77a837e3311eba8b7d46634910c0766a81b5960db4427b813",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -284,7 +290,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-il2cpp-legacy.json"
       },
       "sourceCode": "https://github.com/Raicuparta/uuvr",
       "title": "UUVR Il2Cpp Legacy",
@@ -315,7 +322,7 @@
           "major": 2019
         }
       },
-      "hash": "e3a0f08a788bf1fa22bbe02dd4019419da4aae39f2590c26076e7fc24d98ebcb",
+      "hash": "7d5ff053d330a41a1346af027beb5561235b3470b92953d7be15c0b41587615c",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -324,7 +331,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-legacy.json"
       },
       "sourceCode": "https://github.com/Raicuparta/uuvr",
       "title": "UUVR Mono Legacy",
@@ -356,7 +364,7 @@
           "minor": 4
         }
       },
-      "hash": "3c571e97fce8da43fa720ec407ff29168e88028a3f43edea13fe28f38053384d",
+      "hash": "0e289616dc671daa405bd939f25d811ede4cd447e4f81e007df6cb94bc7c2e72",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -365,7 +373,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-modern.json"
       },
       "sourceCode": "https://github.com/Raicuparta/uuvr",
       "title": "UUVR Mono Modern",
@@ -396,7 +405,7 @@
           "major": 5
         }
       },
-      "hash": "2ad5b5af1674c71b4f58cab9d0ba7244728ba4f2f7ce90816debf201af45a468",
+      "hash": "28b2cf9f713f4730b860bfa5e022af6f066d2c381848baec5198d13ee3afb0e1",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -405,7 +414,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono.json"
       },
       "sourceCode": "https://github.com/Raicuparta/everyone",
       "title": "Everyone",
@@ -431,7 +441,7 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "017f64539b30f059e9729695bd26a69b7f58189c975d4e5489061ca51b3b4ad8",
+      "hash": "939dcc756e1b55c96d16840553da98fad11db56f546a61f7435750d270313d99",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -440,7 +450,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-il2cpp.json"
       },
       "sourceCode": "https://github.com/Raicuparta/everyone",
       "title": "Everyone",
@@ -471,7 +482,7 @@
           "major": 5
         }
       },
-      "hash": "1b18069b1be32386fbf731280eb84c9db91868fdbc8a4c064f3258d5f322aba9",
+      "hash": "354dafd85921f588f1f3a9c59ee20c7f768eb80aa348090d9453b9239328a503",
       "id": "everyone-mono-legacy",
       "install": {
         "extract": [
@@ -480,7 +491,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono-legacy"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono-legacy",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono-legacy.json"
       },
       "sourceCode": "https://github.com/Raicuparta/everyone",
       "title": "Everyone (Legacy)",
@@ -502,7 +514,7 @@
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "1af3a7b1609ff0288c167db36729168b315d85664ac28afe9cff215f30a1d9b8",
+      "hash": "966fc63501f255faa09a9dfd7c37b68909efe7e4dedab823448e8a9c6546e999",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -511,7 +523,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-manager-il2cpp.json"
       },
       "sourceCode": "https://github.com/Vapok/BepInExConfigManager",
       "title": "Config Manager IL2CPP",
@@ -533,7 +546,7 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "91c108b121abc71b54e88cdf10f51e70094d09aa18c728a99f33c13e1d337d29",
+      "hash": "cadb6554e6f67b57d48f1ab57eed5f68c0f99f77a991603c74080cfe43cbc8e4",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -542,7 +555,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/config-manager-mono.json"
       },
       "sourceCode": "https://github.com/sinai-dev/BepInExConfigManager",
       "title": "Config Manager Mono",
@@ -564,7 +578,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "c25f84a78d5b9da2fdcf7529e528293e8318b105b975583e296e8b5864e28722",
+      "hash": "e3fa9cb322bdd6c292e96019d2059d0235d61df0940eb95f223e5968172018d7",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -573,7 +587,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/unity-explorer-il2cpp.json"
       },
       "sourceCode": "https://github.com/yukieiji/UnityExplorer",
       "title": "UnityExplorer",
@@ -595,7 +610,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "d6a9fa42a1f207b811b9bb0b8bcb87f9ff48a775f8d8da96614ad407c761a41a",
+      "hash": "3025e16e6fa4b68c5b571c081e7e46514d38596983e0dfbdacdd13cb76f6301b",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -604,7 +619,8 @@
             "source": "plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/unity-explorer-mono.json"
       },
       "sourceCode": "https://github.com/yukieiji/UnityExplorer",
       "title": "UnityExplorer",
@@ -626,7 +642,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin5_v6.3.zip"
       },
       "engine": "Unity",
-      "hash": "0c800781bb11c775dc7bf71a51bb888034faf850e100bb17bcfdddf23ca6edd5",
+      "hash": "b7747eb3d731735581813606c1de15f95f023df37bf48b509ab2f7bf64d865b7",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -635,7 +651,8 @@
             "source": "BepInEx/plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/runtime-unity-editor-mono.json"
       },
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",
@@ -657,7 +674,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.zip"
       },
       "engine": "Unity",
-      "hash": "bf4203b8f857ef6ac5db87e91d1d01a4b4eebb97df781cfb7ba573030678ee0e",
+      "hash": "0303d71579a3866924ad0ae1e21f81209c8b846f3a0acdf62db2da75bdb94d9c",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -666,7 +683,8 @@
             "source": "BepInEx/plugins"
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp"
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/runtime-unity-editor-il2cpp.json"
       },
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",
@@ -690,25 +708,26 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "2d6ecaaa0d063016ff9c66ded25620c96b3e8ffc6a9c9927e50af8a184f308ed",
+      "hash": "c4860bb80cdaa90fecd84571dfef913226b49a4f3bd0879b7443f26437db761c",
       "id": "uevr",
       "install": {
         "extract": [
           {
-            "destination": "{{LocalModsPath}}/uevr",
+            "destination": "{{SharedModsPath}}/uevr",
             "source": "."
           }
         ],
-        "mainInstalledFolderPath": "{{LocalModsPath}}/uevr"
+        "mainInstalledFolderPath": "{{SharedModsPath}}/uevr",
+        "manifestPath": "{{SharedModsPath}}/uevr/rai-pal-manifest.json"
       },
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
         ],
         "os": "Windows",
-        "path": "{{LocalModsPath}}/uevr/UEVRInjector.exe",
+        "path": "{{SharedModsPath}}/uevr/UEVRInjector.exe",
         "wineEnvironment": {
-          "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
         }
       },
       "sourceCode": "https://github.com/praydog/UEVR",
@@ -732,25 +751,26 @@
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "b9a7d6cfe3774d30a7806574116ec63bbd7b2f72f6f52ff7c1989a147f14f810",
+      "hash": "4d125a355edf4f79e84cf8f4b889824c7a2796ca182a438225c6d7414324b8bb",
       "id": "uevr-nightly",
       "install": {
         "extract": [
           {
-            "destination": "{{LocalModsPath}}/uevr-nightly",
+            "destination": "{{SharedModsPath}}/uevr-nightly",
             "source": "."
           }
         ],
-        "mainInstalledFolderPath": "{{LocalModsPath}}/uevr-nightly"
+        "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-nightly",
+        "manifestPath": "{{SharedModsPath}}/uevr-nightly/rai-pal-manifest.json"
       },
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
         ],
         "os": "Windows",
-        "path": "{{LocalModsPath}}/uevr-nightly/UEVRInjector.exe",
+        "path": "{{SharedModsPath}}/uevr-nightly/UEVRInjector.exe",
         "wineEnvironment": {
-          "DOTNET_ROOT": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
         }
       },
       "sourceCode": "https://github.com/praydog/UEVR",
@@ -764,17 +784,18 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
       },
       "gameOs": "Windows",
-      "hash": "e440375224f4e3d6c1baaabad434cdd2ea98a0786d92162516dbb661bae07849",
+      "hash": "b4ad5529a9c157563228a92248bfcb9333def1a7127c03acdd0b1790ee8915fb",
       "hostOs": "Linux",
       "id": "dotnet-desktop-runtime-win-x64",
       "install": {
         "extract": [
           {
-            "destination": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64",
+            "destination": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64",
             "source": "."
           }
         ],
-        "mainInstalledFolderPath": "{{LocalModsPath}}/dotnet-desktop-runtime-win-x64"
+        "mainInstalledFolderPath": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64",
+        "manifestPath": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64/rai-pal-manifest.json"
       },
       "sourceCode": "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
       "title": ".NET Desktop Runtime"
@@ -787,7 +808,7 @@
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-953-gb872ad11.zip"
       },
       "engine": "Unreal",
-      "hash": "51fc8fb2be25922a13fd0c24b2653ce7697dcc2f4fd7d171af9fbd3841a40429",
+      "hash": "41872492466b10274ba7c4f3edce34e3714d98cddf83fbccaba35ed065f5432f",
       "id": "ue4ss",
       "install": {
         "extract": [
@@ -801,6 +822,7 @@
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/ue4ss",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/ue4ss.json",
         "wineDllOverrides": [
           "dwmapi"
         ],

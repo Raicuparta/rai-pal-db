@@ -20,6 +20,7 @@ function bepinexMonoLoaderBase(
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: {
+			manifestPath: `${token.GameInstalledModsPath}/manifests/${modId}.json`,
 			extract: [
 				{
 					source: "BepInEx",

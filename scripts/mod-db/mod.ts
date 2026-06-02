@@ -82,6 +82,11 @@ export interface ModBase {
 
 	install?: {
 		/**
+		 * Supports replacement tokens. Path to the json where this mod's manifest will be installed. Can be per-game or shared, depending on replacement tokens used.
+		 */
+		manifestPath: string;
+
+		/**
 		 * Files and folders to extract from the downloaded mod zip
 		 */
 		extract?: {

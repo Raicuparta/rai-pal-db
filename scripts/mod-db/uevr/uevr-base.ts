@@ -16,21 +16,22 @@ export function uevrBase(
 			},
 		],
 		runForGame: {
-			path: `${token.LocalModsPath}/${id}/UEVRInjector.exe`,
+			path: `${token.SharedModsPath}/${id}/UEVRInjector.exe`,
 			args: [`--attach=${token.GameExecutableName}`],
 			wineEnvironment: {
-				DOTNET_ROOT: `${token.LocalModsPath}/dotnet-desktop-runtime-win-x64`,
+				DOTNET_ROOT: `${token.SharedModsPath}/dotnet-desktop-runtime-win-x64`,
 			},
 			os: "Windows",
 		},
 		install: {
+			manifestPath: `${token.SharedModsPath}/${id}/rai-pal-manifest.json`,
 			extract: [
 				{
 					source: ".",
-					destination: `${token.LocalModsPath}/${id}`,
+					destination: `${token.SharedModsPath}/${id}`,
 				},
 			],
-			mainInstalledFolderPath: `${token.LocalModsPath}/${id}`,
+			mainInstalledFolderPath: `${token.SharedModsPath}/${id}`,
 		},
 		config: {
 			destinationPath:

@@ -1,12 +1,15 @@
 import { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
+const idModern = "bepinex-config-modern";
+const idLegacy = "bepinex-config-legacy";
+
 // These are exposed as mods instead of configs since they're not game-specific,
 // just convenient this way since we can already filter by version.
 export function getGepInExConfigs(): ModBase[] {
 	return [
 		{
-			id: "bepinex-config-modern",
+			id: idModern,
 			title: "BepInEx Config (Modern)",
 			author: "BepInEx",
 			description: "Default BepInEx config",
@@ -19,6 +22,8 @@ export function getGepInExConfigs(): ModBase[] {
 				},
 			},
 			install: {
+				manifestPath:
+					`${token.GameInstalledModsPath}/manifests/${idModern}.json`,
 				write: [
 					{
 						content: `[Logging.Console]
@@ -30,7 +35,7 @@ Enabled = true`,
 			},
 		},
 		{
-			id: "bepinex-config-legacy",
+			id: idLegacy,
 			title: "BepInEx Config (Legacy)",
 			author: "BepInEx",
 			description: "Default BepInEx config",
@@ -43,6 +48,8 @@ Enabled = true`,
 				},
 			},
 			install: {
+				manifestPath:
+					`${token.GameInstalledModsPath}/manifests/${idLegacy}.json`,
 				write: [
 					{
 						content: `[Logging.Console]

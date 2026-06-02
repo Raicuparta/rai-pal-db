@@ -17,6 +17,7 @@ export function bepinexMod(
 		...mod,
 		engine: "Unity",
 		install: {
+			manifestPath: `${token.GameInstalledModsPath}/manifests/${mod.id}.json`,
 			extract: [
 				{
 					source: `${params?.zipRoot ? `${params.zipRoot}/` : ""}plugins`,

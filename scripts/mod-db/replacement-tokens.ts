@@ -12,7 +12,7 @@ function makeTokens<const T extends Record<string, string>>(obj: T) {
 export const token = makeTokens(
 	{
 		/** Path to the folder where Rai Pal stores downloaded (but not installed) mods */
-		LocalModsPath: "",
+		SharedModsPath: "",
 
 		/** Path to the folder where mods are installed for the current game. */
 		GameInstalledModsPath: "",

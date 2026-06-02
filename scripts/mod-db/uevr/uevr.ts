@@ -41,13 +41,15 @@ export async function getUevrMods(): Promise<ModBase[]> {
 					"https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
 			},
 			install: {
+				manifestPath:
+					`${token.SharedModsPath}/${dotnetId}/rai-pal-manifest.json`,
 				extract: [
 					{
 						source: ".",
-						destination: `${token.LocalModsPath}/${dotnetId}`,
+						destination: `${token.SharedModsPath}/${dotnetId}`,
 					},
 				],
-				mainInstalledFolderPath: `${token.LocalModsPath}/${dotnetId}`,
+				mainInstalledFolderPath: `${token.SharedModsPath}/${dotnetId}`,
 			},
 			gameOs: "Windows",
 			hostOs: "Linux",
