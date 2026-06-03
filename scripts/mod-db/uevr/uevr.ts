@@ -32,6 +32,8 @@ export async function getUevrMods(): Promise<ModBase[]> {
 		{
 			id: dotnetId,
 			title: ".NET Desktop Runtime",
+			hideFromGameModsList: true,
+			engine: "Unreal",
 			author: "bill gates himself",
 			description: "Required for running UEVR via Wine",
 			sourceCode: "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",

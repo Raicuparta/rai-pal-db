@@ -10,6 +10,12 @@ export interface ModBase {
 	deprecated?: boolean;
 
 	/**
+	 * Hide mod from the per-game mod list where users install mods.
+	 * USeful for stuff that needs to be installed as dependencies but would otherwise clutter the UI.
+	 */
+	hideFromGameModsList?: boolean;
+
+	/**
 	 * Game engine that this mod supports.
 	 */
 	engine?: Engine;

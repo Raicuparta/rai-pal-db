@@ -218,7 +218,8 @@
           "minor": 5
         }
       },
-      "hash": "ff99b28888c8d7ba78837c4299dcc8a6ac03e6fcdc4545cc33fa2e1cf77ec059",
+      "hash": "69ccff5b07aa8a40cbb20131f67d8c032422aaf45fda32476285f92b3a2dc362",
+      "hideFromGameModsList": true,
       "id": "bepinex-config-modern",
       "install": {
         "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-modern.json",
@@ -242,7 +243,8 @@
           "minor": 4
         }
       },
-      "hash": "f6f35139bc71b4160ee4484d2733ad70d12147fa1e45acdc77ce7d4726783720",
+      "hash": "496b1f4ab3f7c2fa054b214c92e94da7d4362c0cb46e71c7506708cc7717076d",
+      "hideFromGameModsList": true,
       "id": "bepinex-config-legacy",
       "install": {
         "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-legacy.json",
@@ -783,8 +785,10 @@
         "id": "6.0.36",
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip"
       },
+      "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "b4ad5529a9c157563228a92248bfcb9333def1a7127c03acdd0b1790ee8915fb",
+      "hash": "afc8d038ec863130868a23f0956eac672df4c6647dbe142074a10f78d5b77851",
+      "hideFromGameModsList": true,
       "hostOs": "Linux",
       "id": "dotnet-desktop-runtime-win-x64",
       "install": {
