@@ -133,30 +133,15 @@ export interface ModBase {
 		mainInstalledFolderPath?: string;
 	};
 
-	runForGame?: {
-		/**
-		 * Path relative to the mod folder, pointing to the executable/script to run
-		 */
-		path?: string;
+	/**
+	 * Command for running the mod executable for a specific game (meaning game stuff can be accessed in replacement tokens).
+	 */
+	runForGame?: ModRun;
 
-		/**
-		 * List of arguments to pass to the command. Supports replacement tokens.
-		 */
-		args?: string[];
-
-		/**
-		 * Environment variables to set when running the command via Wine. Supports replacement tokens in values.
-		 */
-		wineEnvironment?: {
-			[k: string]: string;
-		};
-
-		/**
-		 * Operating system the mod itself is built for. So a .exe would be Windows.
-		 * Unspecified means it somehow works for all.
-		 */
-		os?: OperatingSystem;
-	};
+	/**
+	 * Command for running the mod executable by itself (meaning game-related replacement tokens can NOT be used).
+	 */
+	runStandalone?: ModRun;
 
 	/**
 	 * Information used to find local mod configs, and also for downloading configs from the database.
@@ -217,3 +202,28 @@ export interface EngineVersion {
 	minor?: number;
 	patch?: number;
 }
+
+export type ModRun = {
+	/**
+	 * Path relative to the mod folder, pointing to the executable/script to run
+	 */
+	path?: string;
+
+	/**
+	 * List of arguments to pass to the command. Supports replacement tokens.
+	 */
+	args?: string[];
+
+	/**
+	 * Environment variables to set when running the command via Wine. Supports replacement tokens in values.
+	 */
+	wineEnvironment?: {
+		[k: string]: string;
+	};
+
+	/**
+	 * Operating system the mod itself is built for. So a .exe would be Windows.
+	 * Unspecified means it somehow works for all.
+	 */
+	os?: OperatingSystem;
+};

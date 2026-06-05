@@ -1,9 +1,17 @@
-import { ModBase } from "../mod.ts";
+import { ModBase, ModRun } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 export function uevrBase(
 	id: string,
 ): Omit<ModBase, "title" | "description" | "download"> {
+	const runBase: ModRun = {
+		path: `${token.SharedModsPath}/${id}/UEVRInjector.exe`,
+		wineEnvironment: {
+			DOTNET_ROOT: `${token.SharedModsPath}/dotnet-desktop-runtime-win-x64`,
+		},
+		os: "Windows",
+	};
+
 	return {
 		id,
 		author: "praydog",
@@ -16,13 +24,10 @@ export function uevrBase(
 			},
 		],
 		runForGame: {
-			path: `${token.SharedModsPath}/${id}/UEVRInjector.exe`,
+			...runBase,
 			args: [`--attach=${token.GameExecutableName}`],
-			wineEnvironment: {
-				DOTNET_ROOT: `${token.SharedModsPath}/dotnet-desktop-runtime-win-x64`,
-			},
-			os: "Windows",
 		},
+		runStandalone: runBase,
 		install: {
 			manifestPath: `${token.SharedModsPath}/${id}/rai-pal-manifest.json`,
 			extract: [
