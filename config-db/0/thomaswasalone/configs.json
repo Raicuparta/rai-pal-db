@@ -2,7 +2,7 @@
 	"$schema": "../schema/config-db-schema.json",
 	"configs": [
 		{
-			"modId": "everyone-mono-legacy",
+			"modId": "everyone-mono",
 			"loaderId": "bepinex",
 			"file": "raicuparta.everyone.json",
 			"version": 0
