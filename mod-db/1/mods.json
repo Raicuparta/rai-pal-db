@@ -402,12 +402,7 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.0/EveryoneClient.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "engineVersionRange": {
-        "minimum": {
-          "major": 5
-        }
-      },
-      "hash": "709314ea41083f4a525c43c12117d59790c406daaba67109759206492cbea43d",
+      "hash": "06c3c8eda5385efd7eb5c1c2f49a0970a68432f675eb88d5cbecf0c648c654d2",
       "id": "everyone-mono",
       "install": {
         "extract": [

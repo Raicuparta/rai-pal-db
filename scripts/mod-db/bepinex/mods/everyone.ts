@@ -6,11 +6,6 @@ export async function getEveryoneMods() {
 		bepinexMod({
 			id: "everyone-mono",
 			unityBackend: "Mono",
-			engineVersionRange: {
-				minimum: {
-					major: 5,
-				},
-			},
 			title: "Everyone",
 			author: "Raicuparta",
 			sourceCode: "https://github.com/Raicuparta/everyone",
