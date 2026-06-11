@@ -17,11 +17,11 @@
       ],
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.759",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/759/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.759%2B9aedb90.zip"
+        "id": "6.0.0-be.762",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/762/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.762%2Bbd467c9.zip"
       },
       "engine": "Unity",
-      "hash": "25a54d96c7d8e610c3cb62008edbc151277fa30240bc6dcf7c3d0a255622464b",
+      "hash": "d97abf89a35605cf180fc7194437a7b66759ac0ae84fb8c8c6281419ebe31803",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -71,11 +71,11 @@
       ],
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.759",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/759/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.759%2B9aedb90.zip"
+        "id": "6.0.0-be.762",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/762/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.762%2Bbd467c9.zip"
       },
       "engine": "Unity",
-      "hash": "dd84af8b44cac0673d82815f5ae14d571f6ac74ce32ab34b5f0d101faf82df0b",
+      "hash": "4dc69a0be7a5c5b02f67d33795823bb36270eab0a9492ce8a3954d3d93b03eba",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -398,8 +398,8 @@
       ],
       "description": "Mono version. Work in progress! F3 to chat.",
       "download": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.zip"
+        "id": "0.2.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.0/EveryoneClient.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
       "engineVersionRange": {
@@ -407,7 +407,7 @@
           "major": 5
         }
       },
-      "hash": "28b2cf9f713f4730b860bfa5e022af6f066d2c381848baec5198d13ee3afb0e1",
+      "hash": "709314ea41083f4a525c43c12117d59790c406daaba67109759206492cbea43d",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -439,11 +439,11 @@
       ],
       "description": "IL2CPP version. Work in progress! F3 to chat.",
       "download": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+        "id": "0.2.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "939dcc756e1b55c96d16840553da98fad11db56f546a61f7435750d270313d99",
+      "hash": "2d43d0264c15374613b250e996ca06bfb7e949ce91f378fb0ef8986e5b247441",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -458,47 +458,6 @@
       "sourceCode": "https://github.com/Raicuparta/everyone",
       "title": "Everyone",
       "unityBackend": "Il2Cpp"
-    },
-    {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-        "destinationType": "File"
-      },
-      "dependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
-      "description": "Mono Legacy version. Work in progress! F3 to chat.",
-      "download": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.1.0/EveryoneClient.BepInEx5.Mono.Legacy.zip"
-      },
-      "engine": "Unity",
-      "engineVersionRange": {
-        "maximum": {
-          "major": 5
-        }
-      },
-      "hash": "354dafd85921f588f1f3a9c59ee20c7f768eb80aa348090d9453b9239328a503",
-      "id": "everyone-mono-legacy",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono-legacy",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono-legacy",
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono-legacy.json"
-      },
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Legacy)",
-      "unityBackend": "Mono"
     },
     {
       "author": "sinai",
