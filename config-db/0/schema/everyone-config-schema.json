@@ -35,14 +35,6 @@
 					"description": "Scale multiplier for all text rendered by Everyone. Note that this multiplies together with the BaseScale property. That means BaseScale=2 and TextScale=3 gives you a total text scale multiplier of 2*3=6.",
 					"default": 1,
 					"minimum": 0
-				},
-				"FontName": {
-					"type": "string",
-					"description": "Name of a font that's present in the game. By default, Everyone uses Arial if it exists, otherwise it uses the first font it finds. If none of those work, use this to provide a font from the game. You can also change the font just to make it look nicer and better fit the game's aesthetic (Arial do be ugly). Note that this can't be just some font included in the operating system, it's gotta be a font included in the game."
-				},
-				"PreferUiText": {
-					"type": "boolean",
-					"description": "Everyone tries to render text in two ways: using TextMesh or using UI.Text. Some games only work with one, some only work with the other. Everyone usually only picks UI.Text if TextMesh doesn't work. Some times, Everyone will pick TextMesh and it doesn't look right. If that's the case, you can set this to true to force it to use UI.Text."
 				}
 			}
 		},
@@ -59,6 +51,23 @@
 				"EulerAnglesOffset": {
 					"type": "string",
 					"description": "Local rotation offset to apply to the model. Useful if the object you're using as LocalPlayer doesn't quite track the correct rotation. Format: 'x,y,z'. Example: '0.1,0,1.32'.",
+					"default": "0,0,0"
+				}
+			}
+		},
+		"Note": {
+			"type": "object",
+			"description": "Adjustments for how notes are presented.",
+			"additionalProperties": false,
+			"properties": {
+				"PositionOffset": {
+					"type": "string",
+					"description": "Local position offset to apply to the model. Format: 'x,y,z'. Example: '0.1,0,1.32'.",
+					"default": "0,0,0"
+				},
+				"EulerAnglesOffset": {
+					"type": "string",
+					"description": "Local rotation offset to apply to the model. Format: 'x,y,z'. Example: '0.1,0,1.32'.",
 					"default": "0,0,0"
 				}
 			}

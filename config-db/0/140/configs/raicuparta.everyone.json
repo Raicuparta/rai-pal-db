@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/Raicuparta/rai-pal-db/refs/heads/main/config-db/0/schema/everyone-config-schema.json",
-	"BaseScale": 2,
+	"BaseScale": 1.75,
 	"LocalPlayer": {
 		"Include": [
 			{
@@ -10,6 +10,9 @@
 	},
 	"Text": {
 		"TextScale": 1.5
+	},
+	"Note": {
+		"PositionOffset": "0,0.5,0"
 	},
 	"RemotePlayer": {
 		"EulerAnglesOffset": "0,180,0"
