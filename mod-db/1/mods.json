@@ -17,11 +17,11 @@
       ],
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.762",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/762/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.762%2Bbd467c9.zip"
+        "id": "6.0.0-be.764",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/764/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.764%2B5f39645.zip"
       },
       "engine": "Unity",
-      "hash": "d97abf89a35605cf180fc7194437a7b66759ac0ae84fb8c8c6281419ebe31803",
+      "hash": "b2bce51b728b7a2ed3832fb3c564f301ef18c33589ced7a531d6572a330a80d2",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -71,11 +71,11 @@
       ],
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.762",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/762/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.762%2Bbd467c9.zip"
+        "id": "6.0.0-be.764",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/764/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.764%2B5f39645.zip"
       },
       "engine": "Unity",
-      "hash": "4dc69a0be7a5c5b02f67d33795823bb36270eab0a9492ce8a3954d3d93b03eba",
+      "hash": "b72bec03f41734142edc554a75c9c8e1cb8a724ba02bb4294e6ca46bcab0564a",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -776,11 +776,11 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-954",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-954-g272ce2f8.zip"
+        "id": "v3.0.1-968",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-968-gcfe10f22.zip"
       },
       "engine": "Unreal",
-      "hash": "1d2733dc5e7aa2f9bd1ba1b9997117593d70103728e29f2b98f0f330a4b1c6e9",
+      "hash": "60dbbb340c0f0af4adf425967e3f0cda196a192194794f4c7d8b4bbe0575a5b9",
       "id": "ue4ss",
       "install": {
         "extract": [
