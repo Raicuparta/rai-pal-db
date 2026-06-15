@@ -396,13 +396,13 @@
           "modId": "bepinex-mono-x86"
         }
       ],
-      "description": "Mono version. Work in progress! F3 to chat.",
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "0.2.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.0/EveryoneClient.BepInEx5.Mono.zip"
+        "id": "0.2.1",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "06c3c8eda5385efd7eb5c1c2f49a0970a68432f675eb88d5cbecf0c648c654d2",
+      "hash": "bad26e8c8363ce925c35164bce6fd30125d3492abbc2d09a9cf39eb9cbf02cfb",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -415,7 +415,7 @@
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono.json"
       },
       "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone",
+      "title": "Everyone (Mono)",
       "unityBackend": "Mono"
     },
     {
@@ -432,13 +432,13 @@
           "modId": "bepinex-il2cpp-x86"
         }
       ],
-      "description": "IL2CPP version. Work in progress! F3 to chat.",
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "0.2.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+        "id": "0.2.1",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "2d43d0264c15374613b250e996ca06bfb7e949ce91f378fb0ef8986e5b247441",
+      "hash": "ffebd8358e6ff7ac07012ce8fa92016a240d265595e0387dfc98ed40fba34723",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -451,7 +451,7 @@
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-il2cpp.json"
       },
       "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone",
+      "title": "Everyone (Il2Cpp)",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -776,11 +776,11 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-968",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-968-gcfe10f22.zip"
+        "id": "v3.0.1-969",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-969-gd90375c8.zip"
       },
       "engine": "Unreal",
-      "hash": "60dbbb340c0f0af4adf425967e3f0cda196a192194794f4c7d8b4bbe0575a5b9",
+      "hash": "a03c017b605d35746a25cc8055463480a277f57a6413ec3061d16cdd647590f5",
       "id": "ue4ss",
       "install": {
         "extract": [
