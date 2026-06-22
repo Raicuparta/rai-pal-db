@@ -17,11 +17,11 @@
       ],
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.764",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/764/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.764%2B5f39645.zip"
+        "id": "6.0.0-be.783",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/783/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.783%2Bc58c42d.zip"
       },
       "engine": "Unity",
-      "hash": "b2bce51b728b7a2ed3832fb3c564f301ef18c33589ced7a531d6572a330a80d2",
+      "hash": "bde473c6dae63a605ce202661a0c1d279b839474bab6451583fa7e4a7b9307f6",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -71,11 +71,11 @@
       ],
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.764",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/764/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.764%2B5f39645.zip"
+        "id": "6.0.0-be.783",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/783/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.783%2Bc58c42d.zip"
       },
       "engine": "Unity",
-      "hash": "b72bec03f41734142edc554a75c9c8e1cb8a724ba02bb4294e6ca46bcab0564a",
+      "hash": "75e0abd298ce27798525671f6a0c08520de7c8cebe7b49af563115eff523a70b",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
