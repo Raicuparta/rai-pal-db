@@ -1,12 +1,5 @@
 {
 	"lsp": {
-		"deno": {
-			"settings": {
-				"deno": {
-					"enable": true,
-				},
-			},
-		},
 		"json-language-server": {
 			"settings": {
 				"json": {

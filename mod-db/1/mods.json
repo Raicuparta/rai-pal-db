@@ -709,12 +709,12 @@
       ],
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "download": {
-        "id": "01135",
-        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01135-1b1693e820413a8afb1fdfd8f9da43a19870042e/uevr.zip"
+        "id": "01136",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01136-a8dae23d73d6d590854096648cb479610094dd26/uevr.zip"
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "c5f32a0acb77ab522faa693f7dac28cc5950256c0fbe05bc61b522f960e4ee28",
+      "hash": "87213c7738b7107c3f679c91fe28ad18cc09b77816428ce593cb266fd2a8eea7",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -773,14 +773,55 @@
       "title": ".NET Desktop Runtime"
     },
     {
+      "author": "Keton",
+      "description": "Simple injector/game launcher for UEVR",
+      "download": {
+        "id": "v0.4.1",
+        "url": "https://github.com/keton/chihuahua/releases/download/v0.4.1/chihuahua.zip"
+      },
+      "engine": "Unreal",
+      "gameOs": "Windows",
+      "hash": "8af8daedef3bf61a9ab211220923eba70766f33666d09c8650ad747fbe27c998",
+      "id": "chihuahua-uevr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/chihuahua-uevr",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{SharedModsPath}}/chihuahua-uevr",
+        "manifestPath": "{{SharedModsPath}}/chihuahua-uevr/rai-pal-manifest.json"
+      },
+      "runForGame": {
+        "args": [
+          "{{GameExecutablePath}}",
+          "--delay",
+          "20",
+          "--launch-cmd",
+          "{{GameStartCommand}}",
+          "--launch-args",
+          "{{GameStartCommandArgs}}"
+        ],
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/chihuahua-uevr/chihuahua.exe"
+      },
+      "runStandalone": {
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/chihuahua-uevr/chihuahua.exe"
+      },
+      "sourceCode": "https://github.com/keton/chihuahua",
+      "title": "Chihuahua"
+    },
+    {
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1011",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1011-gb50986bd.zip"
+        "id": "v3.0.1-1012",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1012-gc838a8ac.zip"
       },
       "engine": "Unreal",
-      "hash": "3d46674402ad2c98c76ea676195e3b3c85901012157ca53dba788cde10c796cb",
+      "hash": "1392763f9e8e3ecca90df9604a0745683365be8763e73b8d49986afbfd0007a2",
       "id": "ue4ss",
       "install": {
         "extract": [

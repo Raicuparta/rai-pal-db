@@ -4,6 +4,7 @@ import { token } from "../replacement-tokens.ts";
 import { uevrBase } from "./uevr-base.ts";
 
 const dotnetId = "dotnet-desktop-runtime-win-x64";
+const chihuahuaId = "chihuahua-uevr";
 
 export async function getUevrMods(): Promise<ModBase[]> {
 	return [
@@ -56,5 +57,49 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			gameOs: "Windows",
 			hostOs: "Linux",
 		},
-	];
+		{
+			id: chihuahuaId,
+			title: "Chihuahua",
+			author: "Keton",
+			engine: "Unreal",
+			gameOs: "Windows",
+			description:
+				"Simple injector/game launcher for UEVR",
+			sourceCode: "https://github.com/keton/chihuahua",
+			download: await getLatestFromGitHub({
+				owner: "keton",
+				repo: "chihuahua",
+				selectAssetName: (assetName) => assetName === "chihuahua.zip",
+			}),
+			install: {
+				manifestPath:
+					`${token.SharedModsPath}/${chihuahuaId}/rai-pal-manifest.json`,
+				extract: [
+					{
+						source: ".",
+						destination: `${token.SharedModsPath}/${chihuahuaId}`,
+					},
+				],
+				mainInstalledFolderPath:
+					`${token.SharedModsPath}/${chihuahuaId}`,
+			},
+			runForGame: {
+				path: `${token.SharedModsPath}/${chihuahuaId}/chihuahua.exe`,
+				args: [
+					token.GameExecutablePath,
+					"--delay",
+					"20",
+					"--launch-cmd",
+					token.GameStartCommand,
+					"--launch-args",
+					token.GameStartCommandArgs,
+				],
+				os: "Windows",
+			},
+			runStandalone: {
+				path: `${token.SharedModsPath}/${chihuahuaId}/chihuahua.exe`,
+				os: "Windows",
+			},
+		},
+];
 }
