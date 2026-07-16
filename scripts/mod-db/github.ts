@@ -6,46 +6,48 @@ type Params = {
 	repo: string;
 	selectAssetName: (assetName: string) => boolean;
 	formatId?: (tag: string) => string;
-	/**
-	 * If true, allows fetching the latest release even if it's a pre-release.
-	 * By default, the GitHub API only returns non-prerelease, non-draft releases.
-	 */
 	allowPreRelease?: boolean;
 };
 
 const octokit = new Octokit();
 
 async function getReleaseData(params: Params) {
-	if (params.allowPreRelease) {
-		const response = await octokit.rest.repos.listReleases({
+	// First, try to get the latest full release.
+	try {
+		const response = await octokit.rest.repos.getLatestRelease({
 			owner: params.owner,
 			repo: params.repo,
-			per_page: 100,
 		});
-
-		const preRelease = response.data
-			.filter((r) => r.prerelease && r.published_at)
-			.sort(
-				(a, b) =>
-					new Date(b.published_at!).getTime() -
-					new Date(a.published_at!).getTime(),
-			)[0];
-
-		if (!preRelease) {
-			throw new Error(
-				`No pre-releases found for ${params.owner}/${params.repo}`,
-			);
+		return response.data;
+	} catch (error) {
+		// If allowPreRelease is false, re-throw immediately.
+		if (!params.allowPreRelease) {
+			throw error;
 		}
-
-		return preRelease;
 	}
 
-	const response = await octokit.rest.repos.getLatestRelease({
+	// Fall back to the latest prerelease.
+	const response = await octokit.rest.repos.listReleases({
 		owner: params.owner,
 		repo: params.repo,
+		per_page: 100,
 	});
 
-	return response.data;
+	const preRelease = response.data
+		.filter((r) => r.prerelease && r.published_at)
+		.sort(
+			(a, b) =>
+				new Date(b.published_at!).getTime() -
+				new Date(a.published_at!).getTime(),
+		)[0];
+
+	if (!preRelease) {
+		throw new Error(
+			`No pre-releases found for ${params.owner}/${params.repo}`,
+		);
+	}
+
+	return preRelease;
 }
 
 export async function getLatestFromGitHub(
