@@ -38,6 +38,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 				"UEVR with joehhodge's enhancements + Alternate Frame Warping.",
 			sourceCode: "https://github.com/PureDark/UEVR",
 			download: await getLatestFromGitHub({
+				formatId: (tag) => tag.replace("UEVR_AFW_", ""),
 				owner: "PureDark",
 				repo: "UEVR",
 				selectAssetName: (assetName) =>
@@ -53,6 +54,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			description: "UEVR nightly + Alternate Frame Warping.",
 			sourceCode: "https://github.com/PureDark/UEVR",
 			download: await getLatestFromGitHub({
+				formatId: (tag) => tag.replace("UEVR_AFW_", ""),
 				owner: "PureDark",
 				repo: "UEVR",
 				selectAssetName: (assetName) =>

@@ -759,12 +759,12 @@
       ],
       "description": "UEVR with joehhodge's enhancements + Alternate Frame Warping.",
       "download": {
-        "id": "UEVR_AFW_v1.0-beta.2",
+        "id": "v1.0-beta.2",
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.2/UEVR-joeyhodge_AFW_v1.0-beta.2.1.zip"
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "77820956effa7f50efb040f551b3dcfe4e6100027468810e28b4166873f98259",
+      "hash": "32c0bc80c5a289cae6f84a4f64b7d209a8701f418deb9e905b9b3af39da23dfd",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -809,12 +809,12 @@
       ],
       "description": "UEVR nightly + Alternate Frame Warping.",
       "download": {
-        "id": "UEVR_AFW_v1.0-beta.2",
+        "id": "v1.0-beta.2",
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.2/UEVR-nightly_AFW_v1.0-beta.2.1.zip"
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "4be052cb16de4837383290750be9b75a3342ebb30677cf0a016e32a6e3cc3e50",
+      "hash": "f10a9f086c4448db017477f778501d3c3d4c5fb8cec2a7b521986b556f1aa24c",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
