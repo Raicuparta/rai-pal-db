@@ -20,16 +20,24 @@ async function getReleaseData(params: Params) {
 		const response = await octokit.rest.repos.listReleases({
 			owner: params.owner,
 			repo: params.repo,
-			per_page: 1,
+			per_page: 100,
 		});
 
-		if (response.data.length === 0) {
+		const preRelease = response.data
+			.filter((r) => r.prerelease && r.published_at)
+			.sort(
+				(a, b) =>
+					new Date(b.published_at!).getTime() -
+					new Date(a.published_at!).getTime(),
+			)[0];
+
+		if (!preRelease) {
 			throw new Error(
-				`No releases found for ${params.owner}/${params.repo}`,
+				`No pre-releases found for ${params.owner}/${params.repo}`,
 			);
 		}
 
-		return response.data[0];
+		return preRelease;
 	}
 
 	const response = await octokit.rest.repos.getLatestRelease({
