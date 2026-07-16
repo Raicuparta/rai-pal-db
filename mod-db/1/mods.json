@@ -747,6 +747,106 @@
       "title": "UEVR Nightly"
     },
     {
+      "author": "praydog + PureDark + joeyhodge",
+      "config": {
+        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+        "destinationType": "Folder"
+      },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "description": "UEVR with joehhodge's enhancements + Alternate Frame Warping.",
+      "download": {
+        "id": "UEVR_AFW_v1.0-beta.2",
+        "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.2/UEVR-joeyhodge_AFW_v1.0-beta.2.1.zip"
+      },
+      "engine": "Unreal",
+      "gameOs": "Windows",
+      "hash": "77820956effa7f50efb040f551b3dcfe4e6100027468810e28b4166873f98259",
+      "id": "uevr-joeyhodge-afw",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/uevr-joeyhodge-afw",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge-afw",
+        "manifestPath": "{{SharedModsPath}}/uevr-joeyhodge-afw/rai-pal-manifest.json"
+      },
+      "runForGame": {
+        "args": [
+          "--attach={{GameExecutableName}}"
+        ],
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-joeyhodge-afw/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "runStandalone": {
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-joeyhodge-afw/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "sourceCode": "https://github.com/PureDark/UEVR",
+      "title": "UEVR JoeyHodge AFW"
+    },
+    {
+      "author": "praydog + PureDark",
+      "config": {
+        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+        "destinationType": "Folder"
+      },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "description": "UEVR nightly + Alternate Frame Warping.",
+      "download": {
+        "id": "UEVR_AFW_v1.0-beta.2",
+        "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.2/UEVR-nightly_AFW_v1.0-beta.2.1.zip"
+      },
+      "engine": "Unreal",
+      "gameOs": "Windows",
+      "hash": "4be052cb16de4837383290750be9b75a3342ebb30677cf0a016e32a6e3cc3e50",
+      "id": "uevr-nightly-afw",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/uevr-nightly-afw",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-nightly-afw",
+        "manifestPath": "{{SharedModsPath}}/uevr-nightly-afw/rai-pal-manifest.json"
+      },
+      "runForGame": {
+        "args": [
+          "--attach={{GameExecutableName}}"
+        ],
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-nightly-afw/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "runStandalone": {
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-nightly-afw/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "sourceCode": "https://github.com/PureDark/UEVR",
+      "title": "UEVR Nightly AFW"
+    },
+    {
       "author": "bill gates himself",
       "description": "Required for running UEVR via Wine",
       "download": {

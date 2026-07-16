@@ -31,6 +31,37 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			}),
 		},
 		{
+			...uevrBase("uevr-joeyhodge-afw"),
+			title: "UEVR JoeyHodge AFW",
+			author: "praydog + PureDark + joeyhodge",
+			description:
+				"UEVR with joehhodge's enhancements + Alternate Frame Warping.",
+			sourceCode: "https://github.com/PureDark/UEVR",
+			download: await getLatestFromGitHub({
+				owner: "PureDark",
+				repo: "UEVR",
+				selectAssetName: (assetName) =>
+					assetName.startsWith("UEVR-joeyhodge_AFW_") &&
+					assetName.endsWith(".zip"),
+				allowPreRelease: true,
+			}),
+		},
+		{
+			...uevrBase("uevr-nightly-afw"),
+			title: "UEVR Nightly AFW",
+			author: "praydog + PureDark",
+			description: "UEVR nightly + Alternate Frame Warping.",
+			sourceCode: "https://github.com/PureDark/UEVR",
+			download: await getLatestFromGitHub({
+				owner: "PureDark",
+				repo: "UEVR",
+				selectAssetName: (assetName) =>
+					assetName.startsWith("UEVR-nightly_AFW_") &&
+					assetName.endsWith(".zip"),
+				allowPreRelease: true,
+			}),
+		},
+		{
 			id: dotnetId,
 			title: ".NET Desktop Runtime",
 			hideFromGameModsList: true,
@@ -63,8 +94,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "Keton",
 			engine: "Unreal",
 			gameOs: "Windows",
-			description:
-				"Simple injector/game launcher for UEVR",
+			description: "Simple injector/game launcher for UEVR",
 			sourceCode: "https://github.com/keton/chihuahua",
 			download: await getLatestFromGitHub({
 				owner: "keton",
@@ -80,8 +110,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 						destination: `${token.SharedModsPath}/${chihuahuaId}`,
 					},
 				],
-				mainInstalledFolderPath:
-					`${token.SharedModsPath}/${chihuahuaId}`,
+				mainInstalledFolderPath: `${token.SharedModsPath}/${chihuahuaId}`,
 			},
 			runForGame: {
 				path: `${token.SharedModsPath}/${chihuahuaId}/chihuahua.exe`,
@@ -101,5 +130,5 @@ export async function getUevrMods(): Promise<ModBase[]> {
 				os: "Windows",
 			},
 		},
-];
+	];
 }

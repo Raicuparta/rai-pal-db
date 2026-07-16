@@ -6,19 +6,46 @@ type Params = {
 	repo: string;
 	selectAssetName: (assetName: string) => boolean;
 	formatId?: (tag: string) => string;
+	/**
+	 * If true, allows fetching the latest release even if it's a pre-release.
+	 * By default, the GitHub API only returns non-prerelease, non-draft releases.
+	 */
+	allowPreRelease?: boolean;
 };
 
 const octokit = new Octokit();
 
-export async function getLatestFromGitHub(
-	params: Params,
-): Promise<ModDownload> {
+async function getReleaseData(params: Params) {
+	if (params.allowPreRelease) {
+		const response = await octokit.rest.repos.listReleases({
+			owner: params.owner,
+			repo: params.repo,
+			per_page: 1,
+		});
+
+		if (response.data.length === 0) {
+			throw new Error(
+				`No releases found for ${params.owner}/${params.repo}`,
+			);
+		}
+
+		return response.data[0];
+	}
+
 	const response = await octokit.rest.repos.getLatestRelease({
 		owner: params.owner,
 		repo: params.repo,
 	});
 
-	const asset = response.data.assets.find((asset) =>
+	return response.data;
+}
+
+export async function getLatestFromGitHub(
+	params: Params,
+): Promise<ModDownload> {
+	const release = await getReleaseData(params);
+
+	const asset = release.assets.find((asset) =>
 		params.selectAssetName(asset.name)
 	);
 
@@ -28,13 +55,13 @@ export async function getLatestFromGitHub(
 		);
 	}
 
-	let id = response.data.tag_name;
+	let id = release.tag_name;
 	if (params.formatId) {
 		try {
-			id = params.formatId(response.data.tag_name) ?? response.data.tag_name;
+			id = params.formatId(release.tag_name) ?? release.tag_name;
 		} catch (error) {
 			console.warn(
-				`Error formatting tag name "${response.data.tag_name}" with provided formatId function:`,
+				`Error formatting tag name "${release.tag_name}" with provided formatId function:`,
 				error,
 			);
 		}
