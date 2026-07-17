@@ -6,6 +6,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 	return [
 		bepinexMod({
 			id: "uuvr-il2cpp-legacy",
+			family: "uuvr",
 			unityBackend: "Il2Cpp",
 			title: "UUVR Il2Cpp Legacy",
 			author: "Raicuparta",
@@ -27,6 +28,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 		}),
 		bepinexMod({
 			id: "uuvr-mono-legacy",
+			family: "uuvr",
 			unityBackend: "Mono",
 			title: "UUVR Mono Legacy",
 			author: "Raicuparta",
@@ -48,6 +50,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 		}),
 		bepinexMod({
 			id: "uuvr-mono-modern",
+			family: "uuvr",
 			unityBackend: "Mono",
 			title: "UUVR Mono Modern",
 			author: "Raicuparta",

@@ -5,6 +5,11 @@ export interface ModBase {
 	id: string;
 
 	/**
+	 * Non-unique family ID. Mods in the same family provide the same uhh thing. Rai Pal uses this for filters; you filter by games compatible with at least one mod of a given family.
+	 */
+	family?: string;
+
+	/**
 	 * If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement.
 	 */
 	deprecated?: boolean;

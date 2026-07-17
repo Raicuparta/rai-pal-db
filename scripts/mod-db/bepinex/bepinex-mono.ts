@@ -14,6 +14,7 @@ function bepinexMonoLoaderBase(
 ): Omit<ModBase, "title" | "download"> {
 	return {
 		id: modId,
+		family: "bepinex",
 		description: "Mod loader for Unity mods.",
 		engine: "Unity",
 		unityBackend: "Mono",

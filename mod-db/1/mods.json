@@ -21,7 +21,8 @@
         "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785%2B6abdba4.zip"
       },
       "engine": "Unity",
-      "hash": "c42c0e44b247e84f4a265e77121a7ebb60addb80e9cc9149c7cb9a3ce55db88a",
+      "family": "bepinex",
+      "hash": "915cad7cfb1c2b2b3f3104048edb3342a4d4c41d3650de992e4a839b7aa429a6",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -75,7 +76,8 @@
         "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.785%2B6abdba4.zip"
       },
       "engine": "Unity",
-      "hash": "71c127ca813f61b4532a7eba857659a82e94996b0fc05c620f0143cf10bdbfdd",
+      "family": "bepinex",
+      "hash": "f841db03f7b7f71fb172190ae39184742237fc77dea1241e5456a1601cce219b",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -129,7 +131,8 @@
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
       },
       "engine": "Unity",
-      "hash": "f88796c3cac6be3e632244501e25c53c84fb97b0278cbe43a8418cf3cef59f97",
+      "family": "bepinex",
+      "hash": "82001e57d518c90611c44b7d954820d98f215663e75c543e9b00d27249cc5962",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -179,7 +182,8 @@
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
       },
       "engine": "Unity",
-      "hash": "71e7fddcdb6c7ca4d0c2fab7131937e809c92c5ead50bd904bfea8774ea39c14",
+      "family": "bepinex",
+      "hash": "5fbd5b79e38024e5f920a3a0b349633d66cff33eaa4dbfa63c75974044a092b1",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -283,7 +287,8 @@
           "major": 2019
         }
       },
-      "hash": "40fa2297552d2de77a837e3311eba8b7d46634910c0766a81b5960db4427b813",
+      "family": "uuvr",
+      "hash": "3eaf5f6ca8901ebb18f93a859216ec8e971ead03a32460a1788c93721e2630d3",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -324,7 +329,8 @@
           "major": 2019
         }
       },
-      "hash": "7d5ff053d330a41a1346af027beb5561235b3470b92953d7be15c0b41587615c",
+      "family": "uuvr",
+      "hash": "297ff34f80a27c1452ad70e5c554f4575306eb101b8651499b555214b3d673e6",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -366,7 +372,8 @@
           "minor": 4
         }
       },
-      "hash": "0e289616dc671daa405bd939f25d811ede4cd447e4f81e007df6cb94bc7c2e72",
+      "family": "uuvr",
+      "hash": "2f151238c3a3624f8b6c12295e65bc0ee25961af702b03bf4673eaf69a736bc1",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -402,7 +409,8 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "bad26e8c8363ce925c35164bce6fd30125d3492abbc2d09a9cf39eb9cbf02cfb",
+      "family": "everyone",
+      "hash": "53240517a9c90ab867a51d7e2c13437350fc8c9813e0a6d2cd30cada27b59b01",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -438,7 +446,8 @@
         "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "ffebd8358e6ff7ac07012ce8fa92016a240d265595e0387dfc98ed40fba34723",
+      "family": "everyone",
+      "hash": "364cb238eca3e337bedee3f78563171d9ec98f6d2df5997d3597b1a60b2ebcf2",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -534,7 +543,8 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "e3fa9cb322bdd6c292e96019d2059d0235d61df0940eb95f223e5968172018d7",
+      "family": "unity-explorer",
+      "hash": "3fe6d0e07978e593c6d5f73788b3ab9a8799a554664e4bc444c6a6e2e5b321d3",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -566,7 +576,8 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "3025e16e6fa4b68c5b571c081e7e46514d38596983e0dfbdacdd13cb76f6301b",
+      "family": "unity-explorer",
+      "hash": "33addac2dd7bb681fc738bfbc5e523f3346fcfbb5c9440a9a0085557f1e9233e",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -663,8 +674,9 @@
         "url": "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip"
       },
       "engine": "Unreal",
+      "family": "uevr",
       "gameOs": "Windows",
-      "hash": "f7c53f24601b9175d2c0ee0ceb379fd5a114bc740652fb50b1ccc78f7fed7289",
+      "hash": "09c82e1986234e4522c57188fd14e06eff89dfbbc0fe243c9f2150851b5b4d70",
       "id": "uevr",
       "install": {
         "extract": [
@@ -713,8 +725,9 @@
         "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01136-a8dae23d73d6d590854096648cb479610094dd26/uevr.zip"
       },
       "engine": "Unreal",
+      "family": "uevr",
       "gameOs": "Windows",
-      "hash": "87213c7738b7107c3f679c91fe28ad18cc09b77816428ce593cb266fd2a8eea7",
+      "hash": "c4d41ac23221d2dfa2225610405a96909e71b09ba242a4634179a1444a62cf41",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -763,8 +776,9 @@
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.3/UEVR-joeyhodge_AFW_v1.0-beta.3.zip"
       },
       "engine": "Unreal",
+      "family": "uevr",
       "gameOs": "Windows",
-      "hash": "d693560ae3f7a4f9654075b031d950f7320dcdb86bd6cbf433d24b9147a1786e",
+      "hash": "4555efb2d478c9fa1a146541bc8d53d6a482a579a08a0f16e166e2cc6456897e",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -813,8 +827,9 @@
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.3/UEVR-nightly_AFW_v1.0-beta.3.1.zip"
       },
       "engine": "Unreal",
+      "family": "uevr",
       "gameOs": "Windows",
-      "hash": "9696ae84f196224fca89e8b36c0999f1889f331bd7c8f98326162d659a989f46",
+      "hash": "6b438302f098dbd93d958dc4c5b5965c84e192d34c0fbe4c9aa5ae14071f0b55",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
@@ -921,7 +936,8 @@
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1012-gc838a8ac.zip"
       },
       "engine": "Unreal",
-      "hash": "1392763f9e8e3ecca90df9604a0745683365be8763e73b8d49986afbfd0007a2",
+      "family": "ue4ss",
+      "hash": "e2be5696f89e872ed4de2359a56321edf6cca9d6b1600fabd5abcb0735c044fd",
       "id": "ue4ss",
       "install": {
         "extract": [

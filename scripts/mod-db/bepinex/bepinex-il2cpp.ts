@@ -14,6 +14,7 @@ function bepinexIl2cppLoaderBase(
 ): Omit<ModBase, "title" | "download"> {
 	return {
 		id: modId,
+		family: "bepinex",
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
 		description: "Mod loader for Unity mods.",

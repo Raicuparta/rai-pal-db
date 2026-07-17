@@ -5,6 +5,7 @@ export async function getUnityExplorerMods() {
 	return [
 		bepinexMod({
 			id: "unity-explorer-il2cpp",
+			family: "unity-explorer",
 			unityBackend: "Il2Cpp",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",
@@ -20,6 +21,7 @@ export async function getUnityExplorerMods() {
 		}),
 		bepinexMod({
 			id: "unity-explorer-mono",
+			family: "unity-explorer",
 			unityBackend: "Mono",
 			title: "UnityExplorer",
 			author: "Sinai + yukieiji",

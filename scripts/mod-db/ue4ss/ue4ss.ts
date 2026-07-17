@@ -8,6 +8,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 	return [
 		{
 			id,
+			family: "ue4ss",
 			engine: "Unreal",
 			title: "UE4SS",
 			author: "UE4SS-RE",

@@ -5,6 +5,7 @@ export async function getEveryoneMods() {
 	return [
 		bepinexMod({
 			id: "everyone-mono",
+			family: "everyone",
 			unityBackend: "Mono",
 			title: "Everyone (Mono)",
 			author: "Raicuparta",
@@ -21,6 +22,7 @@ export async function getEveryoneMods() {
 		}),
 		bepinexMod({
 			id: "everyone-il2cpp",
+			family: "everyone",
 			unityBackend: "Il2Cpp",
 			title: "Everyone (Il2Cpp)",
 			author: "Raicuparta",

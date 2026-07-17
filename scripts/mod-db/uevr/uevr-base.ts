@@ -14,6 +14,7 @@ export function uevrBase(
 
 	return {
 		id,
+		family: "uevr",
 		author: "praydog",
 		engine: "Unreal",
 		gameOs: "Windows",
