@@ -674,9 +674,14 @@
         "url": "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip"
       },
       "engine": "Unreal",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 4
+        }
+      },
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "09c82e1986234e4522c57188fd14e06eff89dfbbc0fe243c9f2150851b5b4d70",
+      "hash": "721e266b46d23c606a63e9874c1780b49d45cf787b935537eee3b944ea00e92b",
       "id": "uevr",
       "install": {
         "extract": [
@@ -725,9 +730,14 @@
         "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01136-a8dae23d73d6d590854096648cb479610094dd26/uevr.zip"
       },
       "engine": "Unreal",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 4
+        }
+      },
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "c4d41ac23221d2dfa2225610405a96909e71b09ba242a4634179a1444a62cf41",
+      "hash": "6d45f5cac89d50dd00477cf351407a1fb4aa7e7e9ca69c784ef90f47bf838774",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -776,9 +786,14 @@
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.3/UEVR-joeyhodge_AFW_v1.0-beta.3.zip"
       },
       "engine": "Unreal",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 4
+        }
+      },
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "4555efb2d478c9fa1a146541bc8d53d6a482a579a08a0f16e166e2cc6456897e",
+      "hash": "d49e3acbb57fd1c16a67ea9d7c817e85fa16f034987910f254fcd28270b4f7ee",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -827,9 +842,14 @@
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.3/UEVR-nightly_AFW_v1.0-beta.3.1.zip"
       },
       "engine": "Unreal",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 4
+        }
+      },
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "6b438302f098dbd93d958dc4c5b5965c84e192d34c0fbe4c9aa5ae14071f0b55",
+      "hash": "22a7c6ace11ec0afc6311161c387b9c3e01791fc41ddf1b7d87c6f9ebd122865",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
