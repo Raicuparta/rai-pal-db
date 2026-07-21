@@ -44,10 +44,5 @@ export function uevrBase(
 				`${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
 			destinationType: "Folder",
 		},
-		engineVersionRange: {
-			minimum: {
-				major: 4,
-			},
-		},
 	};
 }
