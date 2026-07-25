@@ -721,13 +721,13 @@
       ],
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "download": {
-        "id": "01136",
-        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01136-a8dae23d73d6d590854096648cb479610094dd26/uevr.zip"
+        "id": "01138",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01138-158232aa0703f39014931a8a2320e0633c3c47d4/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "c4d41ac23221d2dfa2225610405a96909e71b09ba242a4634179a1444a62cf41",
+      "hash": "68a5a8e3b431273173c9c09547069f634c8f3ecfaf2dec758450f85c61b3785e",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -932,12 +932,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1012",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1012-gc838a8ac.zip"
+        "id": "v3.0.1-1015",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1015-g4b96f82b.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "e2be5696f89e872ed4de2359a56321edf6cca9d6b1600fabd5abcb0735c044fd",
+      "hash": "3e802e7946ec6392d55475e6c680d91443d698a5546ee0d7669693343a56f03d",
       "id": "ue4ss",
       "install": {
         "extract": [
