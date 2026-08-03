@@ -605,11 +605,11 @@
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin5_v6.3.zip"
+        "id": "v6.3.1",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.1/RuntimeUnityEditor.Bepin5_v6.3.1.zip"
       },
       "engine": "Unity",
-      "hash": "b7747eb3d731735581813606c1de15f95f023df37bf48b509ab2f7bf64d865b7",
+      "hash": "54da168e580ab6ded4db672965c46c81ab52ee8ddc49f6b7f912ce738296f1d0",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -637,11 +637,11 @@
       ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.zip"
+        "id": "v6.3.1",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.1/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.1.zip"
       },
       "engine": "Unity",
-      "hash": "0303d71579a3866924ad0ae1e21f81209c8b846f3a0acdf62db2da75bdb94d9c",
+      "hash": "c9f5b70ab4474d874c9e307542c534427ae2854376b4403480be2c0cea18359e",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
