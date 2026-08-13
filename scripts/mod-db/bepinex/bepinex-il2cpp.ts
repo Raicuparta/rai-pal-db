@@ -61,7 +61,7 @@ corlib_dir = ${token.GameInstalledModsPath}/bepinex/dotnet
 				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 			destinationType: "File",
 		},
-		dependencies: [
+		optionalDependencies: [
 			{
 				modId: "bepinex-config-legacy",
 			},

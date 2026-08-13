@@ -55,7 +55,7 @@ dll_search_path_override=
 				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 			destinationType: "File",
 		},
-		dependencies: [
+		optionalDependencies: [
 			{
 				modId: "bepinex-config-legacy",
 			},

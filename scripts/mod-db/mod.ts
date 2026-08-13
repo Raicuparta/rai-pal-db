@@ -82,9 +82,14 @@ export interface ModBase {
 	};
 
 	/**
-	 * Mods that need to be installed before this one.
+	 * Mods that need to be installed before this one. Every dependency here must be satisfied by a compatible mod, otherwise this mod is also considered incompatible.
 	 */
-	dependencies?: ModDependency[];
+	requiredDependencies?: ModDependency[];
+
+	/**
+	 * Mods that should get installed before this one, if they're compatible. If not, that's fine.
+	 */
+	optionalDependencies?: ModDependency[];
 
 	install?: {
 		/**
@@ -175,8 +180,8 @@ export interface Mod extends ModBase {
  * We can defined dependencies via unique mod IDs, or via the non-unique family IDs
  */
 type ModDependency = {
-  modId: string;
-  family?: never;
+	modId: string;
+	family?: never;
 } | {
 	family: string;
 	modId?: never;
