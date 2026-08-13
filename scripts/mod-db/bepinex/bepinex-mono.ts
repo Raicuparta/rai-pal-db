@@ -18,6 +18,7 @@ function bepinexMonoLoaderBase(
 		description: "Mod loader for Unity mods.",
 		engine: "Unity",
 		unityBackend: "Mono",
+		gameOs: "Windows",
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: {

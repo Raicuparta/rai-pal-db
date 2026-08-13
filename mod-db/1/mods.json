@@ -2,6 +2,7 @@
   "mods": [
     {
       "architecture": "X64",
+      "gameOs": "Windows",
       "author": "BepInEx",
       "config": {
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
@@ -57,6 +58,7 @@
     },
     {
       "architecture": "X86",
+      "gameOs": "Windows",
       "author": "BepInEx",
       "config": {
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",

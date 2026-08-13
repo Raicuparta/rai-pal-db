@@ -17,6 +17,7 @@ function bepinexIl2cppLoaderBase(
 		family: "bepinex",
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
+		gameOs: "Windows",
 		description: "Mod loader for Unity mods.",
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
