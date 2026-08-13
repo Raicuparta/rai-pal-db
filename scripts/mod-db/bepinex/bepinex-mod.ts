@@ -35,22 +35,10 @@ export function bepinexMod(
 				destinationType: "File",
 			}
 			: undefined,
-		dependencies: mod.unityBackend === "Mono"
-			? [
-				{
-					modId: "bepinex-mono-x64",
-				},
-				{
-					modId: "bepinex-mono-x86",
-				},
-			]
-			: [
-				{
-					modId: "bepinex-il2cpp-x64",
-				},
-				{
-					modId: "bepinex-il2cpp-x86",
-				},
-			],
+		dependencies: [
+			{
+				family: "bepinex",
+			},
+		],
 	};
 }

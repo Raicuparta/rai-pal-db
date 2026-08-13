@@ -84,12 +84,7 @@ export interface ModBase {
 	/**
 	 * Mods that need to be installed before this one.
 	 */
-	dependencies?: {
-		/**
-		 * ID of the mod to depend on.
-		 */
-		modId?: string;
-	}[];
+	dependencies?: ModDependency[];
 
 	install?: {
 		/**
@@ -175,6 +170,17 @@ export interface Mod extends ModBase {
 	 */
 	hash: string;
 }
+
+/**
+ * We can defined dependencies via unique mod IDs, or via the non-unique family IDs
+ */
+type ModDependency = {
+  modId: string;
+  family?: never;
+} | {
+	family: string;
+	modId?: never;
+};
 
 export type UnityBackend = "Il2Cpp" | "Mono";
 
