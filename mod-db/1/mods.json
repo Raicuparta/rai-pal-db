@@ -2,7 +2,6 @@
   "mods": [
     {
       "architecture": "X64",
-      "gameOs": "Windows",
       "author": "BepInEx",
       "config": {
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
@@ -23,7 +22,8 @@
       },
       "engine": "Unity",
       "family": "bepinex",
-      "hash": "915cad7cfb1c2b2b3f3104048edb3342a4d4c41d3650de992e4a839b7aa429a6",
+      "gameOs": "Windows",
+      "hash": "d5df325d8b167bba2a784b9a97b4e1eda8abbf03229c07e0f26b4386b23db046",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -58,7 +58,6 @@
     },
     {
       "architecture": "X86",
-      "gameOs": "Windows",
       "author": "BepInEx",
       "config": {
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
@@ -79,7 +78,8 @@
       },
       "engine": "Unity",
       "family": "bepinex",
-      "hash": "f841db03f7b7f71fb172190ae39184742237fc77dea1241e5456a1601cce219b",
+      "gameOs": "Windows",
+      "hash": "65ec2e58a6ca9d41765640e5b3655f6292dddfdaf59734dcbc77c7e01e21ef36",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -134,7 +134,8 @@
       },
       "engine": "Unity",
       "family": "bepinex",
-      "hash": "82001e57d518c90611c44b7d954820d98f215663e75c543e9b00d27249cc5962",
+      "gameOs": "Windows",
+      "hash": "d763d43ac4200d2bd11eca6f23a4e53efdc753a0791fe778e2189edcec94e5cc",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -185,7 +186,8 @@
       },
       "engine": "Unity",
       "family": "bepinex",
-      "hash": "5fbd5b79e38024e5f920a3a0b349633d66cff33eaa4dbfa63c75974044a092b1",
+      "gameOs": "Windows",
+      "hash": "ca1865ccd9d4e32d431f050a3648923cf023154b9c508c1de83c7ce09e00970e",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
