@@ -1,6 +1,6 @@
 import { ModBase, ModDownload } from "../mod.ts";
-import { Octokit } from "octokit";
 import { token } from "../replacement-tokens.ts";
+import { createOctokit } from "../github-client.ts";
 
 const id = "ue4ss";
 
@@ -41,7 +41,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 	];
 }
 
-const octokit = new Octokit();
+const octokit = createOctokit();
 const VERSION_PATTERN = /^UE4SS_(v[\d.]+\-\d+)[\-\w]*\.zip$/;
 
 export async function getLatestUe4ss(): Promise<ModDownload> {

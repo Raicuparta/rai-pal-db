@@ -1,10 +1,10 @@
 import { Architecture, isArchitecture, ModBase, ModDownload } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { Octokit } from "octokit";
+import { createOctokit } from "../github-client.ts";
 
 const repository = "BepInEx/BepInEx";
 const [owner, repo] = repository.split("/");
-const octokit = new Octokit();
+const octokit = createOctokit();
 
 /**
  * Base mod object for BepInEx itself, mono version.
