@@ -334,13 +334,17 @@
         }
       },
       "family": "uuvr",
-      "hash": "297ff34f80a27c1452ad70e5c554f4575306eb101b8651499b555214b3d673e6",
+      "hash": "d89ec25360b807f07f348223f1ba52fd209b15de2eb48c0ebc3c5e0a5018439b",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-legacy",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
@@ -377,13 +381,17 @@
         }
       },
       "family": "uuvr",
-      "hash": "2f151238c3a3624f8b6c12295e65bc0ee25961af702b03bf4673eaf69a736bc1",
+      "hash": "13101cff201fa7398eb3e72883305d690823b0128329a54e664aaee5e35f9783",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-modern",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
