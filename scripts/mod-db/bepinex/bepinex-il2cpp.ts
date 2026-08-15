@@ -56,13 +56,13 @@ function bepinexIl2cppRunForGame(os: OperatingSystem): ModRun | null {
 	return {
 		path: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
 		args: [
-			token.GameExecutableName,
+			`"${token.GameExecutableName}"`,
 			"--doorstop-target-assembly",
-			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll`,
+			`"${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll"`,
 			"--doorstop-clr-runtime-coreclr-path",
-			`${token.GameInstalledModsPath}/bepinex/dotnet/libcoreclr`,
+			`"${token.GameInstalledModsPath}/bepinex/dotnet/libcoreclr"`,
 			"--doorstop-clr-corlib-dir",
-			`${token.GameInstalledModsPath}/bepinex/dotnet`,
+			`"${token.GameInstalledModsPath}/bepinex/dotnet"`,
 		],
 		os: "Linux",
 	};

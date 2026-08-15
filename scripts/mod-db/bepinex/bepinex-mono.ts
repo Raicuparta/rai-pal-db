@@ -56,9 +56,9 @@ function bepinexMonoRunForGame(os: OperatingSystem): ModRun | null {
 	return {
 		path: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
 		args: [
-			token.GameExecutableName,
+			`"${token.GameExecutableName}"`,
 			"--doorstop-target-assembly",
-			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll`,
+			`"${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll"`,
 		],
 		os: "Linux",
 	};
