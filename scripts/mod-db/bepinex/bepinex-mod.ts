@@ -11,6 +11,7 @@ export function bepinexMod(
 	params?: {
 		configFileName?: string;
 		zipRoot?: string;
+		withPatchers?: boolean;
 	},
 ): ModBase {
 	return {
@@ -24,6 +25,13 @@ export function bepinexMod(
 					destination:
 						`${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
 				},
+				...params?.withPatchers
+					? [{
+						source: `${params?.zipRoot ? `${params.zipRoot}/` : ""}patchers`,
+						destination:
+							`${token.GameInstalledModsPath}/bepinex/BepInEx/patchers/${mod.id}`,
+					}]
+					: [],
 			],
 			mainInstalledFolderPath:
 				`${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
