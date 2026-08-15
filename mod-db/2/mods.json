@@ -119,7 +119,7 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods.",
+      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
       "download": {
         "id": "6.0.0-be.785",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.785%2B6abdba4.zip"
@@ -127,7 +127,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "5dce6b896c43e5339c8ef0c1ea61fa882c89c0ca1c753ea526ff0f069e50cabd",
+      "hash": "0766e0b3de6faf3228187e350ce37b6f9dd9c763fe2ffc2c264fab2c09650289",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -287,7 +287,7 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods.",
+      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
       "download": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
@@ -295,7 +295,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "1ce71a090935df04620801bc90268f76b73a0684884cd117d70989c5f2d835f6",
+      "hash": "6dab3c4c8c60ebcb4523edf5c87002e1e8f972e17adf42ef6c204e7f8b17ba86",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -343,7 +343,7 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods.",
+      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
       "download": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
@@ -351,7 +351,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "aaad5cc31c908bc6c182b45d7d6b7d6e03628abb0cffb0da9d7edef813f67e1c",
+      "hash": "c1f62c1ec56c412a6bbb6f14889bc97780ddcd8818c1569cbb422a9c8e0eb22c",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [

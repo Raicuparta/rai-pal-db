@@ -27,7 +27,11 @@ function bepinexIl2cppLoaderBase(
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
 		gameOs: os,
-		description: "Mod loader for Unity mods.",
+		description: `Mod loader for Unity mods.${
+			os === "Linux"
+				? " You must start the game with this 'Run' button for mods to work"
+				: ""
+		}`,
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: bepinexIl2cppInstall(modId, os),

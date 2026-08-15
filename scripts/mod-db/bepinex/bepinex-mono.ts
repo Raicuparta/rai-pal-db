@@ -24,7 +24,11 @@ function bepinexMonoLoaderBase(
 	return {
 		id: modId,
 		family: "bepinex",
-		description: "Mod loader for Unity mods.",
+		description: `Mod loader for Unity mods.${
+			os === "Linux"
+				? " You must start the game with this 'Run' button for mods to work"
+				: ""
+		}`,
 		engine: "Unity",
 		unityBackend: "Mono",
 		gameOs: os,
