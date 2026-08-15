@@ -284,13 +284,17 @@
         }
       },
       "family": "uuvr",
-      "hash": "03664c3c9a6c3e012cb666bd39a2d261f9acb1337480292135d2a32d679953f4",
+      "hash": "7185a653a84f2e7937ba70f61a40f4289be2c9675d4db910c6e07a485f948032",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-il2cpp-legacy",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
@@ -323,13 +327,17 @@
         }
       },
       "family": "uuvr",
-      "hash": "d99dae3983433f84edcd4291a800dbf3aa352ff854050ec65fcafd4476cd9e31",
+      "hash": "6d21d4d4bf4d5c48f1a1d8731804ee300016281a9dc575103d8081cacc921d29",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-legacy",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
@@ -363,13 +371,17 @@
         }
       },
       "family": "uuvr",
-      "hash": "fd06d0b89aafc4a97c6e9cf68a6ae3c6c2ceee95c62d1a01d21cab58df24d77a",
+      "hash": "5cc351ab4667f41686b04431fabff99f7e18045aada2f8bc54c1ec75a61e93e4",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-modern",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
@@ -903,12 +915,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1021",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1021-g1c1a1497.zip"
+        "id": "v3.0.1-1026",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1026-g4063b982.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "3811f71c8dda4ad3cc771cb6dbc5d118f4d58e735276f7dc82e97cdc95ff1fd0",
+      "hash": "bbfb6a79549ea41f82cfbb15e755804655f9c3ac121a2a33bee6de8fd143f37d",
       "id": "ue4ss",
       "install": {
         "extract": [

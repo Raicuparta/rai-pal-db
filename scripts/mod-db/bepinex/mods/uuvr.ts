@@ -24,6 +24,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip",
 			},
 		}, {
+			withPatchers: true,
 			configFileName: "raicuparta.uuvr-legacy.cfg",
 		}),
 		bepinexMod({
@@ -46,6 +47,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip",
 			},
 		}, {
+			withPatchers: true,
 			configFileName: "raicuparta.uuvr-legacy.cfg",
 		}),
 		bepinexMod({
@@ -69,6 +71,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 					"https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip",
 			},
 		}, {
+			withPatchers: true,
 			configFileName: "raicuparta.uuvr-modern.cfg",
 		}),
 	];
