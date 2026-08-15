@@ -1,5 +1,11 @@
 import { DOMParser } from "@b-fuze/deno-dom";
-import { Architecture, isArchitecture, ModBase, ModDownload } from "../mod.ts";
+import {
+	Architecture,
+	isArchitecture,
+	ModBase,
+	ModDownload,
+	OperatingSystem,
+} from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
@@ -11,27 +17,54 @@ const BLEEDING_BUILD_URL_BASE =
  */
 function bepinexIl2cppLoaderBase(
 	modId: string,
+	os: OperatingSystem,
 ): Omit<ModBase, "title" | "download"> {
 	return {
 		id: modId,
 		family: "bepinex",
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
-		gameOs: "Windows",
+		gameOs: os,
 		description: "Mod loader for Unity mods.",
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
-		install: {
-			manifestPath: `${token.GameInstalledModsPath}/manifests/${modId}.json`,
+		install: bepinexIl2cppInstall(modId, os),
+		config: {
+			destinationPath:
+				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+			destinationType: "File",
+		},
+		optionalDependencies: [
+			{
+				modId: "bepinex-config-legacy",
+			},
+			{
+				modId: "bepinex-config-modern",
+			},
+		],
+	};
+}
+
+function bepinexIl2cppInstall(
+	modId: string,
+	os: OperatingSystem,
+): NonNullable<ModBase["install"]> {
+	const manifestPath = `${token.GameInstalledModsPath}/manifests/${modId}.json`;
+	const bepinexExtract = {
+		source: "BepInEx",
+		destination: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
+	};
+	const dotnetExtract = {
+		source: "dotnet",
+		destination: `${token.GameInstalledModsPath}/bepinex/dotnet`,
+	};
+
+	if (os === "Windows") {
+		return {
+			manifestPath,
 			extract: [
-				{
-					source: "BepInEx",
-					destination: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
-				},
-				{
-					source: "dotnet",
-					destination: `${token.GameInstalledModsPath}/bepinex/dotnet`,
-				},
+				bepinexExtract,
+				dotnetExtract,
 				{
 					source: "winhttp.dll",
 					destination: `${token.GameExecutableFolderPath}/winhttp.dll`,
@@ -55,22 +88,49 @@ corlib_dir = ${token.GameInstalledModsPath}/bepinex/dotnet
 			],
 			wineDllOverrides: ["winhttp"],
 			mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
-		},
-		config: {
-			destinationPath:
-				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
-			destinationType: "File",
-		},
-		optionalDependencies: [
+		};
+	}
+
+	return {
+		manifestPath,
+		extract: [
+			bepinexExtract,
+			dotnetExtract,
 			{
-				modId: "bepinex-config-legacy",
-			},
-			{
-				modId: "bepinex-config-modern",
+				source: "libdoorstop.so",
+				destination: `${token.GameExecutableFolderPath}/libdoorstop.so`,
 			},
 		],
+		mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 	};
 }
+
+type LoaderPlatform = {
+	os: OperatingSystem;
+	architecture: Architecture;
+};
+
+function isLinux(platform: LoaderPlatform): boolean {
+	return platform.os === "Linux";
+}
+
+function modIdSuffix(platform: LoaderPlatform): string {
+	return `${
+		isLinux(platform) ? "linux-" : ""
+	}${platform.architecture.toLocaleLowerCase()}`;
+}
+
+function title(platform: LoaderPlatform): string {
+	return `BepInEx Il2Cpp ${platform.architecture}${
+		isLinux(platform) ? " (Linux)" : ""
+	}`;
+}
+
+const wantedPlatforms: LoaderPlatform[] = [
+	{ os: "Windows", architecture: "X64" },
+	{ os: "Windows", architecture: "X86" },
+	{ os: "Linux", architecture: "X64" },
+];
 
 export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 	const response = await fetch(BLEEDING_BUILD_URL_BASE);
@@ -82,8 +142,13 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 	}
 
 	const releaseElements = doc.getElementsByClassName("artifact-item");
-	const latestByArch: Partial<
-		Record<Architecture, { timestamp: number; release: ModDownload }>
+	const latestByPlatform: Partial<
+		Record<
+			OperatingSystem,
+			Partial<
+				Record<Architecture, { timestamp: number; release: ModDownload }>
+			>
+		>
 	> = {};
 
 	for (const releaseElement of releaseElements) {
@@ -107,17 +172,18 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 			}
 
 			const match = href.match(
-				/\/BepInEx-Unity\.(Mono|IL2CPP)-win-(x86|x64)-(\d+\.\d+\.\d+-be\.\d+)/,
+				/\/BepInEx-Unity\.(Mono|IL2CPP)-(win|linux)-(x86|x64)-(\d+\.\d+\.\d+-be\.\d+)/,
 			);
 			if (!match) {
 				continue;
 			}
 
-			const [, backendMatch, archMatch, buildVersionMatch] = match;
+			const [, backendMatch, osMatch, archMatch, buildVersionMatch] = match;
 			if (backendMatch !== "IL2CPP") {
 				continue;
 			}
 
+			const os = osMatch === "linux" ? "Linux" : "Windows";
 			const architecture = archMatch.toLocaleUpperCase();
 
 			if (!isArchitecture(architecture)) {
@@ -125,42 +191,37 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 				continue;
 			}
 
-			const existing = latestByArch[architecture];
+			const existing = latestByPlatform[os]?.[architecture];
 			if (!existing || releaseTimestamp > existing.timestamp) {
-				latestByArch[architecture] = {
+				const latestForOs = latestByPlatform[os] ?? {};
+				latestForOs[architecture] = {
 					release: {
 						id: buildVersionMatch,
 						url: `${BLEEDING_BUILD_URL_DOMAIN}${href}`,
 					},
 					timestamp: releaseTimestamp,
 				};
+				latestByPlatform[os] = latestForOs;
 			}
 		}
 	}
 
-	const latestX86 = latestByArch.X86;
-	const latestX64 = latestByArch.X64;
+	return wantedPlatforms.map((platform) => {
+		const latest = latestByPlatform[platform.os]?.[platform.architecture];
+		if (!latest) {
+			throw new Error(
+				`No ${platform.os} ${platform.architecture} BepInEx Bleeding found`,
+			);
+		}
 
-	if (!latestX86) {
-		throw new Error("No x86 BepInEx Bleeding found");
-	}
-
-	if (!latestX64) {
-		throw new Error("No x64 BepInEx Bleeding found");
-	}
-
-	return [
-		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x64"),
-			architecture: "X64",
-			title: "BepInEx Il2Cpp X64",
-			download: latestX64.release,
-		},
-		{
-			...bepinexIl2cppLoaderBase("bepinex-il2cpp-x86"),
-			architecture: "X86",
-			title: "BepInEx Il2Cpp X86",
-			download: latestX86.release,
-		},
-	];
+		return {
+			...bepinexIl2cppLoaderBase(
+				`bepinex-il2cpp-${modIdSuffix(platform)}`,
+				platform.os,
+			),
+			architecture: platform.architecture,
+			title: title(platform),
+			download: latest.release,
+		};
+	});
 }

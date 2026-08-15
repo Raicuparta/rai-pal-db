@@ -1,4 +1,10 @@
-import { Architecture, isArchitecture, ModBase, ModDownload } from "../mod.ts";
+import {
+	Architecture,
+	isArchitecture,
+	ModBase,
+	ModDownload,
+	OperatingSystem,
+} from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { createOctokit } from "../github-client.ts";
 
@@ -11,6 +17,7 @@ const octokit = createOctokit();
  */
 function bepinexMonoLoaderBase(
 	modId: string,
+	os: OperatingSystem,
 ): Omit<ModBase, "title" | "download"> {
 	return {
 		id: modId,
@@ -18,16 +25,40 @@ function bepinexMonoLoaderBase(
 		description: "Mod loader for Unity mods.",
 		engine: "Unity",
 		unityBackend: "Mono",
-		gameOs: "Windows",
+		gameOs: os,
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
-		install: {
+		install: bepinexMonoInstall(modId, os),
+		config: {
+			destinationPath:
+				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+			destinationType: "File",
+		},
+		optionalDependencies: [
+			{
+				modId: "bepinex-config-legacy",
+			},
+			{
+				modId: "bepinex-config-modern",
+			},
+		],
+	};
+}
+
+function bepinexMonoInstall(
+	modId: string,
+	os: OperatingSystem,
+): NonNullable<ModBase["install"]> {
+	const bepinexExtract = {
+		source: "BepInEx",
+		destination: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
+	};
+
+	if (os === "Windows") {
+		return {
 			manifestPath: `${token.GameInstalledModsPath}/manifests/${modId}.json`,
 			extract: [
-				{
-					source: "BepInEx",
-					destination: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
-				},
+				bepinexExtract,
 				{
 					source: "winhttp.dll",
 					destination: `${token.GameExecutableFolderPath}/winhttp.dll`,
@@ -49,22 +80,26 @@ dll_search_path_override=
 			],
 			wineDllOverrides: ["winhttp"],
 			mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
-		},
-		config: {
-			destinationPath:
-				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
-			destinationType: "File",
-		},
-		optionalDependencies: [
+		};
+	}
+
+	return {
+		manifestPath: `${token.GameInstalledModsPath}/manifests/${modId}.json`,
+		extract: [
+			bepinexExtract,
 			{
-				modId: "bepinex-config-legacy",
-			},
-			{
-				modId: "bepinex-config-modern",
+				source: "libdoorstop.so",
+				destination: `${token.GameExecutableFolderPath}/libdoorstop.so`,
 			},
 		],
+		mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 	};
 }
+
+type LoaderPlatform = {
+	os: OperatingSystem;
+	architecture: Architecture;
+};
 
 function asArch(archMatch: string): Architecture | null {
 	const architecture = archMatch.toLocaleUpperCase();
@@ -76,28 +111,59 @@ function asArch(archMatch: string): Architecture | null {
 	return architecture;
 }
 
-function getMonoArchFromAssetName(assetName: string): Architecture | null {
-	const modernMatch = assetName.match(/^BepInEx_win_(x64|x86)_/);
+function asOs(osMatch: string): OperatingSystem | null {
+	switch (osMatch) {
+		case "win":
+		case "windows":
+			return "Windows";
+		case "linux":
+			return "Linux";
+		default:
+			console.warn(`Unknown operating system: ${osMatch}`);
+			return null;
+	}
+}
+
+function asPlatform(
+	osMatch: string,
+	archMatch: string,
+): LoaderPlatform | null {
+	const os = asOs(osMatch);
+	if (!os) {
+		return null;
+	}
+	const architecture = asArch(archMatch);
+	if (!architecture) {
+		return null;
+	}
+	return { os, architecture };
+}
+
+function getMonoPlatformFromAssetName(
+	assetName: string,
+): LoaderPlatform | null {
+	const modernMatch = assetName.match(/^BepInEx_(win|linux)_(x64|x86)_/);
 	if (modernMatch) {
-		const [, archMatch] = modernMatch;
-		return asArch(archMatch);
+		const [, osMatch, archMatch] = modernMatch;
+		return asPlatform(osMatch, archMatch);
 	}
 
 	const legacyMatch = assetName.match(/^BepInEx_(x64|x86)_/);
 	if (legacyMatch) {
-		const [, archMatch] = legacyMatch;
-		return asArch(archMatch);
+		return asPlatform("win", legacyMatch[1]);
 	}
 
-	const prereleaseMatch = assetName.match(/^BepInEx-(.+)-win-(x64|x86)-/);
+	const prereleaseMatch = assetName.match(
+		/^BepInEx-(.+)-(win|linux)-(x64|x86)-/,
+	);
 	if (prereleaseMatch) {
-		const [, backendMatch, archMatch] = prereleaseMatch;
+		const [, backendMatch, osMatch, archMatch] = prereleaseMatch;
 		if (
 			backendMatch.includes("Unity.Mono") ||
 			backendMatch.includes("NET.Framework") ||
 			backendMatch.includes("NET.CoreCLR")
 		) {
-			return asArch(archMatch);
+			return asPlatform(osMatch, archMatch);
 		}
 		return null;
 	}
@@ -110,11 +176,34 @@ function getMonoArchFromAssetName(assetName: string): Architecture | null {
 		if (!isMonoLike) {
 			return null;
 		}
-		return asArch(archMatch);
+		return asPlatform("win", archMatch);
 	}
 
 	return null;
 }
+
+function isLinux(platform: LoaderPlatform): boolean {
+	return platform.os === "Linux";
+}
+
+function modIdSuffix(platform: LoaderPlatform): string {
+	return `${
+		isLinux(platform) ? "linux-" : ""
+	}${platform.architecture.toLocaleLowerCase()}`;
+}
+
+function title(platform: LoaderPlatform): string {
+	return `BepInEx Mono ${platform.architecture}${
+		isLinux(platform) ? " (Linux)" : ""
+	}`;
+}
+
+const wantedPlatforms: LoaderPlatform[] = [
+	{ os: "Windows", architecture: "X64" },
+	{ os: "Windows", architecture: "X86" },
+	{ os: "Linux", architecture: "X64" },
+	{ os: "Linux", architecture: "X86" },
+];
 
 export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 	const response = await octokit.rest.repos.listReleases({
@@ -124,8 +213,13 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 	});
 	const githubReleases = response.data;
 
-	const latestByArch: Partial<
-		Record<Architecture, { timestamp: number; release: ModDownload }>
+	const latestByPlatform: Partial<
+		Record<
+			OperatingSystem,
+			Partial<
+				Record<Architecture, { timestamp: number; release: ModDownload }>
+			>
+		>
 	> = {};
 
 	for (const gitHubRelease of githubReleases) {
@@ -138,44 +232,39 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 		const timestamp = new Date(publishedAt).getTime();
 
 		for (const asset of gitHubRelease.assets) {
-			const arch = getMonoArchFromAssetName(asset.name);
-			if (!arch) {
+			const platform = getMonoPlatformFromAssetName(asset.name);
+			if (!platform) {
 				continue;
 			}
 
-			const existing = latestByArch[arch];
+			const existing = latestByPlatform[platform.os]?.[platform.architecture];
 			if (!existing || timestamp > existing.timestamp) {
-				latestByArch[arch] = {
+				const latestForOs = latestByPlatform[platform.os] ?? {};
+				latestForOs[platform.architecture] = {
 					timestamp,
 					release: { id: version, url: asset.browser_download_url },
 				};
+				latestByPlatform[platform.os] = latestForOs;
 			}
 		}
 	}
 
-	const latestX86 = latestByArch.X86;
-	const latestX64 = latestByArch.X64;
+	return wantedPlatforms.map((platform) => {
+		const latest = latestByPlatform[platform.os]?.[platform.architecture];
+		if (!latest) {
+			throw new Error(
+				`No ${platform.os} ${platform.architecture} BepInEx Mono found`,
+			);
+		}
 
-	if (!latestX86) {
-		throw new Error("No x86 BepInEx Mono found");
-	}
-
-	if (!latestX64) {
-		throw new Error("No x64 BepInEx Mono found");
-	}
-
-	return [
-		{
-			...bepinexMonoLoaderBase("bepinex-mono-x64"),
-			architecture: "X64",
-			title: "BepInEx Mono X64",
-			download: latestX64.release,
-		},
-		{
-			...bepinexMonoLoaderBase("bepinex-mono-x86"),
-			architecture: "X86",
-			title: "BepInEx Mono X86",
-			download: latestX86.release,
-		},
-	];
+		return {
+			...bepinexMonoLoaderBase(
+				`bepinex-mono-${modIdSuffix(platform)}`,
+				platform.os,
+			),
+			architecture: platform.architecture,
+			title: title(platform),
+			download: latest.release,
+		};
+	});
 }

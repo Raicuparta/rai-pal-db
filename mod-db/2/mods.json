@@ -121,6 +121,53 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
+        "id": "6.0.0-be.785",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.785%2B6abdba4.zip"
+      },
+      "engine": "Unity",
+      "family": "bepinex",
+      "gameOs": "Linux",
+      "hash": "cf688c865299f0b4cddc59c4fefe581ad8b21af67ce1fed7ad426166b4662846",
+      "id": "bepinex-il2cpp-linux-x64",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/dotnet",
+            "source": "dotnet"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
+            "source": "libdoorstop.so"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-il2cpp-linux-x64.json"
+      },
+      "optionalDependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Il2Cpp X64 (Linux)",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "architecture": "X64",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "Mod loader for Unity mods.",
+      "download": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
       },
@@ -214,6 +261,92 @@
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X86",
+      "unityBackend": "Mono"
+    },
+    {
+      "architecture": "X64",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "Mod loader for Unity mods.",
+      "download": {
+        "id": "5.4.23.5",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
+      },
+      "engine": "Unity",
+      "family": "bepinex",
+      "gameOs": "Linux",
+      "hash": "6617110d618d8aa6b3ec05c5ae707ab1309dd806da5c77e33e01f698275e723e",
+      "id": "bepinex-mono-linux-x64",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
+            "source": "libdoorstop.so"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-linux-x64.json"
+      },
+      "optionalDependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Mono X64 (Linux)",
+      "unityBackend": "Mono"
+    },
+    {
+      "architecture": "X86",
+      "author": "BepInEx",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+        "destinationType": "File"
+      },
+      "description": "Mod loader for Unity mods.",
+      "download": {
+        "id": "5.4.23.5",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
+      },
+      "engine": "Unity",
+      "family": "bepinex",
+      "gameOs": "Linux",
+      "hash": "139e3fde256b30d358bc99d163f16cd3ce465673a92e5474cb80f0bd59e6622b",
+      "id": "bepinex-mono-linux-x86",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+            "source": "BepInEx"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
+            "source": "libdoorstop.so"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-mono-linux-x86.json"
+      },
+      "optionalDependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
+      "sourceCode": "https://github.com/BepInEx/BepInEx",
+      "title": "BepInEx Mono X86 (Linux)",
       "unityBackend": "Mono"
     },
     {
