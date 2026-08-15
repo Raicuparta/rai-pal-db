@@ -127,7 +127,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "0766e0b3de6faf3228187e350ce37b6f9dd9c763fe2ffc2c264fab2c09650289",
+      "hash": "9b2a84be729a2dcac1f81e6d050cda474cd4ab1282f866e477a9e770484e0083",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -161,13 +161,13 @@
       ],
       "runForGame": {
         "args": [
-          "\"{{GameExecutableName}}\"",
+          "{{GameExecutableName}}",
           "--doorstop-target-assembly",
-          "\"{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll\"",
+          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
           "--doorstop-clr-runtime-coreclr-path",
-          "\"{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr\"",
+          "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr",
           "--doorstop-clr-corlib-dir",
-          "\"{{GameInstalledModsPath}}/bepinex/dotnet\""
+          "{{GameInstalledModsPath}}/bepinex/dotnet"
         ],
         "os": "Linux",
         "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
@@ -295,7 +295,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "6dab3c4c8c60ebcb4523edf5c87002e1e8f972e17adf42ef6c204e7f8b17ba86",
+      "hash": "bb118abd01ab56dac1780c313f5ad1e0279b068c1fbba0584a226001fb8e1a2e",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -325,9 +325,9 @@
       ],
       "runForGame": {
         "args": [
-          "\"{{GameExecutableName}}\"",
+          "{{GameExecutableName}}",
           "--doorstop-target-assembly",
-          "\"{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\""
+          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll"
         ],
         "os": "Linux",
         "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
@@ -351,7 +351,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "c1f62c1ec56c412a6bbb6f14889bc97780ddcd8818c1569cbb422a9c8e0eb22c",
+      "hash": "44cff43d8fd49df184b3d74ff66df8b75c9f4190f3e66b431c9cf5b89ffe1730",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -381,9 +381,9 @@
       ],
       "runForGame": {
         "args": [
-          "\"{{GameExecutableName}}\"",
+          "{{GameExecutableName}}",
           "--doorstop-target-assembly",
-          "\"{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll\""
+          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll"
         ],
         "os": "Linux",
         "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
