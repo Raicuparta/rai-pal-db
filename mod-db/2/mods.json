@@ -402,14 +402,14 @@
           "minor": 5
         }
       },
-      "hash": "69ccff5b07aa8a40cbb20131f67d8c032422aaf45fda32476285f92b3a2dc362",
+      "hash": "ef903816f3d7beac6fa7dceac35c285bb9dbe7f24cbb3e08474729c6bc2fcb21",
       "hideFromGameModsList": true,
       "id": "bepinex-config-modern",
       "install": {
         "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-modern.json",
         "write": [
           {
-            "content": "[Logging.Console]\nEnabled = true",
+            "content": "[Logging.Console]\nEnabled = true\nForceBepInExTTYDriver = true",
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
           }
         ]
@@ -427,14 +427,14 @@
           "minor": 4
         }
       },
-      "hash": "496b1f4ab3f7c2fa054b214c92e94da7d4362c0cb46e71c7506708cc7717076d",
+      "hash": "d5718443270002521ea6cba7ba0c52044f3d91616765a8dac29fdab9be00f5df",
       "hideFromGameModsList": true,
       "id": "bepinex-config-legacy",
       "install": {
         "manifestPath": "{{GameInstalledModsPath}}/manifests/bepinex-config-legacy.json",
         "write": [
           {
-            "content": "[Logging.Console]\nEnabled = true\n[Preloader.Entrypoint]\nAssembly = UnityEngine.dll\nType = MonoBehaviour\nMethod = .cctor",
+            "content": "[Logging.Console]\nEnabled = true\nForceBepInExTTYDriver = true\n[Preloader.Entrypoint]\nAssembly = UnityEngine.dll\nType = MonoBehaviour\nMethod = .cctor",
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg"
           }
         ]
