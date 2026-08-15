@@ -127,7 +127,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "35b793241e59bfc167a83567c129ef51b936f9a40acfdc3a264d4d3992ae11ea",
+      "hash": "cc0889e1e8a6ce69a2cdb9a4d0e353dfc9ab242435e97614eb3b3859a077ca30",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -159,6 +159,19 @@
           "modId": "bepinex-config-modern"
         }
       ],
+      "runForGame": {
+        "args": [
+          "{{GameExecutableName}}",
+          "--doorstop-target-assembly",
+          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
+          "--doorstop-clr-runtime-coreclr-path",
+          "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr",
+          "--doorstop-clr-corlib-dir",
+          "{{GameInstalledModsPath}}/bepinex/dotnet"
+        ],
+        "os": "Linux",
+        "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
+      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X64 (Linux)",
       "unityBackend": "Il2Cpp"
@@ -282,7 +295,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "568c5de3d0ee300dc7466b5df0a5389979f836ab7be72a1339c0264daafc72a5",
+      "hash": "45649564ccc97da472053ab6d2ab5cd7a04086daf1a1fff8b9191fc4cebfe0f4",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -310,6 +323,15 @@
           "modId": "bepinex-config-modern"
         }
       ],
+      "runForGame": {
+        "args": [
+          "{{GameExecutableName}}",
+          "--doorstop-target-assembly",
+          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll"
+        ],
+        "os": "Linux",
+        "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
+      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X64 (Linux)",
       "unityBackend": "Mono"
@@ -329,7 +351,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "9ee0526a57ef6725cdad8fba963741851a53448e4dbaca7958c11dfa5ec303a3",
+      "hash": "9636a1e10a4a394c7058b4bd9e21d1aa3a80515419033da836dad3816bf3896b",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -357,6 +379,15 @@
           "modId": "bepinex-config-modern"
         }
       ],
+      "runForGame": {
+        "args": [
+          "{{GameExecutableName}}",
+          "--doorstop-target-assembly",
+          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll"
+        ],
+        "os": "Linux",
+        "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
+      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X86 (Linux)",
       "unityBackend": "Mono"
@@ -1060,12 +1091,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1026",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1026-g4063b982.zip"
+        "id": "v3.0.1-1028",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1028-gd7e7826d.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "bbfb6a79549ea41f82cfbb15e755804655f9c3ac121a2a33bee6de8fd143f37d",
+      "hash": "1275d640ab94fc9e7aa4f51bfb3653ee57d0ef25e3f1f1c03b861ec7ad6a67d2",
       "id": "ue4ss",
       "install": {
         "extract": [

@@ -3,6 +3,7 @@ import {
 	isArchitecture,
 	ModBase,
 	ModDownload,
+	ModRun,
 	OperatingSystem,
 } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
@@ -19,6 +20,7 @@ function bepinexMonoLoaderBase(
 	modId: string,
 	os: OperatingSystem,
 ): Omit<ModBase, "title" | "download"> {
+	const runForGame = bepinexMonoRunForGame(os);
 	return {
 		id: modId,
 		family: "bepinex",
@@ -29,6 +31,7 @@ function bepinexMonoLoaderBase(
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: bepinexMonoInstall(modId, os),
+		...(runForGame ? { runForGame } : {}),
 		config: {
 			destinationPath:
 				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
@@ -42,6 +45,22 @@ function bepinexMonoLoaderBase(
 				modId: "bepinex-config-modern",
 			},
 		],
+	};
+}
+
+function bepinexMonoRunForGame(os: OperatingSystem): ModRun | null {
+	if (os === "Windows") {
+		return null;
+	}
+
+	return {
+		path: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
+		args: [
+			token.GameExecutableName,
+			"--doorstop-target-assembly",
+			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll`,
+		],
+		os: "Linux",
 	};
 }
 

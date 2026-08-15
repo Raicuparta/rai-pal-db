@@ -4,6 +4,7 @@ import {
 	isArchitecture,
 	ModBase,
 	ModDownload,
+	ModRun,
 	OperatingSystem,
 } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
@@ -19,6 +20,7 @@ function bepinexIl2cppLoaderBase(
 	modId: string,
 	os: OperatingSystem,
 ): Omit<ModBase, "title" | "download"> {
+	const runForGame = bepinexIl2cppRunForGame(os);
 	return {
 		id: modId,
 		family: "bepinex",
@@ -29,6 +31,7 @@ function bepinexIl2cppLoaderBase(
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: bepinexIl2cppInstall(modId, os),
+		...(runForGame ? { runForGame } : {}),
 		config: {
 			destinationPath:
 				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
@@ -42,6 +45,26 @@ function bepinexIl2cppLoaderBase(
 				modId: "bepinex-config-modern",
 			},
 		],
+	};
+}
+
+function bepinexIl2cppRunForGame(os: OperatingSystem): ModRun | null {
+	if (os === "Windows") {
+		return null;
+	}
+
+	return {
+		path: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
+		args: [
+			token.GameExecutableName,
+			"--doorstop-target-assembly",
+			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll`,
+			"--doorstop-clr-runtime-coreclr-path",
+			`${token.GameInstalledModsPath}/bepinex/dotnet/libcoreclr`,
+			"--doorstop-clr-corlib-dir",
+			`${token.GameInstalledModsPath}/bepinex/dotnet`,
+		],
+		os: "Linux",
 	};
 }
 

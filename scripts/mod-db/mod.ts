@@ -221,7 +221,7 @@ export interface EngineVersion {
 
 export type ModRun = {
 	/**
-	 * Path relative to the mod folder, pointing to the executable/script to run
+	 * Path pointing to the executable/script to run. Supports replacement tokens.
 	 */
 	path?: string;
 
