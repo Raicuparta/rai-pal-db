@@ -127,7 +127,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "cf688c865299f0b4cddc59c4fefe581ad8b21af67ce1fed7ad426166b4662846",
+      "hash": "35b793241e59bfc167a83567c129ef51b936f9a40acfdc3a264d4d3992ae11ea",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -142,6 +142,10 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
+            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -278,7 +282,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "6617110d618d8aa6b3ec05c5ae707ab1309dd806da5c77e33e01f698275e723e",
+      "hash": "568c5de3d0ee300dc7466b5df0a5389979f836ab7be72a1339c0264daafc72a5",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -289,6 +293,10 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
+            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -321,7 +329,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "139e3fde256b30d358bc99d163f16cd3ce465673a92e5474cb80f0bd59e6622b",
+      "hash": "9ee0526a57ef6725cdad8fba963741851a53448e4dbaca7958c11dfa5ec303a3",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -332,6 +340,10 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
+          },
+          {
+            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
+            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",

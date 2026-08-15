@@ -100,6 +100,10 @@ corlib_dir = ${token.GameInstalledModsPath}/bepinex/dotnet
 				source: "libdoorstop.so",
 				destination: `${token.GameExecutableFolderPath}/libdoorstop.so`,
 			},
+			{
+				source: "run_bepinex.sh",
+				destination: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
+			},
 		],
 		mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 	};
