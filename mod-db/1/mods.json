@@ -733,13 +733,13 @@
       ],
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "download": {
-        "id": "01139",
-        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01139-74b76bc9428a906cbdc69de3ebc1905fd0e9cc57/uevr.zip"
+        "id": "01140",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01140-1bf5922903e2d976e08a90e88a3982767d6609a5/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "41103bb43e57a68c0b9af8e2fa6f70e632a4ae050dc51a6a8bae2172a0c52857",
+      "hash": "10471d63d51fd692bfb0546fd1a984bc65d6b6823789051e61721d3a2d7dd373",
       "id": "uevr-nightly",
       "install": {
         "extract": [
