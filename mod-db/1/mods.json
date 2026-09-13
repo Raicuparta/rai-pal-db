@@ -9,8 +9,8 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.785",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785%2B6abdba4.zip"
+        "id": "6.0.0-be.788",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
@@ -65,8 +65,8 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.785",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.785%2B6abdba4.zip"
+        "id": "6.0.0-be.788",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
@@ -333,6 +333,10 @@
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-legacy",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
@@ -376,6 +380,10 @@
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
             "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/uuvr-mono-modern",
+            "source": "patchers"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
@@ -720,8 +728,8 @@
       },
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "download": {
-        "id": "01139",
-        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01139-74b76bc9428a906cbdc69de3ebc1905fd0e9cc57/uevr.zip"
+        "id": "01143",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01143-4ee5c6b6162dee2291fc75f9dfc57667f6d45a2d/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
@@ -936,12 +944,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1021",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1021-g1c1a1497.zip"
+        "id": "v3.0.1-1133",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1133-gb4cefa18.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "3811f71c8dda4ad3cc771cb6dbc5d118f4d58e735276f7dc82e97cdc95ff1fd0",
+      "hash": "5921f01555c7174cf2153b5e359a2639208ad287c74b660f336cc79ab4bb5afa",
       "id": "ue4ss",
       "install": {
         "extract": [

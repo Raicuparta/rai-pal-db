@@ -49,6 +49,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 		}, {
 			withPatchers: true,
 			configFileName: "raicuparta.uuvr-legacy.cfg",
+			withPatchers: true,
 		}),
 		bepinexMod({
 			id: "uuvr-mono-modern",
@@ -73,6 +74,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 		}, {
 			withPatchers: true,
 			configFileName: "raicuparta.uuvr-modern.cfg",
+			withPatchers: true,
 		}),
 	];
 }
