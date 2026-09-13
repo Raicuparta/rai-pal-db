@@ -7,6 +7,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "6.0.0-be.788",
@@ -15,7 +23,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "2305af560f7f6f9002c1b82cea41e0b382ebede2d2c872ce2bf06d60d373cf96",
+      "hash": "d6e49a73f80661ce976cf481de116f38af4baa1c0b4e8fc907c17e4a123776b4",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -44,14 +52,6 @@
           }
         ]
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-config-legacy"
-        },
-        {
-          "modId": "bepinex-config-modern"
-        }
-      ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X64",
       "unityBackend": "Il2Cpp"
@@ -63,6 +63,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "6.0.0-be.788",
@@ -71,7 +79,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "22265655c5ca1e8150df1ca6fc096919f67a4593d417422988dd700d13011e8b",
+      "hash": "0d2895b35668829db4006271b516b1faaa6b17522598175d14a70ca200b349e9",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -100,14 +108,6 @@
           }
         ]
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-config-legacy"
-        },
-        {
-          "modId": "bepinex-config-modern"
-        }
-      ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X86",
       "unityBackend": "Il2Cpp"
@@ -119,6 +119,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
@@ -127,7 +135,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "e560c6bfca6e3b44b671848178e3fee322e69ac0b2b5fff28c7a37119c8e3b5d",
+      "hash": "d763d43ac4200d2bd11eca6f23a4e53efdc753a0791fe778e2189edcec94e5cc",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -152,14 +160,6 @@
           }
         ]
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-config-legacy"
-        },
-        {
-          "modId": "bepinex-config-modern"
-        }
-      ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X64",
       "unityBackend": "Mono"
@@ -171,6 +171,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-config-legacy"
+        },
+        {
+          "modId": "bepinex-config-modern"
+        }
+      ],
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
@@ -179,7 +187,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "71347892d5f9fff4c1ed9ef51ce8f3d7c5dd45142d29ff7a511064b812eb2dfb",
+      "hash": "ca1865ccd9d4e32d431f050a3648923cf023154b9c508c1de83c7ce09e00970e",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -204,14 +212,6 @@
           }
         ]
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-config-legacy"
-        },
-        {
-          "modId": "bepinex-config-modern"
-        }
-      ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X86",
       "unityBackend": "Mono"
@@ -272,6 +272,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
       "download": {
         "id": "0.3.1",
@@ -284,7 +292,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "ab0323fcb54b3da523d24d19b0d7d9739de90f08d537a06c67e85ceda2df2277",
+      "hash": "3eaf5f6ca8901ebb18f93a859216ec8e971ead03a32460a1788c93721e2630d3",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -296,14 +304,6 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-il2cpp-legacy",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-il2cpp-legacy.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
       "title": "UUVR Il2Cpp Legacy",
       "unityBackend": "Il2Cpp"
@@ -314,6 +314,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
       "download": {
         "id": "0.3.1",
@@ -326,7 +334,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "7b2ef603db92b95e8d805533a8995b1be3b40fe89f8eac62353a74eeb9ae3d93",
+      "hash": "d89ec25360b807f07f348223f1ba52fd209b15de2eb48c0ebc3c5e0a5018439b",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -342,14 +350,6 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-legacy",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-legacy.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
       "title": "UUVR Mono Legacy",
       "unityBackend": "Mono"
@@ -360,6 +360,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "description": "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
       "download": {
         "id": "0.4.0",
@@ -373,7 +381,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "cdb8663b41cc1402f117e720b1b3e2bba1dda3ea2899dc5330606c014d0ffd40",
+      "hash": "13101cff201fa7398eb3e72883305d690823b0128329a54e664aaee5e35f9783",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -389,14 +397,6 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/uuvr-mono-modern",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/uuvr-mono-modern.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
       "title": "UUVR Mono Modern",
       "unityBackend": "Mono"
@@ -407,6 +407,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "0.2.1",
@@ -414,7 +422,7 @@
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "471c78aeb8ae9b4652d3b9fca1508b52ab21f1e81d387bf4682d394a2a61f0b4",
+      "hash": "53240517a9c90ab867a51d7e2c13437350fc8c9813e0a6d2cd30cada27b59b01",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -426,14 +434,6 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
       "sourceCode": "https://github.com/Raicuparta/everyone",
       "title": "Everyone (Mono)",
       "unityBackend": "Mono"
@@ -444,6 +444,14 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
         "destinationType": "File"
       },
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "0.2.1",
@@ -451,7 +459,7 @@
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "759779b7e4f905961df081ed175c807199e82352f47311096d780fff87058673",
+      "hash": "364cb238eca3e337bedee3f78563171d9ec98f6d2df5997d3597b1a60b2ebcf2",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -463,7 +471,13 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-il2cpp.json"
       },
-      "requiredDependencies": [
+      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "title": "Everyone (Il2Cpp)",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "author": "sinai",
+      "dependencies": [
         {
           "modId": "bepinex-il2cpp-x64"
         },
@@ -471,19 +485,13 @@
           "modId": "bepinex-il2cpp-x86"
         }
       ],
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Il2Cpp)",
-      "unityBackend": "Il2Cpp"
-    },
-    {
-      "author": "sinai",
       "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
       "download": {
         "id": "1.0.0",
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "3f29aa6b66bf35795c72a15e0464134be3a4502aeb6be29992e64aabf1f22209",
+      "hash": "966fc63501f255faa09a9dfd7c37b68909efe7e4dedab823448e8a9c6546e999",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -495,27 +503,27 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-il2cpp",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/config-manager-il2cpp.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
       "sourceCode": "https://github.com/Vapok/BepInExConfigManager",
       "title": "Config Manager IL2CPP",
       "unityBackend": "Il2Cpp"
     },
     {
       "author": "sinai",
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR.",
       "download": {
         "id": "1.3.0",
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "7ca4072159ed15af757ea1810b56568e921b6c08b63f5533b2ae00b34757dac4",
+      "hash": "cadb6554e6f67b57d48f1ab57eed5f68c0f99f77a991603c74080cfe43cbc8e4",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -527,20 +535,20 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/config-manager-mono",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/config-manager-mono.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
       "sourceCode": "https://github.com/sinai-dev/BepInExConfigManager",
       "title": "Config Manager Mono",
       "unityBackend": "Mono"
     },
     {
       "author": "Sinai + yukieiji",
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "description": "An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
       "download": {
         "id": "v4.13.6",
@@ -548,7 +556,7 @@
       },
       "engine": "Unity",
       "family": "unity-explorer",
-      "hash": "62d0f19bdd268c35f3862c0c3fe7b2b4ed060dbe79d26cb1d18d1169fc405684",
+      "hash": "3fe6d0e07978e593c6d5f73788b3ab9a8799a554664e4bc444c6a6e2e5b321d3",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -560,20 +568,20 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/unity-explorer-il2cpp.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
       "sourceCode": "https://github.com/yukieiji/UnityExplorer",
       "title": "UnityExplorer",
       "unityBackend": "Il2Cpp"
     },
     {
       "author": "Sinai + yukieiji",
+      "dependencies": [
+        {
+          "modId": "bepinex-mono-x64"
+        },
+        {
+          "modId": "bepinex-mono-x86"
+        }
+      ],
       "description": "An in-game UI for exploring, debugging and modifying Unity games.",
       "download": {
         "id": "v4.13.6",
@@ -581,7 +589,7 @@
       },
       "engine": "Unity",
       "family": "unity-explorer",
-      "hash": "06f986e13e14bc25267212fe49870177a760300ed3718182ddff13d1f74d1258",
+      "hash": "33addac2dd7bb681fc738bfbc5e523f3346fcfbb5c9440a9a0085557f1e9233e",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -593,7 +601,13 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/unity-explorer-mono.json"
       },
-      "requiredDependencies": [
+      "sourceCode": "https://github.com/yukieiji/UnityExplorer",
+      "title": "UnityExplorer",
+      "unityBackend": "Mono"
+    },
+    {
+      "author": "ManlyMarco",
+      "dependencies": [
         {
           "modId": "bepinex-mono-x64"
         },
@@ -601,19 +615,13 @@
           "modId": "bepinex-mono-x86"
         }
       ],
-      "sourceCode": "https://github.com/yukieiji/UnityExplorer",
-      "title": "UnityExplorer",
-      "unityBackend": "Mono"
-    },
-    {
-      "author": "ManlyMarco",
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
         "id": "v6.3.1",
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.1/RuntimeUnityEditor.Bepin5_v6.3.1.zip"
       },
       "engine": "Unity",
-      "hash": "e68b91f7098b3369bd436bcb34a3a968e7deb6e8648e41c840e5b33bb5e0f16d",
+      "hash": "54da168e580ab6ded4db672965c46c81ab52ee8ddc49f6b7f912ce738296f1d0",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -625,27 +633,27 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/runtime-unity-editor-mono.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-mono-x64"
-        },
-        {
-          "modId": "bepinex-mono-x86"
-        }
-      ],
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",
       "unityBackend": "Mono"
     },
     {
       "author": "ManlyMarco",
+      "dependencies": [
+        {
+          "modId": "bepinex-il2cpp-x64"
+        },
+        {
+          "modId": "bepinex-il2cpp-x86"
+        }
+      ],
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
         "id": "v6.3.1",
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.1/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.1.zip"
       },
       "engine": "Unity",
-      "hash": "59c84f679a27893a72af9ecc92318102d89d9634e41e1dd4f421e29969831001",
+      "hash": "c9f5b70ab4474d874c9e307542c534427ae2854376b4403480be2c0cea18359e",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -657,14 +665,6 @@
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/runtime-unity-editor-il2cpp.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "bepinex-il2cpp-x64"
-        },
-        {
-          "modId": "bepinex-il2cpp-x86"
-        }
-      ],
       "sourceCode": "https://github.com/ManlyMarco/RuntimeUnityEditor",
       "title": "Runtime Unity Editor",
       "unityBackend": "Il2Cpp"
@@ -675,6 +675,11 @@
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
       },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
       "description": "Universal VR mod for Unreal Engine games.",
       "download": {
         "id": "1.05",
@@ -683,7 +688,7 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "51490c263f990da43cb815e85c54d80524535b7c38448d29c8f275a4d750b958",
+      "hash": "09c82e1986234e4522c57188fd14e06eff89dfbbc0fe243c9f2150851b5b4d70",
       "id": "uevr",
       "install": {
         "extract": [
@@ -695,11 +700,6 @@
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr",
         "manifestPath": "{{SharedModsPath}}/uevr/rai-pal-manifest.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64"
-        }
-      ],
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
@@ -726,6 +726,11 @@
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
       },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "download": {
         "id": "01143",
@@ -734,7 +739,7 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "b63edb9d1c1c58a0622b3ae62f3fda43732208de2e6247347f594f19b375ea05",
+      "hash": "746755389a8e999d7c4a4cfbfef2b2b98fd5ba2dce4c2510c6111b7892ce3c99",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -746,11 +751,6 @@
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-nightly",
         "manifestPath": "{{SharedModsPath}}/uevr-nightly/rai-pal-manifest.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64"
-        }
-      ],
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
@@ -777,6 +777,11 @@
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
       },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
       "description": "UEVR with joehhodge's enhancements + Alternate Frame Warping.",
       "download": {
         "id": "v1.0-beta.6",
@@ -785,7 +790,7 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "3cdf392384085bf7f39f6a71fdfdcd2c30227ebac98386bb51bfd41ce7515592",
+      "hash": "e156fead32eacb5e2137d3f5668583cd74d98adbefc01e427990751504ef8c9e",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -797,11 +802,6 @@
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge-afw",
         "manifestPath": "{{SharedModsPath}}/uevr-joeyhodge-afw/rai-pal-manifest.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64"
-        }
-      ],
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
@@ -828,6 +828,11 @@
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
         "destinationType": "Folder"
       },
+      "dependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
       "description": "UEVR nightly + Alternate Frame Warping.",
       "download": {
         "id": "v1.0-beta.6",
@@ -836,7 +841,7 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "1f7ea51e7a90df4e66b1d8c5910209e1bfabaf0a486e06901152b9124e000d34",
+      "hash": "e97168fd2b21a9d33aaacd0629db93b5cc7c171c960bc1a484d8af35cb1a1254",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
@@ -848,11 +853,6 @@
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-nightly-afw",
         "manifestPath": "{{SharedModsPath}}/uevr-nightly-afw/rai-pal-manifest.json"
       },
-      "requiredDependencies": [
-        {
-          "modId": "dotnet-desktop-runtime-win-x64"
-        }
-      ],
       "runForGame": {
         "args": [
           "--attach={{GameExecutableName}}"
