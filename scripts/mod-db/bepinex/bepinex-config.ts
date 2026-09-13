@@ -17,7 +17,8 @@ export function getGepInExConfigs(): ModBase[] {
 				},
 			},
 			`[Logging.Console]
-Enabled = true`,
+Enabled = true
+ForceBepInExTTYDriver = true`,
 		),
 		bepInExConfig(
 			{
@@ -32,6 +33,7 @@ Enabled = true`,
 			},
 			`[Logging.Console]
 Enabled = true
+ForceBepInExTTYDriver = true
 [Preloader.Entrypoint]
 Assembly = UnityEngine.dll
 Type = MonoBehaviour

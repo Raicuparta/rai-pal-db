@@ -82,14 +82,14 @@ export interface ModBase {
 	};
 
 	/**
-	 * Mods that need to be installed before this one.
+	 * Mods that need to be installed before this one. Every dependency here must be satisfied by a compatible mod, otherwise this mod is also considered incompatible.
 	 */
-	dependencies?: {
-		/**
-		 * ID of the mod to depend on.
-		 */
-		modId?: string;
-	}[];
+	requiredDependencies?: ModDependency[];
+
+	/**
+	 * Mods that should get installed before this one, if they're compatible. If not, that's fine.
+	 */
+	optionalDependencies?: ModDependency[];
 
 	install?: {
 		/**
@@ -176,6 +176,17 @@ export interface Mod extends ModBase {
 	hash: string;
 }
 
+/**
+ * We can defined dependencies via unique mod IDs, or via the non-unique family IDs
+ */
+type ModDependency = {
+	modId: string;
+	family?: never;
+} | {
+	family: string;
+	modId?: never;
+};
+
 export type UnityBackend = "Il2Cpp" | "Mono";
 
 const ARCHITECTURES = ["X64", "X86"] as const;
@@ -210,7 +221,7 @@ export interface EngineVersion {
 
 export type ModRun = {
 	/**
-	 * Path relative to the mod folder, pointing to the executable/script to run
+	 * Path pointing to the executable/script to run. Supports replacement tokens.
 	 */
 	path?: string;
 

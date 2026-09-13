@@ -1,5 +1,5 @@
-import { Octokit } from "octokit";
 import { ModDownload } from "./mod.ts";
+import { createOctokit } from "./github-client.ts";
 
 type Params = {
 	owner: string;
@@ -9,7 +9,7 @@ type Params = {
 	allowPreRelease?: boolean;
 };
 
-const octokit = new Octokit();
+const octokit = createOctokit();
 
 async function getReleaseData(params: Params) {
 	// First, try to get the latest full release.

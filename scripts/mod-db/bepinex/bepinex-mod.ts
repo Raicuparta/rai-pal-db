@@ -5,9 +5,18 @@ import { token } from "../replacement-tokens.ts";
  * Base mod object for BepInEx mods.
  */
 export function bepinexMod(
-	mod: Omit<ModBase, "engine" | "install" | "config" | "dependencies"> & {
-		unityBackend: UnityBackend;
-	},
+	mod:
+		& Omit<
+			ModBase,
+			| "engine"
+			| "install"
+			| "config"
+			| "requiredDependencies"
+			| "optionalDependencies"
+		>
+		& {
+			unityBackend: UnityBackend;
+		},
 	params?: {
 		configFileName?: string;
 		zipRoot?: string;
@@ -43,22 +52,10 @@ export function bepinexMod(
 				destinationType: "File",
 			}
 			: undefined,
-		dependencies: mod.unityBackend === "Mono"
-			? [
-				{
-					modId: "bepinex-mono-x64",
-				},
-				{
-					modId: "bepinex-mono-x86",
-				},
-			]
-			: [
-				{
-					modId: "bepinex-il2cpp-x64",
-				},
-				{
-					modId: "bepinex-il2cpp-x86",
-				},
-			],
+		requiredDependencies: [
+			{
+				family: "bepinex",
+			},
+		],
 	};
 }

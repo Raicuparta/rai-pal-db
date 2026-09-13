@@ -16,7 +16,7 @@
 
 	"tasks": {
 		"update-game-db": "deno check && deno run --allow-net --allow-read --allow-write game-db/main.ts",
-		"update-mod-db": "deno check && deno run --allow-net --allow-read --allow-write mod-db/main.ts",
+		"update-mod-db": "deno check && deno run --allow-env --env-file=.env --allow-net --allow-read --allow-write mod-db/main.ts",
 		"test": "deno run --allow-net --allow-read --allow-write test.ts"
 	},
 

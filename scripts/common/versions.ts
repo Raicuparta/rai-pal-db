@@ -2,4 +2,4 @@
 // This will be used as the folder name where the database files are stored,
 // which means the database URLs also change.
 export const GAME_DATABASE_VERSION = 2;
-export const MOD_DATABASE_VERSION = 1;
+export const MOD_DATABASE_VERSION = 2;

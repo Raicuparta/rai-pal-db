@@ -30,8 +30,12 @@ if (!json) {
 	throw new Error("Failed to convert mods output to JSON");
 }
 
+const targetFolder = `../mod-db/${MOD_DATABASE_VERSION}`;
+
+await Deno.mkdir(targetFolder, { recursive: true });
+
 await Deno.writeTextFile(
-	`../mod-db/${MOD_DATABASE_VERSION}/mods.json`,
+	`${targetFolder}/mods.json`,
 	json,
 );
 
