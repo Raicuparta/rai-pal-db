@@ -9,13 +9,13 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.785",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785%2B6abdba4.zip"
+        "id": "6.0.0-be.788",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "1adfc5cffa8ea3f3e4327f168abb4066e88850cfce47ae58a8ca28ef50ccdbc0",
+      "hash": "5f04db968714f9e3892491daf6e3e408a791eed06ac0fb9f9264189ae2bdc57a",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -65,13 +65,13 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.785",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.785%2B6abdba4.zip"
+        "id": "6.0.0-be.788",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "d3d92f9e7f4d2c7c6bfd6cfcb1dadfec5b2d2f7601fc662728705d50c3b282ab",
+      "hash": "c7fb0778f7e975173f148f27bf6d691e8e4fe6612fe45b77674f45e1bcb65632",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -121,13 +121,13 @@
       },
       "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
       "download": {
-        "id": "6.0.0-be.785",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.785%2B6abdba4.zip"
+        "id": "6.0.0-be.788",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "9b2a84be729a2dcac1f81e6d050cda474cd4ab1282f866e477a9e770484e0083",
+      "hash": "e91fb3eb2b58a67248b924a919aa4e91148d936876a250bf26a600a58a72ea2d",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -875,13 +875,13 @@
       },
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "download": {
-        "id": "01139",
-        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01139-74b76bc9428a906cbdc69de3ebc1905fd0e9cc57/uevr.zip"
+        "id": "01143",
+        "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01143-4ee5c6b6162dee2291fc75f9dfc57667f6d45a2d/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "c7ec3d2161364d062260dcbd42dbee08437e6c2fea5dc9aa5b4e74742bdb78ed",
+      "hash": "b66bcd802058419bb661dbe2ac680146ba6edd5358105b735791f69c7f75e475",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -1091,12 +1091,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1028",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1028-gd7e7826d.zip"
+        "id": "v3.0.1-1133",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1133-gb4cefa18.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "1275d640ab94fc9e7aa4f51bfb3653ee57d0ef25e3f1f1c03b861ec7ad6a67d2",
+      "hash": "5921f01555c7174cf2153b5e359a2639208ad287c74b660f336cc79ab4bb5afa",
       "id": "ue4ss",
       "install": {
         "extract": [
