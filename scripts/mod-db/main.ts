@@ -3,6 +3,7 @@ import stringify from "canonical-json";
 import { hash } from "canonical-json/hash";
 import { Mod, ModBase } from "./mod.ts";
 import { getBepinexMods } from "./bepinex/bepinex.ts";
+import { getGodotMods } from "./godot/godot.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
 
@@ -10,6 +11,7 @@ type ModGetter = () => Promise<ModBase[]>;
 
 const modGetters: ModGetter[] = [
 	getBepinexMods,
+	getGodotMods,
 	getUevrMods,
 	getUe4ssMods,
 ];
