@@ -242,4 +242,10 @@ export type ModRun = {
 	 * Unspecified means it somehow works for all.
 	 */
 	os?: OperatingSystem;
+
+	/**
+	 * If true, Rai Pal owns this process: it can be started and stopped from the UI, and it gets killed when Rai Pal exits.
+	 * If false or unspecified, the process is spawned detached and Rai Pal forgets about it immediately.
+	 */
+	managed?: boolean;
 };
