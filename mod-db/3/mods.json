@@ -581,11 +581,11 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx5.Mono.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.2.1/EveryoneClient.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "4d1ea2ecc96fc1c4319b93c0f779a3549adba833ec88a0c079af9af59a65c317",
+      "hash": "812c3b66d7dbf495a81926ab947cc632cf158710f80438cf2beaa7f7f716110f",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -615,11 +615,11 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "3d477358d57b15d1ef24cbfc4ff4f2b4a266ac6b57377230784d4ed0faf1adff",
+      "hash": "5f53efedb3cf6d80a08270062afab19fd41bb8dd00a592734f2830b622d1dc78",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -894,7 +894,7 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/everyone-3.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.2.1/everyone-3.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -906,7 +906,7 @@
         }
       },
       "family": "everyone",
-      "hash": "ef9b451245a11bf5f499e1797e7e6a7baca17ea3ed3832e886d618ecf38eb90c",
+      "hash": "447e8b47d47511371c874b09fdde8906c855f60d23fc1adaebd8259961e68a88",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -931,7 +931,7 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/everyone-4.zip"
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.2.1/everyone-4.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -940,7 +940,7 @@
         }
       },
       "family": "everyone",
-      "hash": "0b0085be3fe0628e52f077dc7f18306da27aabafc9c02f7e5c2703520a76b862",
+      "hash": "a8ba3246a6ab49ee5b501bb790f69282e8135402e50f2a95aa2726b5d1994de8",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -1267,6 +1267,41 @@
       },
       "sourceCode": "https://github.com/UE4SS-RE/RE-UE4SS",
       "title": "UE4SS"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F2 to connect.",
+      "download": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unreal-v0.1.0/everyone-unreal.zip"
+      },
+      "engine": "Unreal",
+      "family": "everyone",
+      "hash": "2da84096e2a881e2328539c3376eb4c7b0263e7526d38d695044d3e87f8617bf",
+      "id": "everyone-ue",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue/dlls",
+            "source": "dlls"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-ue.json",
+        "write": [
+          {
+            "content": "",
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue/enabled.txt"
+          }
+        ]
+      },
+      "requiredDependencies": [
+        {
+          "modId": "ue4ss"
+        }
+      ],
+      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "title": "Everyone (Unreal)"
     },
     {
       "author": "Raicuparta",

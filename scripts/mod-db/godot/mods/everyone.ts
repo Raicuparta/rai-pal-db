@@ -3,7 +3,7 @@ import { token } from "../../replacement-tokens.ts";
 
 // Each zip contains a single `everyone-<major>.gd` script.
 const downloadBase =
-	"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1";
+	"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.2.1";
 
 function godotEveryone(major: 3 | 4): ModBase {
 	const id = `everyone-godot-${major}`;
