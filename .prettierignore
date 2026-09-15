@@ -1,0 +1,3 @@
+# Generated database files are written by the update-db workflow with 2-space
+# indentation. Don't reformat them.
+mod-db/

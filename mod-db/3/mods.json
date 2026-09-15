@@ -1267,6 +1267,41 @@
       },
       "sourceCode": "https://github.com/UE4SS-RE/RE-UE4SS",
       "title": "UE4SS"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Proximity voice chat for the Everyone mod. Requires being logged in to Rai Pal.",
+      "download": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-voice-client-v0.1.0/everyone-client-voice.zip"
+      },
+      "hash": "28ad6553ffeddec1db357e878dcfebe4569c966c292b082f584decd9ce3e14f3",
+      "id": "everyone-voice-client",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/everyone-voice-client",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{SharedModsPath}}/everyone-voice-client",
+        "manifestPath": "{{SharedModsPath}}/everyone-voice-client/rai-pal-manifest.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "everyone"
+        }
+      ],
+      "runForGame": {
+        "managed": true,
+        "path": "{{SharedModsPath}}/everyone-voice-client/everyone-client-voice"
+      },
+      "runStandalone": {
+        "managed": true,
+        "path": "{{SharedModsPath}}/everyone-voice-client/everyone-client-voice"
+      },
+      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "title": "Everyone Voice Client"
     }
   ]
 }
