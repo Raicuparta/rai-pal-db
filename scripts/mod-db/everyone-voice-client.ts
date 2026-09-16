@@ -12,7 +12,6 @@ const downloadBase =
 // local user socket, so Rai Pal owns the process and can start/stop it from the UI.
 const run: ModRun = {
 	path: `${token.SharedModsPath}/${id}/everyone-client-voice`,
-	managed: true,
 };
 
 // This mod is not tied to any game engine: as long as the Everyone mod is
@@ -41,8 +40,7 @@ export async function getEveryoneVoiceClientMods() {
 				],
 				mainInstalledFolderPath: `${token.SharedModsPath}/${id}`,
 			},
-			runForGame: run,
-			runStandalone: run,
+			runManaged: run,
 		} satisfies ModBase,
 	];
 }

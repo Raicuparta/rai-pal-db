@@ -1292,7 +1292,7 @@
 				"id": "0.1.0",
 				"url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-voice-client-v0.1.0/everyone-client-voice.zip"
 			},
-			"hash": "28ad6553ffeddec1db357e878dcfebe4569c966c292b082f584decd9ce3e14f3",
+			"hash": "879b9000df0cc0c5d3a67b880c2d49dd8017bed433cff7a1ed1bcf35b738d2f1",
 			"id": "everyone-voice-client",
 			"install": {
 				"extract": [
@@ -1304,12 +1304,7 @@
 				"mainInstalledFolderPath": "{{SharedModsPath}}/everyone-voice-client",
 				"manifestPath": "{{SharedModsPath}}/everyone-voice-client/rai-pal-manifest.json"
 			},
-			"runForGame": {
-				"managed": true,
-				"path": "{{SharedModsPath}}/everyone-voice-client/everyone-client-voice"
-			},
-			"runStandalone": {
-				"managed": true,
+			"runManaged": {
 				"path": "{{SharedModsPath}}/everyone-voice-client/everyone-client-voice"
 			},
 			"sourceCode": "https://github.com/Raicuparta/everyone",

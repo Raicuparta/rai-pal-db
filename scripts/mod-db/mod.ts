@@ -149,6 +149,13 @@ export interface ModBase {
 	runStandalone?: ModRun;
 
 	/**
+	 * Command for a mod executable that Rai Pal itself owns and manages the lifecycle of.
+	 * Managed runs are global: only one instance can run at a time across all games, and the running state is
+	 * shared by every game this mod is compatible with. Rai Pal can start and stop it, and kills it when it exits.
+	 */
+	runManaged?: ModRun;
+
+	/**
 	 * Information used to find local mod configs, and also for downloading configs from the database.
 	 */
 	config?: {
@@ -242,10 +249,4 @@ export type ModRun = {
 	 * Unspecified means it somehow works for all.
 	 */
 	os?: OperatingSystem;
-
-	/**
-	 * If true, Rai Pal owns this process: it can be started and stopped from the UI, and it gets killed when Rai Pal exits.
-	 * If false or unspecified, the process is spawned detached and Rai Pal forgets about it immediately.
-	 */
-	managed?: boolean;
 };
