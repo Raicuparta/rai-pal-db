@@ -31,7 +31,6 @@ export async function getEveryoneVoiceClientMods() {
 				id: "0.1.0",
 				url: `${downloadBase}/everyone-client-voice.zip`,
 			},
-			requiredDependencies: [{ family: "everyone" }],
 			install: {
 				manifestPath: `${token.SharedModsPath}/${id}/rai-pal-manifest.json`,
 				extract: [
