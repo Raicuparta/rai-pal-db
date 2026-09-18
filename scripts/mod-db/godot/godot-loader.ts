@@ -1,11 +1,6 @@
 import { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
-// The loader zips (each containing only `script-loader.gd`) are published to
-// the rai-pal-db repo releases, like the other mods in this database.
-const downloadBase =
-	"https://github.com/Raicuparta/rai-pal-db/releases/download/godot-v0.1.0";
-
 const sourceCode = "https://github.com/Raicuparta/everyone";
 
 const loaderGd4 = `extends Node
@@ -103,6 +98,9 @@ func _get_mod_scripts(mods_path: String) -> Array:
 
 function godotLoader(major: 3 | 4): ModBase {
 	const id = `godot-loader-${major}`;
+	const scriptLoaderGdPath =
+		`${token.GameInstalledModsPath}/${id}/script-loader.gd`;
+
 	return {
 		id,
 		family: "godot",
@@ -120,11 +118,11 @@ function godotLoader(major: 3 | 4): ModBase {
 			write: [
 				{
 					content: major === 3 ? loaderGd3 : loaderGd4,
-					destination: `${token.GameInstalledModsPath}/script-loader.gd`,
+					destination: scriptLoaderGdPath,
 				},
 				{
 					content: `[autoload]
-ModLoaderStore="${token.MaybeWineRoot}${token.GameInstalledModsPath}/script-loader.gd"
+ModLoaderStore="${token.MaybeWineRoot}${scriptLoaderGdPath}"
 `,
 					destination: `${token.GameExecutableFolderPath}/override.cfg`,
 				},

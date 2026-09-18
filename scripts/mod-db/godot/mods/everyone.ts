@@ -7,6 +7,7 @@ const downloadBase =
 
 function godotEveryone(major: 3 | 4): ModBase {
 	const id = `everyone-godot-${major}`;
+	const loaderId = `godot-loader-${major}`;
 	return {
 		id,
 		family: "everyone",
@@ -30,10 +31,12 @@ function godotEveryone(major: 3 | 4): ModBase {
 			extract: [
 				{
 					source: ".",
-					destination: `${token.GameInstalledModsPath}/mods/everyone`,
+					destination:
+						`${token.GameInstalledModsPath}/${loaderId}/mods/everyone`,
 				},
 			],
-			mainInstalledFolderPath: `${token.GameInstalledModsPath}/mods/everyone`,
+			mainInstalledFolderPath:
+				`${token.GameInstalledModsPath}/${loaderId}/mods/everyone`,
 		},
 	};
 }

@@ -829,7 +829,7 @@
         }
       },
       "family": "godot",
-      "hash": "7efc73aff187e5421ab500621a632b9e86572e66d316dcb657f910557b4f5ad2",
+      "hash": "95ff778dfc6957a81f5dd299ad15f1be0273ce87c697de62bc887b48a4f58b76",
       "id": "godot-loader-3",
       "install": {
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}",
@@ -837,10 +837,10 @@
         "write": [
           {
             "content": "extends Node\n\nfunc _ready() -> void:\n\tvar base_dir = get_script().resource_path.get_base_dir()\n\tvar mods_path = base_dir.plus_file(\"mods\")\n\n\tvar gd_files = _get_mod_scripts(mods_path)\n\tvar mod_counter = 1\n\n\tfor file_path in gd_files:\n\t\tvar script_res = load(file_path)\n\t\tif script_res:\n\t\t\tvar instance = script_res.new()\n\t\t\tif instance is Node:\n\t\t\t\t# Name them sequentially: RaiPalMod_1, RaiPalMod_2, etc.\n\t\t\t\tinstance.name = \"RaiPalMod_\" + str(mod_counter)\n\t\t\t\tmod_counter += 1\n\n\t\t\t\tget_tree().root.call_deferred(\"add_child\", instance)\n\t\t\t\tprint(\"Loaded Mod: \", instance.name, \" from \", file_path)\n\nfunc _get_mod_scripts(mods_path: String) -> Array:\n\tvar result = []\n\tvar mods_dir = Directory.new()\n\n\tif mods_dir.open(mods_path) == OK:\n\t\tmods_dir.list_dir_begin(true, true)\n\t\tvar mod_folder_name = mods_dir.get_next()\n\n\t\twhile mod_folder_name != \"\":\n\t\t\tif mods_dir.current_is_dir():\n\t\t\t\tvar mod_path = mods_path.plus_file(mod_folder_name)\n\t\t\t\tvar inner_dir = Directory.new()\n\n\t\t\t\tif inner_dir.open(mod_path) == OK:\n\t\t\t\t\tinner_dir.list_dir_begin(true, true)\n\t\t\t\t\tvar file_name = inner_dir.get_next()\n\n\t\t\t\t\twhile file_name != \"\":\n\t\t\t\t\t\tif not inner_dir.current_is_dir() and file_name.ends_with(\".gd\"):\n\t\t\t\t\t\t\tresult.append(mod_path.plus_file(file_name))\n\t\t\t\t\t\tfile_name = inner_dir.get_next()\n\n\t\t\t\t\tinner_dir.list_dir_end()\n\n\t\t\tmod_folder_name = mods_dir.get_next()\n\n\t\tmods_dir.list_dir_end()\n\telse:\n\t\tprint(\"No 'mods' directory found at: \", mods_path)\n\n\treturn result",
-            "destination": "{{GameInstalledModsPath}}/script-loader.gd"
+            "destination": "{{GameInstalledModsPath}}/godot-loader-3/script-loader.gd"
           },
           {
-            "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/script-loader.gd\"\n",
+            "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/godot-loader-3/script-loader.gd\"\n",
             "destination": "{{GameExecutableFolderPath}}/override.cfg"
           }
         ]
@@ -858,7 +858,7 @@
         }
       },
       "family": "godot",
-      "hash": "019a66205bccea5165a806b831e2819d2c63e2c2637d9d130f54feec9f032c32",
+      "hash": "9d2c9dda63fccf8ce036d5a57b5f8d82f75976f94ed1e8cacdaeffa60fa5eb27",
       "id": "godot-loader-4",
       "install": {
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}",
@@ -866,10 +866,10 @@
         "write": [
           {
             "content": "extends Node\n\nfunc _ready() -> void:\n\tvar base_dir = get_script().resource_path.get_base_dir()\n\tvar mods_path = base_dir.path_join(\"mods\")\n\n\tvar gd_files = _get_mod_scripts(mods_path)\n\tvar mod_counter = 1\n\n\tfor file_path in gd_files:\n\t\tvar script_res = load(file_path)\n\t\tif script_res:\n\t\t\tvar instance = script_res.new()\n\t\t\tif instance is Node:\n\t\t\t\t# Name them sequentially: RaiPalMod_1, RaiPalMod_2, etc.\n\t\t\t\tinstance.name = \"RaiPalMod_\" + str(mod_counter)\n\t\t\t\tmod_counter += 1\n\n\t\t\t\tget_tree().root.call_deferred(\"add_child\", instance)\n\t\t\t\tprint(\"Loaded Mod: \", instance.name, \" from \", file_path)\n\nfunc _get_mod_scripts(mods_path: String) -> Array[String]:\n\tvar result: Array[String] = []\n\n\tif not DirAccess.dir_exists_absolute(mods_path):\n\t\tprint(\"No 'mods' directory found at: \", mods_path)\n\t\treturn result\n\n\tvar mod_folders = DirAccess.get_directories_at(mods_path)\n\n\tfor mod_name in mod_folders:\n\t\tvar mod_path = mods_path.path_join(mod_name)\n\t\tvar files = DirAccess.get_files_at(mod_path)\n\n\t\tfor file_name in files:\n\t\t\tif file_name.ends_with(\".gd\"):\n\t\t\t\tresult.append(mod_path.path_join(file_name))\n\n\treturn result",
-            "destination": "{{GameInstalledModsPath}}/script-loader.gd"
+            "destination": "{{GameInstalledModsPath}}/godot-loader-4/script-loader.gd"
           },
           {
-            "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/script-loader.gd\"\n",
+            "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/godot-loader-4/script-loader.gd\"\n",
             "destination": "{{GameExecutableFolderPath}}/override.cfg"
           }
         ]
@@ -894,16 +894,16 @@
         }
       },
       "family": "everyone",
-      "hash": "447e8b47d47511371c874b09fdde8906c855f60d23fc1adaebd8259961e68a88",
+      "hash": "da397e53272aac6709cf7892b25346c97e5f4dbdda3605788e48d0c5ec7091fc",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/mods/everyone",
+            "destination": "{{GameInstalledModsPath}}/godot-loader-3/mods/everyone",
             "source": "."
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/mods/everyone",
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/godot-loader-3/mods/everyone",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-3.json"
       },
       "requiredDependencies": [
@@ -928,16 +928,16 @@
         }
       },
       "family": "everyone",
-      "hash": "a8ba3246a6ab49ee5b501bb790f69282e8135402e50f2a95aa2726b5d1994de8",
+      "hash": "5e36a8ab7de351aa1239964b1e0b288bae223bb0a1df313c08e4020f916c6fb4",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/mods/everyone",
+            "destination": "{{GameInstalledModsPath}}/godot-loader-4/mods/everyone",
             "source": "."
           }
         ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/mods/everyone",
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/godot-loader-4/mods/everyone",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-4.json"
       },
       "requiredDependencies": [
@@ -1223,12 +1223,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1135",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1135-gf6d5f942.zip"
+        "id": "v3.0.1-1136",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1136-g35d1795d.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "d84086424621c6743a2d2f55a4fdd95847c443ea5753cea38ba271be54eaffcf",
+      "hash": "375fa2068a9711239c75e4859386d4299e7891d907095b316f47537069c0ac8b",
       "id": "ue4ss",
       "install": {
         "extract": [
