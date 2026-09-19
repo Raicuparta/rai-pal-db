@@ -3,7 +3,6 @@ import stringify from "canonical-json";
 import { hash } from "canonical-json/hash";
 import { Mod, ModBase } from "./mod.ts";
 import { getBepinexMods } from "./bepinex/bepinex.ts";
-import { getEveryoneVoiceClientMods } from "./everyone-voice-client.ts";
 import { getGodotMods } from "./godot/godot.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
@@ -15,7 +14,6 @@ const modGetters: ModGetter[] = [
 	getGodotMods,
 	getUevrMods,
 	getUe4ssMods,
-	getEveryoneVoiceClientMods,
 ];
 
 const mods: Mod[] = (await Promise.all(modGetters.map((getter) => getter())))

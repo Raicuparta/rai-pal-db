@@ -1290,31 +1290,6 @@
       ],
       "sourceCode": "https://github.com/Raicuparta/everyone",
       "title": "Everyone (Unreal)"
-    },
-    {
-      "author": "Raicuparta",
-      "description": "Proximity voice chat for the Everyone mod. Requires being logged in to Rai Pal.",
-      "download": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-voice-client-v0.1.0/everyone-client-voice.zip"
-      },
-      "hash": "879b9000df0cc0c5d3a67b880c2d49dd8017bed433cff7a1ed1bcf35b738d2f1",
-      "id": "everyone-voice-client",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{SharedModsPath}}/everyone-voice-client",
-            "source": "."
-          }
-        ],
-        "mainInstalledFolderPath": "{{SharedModsPath}}/everyone-voice-client",
-        "manifestPath": "{{SharedModsPath}}/everyone-voice-client/rai-pal-manifest.json"
-      },
-      "runManaged": {
-        "path": "{{SharedModsPath}}/everyone-voice-client/everyone-client-voice"
-      },
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone Voice Client"
     }
   ]
 }
