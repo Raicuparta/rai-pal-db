@@ -238,6 +238,16 @@ export type ModRun = {
 	};
 
 	/**
+	 * Environment variables to set when running the command natively (not via Wine). Supports replacement tokens in values.
+	 * Values may reference the current environment with `${VAR}`, e.g. `libdoorstop.so:${LD_PRELOAD}`.
+	 * For Steam games on Linux, Rai Pal applies these by temporarily swapping the game executable
+	 * for a launcher script, so Steam still owns the launched process and its Exit Game keeps working.
+	 */
+	environment?: {
+		[k: string]: string;
+	};
+
+	/**
 	 * Operating system the mod itself is built for. So a .exe would be Windows.
 	 * Unspecified means it somehow works for all.
 	 */

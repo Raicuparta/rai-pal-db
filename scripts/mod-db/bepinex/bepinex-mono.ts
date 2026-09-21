@@ -58,12 +58,16 @@ function bepinexMonoRunForGame(os: OperatingSystem): ModRun | null {
 	}
 
 	return {
-		path: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
-		args: [
-			token.GameExecutableName,
-			"--doorstop-target-assembly",
-			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll`,
-		],
+		path: token.GameExecutablePath,
+		environment: {
+			DOORSTOP_ENABLED: "1",
+			DOORSTOP_TARGET_ASSEMBLY:
+				`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll`,
+			DOORSTOP_IGNORE_DISABLED_ENV: "0",
+			LD_LIBRARY_PATH:
+				`${token.GameExecutableFolderPath}:\${LD_LIBRARY_PATH}`,
+			LD_PRELOAD: `libdoorstop.so:\${LD_PRELOAD}`,
+		},
 		os: "Linux",
 	};
 }
