@@ -149,6 +149,14 @@ export interface ModBase {
 	runStandalone?: ModRun;
 
 	/**
+	 * Environment variables to add when Rai Pal launches the game itself. Supports replacement tokens in values.
+	 * Values may reference the current environment with `${VAR}`, e.g. `libdoorstop.so:${LD_PRELOAD}`.
+	 */
+	gameEnvironment?: {
+		[k: string]: string;
+	};
+
+	/**
 	 * Information used to find local mod configs, and also for downloading configs from the database.
 	 */
 	config?: {
@@ -234,16 +242,6 @@ export type ModRun = {
 	 * Environment variables to set when running the command via Wine. Supports replacement tokens in values.
 	 */
 	wineEnvironment?: {
-		[k: string]: string;
-	};
-
-	/**
-	 * Environment variables to set when running the command natively (not via Wine). Supports replacement tokens in values.
-	 * Values may reference the current environment with `${VAR}`, e.g. `libdoorstop.so:${LD_PRELOAD}`.
-	 * For Steam games on Linux, Rai Pal applies these by temporarily swapping the game executable
-	 * for a launcher script, so Steam still owns the launched process and its Exit Game keeps working.
-	 */
-	environment?: {
 		[k: string]: string;
 	};
 

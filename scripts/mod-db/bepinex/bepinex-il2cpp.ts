@@ -4,7 +4,6 @@ import {
 	isArchitecture,
 	ModBase,
 	ModDownload,
-	ModRun,
 	OperatingSystem,
 } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
@@ -20,22 +19,18 @@ function bepinexIl2cppLoaderBase(
 	modId: string,
 	os: OperatingSystem,
 ): Omit<ModBase, "title" | "download"> {
-	const runForGame = bepinexIl2cppRunForGame(os);
+	const gameEnvironment = bepinexIl2cppGameEnvironment(os);
 	return {
 		id: modId,
 		family: "bepinex",
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
 		gameOs: os,
-		description: `Mod loader for Unity mods.${
-			os === "Linux"
-				? " You must start the game with this 'Run' button for mods to work"
-				: ""
-		}`,
+		description: "Mod loader for Unity mods.",
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: bepinexIl2cppInstall(modId, os),
-		...(runForGame ? { runForGame } : {}),
+		...(gameEnvironment ? { gameEnvironment } : {}),
 		config: {
 			destinationPath:
 				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
@@ -52,27 +47,24 @@ function bepinexIl2cppLoaderBase(
 	};
 }
 
-function bepinexIl2cppRunForGame(os: OperatingSystem): ModRun | null {
+function bepinexIl2cppGameEnvironment(
+	os: OperatingSystem,
+): NonNullable<ModBase["gameEnvironment"]> | null {
 	if (os === "Windows") {
 		return null;
 	}
 
 	return {
-		path: token.GameExecutablePath,
-		environment: {
-			DOORSTOP_ENABLED: "1",
-			DOORSTOP_TARGET_ASSEMBLY:
-				`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll`,
-			DOORSTOP_CLR_RUNTIME_CORECLR_PATH:
-				`${token.GameInstalledModsPath}/bepinex/dotnet/libcoreclr.so`,
-			DOORSTOP_CLR_CORLIB_DIR:
-				`${token.GameInstalledModsPath}/bepinex/dotnet`,
-			DOORSTOP_IGNORE_DISABLED_ENV: "0",
-			LD_LIBRARY_PATH:
-				`${token.GameExecutableFolderPath}:${token.GameInstalledModsPath}/bepinex/dotnet:\${LD_LIBRARY_PATH}`,
-			LD_PRELOAD: `libdoorstop.so:\${LD_PRELOAD}`,
-		},
-		os: "Linux",
+		DOORSTOP_ENABLED: "1",
+		DOORSTOP_TARGET_ASSEMBLY:
+			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll`,
+		DOORSTOP_CLR_RUNTIME_CORECLR_PATH:
+			`${token.GameInstalledModsPath}/bepinex/dotnet/libcoreclr.so`,
+		DOORSTOP_CLR_CORLIB_DIR: `${token.GameInstalledModsPath}/bepinex/dotnet`,
+		DOORSTOP_IGNORE_DISABLED_ENV: "0",
+		LD_LIBRARY_PATH:
+			`${token.GameExecutableFolderPath}:${token.GameInstalledModsPath}/bepinex/dotnet:\${LD_LIBRARY_PATH}`,
+		LD_PRELOAD: `libdoorstop.so:\${LD_PRELOAD}`,
 	};
 }
 
@@ -130,10 +122,6 @@ corlib_dir = ${token.GameInstalledModsPath}/bepinex/dotnet
 			{
 				source: "libdoorstop.so",
 				destination: `${token.GameExecutableFolderPath}/libdoorstop.so`,
-			},
-			{
-				source: "run_bepinex.sh",
-				destination: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
 			},
 		],
 		mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
