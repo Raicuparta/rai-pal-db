@@ -119,15 +119,24 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
+      "description": "Mod loader for Unity mods.",
       "download": {
         "id": "6.0.0-be.788",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
+      "gameEnvironment": {
+        "DOORSTOP_CLR_CORLIB_DIR": "{{GameInstalledModsPath}}/bepinex/dotnet",
+        "DOORSTOP_CLR_RUNTIME_CORECLR_PATH": "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr.so",
+        "DOORSTOP_ENABLED": "1",
+        "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+        "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
+        "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:{{GameInstalledModsPath}}/bepinex/dotnet:${LD_LIBRARY_PATH}",
+        "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+      },
       "gameOs": "Linux",
-      "hash": "0a0744644ad307faaa23d0511d80c5ccfa6efa9da13a2a97e8240c3913f8974c",
+      "hash": "0feb7bc0b5a9ab802c2dbef8d0f129a365269d5ef08dd5c055022e11927f3168",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -142,10 +151,6 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
-            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -159,19 +164,6 @@
           "modId": "bepinex-config-modern"
         }
       ],
-      "runForGame": {
-        "environment": {
-          "DOORSTOP_CLR_CORLIB_DIR": "{{GameInstalledModsPath}}/bepinex/dotnet",
-          "DOORSTOP_CLR_RUNTIME_CORECLR_PATH": "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr.so",
-          "DOORSTOP_ENABLED": "1",
-          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
-          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
-          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:{{GameInstalledModsPath}}/bepinex/dotnet:${LD_LIBRARY_PATH}",
-          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
-        },
-        "os": "Linux",
-        "path": "{{GameExecutablePath}}"
-      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X64 (Linux)",
       "unityBackend": "Il2Cpp"
@@ -287,15 +279,22 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
+      "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
+      "gameEnvironment": {
+        "DOORSTOP_ENABLED": "1",
+        "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+        "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
+        "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
+        "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+      },
       "gameOs": "Linux",
-      "hash": "dc2d7cf4e9f95e39573bd3900f0d2bcdee6f436d8a7ec12b3ab2ad28be22b4c5",
+      "hash": "87c67adf65a099e618147d794538c87e85b88505acb6c0d6638e63038de132e1",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -306,10 +305,6 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
-            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -323,17 +318,6 @@
           "modId": "bepinex-config-modern"
         }
       ],
-      "runForGame": {
-        "environment": {
-          "DOORSTOP_ENABLED": "1",
-          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
-          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
-          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
-          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
-        },
-        "os": "Linux",
-        "path": "{{GameExecutablePath}}"
-      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X64 (Linux)",
       "unityBackend": "Mono"
@@ -345,15 +329,22 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
+      "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
+      "gameEnvironment": {
+        "DOORSTOP_ENABLED": "1",
+        "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+        "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
+        "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
+        "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+      },
       "gameOs": "Linux",
-      "hash": "b62adb3dbf575f8e1a4643a0d314d640dda1b482cc250d8578c4e6b0e02cc9cb",
+      "hash": "07efeee0261e069a2026ec7d17337ad9d864b334974125e0e5b59d5763524437",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -364,10 +355,6 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
-            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -381,17 +368,6 @@
           "modId": "bepinex-config-modern"
         }
       ],
-      "runForGame": {
-        "environment": {
-          "DOORSTOP_ENABLED": "1",
-          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
-          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
-          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
-          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
-        },
-        "os": "Linux",
-        "path": "{{GameExecutablePath}}"
-      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X86 (Linux)",
       "unityBackend": "Mono"
