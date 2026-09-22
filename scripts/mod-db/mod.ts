@@ -149,6 +149,14 @@ export interface ModBase {
 	runStandalone?: ModRun;
 
 	/**
+	 * Environment variables to add when Rai Pal launches the game itself. Supports replacement tokens in values.
+	 * Values may reference the current environment with `${VAR}`, e.g. `libdoorstop.so:${LD_PRELOAD}`.
+	 */
+	gameEnvironment?: {
+		[k: string]: string;
+	};
+
+	/**
 	 * Information used to find local mod configs, and also for downloading configs from the database.
 	 */
 	config?: {
