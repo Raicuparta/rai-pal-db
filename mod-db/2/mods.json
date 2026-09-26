@@ -1091,12 +1091,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1145",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1145-g44afb36d.zip"
+        "id": "v3.0.1-1148",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1148-g515bd218.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "13ef2221f870afc0f799895b253875a6404dfd5f42432772bce5174945ee3528",
+      "hash": "3431702d773fb308b9ca564ed330e4097030097be8301bf02a4749183e5756b4",
       "id": "ue4ss",
       "install": {
         "extract": [
