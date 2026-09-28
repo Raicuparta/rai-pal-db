@@ -127,7 +127,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "e91fb3eb2b58a67248b924a919aa4e91148d936876a250bf26a600a58a72ea2d",
+      "hash": "0a0744644ad307faaa23d0511d80c5ccfa6efa9da13a2a97e8240c3913f8974c",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -160,17 +160,17 @@
         }
       ],
       "runForGame": {
-        "args": [
-          "{{GameExecutableName}}",
-          "--doorstop-target-assembly",
-          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
-          "--doorstop-clr-runtime-coreclr-path",
-          "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr",
-          "--doorstop-clr-corlib-dir",
-          "{{GameInstalledModsPath}}/bepinex/dotnet"
-        ],
+        "environment": {
+          "DOORSTOP_CLR_CORLIB_DIR": "{{GameInstalledModsPath}}/bepinex/dotnet",
+          "DOORSTOP_CLR_RUNTIME_CORECLR_PATH": "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr.so",
+          "DOORSTOP_ENABLED": "1",
+          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
+          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:{{GameInstalledModsPath}}/bepinex/dotnet:${LD_LIBRARY_PATH}",
+          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+        },
         "os": "Linux",
-        "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
+        "path": "{{GameExecutablePath}}"
       },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X64 (Linux)",
@@ -295,7 +295,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "bb118abd01ab56dac1780c313f5ad1e0279b068c1fbba0584a226001fb8e1a2e",
+      "hash": "dc2d7cf4e9f95e39573bd3900f0d2bcdee6f436d8a7ec12b3ab2ad28be22b4c5",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -324,13 +324,15 @@
         }
       ],
       "runForGame": {
-        "args": [
-          "{{GameExecutableName}}",
-          "--doorstop-target-assembly",
-          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll"
-        ],
+        "environment": {
+          "DOORSTOP_ENABLED": "1",
+          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
+          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
+          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+        },
         "os": "Linux",
-        "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
+        "path": "{{GameExecutablePath}}"
       },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X64 (Linux)",
@@ -351,7 +353,7 @@
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Linux",
-      "hash": "44cff43d8fd49df184b3d74ff66df8b75c9f4190f3e66b431c9cf5b89ffe1730",
+      "hash": "b62adb3dbf575f8e1a4643a0d314d640dda1b482cc250d8578c4e6b0e02cc9cb",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -380,13 +382,15 @@
         }
       ],
       "runForGame": {
-        "args": [
-          "{{GameExecutableName}}",
-          "--doorstop-target-assembly",
-          "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll"
-        ],
+        "environment": {
+          "DOORSTOP_ENABLED": "1",
+          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
+          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
+          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+        },
         "os": "Linux",
-        "path": "{{GameExecutableFolderPath}}/run_bepinex.sh"
+        "path": "{{GameExecutablePath}}"
       },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X86 (Linux)",
@@ -762,11 +766,11 @@
       "author": "ManlyMarco",
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3.1",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.1/RuntimeUnityEditor.Bepin5_v6.3.1.zip"
+        "id": "v6.3.2",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2/RuntimeUnityEditor.Bepin5_v6.3.2.zip"
       },
       "engine": "Unity",
-      "hash": "85599b30d730b79f34058b384fab70cc66e119ac803bef4fbefdbf46d56483c7",
+      "hash": "7cac78e862fb34ff78bff860a9bc007dcc762aaf119cc0fddad751355740f06f",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -791,11 +795,11 @@
       "author": "ManlyMarco",
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3.1",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.1/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.1.zip"
+        "id": "v6.3.2",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.zip"
       },
       "engine": "Unity",
-      "hash": "892ceb931ad7443eb24eed8237af89c68784ece9047d036588dcbde371bf9281",
+      "hash": "07b6c1d2d9516915511a653da27f38e782be24b2804c30f5cc2a9f88c7150c91",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -1223,12 +1227,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1136",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1136-g35d1795d.zip"
+        "id": "v3.0.1-1151",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1151-g03dbd5c0.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "375fa2068a9711239c75e4859386d4299e7891d907095b316f47537069c0ac8b",
+      "hash": "b4df81c8d0a2afcde2c8adf8a3c49b024d76c6e94aa94fb0b8c26ce47a8f6601",
       "id": "ue4ss",
       "install": {
         "extract": [
