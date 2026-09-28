@@ -119,15 +119,24 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
+      "description": "Mod loader for Unity mods.",
       "download": {
         "id": "6.0.0-be.788",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
+      "gameEnvironment": {
+        "DOORSTOP_CLR_CORLIB_DIR": "{{GameInstalledModsPath}}/bepinex/dotnet",
+        "DOORSTOP_CLR_RUNTIME_CORECLR_PATH": "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr.so",
+        "DOORSTOP_ENABLED": "1",
+        "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+        "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
+        "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:{{GameInstalledModsPath}}/bepinex/dotnet:${LD_LIBRARY_PATH}",
+        "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+      },
       "gameOs": "Linux",
-      "hash": "0a0744644ad307faaa23d0511d80c5ccfa6efa9da13a2a97e8240c3913f8974c",
+      "hash": "0feb7bc0b5a9ab802c2dbef8d0f129a365269d5ef08dd5c055022e11927f3168",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -142,10 +151,6 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
-            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -159,19 +164,6 @@
           "modId": "bepinex-config-modern"
         }
       ],
-      "runForGame": {
-        "environment": {
-          "DOORSTOP_CLR_CORLIB_DIR": "{{GameInstalledModsPath}}/bepinex/dotnet",
-          "DOORSTOP_CLR_RUNTIME_CORECLR_PATH": "{{GameInstalledModsPath}}/bepinex/dotnet/libcoreclr.so",
-          "DOORSTOP_ENABLED": "1",
-          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
-          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll",
-          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:{{GameInstalledModsPath}}/bepinex/dotnet:${LD_LIBRARY_PATH}",
-          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
-        },
-        "os": "Linux",
-        "path": "{{GameExecutablePath}}"
-      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Il2Cpp X64 (Linux)",
       "unityBackend": "Il2Cpp"
@@ -287,15 +279,22 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
+      "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
+      "gameEnvironment": {
+        "DOORSTOP_ENABLED": "1",
+        "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+        "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
+        "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
+        "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+      },
       "gameOs": "Linux",
-      "hash": "dc2d7cf4e9f95e39573bd3900f0d2bcdee6f436d8a7ec12b3ab2ad28be22b4c5",
+      "hash": "87c67adf65a099e618147d794538c87e85b88505acb6c0d6638e63038de132e1",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -306,10 +305,6 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
-            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -323,17 +318,6 @@
           "modId": "bepinex-config-modern"
         }
       ],
-      "runForGame": {
-        "environment": {
-          "DOORSTOP_ENABLED": "1",
-          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
-          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
-          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
-          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
-        },
-        "os": "Linux",
-        "path": "{{GameExecutablePath}}"
-      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X64 (Linux)",
       "unityBackend": "Mono"
@@ -345,15 +329,22 @@
         "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
         "destinationType": "File"
       },
-      "description": "Mod loader for Unity mods. You must start the game with this 'Run' button for mods to work",
+      "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
+      "gameEnvironment": {
+        "DOORSTOP_ENABLED": "1",
+        "DOORSTOP_IGNORE_DISABLED_ENV": "0",
+        "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
+        "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
+        "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
+      },
       "gameOs": "Linux",
-      "hash": "b62adb3dbf575f8e1a4643a0d314d640dda1b482cc250d8578c4e6b0e02cc9cb",
+      "hash": "07efeee0261e069a2026ec7d17337ad9d864b334974125e0e5b59d5763524437",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -364,10 +355,6 @@
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
             "source": "libdoorstop.so"
-          },
-          {
-            "destination": "{{GameExecutableFolderPath}}/run_bepinex.sh",
-            "source": "run_bepinex.sh"
           }
         ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx",
@@ -381,17 +368,6 @@
           "modId": "bepinex-config-modern"
         }
       ],
-      "runForGame": {
-        "environment": {
-          "DOORSTOP_ENABLED": "1",
-          "DOORSTOP_IGNORE_DISABLED_ENV": "0",
-          "DOORSTOP_TARGET_ASSEMBLY": "{{GameInstalledModsPath}}/bepinex/BepInEx/core/BepInEx.Preloader.dll",
-          "LD_LIBRARY_PATH": "{{GameExecutableFolderPath}}:${LD_LIBRARY_PATH}",
-          "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
-        },
-        "os": "Linux",
-        "path": "{{GameExecutablePath}}"
-      },
       "sourceCode": "https://github.com/BepInEx/BepInEx",
       "title": "BepInEx Mono X86 (Linux)",
       "unityBackend": "Mono"
@@ -823,6 +799,10 @@
     {
       "author": "Raicuparta",
       "description": "Mod loader for Godot 3 games.",
+      "download": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/gdscript-loader/releases/download/v0.1.0/godot-3.zip"
+      },
       "engine": "Godot",
       "engineVersionRange": {
         "maximum": {
@@ -833,28 +813,34 @@
         }
       },
       "family": "godot",
-      "hash": "95ff778dfc6957a81f5dd299ad15f1be0273ce87c697de62bc887b48a4f58b76",
+      "hash": "6488c67d808a8bf5adff66e2856494730da3efae80bf76e2b8e0d7e08c66d389",
       "id": "godot-loader-3",
       "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/godot-loader-3/script-loader.gd",
+            "source": "script-loader.gd"
+          }
+        ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/godot-loader-3.json",
         "write": [
-          {
-            "content": "extends Node\n\nfunc _ready() -> void:\n\tvar base_dir = get_script().resource_path.get_base_dir()\n\tvar mods_path = base_dir.plus_file(\"mods\")\n\n\tvar gd_files = _get_mod_scripts(mods_path)\n\tvar mod_counter = 1\n\n\tfor file_path in gd_files:\n\t\tvar script_res = load(file_path)\n\t\tif script_res:\n\t\t\tvar instance = script_res.new()\n\t\t\tif instance is Node:\n\t\t\t\t# Name them sequentially: RaiPalMod_1, RaiPalMod_2, etc.\n\t\t\t\tinstance.name = \"RaiPalMod_\" + str(mod_counter)\n\t\t\t\tmod_counter += 1\n\n\t\t\t\tget_tree().root.call_deferred(\"add_child\", instance)\n\t\t\t\tprint(\"Loaded Mod: \", instance.name, \" from \", file_path)\n\nfunc _get_mod_scripts(mods_path: String) -> Array:\n\tvar result = []\n\tvar mods_dir = Directory.new()\n\n\tif mods_dir.open(mods_path) == OK:\n\t\tmods_dir.list_dir_begin(true, true)\n\t\tvar mod_folder_name = mods_dir.get_next()\n\n\t\twhile mod_folder_name != \"\":\n\t\t\tif mods_dir.current_is_dir():\n\t\t\t\tvar mod_path = mods_path.plus_file(mod_folder_name)\n\t\t\t\tvar inner_dir = Directory.new()\n\n\t\t\t\tif inner_dir.open(mod_path) == OK:\n\t\t\t\t\tinner_dir.list_dir_begin(true, true)\n\t\t\t\t\tvar file_name = inner_dir.get_next()\n\n\t\t\t\t\twhile file_name != \"\":\n\t\t\t\t\t\tif not inner_dir.current_is_dir() and file_name.ends_with(\".gd\"):\n\t\t\t\t\t\t\tresult.append(mod_path.plus_file(file_name))\n\t\t\t\t\t\tfile_name = inner_dir.get_next()\n\n\t\t\t\t\tinner_dir.list_dir_end()\n\n\t\t\tmod_folder_name = mods_dir.get_next()\n\n\t\tmods_dir.list_dir_end()\n\telse:\n\t\tprint(\"No 'mods' directory found at: \", mods_path)\n\n\treturn result",
-            "destination": "{{GameInstalledModsPath}}/godot-loader-3/script-loader.gd"
-          },
           {
             "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/godot-loader-3/script-loader.gd\"\n",
             "destination": "{{GameExecutableFolderPath}}/override.cfg"
           }
         ]
       },
-      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "sourceCode": "https://github.com/Raicuparta/gdscript-loader",
       "title": "Godot 3 Mod Loader"
     },
     {
       "author": "Raicuparta",
       "description": "Mod loader for Godot 4 games.",
+      "download": {
+        "id": "0.1.0",
+        "url": "https://github.com/Raicuparta/gdscript-loader/releases/download/v0.1.0/godot-4.zip"
+      },
       "engine": "Godot",
       "engineVersionRange": {
         "minimum": {
@@ -862,23 +848,25 @@
         }
       },
       "family": "godot",
-      "hash": "9d2c9dda63fccf8ce036d5a57b5f8d82f75976f94ed1e8cacdaeffa60fa5eb27",
+      "hash": "c5b7b9aa522fffb561fbb87e2733375a558445552ca8f462af38e8b0f0d14675",
       "id": "godot-loader-4",
       "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/godot-loader-4/script-loader.gd",
+            "source": "script-loader.gd"
+          }
+        ],
         "mainInstalledFolderPath": "{{GameInstalledModsPath}}",
         "manifestPath": "{{GameInstalledModsPath}}/manifests/godot-loader-4.json",
         "write": [
-          {
-            "content": "extends Node\n\nfunc _ready() -> void:\n\tvar base_dir = get_script().resource_path.get_base_dir()\n\tvar mods_path = base_dir.path_join(\"mods\")\n\n\tvar gd_files = _get_mod_scripts(mods_path)\n\tvar mod_counter = 1\n\n\tfor file_path in gd_files:\n\t\tvar script_res = load(file_path)\n\t\tif script_res:\n\t\t\tvar instance = script_res.new()\n\t\t\tif instance is Node:\n\t\t\t\t# Name them sequentially: RaiPalMod_1, RaiPalMod_2, etc.\n\t\t\t\tinstance.name = \"RaiPalMod_\" + str(mod_counter)\n\t\t\t\tmod_counter += 1\n\n\t\t\t\tget_tree().root.call_deferred(\"add_child\", instance)\n\t\t\t\tprint(\"Loaded Mod: \", instance.name, \" from \", file_path)\n\nfunc _get_mod_scripts(mods_path: String) -> Array[String]:\n\tvar result: Array[String] = []\n\n\tif not DirAccess.dir_exists_absolute(mods_path):\n\t\tprint(\"No 'mods' directory found at: \", mods_path)\n\t\treturn result\n\n\tvar mod_folders = DirAccess.get_directories_at(mods_path)\n\n\tfor mod_name in mod_folders:\n\t\tvar mod_path = mods_path.path_join(mod_name)\n\t\tvar files = DirAccess.get_files_at(mod_path)\n\n\t\tfor file_name in files:\n\t\t\tif file_name.ends_with(\".gd\"):\n\t\t\t\tresult.append(mod_path.path_join(file_name))\n\n\treturn result",
-            "destination": "{{GameInstalledModsPath}}/godot-loader-4/script-loader.gd"
-          },
           {
             "content": "[autoload]\nModLoaderStore=\"{{MaybeWineRoot}}{{GameInstalledModsPath}}/godot-loader-4/script-loader.gd\"\n",
             "destination": "{{GameExecutableFolderPath}}/override.cfg"
           }
         ]
       },
-      "sourceCode": "https://github.com/Raicuparta/everyone",
+      "sourceCode": "https://github.com/Raicuparta/gdscript-loader",
       "title": "Godot 4 Mod Loader"
     },
     {
