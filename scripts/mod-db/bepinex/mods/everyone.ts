@@ -15,7 +15,7 @@ export async function getEveryoneMods() {
 			download: {
 				id: "0.2.1",
 				url:
-					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx5.Mono.zip",
+					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.2.1/EveryoneClient.BepInEx5.Mono.zip",
 			},
 		}, {
 			configFileName: "raicuparta.everyone.json",
@@ -32,7 +32,7 @@ export async function getEveryoneMods() {
 			download: {
 				id: "0.2.1",
 				url:
-					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
 			},
 		}, {
 			configFileName: "raicuparta.everyone.json",

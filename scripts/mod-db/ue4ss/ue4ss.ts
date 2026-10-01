@@ -1,6 +1,7 @@
 import { ModBase, ModDownload } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { createOctokit } from "../github-client.ts";
+import { getUnrealEveryoneMods } from "./mods/everyone.ts";
 
 const id = "ue4ss";
 
@@ -38,6 +39,7 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 				mainInstalledFolderPath: `${token.GameInstalledModsPath}/ue4ss`,
 			},
 		},
+		...(await getUnrealEveryoneMods()),
 	];
 }
 
