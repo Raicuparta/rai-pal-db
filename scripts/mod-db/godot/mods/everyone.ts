@@ -3,7 +3,7 @@ import { token } from "../../replacement-tokens.ts";
 
 // Each zip contains a single `everyone-<major>.gd` script.
 const downloadBase =
-	"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.2.1";
+	"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.3.0";
 
 function godotEveryone(major: 3 | 4): ModBase {
 	const id = `everyone-godot-${major}`;
@@ -22,7 +22,7 @@ function godotEveryone(major: 3 | 4): ModBase {
 		description:
 			"Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
 		download: {
-			id: "0.2.1",
+			id: "0.3.0",
 			url: `${downloadBase}/everyone-${major}.zip`,
 		},
 		requiredDependencies: [{ family: "godot" }],

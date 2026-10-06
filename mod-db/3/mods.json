@@ -560,12 +560,12 @@
       },
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.2.1/EveryoneClient.BepInEx5.Mono.zip"
+        "id": "0.3.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.3.0/EveryoneClient.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "812c3b66d7dbf495a81926ab947cc632cf158710f80438cf2beaa7f7f716110f",
+      "hash": "c392dac7e648e8a30146b7424cbecf0b92957d22fac2e12ace6387f00d4bb339",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -594,12 +594,12 @@
       },
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
+        "id": "0.3.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.3.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "5f53efedb3cf6d80a08270062afab19fd41bb8dd00a592734f2830b622d1dc78",
+      "hash": "3cd5bd32d4829f16766a5c9fecb16b7ebcf9e1b7a3f15068efc86eae5af85a4f",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -742,11 +742,11 @@
       "author": "ManlyMarco",
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3.2",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2/RuntimeUnityEditor.Bepin5_v6.3.2.zip"
+        "id": "v6.3.2.1",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin5_v6.3.2.1.zip"
       },
       "engine": "Unity",
-      "hash": "7cac78e862fb34ff78bff860a9bc007dcc762aaf119cc0fddad751355740f06f",
+      "hash": "0e055236fb7cdd28824b521aee5459481c89152a5156ee47b91db689545c83fd",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -771,11 +771,11 @@
       "author": "ManlyMarco",
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3.2",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.zip"
+        "id": "v6.3.2.1",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.1.zip"
       },
       "engine": "Unity",
-      "hash": "07b6c1d2d9516915511a653da27f38e782be24b2804c30f5cc2a9f88c7150c91",
+      "hash": "77e65fa86a9dfbfb91ba57c05f0c0a03f06bcafac8525ae55cb1fee37dc57ab2",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -873,8 +873,8 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.2.1/everyone-3.zip"
+        "id": "0.3.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.3.0/everyone-3.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -886,7 +886,7 @@
         }
       },
       "family": "everyone",
-      "hash": "da397e53272aac6709cf7892b25346c97e5f4dbdda3605788e48d0c5ec7091fc",
+      "hash": "32f7f5ac40d7d117e0ef7abd83a1efb51af6baa7902427cf1839dc96c1828000",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -910,8 +910,8 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "0.2.1",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.2.1/everyone-4.zip"
+        "id": "0.3.0",
+        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.3.0/everyone-4.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -920,7 +920,7 @@
         }
       },
       "family": "everyone",
-      "hash": "5e36a8ab7de351aa1239964b1e0b288bae223bb0a1df313c08e4020f916c6fb4",
+      "hash": "e90e4e8be5101f4d260be489dbe4bab986c488aa6efc0275616238394b138251",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -1215,12 +1215,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1151",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1151-g03dbd5c0.zip"
+        "id": "v3.0.1-1160",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1160-g3f4037d2.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "b4df81c8d0a2afcde2c8adf8a3c49b024d76c6e94aa94fb0b8c26ce47a8f6601",
+      "hash": "b1f136f1041643f80ee4380f78e9a55915ec2b12a6cc0d9e5e2a021eeb8faaed",
       "id": "ue4ss",
       "install": {
         "extract": [
@@ -1247,41 +1247,6 @@
       },
       "sourceCode": "https://github.com/UE4SS-RE/RE-UE4SS",
       "title": "UE4SS"
-    },
-    {
-      "author": "Raicuparta",
-      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F2 to connect.",
-      "download": {
-        "id": "0.1.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unreal-v0.1.0/everyone-unreal.zip"
-      },
-      "engine": "Unreal",
-      "family": "everyone",
-      "hash": "2da84096e2a881e2328539c3376eb4c7b0263e7526d38d695044d3e87f8617bf",
-      "id": "everyone-ue",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue/dlls",
-            "source": "dlls"
-          }
-        ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue",
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-ue.json",
-        "write": [
-          {
-            "content": "",
-            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue/enabled.txt"
-          }
-        ]
-      },
-      "requiredDependencies": [
-        {
-          "modId": "ue4ss"
-        }
-      ],
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Unreal)"
     }
   ]
 }
