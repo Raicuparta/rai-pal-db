@@ -3,7 +3,6 @@ import {
 	isArchitecture,
 	ModBase,
 	ModDownload,
-	ModRun,
 	OperatingSystem,
 } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
@@ -20,22 +19,18 @@ function bepinexMonoLoaderBase(
 	modId: string,
 	os: OperatingSystem,
 ): Omit<ModBase, "title" | "download"> {
-	const runForGame = bepinexMonoRunForGame(os);
+	const gameEnvironment = bepinexMonoGameEnvironment(os);
 	return {
 		id: modId,
 		family: "bepinex",
-		description: `Mod loader for Unity mods.${
-			os === "Linux"
-				? " You must start the game with this 'Run' button for mods to work"
-				: ""
-		}`,
+		description: "Mod loader for Unity mods.",
 		engine: "Unity",
 		unityBackend: "Mono",
 		gameOs: os,
 		author: "BepInEx",
 		sourceCode: "https://github.com/BepInEx/BepInEx",
 		install: bepinexMonoInstall(modId, os),
-		...(runForGame ? { runForGame } : {}),
+		...(gameEnvironment ? { gameEnvironment } : {}),
 		config: {
 			destinationPath:
 				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
@@ -52,19 +47,20 @@ function bepinexMonoLoaderBase(
 	};
 }
 
-function bepinexMonoRunForGame(os: OperatingSystem): ModRun | null {
+function bepinexMonoGameEnvironment(
+	os: OperatingSystem,
+): NonNullable<ModBase["gameEnvironment"]> | null {
 	if (os === "Windows") {
 		return null;
 	}
 
 	return {
-		path: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
-		args: [
-			token.GameExecutableName,
-			"--doorstop-target-assembly",
+		DOORSTOP_ENABLED: "1",
+		DOORSTOP_TARGET_ASSEMBLY:
 			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll`,
-		],
-		os: "Linux",
+		DOORSTOP_IGNORE_DISABLED_ENV: "0",
+		LD_LIBRARY_PATH: `${token.GameExecutableFolderPath}:\${LD_LIBRARY_PATH}`,
+		LD_PRELOAD: `libdoorstop.so:\${LD_PRELOAD}`,
 	};
 }
 
@@ -113,10 +109,6 @@ dll_search_path_override=
 			{
 				source: "libdoorstop.so",
 				destination: `${token.GameExecutableFolderPath}/libdoorstop.so`,
-			},
-			{
-				source: "run_bepinex.sh",
-				destination: `${token.GameExecutableFolderPath}/run_bepinex.sh`,
 			},
 		],
 		mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,

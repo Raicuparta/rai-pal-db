@@ -38,6 +38,8 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 				mainInstalledFolderPath: `${token.GameInstalledModsPath}/ue4ss`,
 			},
 		},
+		// TODO wait for UE version of Everyone to exist
+		// ...(await getUnrealEveryoneMods()),
 	];
 }
 

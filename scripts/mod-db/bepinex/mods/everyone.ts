@@ -13,9 +13,9 @@ export async function getEveryoneMods() {
 			description:
 				"Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
 			download: {
-				id: "0.2.1",
+				id: "0.3.0",
 				url:
-					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx5.Mono.zip",
+					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.3.0/EveryoneClient.BepInEx5.Mono.zip",
 			},
 		}, {
 			configFileName: "raicuparta.everyone.json",
@@ -30,9 +30,9 @@ export async function getEveryoneMods() {
 			description:
 				"Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
 			download: {
-				id: "0.2.1",
+				id: "0.3.0",
 				url:
-					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-v0.2.1/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+					"https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.3.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip",
 			},
 		}, {
 			configFileName: "raicuparta.everyone.json",
