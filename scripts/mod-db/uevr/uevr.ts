@@ -31,6 +31,33 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			}),
 		},
 		{
+			...uevrBase("uevr-joeyhodge"),
+			title: "UEVR JoeyHodge",
+			author: "praydog + joeyhodge",
+			description: "UEVR with joehhodge's enhancements.",
+			sourceCode: "https://github.com/joeyhodge/UEVR",
+			download: await getLatestFromGitHub({
+				owner: "joeyhodge",
+				repo: "UEVR",
+				selectAssetName: (assetName) =>
+					assetName.toLocaleLowerCase() === "uevr.zip",
+			}),
+		},
+		{
+			...uevrBase("uevr-joeyhodge-dibr"),
+			title: "UEVR JoeyHodge DIBR/Mono",
+			author: "praydog + joeyhodge",
+			description:
+				"UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
+			sourceCode: "https://github.com/joeyhodge/UEVR",
+			download: await getLatestFromGitHub({
+				owner: "joeyhodge",
+				repo: "UEVR",
+				selectAssetName: (assetName) =>
+					assetName.toLocaleLowerCase() === "dibruevr.zip",
+			}),
+		},
+		{
 			...uevrBase("uevr-joeyhodge-afw"),
 			title: "UEVR JoeyHodge AFW",
 			author: "praydog + PureDark + joeyhodge",

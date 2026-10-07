@@ -1043,6 +1043,108 @@
       "title": "UEVR Nightly"
     },
     {
+      "author": "praydog + joeyhodge",
+      "config": {
+        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+        "destinationType": "Folder"
+      },
+      "description": "UEVR with joehhodge's enhancements.",
+      "download": {
+        "id": "100826steamframep2",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/100826steamframep2/uevr.zip"
+      },
+      "engine": "Unreal",
+      "family": "uevr",
+      "gameOs": "Windows",
+      "hash": "c79ff3f318b564847b2c2950725d746f61d8247776cc5278c658ac433e6f9d6b",
+      "id": "uevr-joeyhodge",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/uevr-joeyhodge",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge",
+        "manifestPath": "{{SharedModsPath}}/uevr-joeyhodge/rai-pal-manifest.json"
+      },
+      "optionalDependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "runForGame": {
+        "args": [
+          "--attach={{GameExecutableName}}"
+        ],
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-joeyhodge/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "runStandalone": {
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-joeyhodge/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "sourceCode": "https://github.com/joeyhodge/UEVR",
+      "title": "UEVR JoeyHodge"
+    },
+    {
+      "author": "praydog + joeyhodge",
+      "config": {
+        "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
+        "destinationType": "Folder"
+      },
+      "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
+      "download": {
+        "id": "100826steamframep2",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/100826steamframep2/DIBRUEVR.zip"
+      },
+      "engine": "Unreal",
+      "family": "uevr",
+      "gameOs": "Windows",
+      "hash": "711f921f862e319fda74da0ed2c6ea9546deb876f301743fa27276032387fa0a",
+      "id": "uevr-joeyhodge-dibr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/uevr-joeyhodge-dibr",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge-dibr",
+        "manifestPath": "{{SharedModsPath}}/uevr-joeyhodge-dibr/rai-pal-manifest.json"
+      },
+      "optionalDependencies": [
+        {
+          "modId": "dotnet-desktop-runtime-win-x64"
+        }
+      ],
+      "runForGame": {
+        "args": [
+          "--attach={{GameExecutableName}}"
+        ],
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-joeyhodge-dibr/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "runStandalone": {
+        "os": "Windows",
+        "path": "{{SharedModsPath}}/uevr-joeyhodge-dibr/UEVRInjector.exe",
+        "wineEnvironment": {
+          "DOTNET_ROOT": "{{SharedModsPath}}/dotnet-desktop-runtime-win-x64"
+        }
+      },
+      "sourceCode": "https://github.com/joeyhodge/UEVR",
+      "title": "UEVR JoeyHodge DIBR/Mono"
+    },
+    {
       "author": "praydog + PureDark + joeyhodge",
       "config": {
         "destinationPath": "{{RoamingAppData}}/UnrealVRMod/{{GameExecutableNameWithoutExtension}}",
