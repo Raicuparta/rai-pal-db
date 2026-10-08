@@ -219,6 +219,11 @@ export interface ModDownload {
 	 * Direct download url for the release zip.
 	 */
 	url: string;
+
+	/**
+	 * ISO 8601 date when this specific downloadable release asset was published.
+	 */
+	releaseDate?: string;
 }
 
 export interface EngineVersion {

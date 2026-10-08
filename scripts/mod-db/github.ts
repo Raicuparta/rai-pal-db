@@ -80,5 +80,6 @@ export async function getLatestFromGitHub(
 	return {
 		id,
 		url: asset.browser_download_url,
+		releaseDate: asset.created_at,
 	};
 }

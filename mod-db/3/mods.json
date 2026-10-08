@@ -683,11 +683,12 @@
       "description": "An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
       "download": {
         "id": "v4.13.6",
+        "releaseDate": "2026-04-30T04:41:13Z",
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
       "family": "unity-explorer",
-      "hash": "39761ce6089730a18545d56f5e7649aca298cbe256fb04f0a0536ed500a9e019",
+      "hash": "42459d3273400ea64b800adb709ec21e5ea86cb29a577fcf63773c93a0add10b",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -713,11 +714,12 @@
       "description": "An in-game UI for exploring, debugging and modifying Unity games.",
       "download": {
         "id": "v4.13.6",
+        "releaseDate": "2026-04-30T04:41:10Z",
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
       "family": "unity-explorer",
-      "hash": "221273ed2c16573bdc3bffebac9a3f25770742d1f3bea12627f023ce180509f1",
+      "hash": "db0bdfabf9cc7a6a80a5ce7486fcd251f0d0951222fa037ed2e0b17b9fd0cbff",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -743,10 +745,11 @@
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
         "id": "v6.3.2.1",
+        "releaseDate": "2026-10-06T17:06:37Z",
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin5_v6.3.2.1.zip"
       },
       "engine": "Unity",
-      "hash": "0e055236fb7cdd28824b521aee5459481c89152a5156ee47b91db689545c83fd",
+      "hash": "a3705b3682eb1b88dc47862cb321b2a2c40fdc0dcacd1102f9bc5c693608df05",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -772,10 +775,11 @@
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
         "id": "v6.3.2.1",
+        "releaseDate": "2026-10-06T17:06:46Z",
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.1.zip"
       },
       "engine": "Unity",
-      "hash": "77e65fa86a9dfbfb91ba57c05f0c0a03f06bcafac8525ae55cb1fee37dc57ab2",
+      "hash": "a7df07e5aba9893038052f6d41e9dadbc1bb1d3de50ed3744b305dd115204687",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -949,12 +953,13 @@
       "description": "Universal VR mod for Unreal Engine games.",
       "download": {
         "id": "1.05",
+        "releaseDate": "2024-11-16T01:04:22Z",
         "url": "https://github.com/praydog/UEVR/releases/download/1.05/UEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "4756a3fa930394600594ddfa5208caee01adf58acef4d877db04650150158281",
+      "hash": "ab02449e8802345b70e3bdda1981d56ff52a4bb6f8e604d1c7fe60f05735a5bf",
       "id": "uevr",
       "install": {
         "extract": [
@@ -1000,12 +1005,13 @@
       "description": "UEVR automatically built from the latest, potentially untested code changes.",
       "download": {
         "id": "01143",
+        "releaseDate": "2026-08-30T04:42:31Z",
         "url": "https://github.com/praydog/UEVR-nightly/releases/download/nightly-01143-4ee5c6b6162dee2291fc75f9dfc57667f6d45a2d/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "b66bcd802058419bb661dbe2ac680146ba6edd5358105b735791f69c7f75e475",
+      "hash": "a6f957bc965809f03bdcf3ffaee4d9174b0cdedf458c1b91acbd74f35c7032d8",
       "id": "uevr-nightly",
       "install": {
         "extract": [
@@ -1051,12 +1057,13 @@
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
         "id": "100826steamframep2",
+        "releaseDate": "2026-10-07T16:20:44Z",
         "url": "https://github.com/joeyhodge/UEVR/releases/download/100826steamframep2/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "5f79cafa12c676e1022e9175be8790e22ac5213c0250984b7727878df2351f5a",
+      "hash": "9f74f1e2a28a91649f5fa1d26be878e0aebc5dd09014debf6bb3b67dcab12904",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1102,12 +1109,13 @@
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
         "id": "100826steamframep2",
+        "releaseDate": "2026-10-07T16:17:40Z",
         "url": "https://github.com/joeyhodge/UEVR/releases/download/100826steamframep2/DIBRUEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "7ac2c6fd9b92e3827cc72c42472d7037e7aef4c73d8fd284a094b52c87815e32",
+      "hash": "047042d907524006b8ae88d5412dfbe2ec09652d9074cc9b4a8802fb09495352",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -1153,12 +1161,13 @@
       "description": "UEVR with joehhodge's enhancements + Alternate Frame Warping.",
       "download": {
         "id": "v1.0-beta.6",
+        "releaseDate": "2026-08-13T09:16:53Z",
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.6/UEVR-joeyhodge_AFW_v1.0-beta.6.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "19a09ce4765bafae62a31dc2863bece569707a7c2a998b01d8dadeccea439215",
+      "hash": "00d4720e4aca4cb07b7c341f38d17cbeabb599bcadbd17b8398767547b4effa0",
       "id": "uevr-joeyhodge-afw",
       "install": {
         "extract": [
@@ -1204,12 +1213,13 @@
       "description": "UEVR nightly + Alternate Frame Warping.",
       "download": {
         "id": "v1.0-beta.6",
+        "releaseDate": "2026-08-13T09:16:43Z",
         "url": "https://github.com/PureDark/UEVR/releases/download/UEVR_AFW_v1.0-beta.6/UEVR-nightly_AFW_v1.0-beta.6.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "92684603a7610dfcca6b7455400da3a1e7696b5ca23f1c1291c9c2d2dcef7192",
+      "hash": "61213e8e1b5d1eb42ed75bffbd1a7c2d9045c94d3632c9656d0e6b8c19d7316a",
       "id": "uevr-nightly-afw",
       "install": {
         "extract": [
@@ -1277,11 +1287,12 @@
       "description": "Simple injector/game launcher for UEVR",
       "download": {
         "id": "v0.4.1",
+        "releaseDate": "2024-06-23T19:37:03Z",
         "url": "https://github.com/keton/chihuahua/releases/download/v0.4.1/chihuahua.zip"
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "8af8daedef3bf61a9ab211220923eba70766f33666d09c8650ad747fbe27c998",
+      "hash": "a2fa2b61aba6f133f788ad83f896e11eb44677f2c85aa05f2abd82bc649b859f",
       "id": "chihuahua-uevr",
       "install": {
         "extract": [
