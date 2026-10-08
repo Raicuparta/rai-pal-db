@@ -3,6 +3,7 @@ import { token } from "../replacement-tokens.ts";
 
 export function uevrBase(
 	id: string,
+	zipRoot = ".",
 ): Omit<ModBase, "title" | "description" | "download"> {
 	const runBase: ModRun = {
 		path: `${token.SharedModsPath}/${id}/UEVRInjector.exe`,
@@ -33,7 +34,7 @@ export function uevrBase(
 			manifestPath: `${token.SharedModsPath}/${id}/rai-pal-manifest.json`,
 			extract: [
 				{
-					source: ".",
+					source: zipRoot,
 					destination: `${token.SharedModsPath}/${id}`,
 				},
 			],
