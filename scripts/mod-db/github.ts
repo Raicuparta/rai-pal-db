@@ -1,17 +1,18 @@
 import { ModDownload } from "./mod.ts";
 import { createOctokit } from "./github-client.ts";
 
-type Params = {
+type ReleaseParams = {
 	owner: string;
 	repo: string;
-	selectAssetName: (assetName: string) => boolean;
-	formatId?: (tag: string) => string;
 	allowPreRelease?: boolean;
+	formatId?: (tag: string) => string;
 };
+
+type AssetSelector = (assetName: string) => boolean;
 
 const octokit = createOctokit();
 
-async function getReleaseData(params: Params) {
+async function getReleaseData(params: ReleaseParams) {
 	// First, try to get the latest full release.
 	try {
 		const response = await octokit.rest.repos.getLatestRelease({
@@ -50,20 +51,11 @@ async function getReleaseData(params: Params) {
 	return preRelease;
 }
 
-export async function getLatestFromGitHub(
-	params: Params,
-): Promise<ModDownload> {
+export async function getLatestFromGitHub<K extends string>(
+	params: ReleaseParams,
+	selectAssetNames: Record<K, AssetSelector>,
+): Promise<Record<K, ModDownload>> {
 	const release = await getReleaseData(params);
-
-	const asset = release.assets.find((asset) =>
-		params.selectAssetName(asset.name)
-	);
-
-	if (!asset) {
-		throw new Error(
-			`Asset not found in the latest release of ${params.owner}/${params.repo}`,
-		);
-	}
 
 	let id = release.tag_name;
 	if (params.formatId) {
@@ -77,9 +69,26 @@ export async function getLatestFromGitHub(
 		}
 	}
 
-	return {
-		id,
-		url: asset.browser_download_url,
-		releaseDate: asset.created_at,
-	};
+	const selectors = Object.entries(selectAssetNames) as [
+		K,
+		AssetSelector,
+	][];
+
+	return Object.fromEntries(
+		selectors.map(([key, selectAssetName]) => {
+			const asset = release.assets.find((asset) => selectAssetName(asset.name));
+
+			if (!asset) {
+				throw new Error(
+					`Asset "${key}" not found in the latest release of ${params.owner}/${params.repo}`,
+				);
+			}
+
+			return [key, {
+				id,
+				url: asset.browser_download_url,
+				releaseDate: asset.created_at,
+			}];
+		}),
+	) as Record<K, ModDownload>;
 }

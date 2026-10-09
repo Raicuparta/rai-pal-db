@@ -1,8 +1,20 @@
+import { getLatestFromGitHub } from "../../github.ts";
 import { ModBase } from "../../mod.ts";
 import { bepinexMod } from "../bepinex-mod.ts";
 
-// deno-lint-ignore require-await
+const author = "Raicuparta";
+const sourceCode = "https://github.com/Raicuparta/uuvr";
+
 export async function getUuvrMods(): Promise<ModBase[]> {
+	const { il2cppLegacy, monoLegacy, monoModern } = await getLatestFromGitHub(
+		{ owner: "Raicuparta", repo: "uuvr" },
+		{
+			il2cppLegacy: (assetName) => assetName.includes("il2cpp-legacy"),
+			monoLegacy: (assetName) => assetName.includes("mono-legacy"),
+			monoModern: (assetName) => assetName.includes("mono-modern"),
+		},
+	);
+
 	return [
 		bepinexMod(
 			{
@@ -10,8 +22,8 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 				family: "uuvr",
 				unityBackend: "Il2Cpp",
 				title: "UUVR Il2Cpp Legacy",
-				author: "Raicuparta",
-				sourceCode: "https://github.com/Raicuparta/uuvr",
+				author,
+				sourceCode,
 				description:
 					"Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
 				engineVersionRange: {
@@ -19,10 +31,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 						major: 2019,
 					},
 				},
-				download: {
-					id: "0.3.1",
-					url: "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip",
-				},
+				download: il2cppLegacy,
 			},
 			{
 				withPatchers: true,
@@ -35,8 +44,8 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 				family: "uuvr",
 				unityBackend: "Mono",
 				title: "UUVR Mono Legacy",
-				author: "Raicuparta",
-				sourceCode: "https://github.com/Raicuparta/uuvr",
+				author,
+				sourceCode,
 				description:
 					"Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
 				engineVersionRange: {
@@ -44,10 +53,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 						major: 2019,
 					},
 				},
-				download: {
-					id: "0.3.1",
-					url: "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip",
-				},
+				download: monoLegacy,
 			},
 			{
 				withPatchers: true,
@@ -60,8 +66,8 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 				family: "uuvr",
 				unityBackend: "Mono",
 				title: "UUVR Mono Modern",
-				author: "Raicuparta",
-				sourceCode: "https://github.com/Raicuparta/uuvr",
+				author,
+				sourceCode,
 				description:
 					"Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
 				engineVersionRange: {
@@ -70,10 +76,7 @@ export async function getUuvrMods(): Promise<ModBase[]> {
 						minor: 4,
 					},
 				},
-				download: {
-					id: "0.4.0",
-					url: "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip",
-				},
+				download: monoModern,
 			},
 			{
 				withPatchers: true,

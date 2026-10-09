@@ -7,28 +7,65 @@ const dotnetId = "dotnet-desktop-runtime-win-x64";
 const chihuahuaId = "chihuahua-uevr";
 
 export async function getUevrMods(): Promise<ModBase[]> {
+	const { uevr } = await getLatestFromGitHub(
+		{ owner: "praydog", repo: "UEVR" },
+		{ uevr: (assetName) => assetName === "UEVR.zip" },
+	);
+
+	const { nightly } = await getLatestFromGitHub(
+		{
+			owner: "praydog",
+			repo: "UEVR-nightly",
+			formatId: (tag) => tag.split("-")[1] || tag,
+		},
+		{ nightly: (assetName) => assetName === "uevr.zip" },
+	);
+
+	const { joeyhodge, joeyhodgeDibr } = await getLatestFromGitHub(
+		{ owner: "joeyhodge", repo: "UEVR" },
+		{
+			joeyhodge: (assetName) => assetName.toLocaleLowerCase() === "uevr.zip",
+			joeyhodgeDibr: (assetName) =>
+				assetName.toLocaleLowerCase().includes("dibr") &&
+				assetName.toLocaleLowerCase().endsWith("zip"),
+		},
+	);
+
+	const { joeyhodgeAfw, nightlyAfw } = await getLatestFromGitHub(
+		{
+			owner: "PureDark",
+			repo: "UEVR",
+			allowPreRelease: true,
+			formatId: (tag) => tag.replace("UEVR_AFW_", ""),
+		},
+		{
+			joeyhodgeAfw: (assetName) =>
+				assetName.startsWith("UEVR-joeyhodge_AFW_") &&
+				assetName.endsWith(".zip"),
+			nightlyAfw: (assetName) =>
+				assetName.startsWith("UEVR-nightly_AFW_") &&
+				assetName.endsWith(".zip"),
+		},
+	);
+
+	const { chihuahua } = await getLatestFromGitHub(
+		{ owner: "keton", repo: "chihuahua" },
+		{ chihuahua: (assetName) => assetName === "chihuahua.zip" },
+	);
+
 	return [
 		{
 			...uevrBase("uevr"),
 			title: "UEVR",
 			description: "Universal VR mod for Unreal Engine games.",
-			download: await getLatestFromGitHub({
-				owner: "praydog",
-				repo: "UEVR",
-				selectAssetName: (assetName) => assetName === "UEVR.zip",
-			}),
+			download: uevr,
 		},
 		{
 			...uevrBase("uevr-nightly"),
 			title: "UEVR Nightly",
 			description:
 				"UEVR automatically built from the latest, potentially untested code changes.",
-			download: await getLatestFromGitHub({
-				owner: "praydog",
-				repo: "UEVR-nightly",
-				selectAssetName: (assetName) => assetName === "uevr.zip",
-				formatId: (tag) => tag.split("-")[1] || tag,
-			}),
+			download: nightly,
 		},
 		{
 			...uevrBase("uevr-joeyhodge", "uevr"),
@@ -36,12 +73,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "praydog + joeyhodge",
 			description: "UEVR with joehhodge's enhancements.",
 			sourceCode: "https://github.com/joeyhodge/UEVR",
-			download: await getLatestFromGitHub({
-				owner: "joeyhodge",
-				repo: "UEVR",
-				selectAssetName: (assetName) =>
-					assetName.toLocaleLowerCase() === "uevr.zip",
-			}),
+			download: joeyhodge,
 		},
 		{
 			...uevrBase("uevr-joeyhodge-dibr", "DIBRUEVR"),
@@ -50,13 +82,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			description:
 				"UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
 			sourceCode: "https://github.com/joeyhodge/UEVR",
-			download: await getLatestFromGitHub({
-				owner: "joeyhodge",
-				repo: "UEVR",
-				selectAssetName: (assetName) =>
-					assetName.toLocaleLowerCase().includes("dibr") &&
-					assetName.toLocaleLowerCase().endsWith("zip"),
-			}),
+			download: joeyhodgeDibr,
 		},
 		{
 			...uevrBase("uevr-joeyhodge-afw"),
@@ -65,15 +91,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			description:
 				"UEVR with joehhodge's enhancements + Alternate Frame Warping.",
 			sourceCode: "https://github.com/PureDark/UEVR",
-			download: await getLatestFromGitHub({
-				formatId: (tag) => tag.replace("UEVR_AFW_", ""),
-				owner: "PureDark",
-				repo: "UEVR",
-				selectAssetName: (assetName) =>
-					assetName.startsWith("UEVR-joeyhodge_AFW_") &&
-					assetName.endsWith(".zip"),
-				allowPreRelease: true,
-			}),
+			download: joeyhodgeAfw,
 		},
 		{
 			...uevrBase("uevr-nightly-afw"),
@@ -81,15 +99,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "praydog + PureDark",
 			description: "UEVR nightly + Alternate Frame Warping.",
 			sourceCode: "https://github.com/PureDark/UEVR",
-			download: await getLatestFromGitHub({
-				formatId: (tag) => tag.replace("UEVR_AFW_", ""),
-				owner: "PureDark",
-				repo: "UEVR",
-				selectAssetName: (assetName) =>
-					assetName.startsWith("UEVR-nightly_AFW_") &&
-					assetName.endsWith(".zip"),
-				allowPreRelease: true,
-			}),
+			download: nightlyAfw,
 		},
 		{
 			id: dotnetId,
@@ -127,11 +137,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			gameOs: "Windows",
 			description: "Simple injector/game launcher for UEVR",
 			sourceCode: "https://github.com/keton/chihuahua",
-			download: await getLatestFromGitHub({
-				owner: "keton",
-				repo: "chihuahua",
-				selectAssetName: (assetName) => assetName === "chihuahua.zip",
-			}),
+			download: chihuahua,
 			install: {
 				manifestPath:
 					`${token.SharedModsPath}/${chihuahuaId}/rai-pal-manifest.json`,
