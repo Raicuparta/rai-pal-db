@@ -54,7 +54,8 @@ export async function getUevrMods(): Promise<ModBase[]> {
 				owner: "joeyhodge",
 				repo: "UEVR",
 				selectAssetName: (assetName) =>
-					assetName.toLocaleLowerCase() === "dibruevr.zip",
+					assetName.toLocaleLowerCase().includes("dibr") &&
+					assetName.toLocaleLowerCase().endsWith("zip"),
 			}),
 		},
 		{
@@ -120,6 +121,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 		{
 			id: chihuahuaId,
 			title: "Chihuahua",
+			family: "uevr",
 			author: "Keton",
 			engine: "Unreal",
 			gameOs: "Windows",

@@ -1056,14 +1056,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "100826steamframep2",
-        "releaseDate": "2026-10-07T16:20:44Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/100826steamframep2/uevr.zip"
+        "id": "100926TownFallp2",
+        "releaseDate": "2026-10-09T02:25:47Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/100926TownFallp2/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "9f74f1e2a28a91649f5fa1d26be878e0aebc5dd09014debf6bb3b67dcab12904",
+      "hash": "b9ca2dee12d4f2a384d9e6e9f2c6e289c134c3c7b64ce070f2e25bf7c22b6443",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1108,14 +1108,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "100826steamframep2",
-        "releaseDate": "2026-10-07T16:17:40Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/100826steamframep2/DIBRUEVR.zip"
+        "id": "100926TownFallp2",
+        "releaseDate": "2026-10-09T02:28:13Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/100926TownFallp2/DIBRMONOUEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "047042d907524006b8ae88d5412dfbe2ec09652d9074cc9b4a8802fb09495352",
+      "hash": "5f3f6c7db75db58b7182c2d7316337ba06632e8d1437017eab3e86c578ac3e85",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -1291,8 +1291,9 @@
         "url": "https://github.com/keton/chihuahua/releases/download/v0.4.1/chihuahua.zip"
       },
       "engine": "Unreal",
+      "family": "uevr",
       "gameOs": "Windows",
-      "hash": "a2fa2b61aba6f133f788ad83f896e11eb44677f2c85aa05f2abd82bc649b859f",
+      "hash": "58964aa54d3f55247f40fd803c820417fd762019c56cad2ca41a4b26e6b3927e",
       "id": "chihuahua-uevr",
       "install": {
         "extract": [
@@ -1328,12 +1329,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1161",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1161-g6eb3d9bc.zip"
+        "id": "v3.0.1-1164",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1164-g5e627997.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "dd1e37bac4b2b403ce4e30f21eb7ccd77a9b350bd4ffd09e21a00370bcd6e9ae",
+      "hash": "274aed4f9ffdaa15e7ac013c0107887344dc5d14bf64e96b1bb2b9b988496341",
       "id": "ue4ss",
       "install": {
         "extract": [
