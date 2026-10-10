@@ -1063,13 +1063,13 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "b9ca2dee12d4f2a384d9e6e9f2c6e289c134c3c7b64ce070f2e25bf7c22b6443",
+      "hash": "b80b404e6f652e3f25d4dbadb2fceef7dd0749a354028635b0760c35834c1aaf",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
           {
             "destination": "{{SharedModsPath}}/uevr-joeyhodge",
-            "source": "uevr"
+            "source": "."
           }
         ],
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge",
@@ -1115,13 +1115,13 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "5f3f6c7db75db58b7182c2d7316337ba06632e8d1437017eab3e86c578ac3e85",
+      "hash": "c77ef6195a3d3029cd4c507b3a364fc236ceb76ae48caa6ab8e645b21414a09d",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
           {
             "destination": "{{SharedModsPath}}/uevr-joeyhodge-dibr",
-            "source": "DIBRUEVR"
+            "source": "."
           }
         ],
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge-dibr",
