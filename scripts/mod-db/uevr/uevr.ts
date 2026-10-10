@@ -31,7 +31,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			}),
 		},
 		{
-			...uevrBase("uevr-joeyhodge", "uevr"),
+			...uevrBase("uevr-joeyhodge"),
 			title: "UEVR JoeyHodge",
 			author: "praydog + joeyhodge",
 			description: "UEVR with joehhodge's enhancements.",
@@ -44,7 +44,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			}),
 		},
 		{
-			...uevrBase("uevr-joeyhodge-dibr", "DIBRUEVR"),
+			...uevrBase("uevr-joeyhodge-dibr"),
 			title: "UEVR JoeyHodge DIBR/Mono",
 			author: "praydog + joeyhodge",
 			description:
