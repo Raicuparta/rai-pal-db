@@ -2,6 +2,15 @@ import { getLatestFromGitHub } from "../../github.ts";
 import { bepinexMod } from "../bepinex-mod.ts";
 
 export async function getUnityExplorerMods() {
+	const { il2cpp, mono } = await getLatestFromGitHub(
+		{ owner: "yukieiji", repo: "UnityExplorer" },
+		{
+			il2cpp: (assetName) =>
+				assetName === "UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
+			mono: (assetName) => assetName === "UnityExplorer.BepInEx5.Mono.zip",
+		},
+	);
+
 	return [
 		bepinexMod({
 			id: "unity-explorer-il2cpp",
@@ -12,12 +21,7 @@ export async function getUnityExplorerMods() {
 			sourceCode: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games. Not compatible with Config Manager.",
-			download: await getLatestFromGitHub({
-				owner: "yukieiji",
-				repo: "UnityExplorer",
-				selectAssetName: (assetName) =>
-					assetName === "UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip",
-			}),
+			download: il2cpp,
 		}),
 		bepinexMod({
 			id: "unity-explorer-mono",
@@ -28,12 +32,7 @@ export async function getUnityExplorerMods() {
 			sourceCode: "https://github.com/yukieiji/UnityExplorer",
 			description:
 				"An in-game UI for exploring, debugging and modifying Unity games.",
-			download: await getLatestFromGitHub({
-				owner: "yukieiji",
-				repo: "UnityExplorer",
-				selectAssetName: (assetName) =>
-					assetName === "UnityExplorer.BepInEx5.Mono.zip",
-			}),
+			download: mono,
 		}),
 	];
 }

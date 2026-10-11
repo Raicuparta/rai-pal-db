@@ -211,12 +211,6 @@ function modIdSuffix(platform: LoaderPlatform): string {
 	}${platform.architecture.toLocaleLowerCase()}`;
 }
 
-function title(platform: LoaderPlatform): string {
-	return `BepInEx Mono ${platform.architecture}${
-		isLinux(platform) ? " (Linux)" : ""
-	}`;
-}
-
 const wantedPlatforms: LoaderPlatform[] = [
 	{ os: "Windows", architecture: "X64" },
 	{ os: "Windows", architecture: "X86" },
@@ -261,7 +255,11 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 				const latestForOs = latestByPlatform[platform.os] ?? {};
 				latestForOs[platform.architecture] = {
 					timestamp,
-					release: { id: version, url: asset.browser_download_url },
+					release: {
+						id: version,
+						url: asset.browser_download_url,
+						releaseDate: asset.created_at,
+					},
 				};
 				latestByPlatform[platform.os] = latestForOs;
 			}
@@ -282,7 +280,7 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 				platform.os,
 			),
 			architecture: platform.architecture,
-			title: title(platform),
+			title: "BepInEx",
 			download: latest.release,
 		};
 	});

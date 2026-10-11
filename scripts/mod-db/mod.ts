@@ -1,3 +1,5 @@
+import { FamilyId } from "./families.ts";
+
 export interface ModBase {
 	/**
 	 * Unique identifier for this mod. Must be globally unique within all mods from all loaders.
@@ -7,7 +9,7 @@ export interface ModBase {
 	/**
 	 * Non-unique family ID. Mods in the same family provide the same uhh thing. Rai Pal uses this for filters; you filter by games compatible with at least one mod of a given family.
 	 */
-	family?: string;
+	family?: FamilyId;
 
 	/**
 	 * If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement.
@@ -191,7 +193,7 @@ type ModDependency = {
 	modId: string;
 	family?: never;
 } | {
-	family: string;
+	family: FamilyId;
 	modId?: never;
 };
 

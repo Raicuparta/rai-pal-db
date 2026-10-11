@@ -1,4 +1,34 @@
 {
+  "families": {
+    "bepinex": {
+      "description": "Mod loader for Unity mods.",
+      "title": "BepInEx"
+    },
+    "everyone": {
+      "description": "Adds multiplayerish features.",
+      "title": "Everyone"
+    },
+    "godot-loader": {
+      "description": "Basic mod loader for Godot games.",
+      "title": "Godot Mod Loader"
+    },
+    "ue4ss": {
+      "description": "Scripting and modding framework for Unreal Engine games.",
+      "title": "UE4SS"
+    },
+    "uevr": {
+      "description": "Universal VR mod for Unreal Engine games",
+      "title": "UEVR"
+    },
+    "unity-explorer": {
+      "description": "An in-game UI for exploring, debugging and modifying Unity games.",
+      "title": "Unity Explorer"
+    },
+    "uuvr": {
+      "description": "Universal VR mod for Unity games",
+      "title": "UUVR"
+    }
+  },
   "mods": [
     {
       "architecture": "X64",
@@ -10,12 +40,13 @@
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "6.0.0-be.788",
+        "releaseDate": "2026-09-01T05:05:25.883Z",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "5f04db968714f9e3892491daf6e3e408a791eed06ac0fb9f9264189ae2bdc57a",
+      "hash": "85d1caf9e98ac4dc75d9329092d247bc0df435ed9e28a53e360a3f0c43021514",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -53,7 +84,7 @@
         }
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Il2Cpp X64",
+      "title": "BepInEx",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -66,12 +97,13 @@
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "6.0.0-be.788",
+        "releaseDate": "2026-09-01T05:05:25.883Z",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "c7fb0778f7e975173f148f27bf6d691e8e4fe6612fe45b77674f45e1bcb65632",
+      "hash": "efc2530198ecb2eeca6df3c063031f72255adf88e31bfd533410c1a5ce731b10",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -109,7 +141,7 @@
         }
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Il2Cpp X86",
+      "title": "BepInEx",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -122,6 +154,7 @@
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "6.0.0-be.788",
+        "releaseDate": "2026-09-01T05:05:25.883Z",
         "url": "https://builds.bepinex.dev/projects/bepinex_be/788/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.788%2B5b766a3.zip"
       },
       "engine": "Unity",
@@ -136,7 +169,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "0feb7bc0b5a9ab802c2dbef8d0f129a365269d5ef08dd5c055022e11927f3168",
+      "hash": "f1a5a111199b87bbe3115e988a96d9b706a1539d6487d9fbca669777ac441043",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -165,7 +198,7 @@
         }
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Il2Cpp X64 (Linux)",
+      "title": "BepInEx",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -178,12 +211,13 @@
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
+        "releaseDate": "2026-02-08T01:00:46Z",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "16b0ed537d5cb28f780c097b26b93c350c1e751764c80672c35be9ef6bbbd987",
+      "hash": "c3c14ab325fa54a2718ae5cbd89732fec2f1d17481af58a59e382c2cb0828a37",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -217,7 +251,7 @@
         }
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Mono X64",
+      "title": "BepInEx",
       "unityBackend": "Mono"
     },
     {
@@ -230,12 +264,13 @@
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
+        "releaseDate": "2026-02-08T01:00:47Z",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "98ac1cf47e93e4bfd86158ac97933d364b03901e180431615d18d1d7239e2110",
+      "hash": "cfecd89c03b2cb9d955a9f9c75353c92beef13939de37b2b03554ac896b47554",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -269,7 +304,7 @@
         }
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Mono X86",
+      "title": "BepInEx",
       "unityBackend": "Mono"
     },
     {
@@ -282,6 +317,7 @@
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
+        "releaseDate": "2026-02-08T01:00:47Z",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
       },
       "engine": "Unity",
@@ -294,7 +330,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "87c67adf65a099e618147d794538c87e85b88505acb6c0d6638e63038de132e1",
+      "hash": "17fb8fe1782913a708ed8c4884bb410632ec088cb4aa694a6393f2b9cdd27670",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -319,7 +355,7 @@
         }
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Mono X64 (Linux)",
+      "title": "BepInEx",
       "unityBackend": "Mono"
     },
     {
@@ -332,6 +368,7 @@
       "description": "Mod loader for Unity mods.",
       "download": {
         "id": "5.4.23.5",
+        "releaseDate": "2026-02-08T01:00:48Z",
         "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
       },
       "engine": "Unity",
@@ -344,7 +381,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "07efeee0261e069a2026ec7d17337ad9d864b334974125e0e5b59d5763524437",
+      "hash": "049f3cb86c16e45eaf22045795df77e99edf0d1aaadd8e38fc2d30cd6984662e",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -369,7 +406,7 @@
         }
       ],
       "sourceCode": "https://github.com/BepInEx/BepInEx",
-      "title": "BepInEx Mono X86 (Linux)",
+      "title": "BepInEx",
       "unityBackend": "Mono"
     },
     {
@@ -430,8 +467,9 @@
       },
       "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
       "download": {
-        "id": "0.3.1",
-        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-il2cpp-legacy.zip"
+        "id": "v0.4.0",
+        "releaseDate": "2026-10-09T09:49:07Z",
+        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-il2cpp-legacy.zip"
       },
       "engine": "Unity",
       "engineVersionRange": {
@@ -440,7 +478,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "7185a653a84f2e7937ba70f61a40f4289be2c9675d4db910c6e07a485f948032",
+      "hash": "91ab7ddcb37f4b390d57309233219524d85e1812265b4c8efcae821aa9620f9d",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -473,8 +511,9 @@
       },
       "description": "Uses OpenVR. Start SteamVR before starting the game. Use the Configuration Manager mod to change UUVR settings for each game.",
       "download": {
-        "id": "0.3.1",
-        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.3.1/uuvr-mono-legacy.zip"
+        "id": "v0.4.0",
+        "releaseDate": "2026-10-09T09:49:03Z",
+        "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-legacy.zip"
       },
       "engine": "Unity",
       "engineVersionRange": {
@@ -483,7 +522,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "6d21d4d4bf4d5c48f1a1d8731804ee300016281a9dc575103d8081cacc921d29",
+      "hash": "eab6d0dc1167909810bc1f7c8938f7147cdaf6e8fccaa4a2301edb60227f9288",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -516,7 +555,8 @@
       },
       "description": "Supports OpenXR and OpenVR. Use the Configuration Manager mod to change UUVR settings for each game.",
       "download": {
-        "id": "0.4.0",
+        "id": "v0.4.0",
+        "releaseDate": "2025-07-03T10:45:14Z",
         "url": "https://github.com/Raicuparta/uuvr/releases/download/v0.4.0/uuvr-mono-modern.zip"
       },
       "engine": "Unity",
@@ -527,7 +567,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "5cc351ab4667f41686b04431fabff99f7e18045aada2f8bc54c1ec75a61e93e4",
+      "hash": "81701dfd2738ce8f5003b74618746371990efccfabc80544e99f491a4bf95eee",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -553,74 +593,6 @@
       "unityBackend": "Mono"
     },
     {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-        "destinationType": "File"
-      },
-      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
-      "download": {
-        "id": "0.3.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.3.0/EveryoneClient.BepInEx5.Mono.zip"
-      },
-      "engine": "Unity",
-      "family": "everyone",
-      "hash": "c392dac7e648e8a30146b7424cbecf0b92957d22fac2e12ace6387f00d4bb339",
-      "id": "everyone-mono",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono.json"
-      },
-      "requiredDependencies": [
-        {
-          "family": "bepinex"
-        }
-      ],
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Mono)",
-      "unityBackend": "Mono"
-    },
-    {
-      "author": "Raicuparta",
-      "config": {
-        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
-        "destinationType": "File"
-      },
-      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
-      "download": {
-        "id": "0.3.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-unity-v0.3.0/EveryoneClient.BepInEx.Unity.IL2CPP.CoreCLR.zip"
-      },
-      "engine": "Unity",
-      "family": "everyone",
-      "hash": "3cd5bd32d4829f16766a5c9fecb16b7ebcf9e1b7a3f15068efc86eae5af85a4f",
-      "id": "everyone-il2cpp",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
-            "source": "plugins"
-          }
-        ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-il2cpp.json"
-      },
-      "requiredDependencies": [
-        {
-          "family": "bepinex"
-        }
-      ],
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Il2Cpp)",
-      "unityBackend": "Il2Cpp"
-    },
-    {
       "author": "sinai",
       "description": "Press F5 to show an in-game menu for changing mod settings. Use this with UUVR. Not compatible with UnityExplorer.",
       "download": {
@@ -628,7 +600,7 @@
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "53d6913fa22c17ab33aae514675c2b52b504654dc09dc60994d2fc4de43b88cc",
+      "hash": "28717c64f95f20a90be35f147389f267badc05cc4cadd0541bbe7ac30f8527b4",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -646,7 +618,7 @@
         }
       ],
       "sourceCode": "https://github.com/Vapok/BepInExConfigManager",
-      "title": "Config Manager IL2CPP",
+      "title": "Config Manager",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -657,7 +629,7 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "0f35216e75b24d610e1db72b7f6c6d7cd19038c7be686be50b19d0becca332a5",
+      "hash": "c7ec98701c574e99ffe1391a3ff36a8d0fa73c01c88a53d51975a537569da003",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -675,7 +647,7 @@
         }
       ],
       "sourceCode": "https://github.com/sinai-dev/BepInExConfigManager",
-      "title": "Config Manager Mono",
+      "title": "Config Manager",
       "unityBackend": "Mono"
     },
     {
@@ -802,7 +774,186 @@
     },
     {
       "author": "Raicuparta",
-      "description": "Mod loader for Godot 3 games.",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+        "destinationType": "File"
+      },
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
+      "download": {
+        "id": "v0.3.0",
+        "releaseDate": "2026-10-11T16:01:06Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unity-mono.zip"
+      },
+      "engine": "Unity",
+      "family": "everyone",
+      "hash": "a99d7ae1ab52209dfb55c1513796d369bc250bbcc098f8d0cdb02d913df9b9cf",
+      "id": "everyone-mono",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-mono",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-mono.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "bepinex"
+        }
+      ],
+      "sourceCode": "https://github.com/Raicuparta/everyone-client",
+      "title": "Everyone",
+      "unityBackend": "Mono"
+    },
+    {
+      "author": "Raicuparta",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+        "destinationType": "File"
+      },
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
+      "download": {
+        "id": "v0.3.0",
+        "releaseDate": "2026-10-11T16:01:06Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unity-il2cpp.zip"
+      },
+      "engine": "Unity",
+      "family": "everyone",
+      "hash": "1a5cd007fc960981ecb939f82a91289277b91764c791298c5cc7a635f28ac96e",
+      "id": "everyone-il2cpp",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
+            "source": "plugins"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/everyone-il2cpp",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-il2cpp.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "bepinex"
+        }
+      ],
+      "sourceCode": "https://github.com/Raicuparta/everyone-client",
+      "title": "Everyone",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
+      "download": {
+        "id": "v0.3.0",
+        "releaseDate": "2026-10-11T16:01:06Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-godot-3.zip"
+      },
+      "engine": "Godot",
+      "engineVersionRange": {
+        "maximum": {
+          "major": 3
+        },
+        "minimum": {
+          "major": 3
+        }
+      },
+      "family": "everyone",
+      "hash": "2a148c9a22dbb26874cd8f09ceef86ab8dac3b2b3782e66867ac4cf042ed04d7",
+      "id": "everyone-godot-3",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/godot-loader-3/mods/everyone",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/godot-loader-3/mods/everyone",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-3.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "godot-loader"
+        }
+      ],
+      "sourceCode": "https://github.com/Raicuparta/everyone-client",
+      "title": "Everyone"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
+      "download": {
+        "id": "v0.3.0",
+        "releaseDate": "2026-10-11T16:01:06Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-godot-4.zip"
+      },
+      "engine": "Godot",
+      "engineVersionRange": {
+        "minimum": {
+          "major": 4
+        }
+      },
+      "family": "everyone",
+      "hash": "a022b957cf02cacee747ae89866610ff98919488128e38e6a1e691358df39c4a",
+      "id": "everyone-godot-4",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/godot-loader-4/mods/everyone",
+            "source": "."
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/godot-loader-4/mods/everyone",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-4.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "godot-loader"
+        }
+      ],
+      "sourceCode": "https://github.com/Raicuparta/everyone-client",
+      "title": "Everyone"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
+      "download": {
+        "id": "v0.3.0",
+        "releaseDate": "2026-10-11T16:01:06Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unreal.zip"
+      },
+      "engine": "Unreal",
+      "family": "everyone",
+      "hash": "ac905179c43f045913f0fb36d440140ea7468b248709e50a640a9906ea783868",
+      "id": "everyone-ue",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue/dlls",
+            "source": "dlls"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-ue.json",
+        "write": [
+          {
+            "content": "",
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/everyone-ue/enabled.txt"
+          }
+        ]
+      },
+      "requiredDependencies": [
+        {
+          "modId": "ue4ss"
+        }
+      ],
+      "sourceCode": "https://github.com/Raicuparta/everyone-client",
+      "title": "Everyone"
+    },
+    {
+      "author": "Raicuparta",
+      "description": "Basic mod loader for Godot games.",
       "download": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/gdscript-loader/releases/download/v0.1.0/godot-3.zip"
@@ -816,8 +967,8 @@
           "major": 3
         }
       },
-      "family": "godot",
-      "hash": "6488c67d808a8bf5adff66e2856494730da3efae80bf76e2b8e0d7e08c66d389",
+      "family": "godot-loader",
+      "hash": "a1d21024c8eb5c4c7848f8cd41e6451a541a8a256fa05f9a5a8ad28f9bc898b0",
       "id": "godot-loader-3",
       "install": {
         "extract": [
@@ -840,7 +991,7 @@
     },
     {
       "author": "Raicuparta",
-      "description": "Mod loader for Godot 4 games.",
+      "description": "Basic mod loader for Godot games.",
       "download": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/gdscript-loader/releases/download/v0.1.0/godot-4.zip"
@@ -851,8 +1002,8 @@
           "major": 4
         }
       },
-      "family": "godot",
-      "hash": "c5b7b9aa522fffb561fbb87e2733375a558445552ca8f462af38e8b0f0d14675",
+      "family": "godot-loader",
+      "hash": "ca958b89f8312987ada1d08a32bcfce80eb7be442fa9d961b650de3c5560b2ed",
       "id": "godot-loader-4",
       "install": {
         "extract": [
@@ -872,77 +1023,6 @@
       },
       "sourceCode": "https://github.com/Raicuparta/gdscript-loader",
       "title": "Godot 4 Mod Loader"
-    },
-    {
-      "author": "Raicuparta",
-      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
-      "download": {
-        "id": "0.3.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.3.0/everyone-3.zip"
-      },
-      "engine": "Godot",
-      "engineVersionRange": {
-        "maximum": {
-          "major": 3
-        },
-        "minimum": {
-          "major": 3
-        }
-      },
-      "family": "everyone",
-      "hash": "32f7f5ac40d7d117e0ef7abd83a1efb51af6baa7902427cf1839dc96c1828000",
-      "id": "everyone-godot-3",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/godot-loader-3/mods/everyone",
-            "source": "."
-          }
-        ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/godot-loader-3/mods/everyone",
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-3.json"
-      },
-      "requiredDependencies": [
-        {
-          "family": "godot"
-        }
-      ],
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Godot 3)"
-    },
-    {
-      "author": "Raicuparta",
-      "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
-      "download": {
-        "id": "0.3.0",
-        "url": "https://github.com/Raicuparta/rai-pal-db/releases/download/everyone-godot-v0.3.0/everyone-4.zip"
-      },
-      "engine": "Godot",
-      "engineVersionRange": {
-        "minimum": {
-          "major": 4
-        }
-      },
-      "family": "everyone",
-      "hash": "e90e4e8be5101f4d260be489dbe4bab986c488aa6efc0275616238394b138251",
-      "id": "everyone-godot-4",
-      "install": {
-        "extract": [
-          {
-            "destination": "{{GameInstalledModsPath}}/godot-loader-4/mods/everyone",
-            "source": "."
-          }
-        ],
-        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/godot-loader-4/mods/everyone",
-        "manifestPath": "{{GameInstalledModsPath}}/manifests/everyone-godot-4.json"
-      },
-      "requiredDependencies": [
-        {
-          "family": "godot"
-        }
-      ],
-      "sourceCode": "https://github.com/Raicuparta/everyone",
-      "title": "Everyone (Godot 4)"
     },
     {
       "author": "praydog",
@@ -1063,7 +1143,7 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "6ab69719db9b39caad9a89c73ad43d58ad73857f5351f71f1507352105d0abeb",
+      "hash": "1e77cdd27c2b290107899f2fc551cce84814538d0ce06e1b67c3ef065b6a6faf",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1115,7 +1195,7 @@
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "073fcba96e35d8bf449c4634709720ce35d7b5c21b75e51b8757c07f1606f00b",
+      "hash": "ee40bbdfe4bafb1f95c747cf68603a372167aee047ede9df372758cbc80eec93",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [

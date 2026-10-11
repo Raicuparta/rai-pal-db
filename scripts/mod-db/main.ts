@@ -3,14 +3,17 @@ import stringify from "canonical-json";
 import { hash } from "canonical-json/hash";
 import { Mod, ModBase } from "./mod.ts";
 import { getBepinexMods } from "./bepinex/bepinex.ts";
+import { getEveryoneMods } from "./everyone.ts";
 import { getGodotMods } from "./godot/godot.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
+import { families } from "./families.ts";
 
 type ModGetter = () => Promise<ModBase[]>;
 
 const modGetters: ModGetter[] = [
 	getBepinexMods,
+	getEveryoneMods,
 	getGodotMods,
 	getUevrMods,
 	getUe4ssMods,
@@ -22,6 +25,7 @@ const mods: Mod[] = (await Promise.all(modGetters.map((getter) => getter())))
 
 const json = stringify(
 	{
+		families,
 		mods,
 	},
 	undefined,

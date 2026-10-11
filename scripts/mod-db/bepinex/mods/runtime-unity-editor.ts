@@ -2,6 +2,18 @@ import { getLatestFromGitHub } from "../../github.ts";
 import { bepinexMod } from "../bepinex-mod.ts";
 
 export async function getRuntimeUnityEditorMods() {
+	const { mono, il2cpp } = await getLatestFromGitHub(
+		{ owner: "ManlyMarco", repo: "RuntimeUnityEditor" },
+		{
+			mono: (assetName) =>
+				assetName.startsWith("RuntimeUnityEditor.Bepin5_") &&
+				assetName.endsWith(".zip"),
+			il2cpp: (assetName) =>
+				assetName.startsWith("RuntimeUnityEditor.Bepin6.IL2CPP_") &&
+				assetName.endsWith(".zip"),
+		},
+	);
+
 	return [
 		bepinexMod({
 			id: "runtime-unity-editor-mono",
@@ -11,13 +23,7 @@ export async function getRuntimeUnityEditorMods() {
 			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
-			download: await getLatestFromGitHub({
-				owner: "ManlyMarco",
-				repo: "RuntimeUnityEditor",
-				selectAssetName: (assetName) =>
-					assetName.startsWith("RuntimeUnityEditor.Bepin5_") &&
-					assetName.endsWith(".zip"),
-			}),
+			download: mono,
 		}, {
 			zipRoot: "BepInEx",
 		}),
@@ -29,13 +35,7 @@ export async function getRuntimeUnityEditorMods() {
 			sourceCode: "https://github.com/ManlyMarco/RuntimeUnityEditor",
 			description:
 				"In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
-			download: await getLatestFromGitHub({
-				owner: "ManlyMarco",
-				repo: "RuntimeUnityEditor",
-				selectAssetName: (assetName) =>
-					assetName.startsWith("RuntimeUnityEditor.Bepin6.IL2CPP_") &&
-					assetName.endsWith(".zip"),
-			}),
+			download: il2cpp,
 		}, {
 			zipRoot: "BepInEx",
 		}),
