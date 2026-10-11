@@ -1056,14 +1056,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "100926TownFallp2",
-        "releaseDate": "2026-10-09T02:25:47Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/100926TownFallp2/uevr.zip"
+        "id": "101126dunevrbindingspatch",
+        "releaseDate": "2026-10-11T00:51:17Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101126dunevrbindingspatch/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "b80b404e6f652e3f25d4dbadb2fceef7dd0749a354028635b0760c35834c1aaf",
+      "hash": "6ab69719db9b39caad9a89c73ad43d58ad73857f5351f71f1507352105d0abeb",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1108,14 +1108,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "100926TownFallp2",
-        "releaseDate": "2026-10-09T02:28:13Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/100926TownFallp2/DIBRMONOUEVR.zip"
+        "id": "101126dunevrbindingspatch",
+        "releaseDate": "2026-10-11T00:53:48Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101126dunevrbindingspatch/DIBRUEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "c77ef6195a3d3029cd4c507b3a364fc236ceb76ae48caa6ab8e645b21414a09d",
+      "hash": "073fcba96e35d8bf449c4634709720ce35d7b5c21b75e51b8757c07f1606f00b",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
