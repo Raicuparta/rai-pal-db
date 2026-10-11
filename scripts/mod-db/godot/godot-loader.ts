@@ -15,7 +15,7 @@ function godotLoader(major: 3 | 4): ModBase {
 
 	return {
 		id,
-		family: "godot",
+		family: "godot-loader",
 		engine: "Godot",
 		engineVersionRange: {
 			minimum: { major },
@@ -24,7 +24,7 @@ function godotLoader(major: 3 | 4): ModBase {
 		title: `Godot ${major} Mod Loader`,
 		author: "Raicuparta",
 		sourceCode,
-		description: `Mod loader for Godot ${major} games.`,
+		description: "Basic mod loader for Godot games.",
 		download: {
 			id: "0.1.0",
 			url: `${downloadBase}/godot-${major}.zip`,

@@ -60,7 +60,7 @@ function godotEveryone(major: 3 | 4, download: ModDownload): ModBase {
 		sourceCode,
 		description,
 		download,
-		requiredDependencies: [{ family: "godot" }],
+		requiredDependencies: [{ family: "godot-loader" }],
 		install: {
 			manifestPath: `${token.GameInstalledModsPath}/manifests/${id}.json`,
 			extract: [
@@ -107,9 +107,9 @@ export async function getEveryoneMods(): Promise<ModBase[]> {
 		bepinexMod(
 			{
 				id: "everyone-il2cpp",
-				family: "everyone",
 				unityBackend: "Il2Cpp",
 				download: il2cpp,
+				family,
 				title,
 				description,
 				author,

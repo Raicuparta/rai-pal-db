@@ -1,4 +1,34 @@
 {
+  "families": {
+    "bepinex": {
+      "description": "Mod loader for Unity mods.",
+      "title": "BepInEx"
+    },
+    "everyone": {
+      "description": "Adds multiplayerish features.",
+      "title": "Everyone"
+    },
+    "godot-loader": {
+      "description": "Basic mod loader for Godot games.",
+      "title": "Godot Mod Loader"
+    },
+    "ue4ss": {
+      "description": "Scripting and modding framework for Unreal Engine games.",
+      "title": "UE4SS"
+    },
+    "uevr": {
+      "description": "Universal VR mod for Unreal Engine games",
+      "title": "UEVR"
+    },
+    "unity-explorer": {
+      "description": "An in-game UI for exploring, debugging and modifying Unity games.",
+      "title": "Unity Explorer"
+    },
+    "uuvr": {
+      "description": "Universal VR mod for Unity games",
+      "title": "UUVR"
+    }
+  },
   "mods": [
     {
       "architecture": "X64",
@@ -830,7 +860,7 @@
         }
       },
       "family": "everyone",
-      "hash": "0867e5af1aed26ea2a63ba5c630d1dec236d55c3a2d63d307c6987412f6a5108",
+      "hash": "b1380e715a9b9560c043c426b21a8a6b524cf9da5c2173ce148b2b39de76c260",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -844,7 +874,7 @@
       },
       "requiredDependencies": [
         {
-          "family": "godot"
+          "family": "godot-loader"
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/everyone-client",
@@ -865,7 +895,7 @@
         }
       },
       "family": "everyone",
-      "hash": "88fba9b34c1272389eb3bc28975c1edab0209c2969c51ac7b2be72737f503fd7",
+      "hash": "1928cd3a7c826a7582b1c60552030df6c21ecb8e7d21b0e5cd1b6f604c33a172",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -879,7 +909,7 @@
       },
       "requiredDependencies": [
         {
-          "family": "godot"
+          "family": "godot-loader"
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/everyone-client",
@@ -923,7 +953,7 @@
     },
     {
       "author": "Raicuparta",
-      "description": "Mod loader for Godot 3 games.",
+      "description": "Basic mod loader for Godot games.",
       "download": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/gdscript-loader/releases/download/v0.1.0/godot-3.zip"
@@ -937,8 +967,8 @@
           "major": 3
         }
       },
-      "family": "godot",
-      "hash": "6488c67d808a8bf5adff66e2856494730da3efae80bf76e2b8e0d7e08c66d389",
+      "family": "godot-loader",
+      "hash": "a1d21024c8eb5c4c7848f8cd41e6451a541a8a256fa05f9a5a8ad28f9bc898b0",
       "id": "godot-loader-3",
       "install": {
         "extract": [
@@ -961,7 +991,7 @@
     },
     {
       "author": "Raicuparta",
-      "description": "Mod loader for Godot 4 games.",
+      "description": "Basic mod loader for Godot games.",
       "download": {
         "id": "0.1.0",
         "url": "https://github.com/Raicuparta/gdscript-loader/releases/download/v0.1.0/godot-4.zip"
@@ -972,8 +1002,8 @@
           "major": 4
         }
       },
-      "family": "godot",
-      "hash": "c5b7b9aa522fffb561fbb87e2733375a558445552ca8f462af38e8b0f0d14675",
+      "family": "godot-loader",
+      "hash": "ca958b89f8312987ada1d08a32bcfce80eb7be442fa9d961b650de3c5560b2ed",
       "id": "godot-loader-4",
       "install": {
         "extract": [
