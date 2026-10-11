@@ -1149,7 +1149,7 @@
         "extract": [
           {
             "destination": "{{SharedModsPath}}/uevr-joeyhodge",
-            "source": "uevr"
+            "source": "."
           }
         ],
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge",
@@ -1201,7 +1201,7 @@
         "extract": [
           {
             "destination": "{{SharedModsPath}}/uevr-joeyhodge-dibr",
-            "source": "DIBRUEVR"
+            "source": "."
           }
         ],
         "mainInstalledFolderPath": "{{SharedModsPath}}/uevr-joeyhodge-dibr",
