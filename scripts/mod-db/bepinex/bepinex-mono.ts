@@ -261,7 +261,11 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 				const latestForOs = latestByPlatform[platform.os] ?? {};
 				latestForOs[platform.architecture] = {
 					timestamp,
-					release: { id: version, url: asset.browser_download_url },
+					release: {
+						id: version,
+						url: asset.browser_download_url,
+						releaseDate: asset.created_at,
+					},
 				};
 				latestByPlatform[platform.os] = latestForOs;
 			}

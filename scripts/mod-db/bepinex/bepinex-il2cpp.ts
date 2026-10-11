@@ -221,6 +221,7 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 					release: {
 						id: buildVersionMatch,
 						url: `${BLEEDING_BUILD_URL_DOMAIN}${href}`,
+						releaseDate: new Date(releaseTimestamp).toISOString(),
 					},
 					timestamp: releaseTimestamp,
 				};
