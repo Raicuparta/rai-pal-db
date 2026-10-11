@@ -143,12 +143,6 @@ function modIdSuffix(platform: LoaderPlatform): string {
 	}${platform.architecture.toLocaleLowerCase()}`;
 }
 
-function title(platform: LoaderPlatform): string {
-	return `BepInEx Il2Cpp ${platform.architecture}${
-		isLinux(platform) ? " (Linux)" : ""
-	}`;
-}
-
 const wantedPlatforms: LoaderPlatform[] = [
 	{ os: "Windows", architecture: "X64" },
 	{ os: "Windows", architecture: "X86" },
@@ -244,7 +238,7 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 				platform.os,
 			),
 			architecture: platform.architecture,
-			title: title(platform),
+			title: "BepInEx",
 			download: latest.release,
 		};
 	});
