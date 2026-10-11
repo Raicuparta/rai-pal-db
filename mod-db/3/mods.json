@@ -781,12 +781,12 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "v0.3.0",
-        "releaseDate": "2026-10-11T13:21:08Z",
+        "releaseDate": "2026-10-11T16:01:06Z",
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unity-mono.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "2f7397922e003baa17a4b64d3f02a352a52ee3e6e96dd249010b8f3ca605cd38",
+      "hash": "a99d7ae1ab52209dfb55c1513796d369bc250bbcc098f8d0cdb02d913df9b9cf",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -816,12 +816,12 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "v0.3.0",
-        "releaseDate": "2026-10-11T13:21:08Z",
+        "releaseDate": "2026-10-11T16:01:06Z",
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unity-il2cpp.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "df971e1aa5429ee42b9ba81ab26999e31f85c442cf6bcb1b8154393a56615fd7",
+      "hash": "1a5cd007fc960981ecb939f82a91289277b91764c791298c5cc7a635f28ac96e",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -847,7 +847,7 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "v0.3.0",
-        "releaseDate": "2026-10-11T13:21:08Z",
+        "releaseDate": "2026-10-11T16:01:06Z",
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-godot-3.zip"
       },
       "engine": "Godot",
@@ -860,7 +860,7 @@
         }
       },
       "family": "everyone",
-      "hash": "b1380e715a9b9560c043c426b21a8a6b524cf9da5c2173ce148b2b39de76c260",
+      "hash": "2a148c9a22dbb26874cd8f09ceef86ab8dac3b2b3782e66867ac4cf042ed04d7",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -885,7 +885,7 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "v0.3.0",
-        "releaseDate": "2026-10-11T13:21:08Z",
+        "releaseDate": "2026-10-11T16:01:06Z",
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-godot-4.zip"
       },
       "engine": "Godot",
@@ -895,7 +895,7 @@
         }
       },
       "family": "everyone",
-      "hash": "1928cd3a7c826a7582b1c60552030df6c21ecb8e7d21b0e5cd1b6f604c33a172",
+      "hash": "a022b957cf02cacee747ae89866610ff98919488128e38e6a1e691358df39c4a",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -920,12 +920,12 @@
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
         "id": "v0.3.0",
-        "releaseDate": "2026-10-11T13:21:08Z",
+        "releaseDate": "2026-10-11T16:01:06Z",
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unreal.zip"
       },
       "engine": "Unreal",
       "family": "everyone",
-      "hash": "79df38588b14e76f7bcb00c209e721e9b0221590335f87e6ccda99cd8ab5580b",
+      "hash": "ac905179c43f045913f0fb36d440140ea7468b248709e50a640a9906ea783868",
       "id": "everyone-ue",
       "install": {
         "extract": [
