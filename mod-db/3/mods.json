@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "101126dunevrbindingspatch",
-        "releaseDate": "2026-10-11T00:51:17Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101126dunevrbindingspatch/uevr.zip"
+        "id": "101226HELLRAISERp1",
+        "releaseDate": "2026-10-11T17:09:07Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101226HELLRAISERp1/UEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "1e77cdd27c2b290107899f2fc551cce84814538d0ce06e1b67c3ef065b6a6faf",
+      "hash": "8e722850d16da581da37058bd3db9999165c750580f92396f2a5252c384915e0",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "101126dunevrbindingspatch",
-        "releaseDate": "2026-10-11T00:53:48Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101126dunevrbindingspatch/DIBRUEVR.zip"
+        "id": "101226HELLRAISERp1",
+        "releaseDate": "2026-10-11T17:17:02Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101226HELLRAISERp1/DIBRMONOUEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "ee40bbdfe4bafb1f95c747cf68603a372167aee047ede9df372758cbc80eec93",
+      "hash": "ba6fb3a11f759f80ef1e2cf7f7ae72973851fc5593e3e8cb8887cedc4144117a",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
