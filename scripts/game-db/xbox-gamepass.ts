@@ -1,4 +1,5 @@
 import { Game, GameSubscription } from "./main.ts";
+import { normalizeReleaseDate } from "./helpers.ts";
 
 const APIIds = {
 	console: "f6f1f99f-9b49-4ccd-b3bf-4d9767a77f5e",
@@ -334,6 +335,9 @@ async function fetchGames(
 				Xbox: new Set([product.ProductId]),
 			},
 			subscriptions: [subscription],
+			releaseDate: normalizeReleaseDate(
+				product.MarketProperties[0]?.OriginalReleaseDate,
+			),
 		}),
 	);
 }

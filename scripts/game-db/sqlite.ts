@@ -16,12 +16,13 @@ export function createDatabase(path: string, games: Game[]) {
         engine_brand TEXT,
         engine_version TEXT,
         subscriptions TEXT,
+        release_date TEXT,
         PRIMARY KEY (provider_id, external_id)
     );
   `);
 
 	const insertGame = db.prepare(`
-    INSERT OR IGNORE INTO games (provider_id, external_id, engine_brand, engine_version, subscriptions) VALUES (?, ?, ?, ?, ?);
+    INSERT OR IGNORE INTO games (provider_id, external_id, engine_brand, engine_version, subscriptions, release_date) VALUES (?, ?, ?, ?, ?, ?);
   `);
 
 	// insert all games now with a single transaction
@@ -38,6 +39,7 @@ export function createDatabase(path: string, games: Game[]) {
 					engine?.brand ?? null,
 					engine?.version ?? null,
 					game.subscriptions?.join(",") ?? null,
+					game.releaseDate ?? null,
 				);
 			});
 		}

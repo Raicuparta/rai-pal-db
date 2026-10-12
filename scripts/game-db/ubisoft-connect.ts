@@ -1,6 +1,6 @@
 import { DOMParser } from "jsr:@b-fuze/deno-dom";
 import { Game, GameSubscription } from "./main.ts";
-import { filterFalsy } from "./helpers.ts";
+import { filterFalsy, normalizeReleaseDate } from "./helpers.ts";
 
 type AlgoliaResponse = {
 	hits: {
@@ -87,6 +87,7 @@ export async function fetchUbisoftGames(): Promise<Game[]> {
 			subscriptions: filterFalsy(
 				hit.partofSubscriptionOffer.map(getSubscription),
 			),
+			releaseDate: normalizeReleaseDate(hit.release_date),
 		}),
 	);
 }

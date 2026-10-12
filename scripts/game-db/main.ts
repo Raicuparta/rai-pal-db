@@ -42,6 +42,7 @@ export type Game = {
 	ids: IdMap;
 	engines?: Engine[];
 	subscriptions?: GameSubscription[];
+	releaseDate?: string;
 };
 
 interface GameWithUniqueIndex extends Game {

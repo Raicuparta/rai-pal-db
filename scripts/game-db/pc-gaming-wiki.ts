@@ -1,5 +1,6 @@
 import { EngineBrand, IdMap } from "./main.ts";
 import { Engine, engineBrands, type Game } from "./main.ts";
+import { normalizeReleaseDate } from "./helpers.ts";
 
 type PCGamingWikiGame = {
 	title: string;
@@ -7,6 +8,9 @@ type PCGamingWikiGame = {
 	engineVersion?: string;
 	steamIds?: string;
 	gogIds?: string;
+	releasedWindows?: string;
+	releasedMacOs?: string;
+	releasedLinux?: string;
 };
 
 type PCGamingWikiResponse = {
@@ -250,6 +254,12 @@ function getEngine(game: PCGamingWikiGame): Engine | undefined {
 	};
 }
 
+function getReleaseDate(game: PCGamingWikiGame): string | undefined {
+	return normalizeReleaseDate(
+		game.releasedWindows ?? game.releasedMacOs ?? game.releasedLinux,
+	);
+}
+
 async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 	const allGames: Game[] = [];
 	const gamesByTitle: Partial<Record<string, Game>> = {};
@@ -267,7 +277,7 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 			tables: "GameEngine=Engine,Game=Game",
 			join_on: "Game._pageName=Engine._pageName",
 			fields:
-				"Game._pageName=title,Engine.Engine=engineBrand,Game.Steam_AppID=steamIds,Game.GOGcom_ID=gogIds,Engine.Build=engineVersion",
+				"Game._pageName=title,Engine.Engine=engineBrand,Game.Steam_AppID=steamIds,Game.GOGcom_ID=gogIds,Engine.Build=engineVersion,Game.Released_Windows=releasedWindows,Game.Released_Mac_OS=releasedMacOs,Game.Released_Linux=releasedLinux",
 			where: `Engine LIKE "Engine:${engineName}%"`,
 			format: "json",
 			limit: String(limitPerPage),
@@ -306,6 +316,7 @@ async function fetchGamesByEngine(engineName: string): Promise<Game[]> {
 				games.push({
 					...gameBase,
 					engines: [...(gameBase.engines ?? []), engine],
+					releaseDate: getReleaseDate(pcGamingWikiGame) ?? gameBase.releaseDate,
 				});
 			}
 

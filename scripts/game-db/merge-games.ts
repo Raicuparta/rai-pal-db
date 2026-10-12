@@ -127,6 +127,7 @@ export function mergeGames(games: Game[]): Game[] {
 					mergedGame.subscriptions,
 					game.subscriptions,
 				),
+				releaseDate: mergedGame.releaseDate ?? game.releaseDate,
 			};
 		}
 		if (connectedGames.length > biggestMerge) {
