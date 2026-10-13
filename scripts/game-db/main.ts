@@ -13,6 +13,7 @@ import { GAME_DATABASE_VERSION } from "../common/versions.ts";
 export const engineBrands = ["GameMaker", "Unity", "Godot", "Unreal"] as const;
 
 export const providerIds = [
+	"Amazon",
 	"Ea",
 	"Epic",
 	"Gog",
