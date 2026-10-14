@@ -33,6 +33,18 @@ export const families = {
 		description:
 			"An in-game UI for exploring, debugging and modifying Unity games.",
 	},
+	"runtime-unity-editor": {
+		title: "Runtime Unity Editor",
+		description: "In-game inspector and debugging tools.",
+	},
+	"bepinex-config": {
+		title: "BepInEx Config",
+		description: "Default BepInEx config.",
+	},
+	"unity-config-manager": {
+		title: "Unity Config Manager",
+		description: "In-game UI for changing BepInEx mod settings.",
+	},
 } as const satisfies Record<string, Family>;
 
 export type FamilyId = keyof (typeof families);

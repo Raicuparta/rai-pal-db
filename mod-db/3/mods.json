@@ -4,6 +4,10 @@
       "description": "Mod loader for Unity mods.",
       "title": "BepInEx"
     },
+    "bepinex-config": {
+      "description": "Default BepInEx config.",
+      "title": "BepInEx Config"
+    },
     "everyone": {
       "description": "Adds multiplayerish features.",
       "title": "Everyone"
@@ -12,6 +16,10 @@
       "description": "Basic mod loader for Godot games.",
       "title": "Godot Mod Loader"
     },
+    "runtime-unity-editor": {
+      "description": "In-game inspector and debugging tools.",
+      "title": "Runtime Unity Editor"
+    },
     "ue4ss": {
       "description": "Scripting and modding framework for Unreal Engine games.",
       "title": "UE4SS"
@@ -19,6 +27,10 @@
     "uevr": {
       "description": "Universal VR mod for Unreal Engine games",
       "title": "UEVR"
+    },
+    "unity-config-manager": {
+      "description": "In-game UI for changing BepInEx mod settings.",
+      "title": "Unity Config Manager"
     },
     "unity-explorer": {
       "description": "An in-game UI for exploring, debugging and modifying Unity games.",
@@ -419,7 +431,8 @@
           "minor": 5
         }
       },
-      "hash": "ef903816f3d7beac6fa7dceac35c285bb9dbe7f24cbb3e08474729c6bc2fcb21",
+      "family": "bepinex-config",
+      "hash": "a3716d5fa112bc95be4887d00c76b25963bc8f41130801f8362561fe79ea4833",
       "hideFromGameModsList": true,
       "id": "bepinex-config-modern",
       "install": {
@@ -444,7 +457,8 @@
           "minor": 4
         }
       },
-      "hash": "d5718443270002521ea6cba7ba0c52044f3d91616765a8dac29fdab9be00f5df",
+      "family": "bepinex-config",
+      "hash": "a70ed5f99774af9f360c042f56b23f88a66acf76bd10020d37300c88b95b3ad9",
       "hideFromGameModsList": true,
       "id": "bepinex-config-legacy",
       "install": {
@@ -478,7 +492,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "91ab7ddcb37f4b390d57309233219524d85e1812265b4c8efcae821aa9620f9d",
+      "hash": "01a730f6146abc311af73bf22bdbe226687579a4e5ba455c3e271b5de56536f8",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -500,7 +514,7 @@
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Il2Cpp Legacy",
+      "title": "UUVR",
       "unityBackend": "Il2Cpp"
     },
     {
@@ -522,7 +536,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "eab6d0dc1167909810bc1f7c8938f7147cdaf6e8fccaa4a2301edb60227f9288",
+      "hash": "7b8267112f0e850fe15a13c784d8f469a6b797b6692453e1e84d81115f3e3b97",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -544,7 +558,7 @@
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Mono Legacy",
+      "title": "UUVR",
       "unityBackend": "Mono"
     },
     {
@@ -567,7 +581,7 @@
         }
       },
       "family": "uuvr",
-      "hash": "81701dfd2738ce8f5003b74618746371990efccfabc80544e99f491a4bf95eee",
+      "hash": "3b25246c3094844984a51e3af5668716e2c7419f0bcb3fa6bc671b32d1104ebd",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -589,7 +603,7 @@
         }
       ],
       "sourceCode": "https://github.com/Raicuparta/uuvr",
-      "title": "UUVR Mono Modern",
+      "title": "UUVR",
       "unityBackend": "Mono"
     },
     {
@@ -600,7 +614,8 @@
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "28717c64f95f20a90be35f147389f267badc05cc4cadd0541bbe7ac30f8527b4",
+      "family": "unity-config-manager",
+      "hash": "cde81b52070a6eaa2b1acb20c8bd00bf08bc848cab547c41e5c553a931763cd7",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -629,7 +644,8 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "c7ec98701c574e99ffe1391a3ff36a8d0fa73c01c88a53d51975a537569da003",
+      "family": "unity-config-manager",
+      "hash": "291ed6f134addb44070fa491f3292f1603daf9df0e5daa316669b79cfde9879c",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -721,7 +737,8 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin5_v6.3.2.1.zip"
       },
       "engine": "Unity",
-      "hash": "a3705b3682eb1b88dc47862cb321b2a2c40fdc0dcacd1102f9bc5c693608df05",
+      "family": "runtime-unity-editor",
+      "hash": "a1047c125cebab82ea86aef8754989eec102f9034dd626e43a2dc791e852f050",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -751,7 +768,8 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.1.zip"
       },
       "engine": "Unity",
-      "hash": "a7df07e5aba9893038052f6d41e9dadbc1bb1d3de50ed3744b305dd115204687",
+      "family": "runtime-unity-editor",
+      "hash": "2635ea5267e1083c643034d5a6669a86e1097cb4af96b941ba4e779fec059d56",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -780,13 +798,13 @@
       },
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.3.0",
-        "releaseDate": "2026-10-11T16:01:06Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unity-mono.zip"
+        "id": "v0.4.0",
+        "releaseDate": "2026-10-13T23:17:11Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-unity-mono.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "a99d7ae1ab52209dfb55c1513796d369bc250bbcc098f8d0cdb02d913df9b9cf",
+      "hash": "df2e4adef6e772a550dcf97fbc2aebb24df088db8b92d5267894322451c2b74d",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -815,13 +833,13 @@
       },
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.3.0",
-        "releaseDate": "2026-10-11T16:01:06Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unity-il2cpp.zip"
+        "id": "v0.4.0",
+        "releaseDate": "2026-10-13T23:17:11Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-unity-il2cpp.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "1a5cd007fc960981ecb939f82a91289277b91764c791298c5cc7a635f28ac96e",
+      "hash": "08ed9922dd65cc4456cf42937056c7f3d0cddb9bf3417f6097aa23dc69ebd6c2",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -846,9 +864,9 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.3.0",
-        "releaseDate": "2026-10-11T16:01:06Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-godot-3.zip"
+        "id": "v0.4.0",
+        "releaseDate": "2026-10-13T23:17:11Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-godot-3.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -860,7 +878,7 @@
         }
       },
       "family": "everyone",
-      "hash": "2a148c9a22dbb26874cd8f09ceef86ab8dac3b2b3782e66867ac4cf042ed04d7",
+      "hash": "c64f861f37f14a266e89d6420cef8a47088c0bcdef0894724bd5cbd2e3251a2c",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -884,9 +902,9 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.3.0",
-        "releaseDate": "2026-10-11T16:01:06Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-godot-4.zip"
+        "id": "v0.4.0",
+        "releaseDate": "2026-10-13T23:17:11Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-godot-4.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -895,7 +913,7 @@
         }
       },
       "family": "everyone",
-      "hash": "a022b957cf02cacee747ae89866610ff98919488128e38e6a1e691358df39c4a",
+      "hash": "5fdddb270a04c1f4bfc1fbaaefaf2d4ba71753e4f87cb4d5c21ee1726376863b",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -919,13 +937,13 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.3.0",
-        "releaseDate": "2026-10-11T16:01:06Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.3.0/everyone-unreal.zip"
+        "id": "v0.4.0",
+        "releaseDate": "2026-10-13T23:17:11Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-unreal.zip"
       },
       "engine": "Unreal",
       "family": "everyone",
-      "hash": "ac905179c43f045913f0fb36d440140ea7468b248709e50a640a9906ea783868",
+      "hash": "70928c93f638a6f282717c8004a4a8faf2fd0a40d2c8b1a88d43794d146f400f",
       "id": "everyone-ue",
       "install": {
         "extract": [
@@ -1409,12 +1427,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1171",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1171-g91d90727.zip"
+        "id": "v3.0.1-1176",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1176-g1ba38db4.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "3de50eee082255fcddf0a85b8ce005b503abb287ca266beec03e802f6c3df079",
+      "hash": "72044fe988d64ae4f7ef5e7b691638654780f7f73b65f8b20d35802e57536767",
       "id": "ue4ss",
       "install": {
         "extract": [
