@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "101826-gow-e-day-poc-p2",
-        "releaseDate": "2026-10-17T16:28:33Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101826-gow-e-day-poc-p2/uevr.zip"
+        "id": "101926swzcupdate2",
+        "releaseDate": "2026-10-17T21:39:54Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101926swzcupdate2/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "a9b03a70411d0f1560c0b7f865a3664d3c5642d07aa7dafe8cb15fcf0f884c55",
+      "hash": "42e6a2cd5f53164b1da032ddd9aeb1723fc0335d96f9a94284f7027ade00b7d3",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "101826-gow-e-day-poc-p2",
-        "releaseDate": "2026-10-17T16:30:09Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101826-gow-e-day-poc-p2/DIBRMONOUEVR.zip"
+        "id": "101926swzcupdate2",
+        "releaseDate": "2026-10-17T21:42:11Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101926swzcupdate2/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "a4b3d44906cc0977c2f682728ecbd35f48bd171caa3069ab536d21bc05cd26ba",
+      "hash": "cda319f585f8921dbd9142b367dc6d6051d03b4b4b8da231ea3434ca4893f36e",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
