@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "101226HELLRAISERp1",
-        "releaseDate": "2026-10-11T17:09:07Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101226HELLRAISERp1/UEVR.zip"
+        "id": "101726-gow-e-day-poc-p1",
+        "releaseDate": "2026-10-17T03:09:09Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101726-gow-e-day-poc-p1/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "8e722850d16da581da37058bd3db9999165c750580f92396f2a5252c384915e0",
+      "hash": "48b712d8ce1d87dfc7644abfa26e5ead0bcb8dbef2073733fe0f1fb62cfa3dfd",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "101226HELLRAISERp1",
-        "releaseDate": "2026-10-11T17:17:02Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101226HELLRAISERp1/DIBRMONOUEVR.zip"
+        "id": "101726-gow-e-day-poc-p1",
+        "releaseDate": "2026-10-17T03:13:07Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101726-gow-e-day-poc-p1/DIBRMONOUEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "ba6fb3a11f759f80ef1e2cf7f7ae72973851fc5593e3e8cb8887cedc4144117a",
+      "hash": "bb26874741be7878b61f9651101aa95f1340f1ef81e1cb12c057333fca6b3a11",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
