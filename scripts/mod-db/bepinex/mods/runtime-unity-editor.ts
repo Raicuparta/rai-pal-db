@@ -17,6 +17,7 @@ export async function getRuntimeUnityEditorMods() {
 	return [
 		bepinexMod({
 			id: "runtime-unity-editor-mono",
+			family: "runtime-unity-editor",
 			unityBackend: "Mono",
 			title: "Runtime Unity Editor",
 			author: "ManlyMarco",
@@ -29,6 +30,7 @@ export async function getRuntimeUnityEditorMods() {
 		}),
 		bepinexMod({
 			id: "runtime-unity-editor-il2cpp",
+			family: "runtime-unity-editor",
 			unityBackend: "Il2Cpp",
 			title: "Runtime Unity Editor",
 			author: "ManlyMarco",

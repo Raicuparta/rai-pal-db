@@ -7,6 +7,7 @@ export async function getConfigManagerMods() {
 			id: "config-manager-il2cpp",
 			unityBackend: "Il2Cpp",
 			title: "Config Manager",
+			family: "unity-config-manager",
 			author: "sinai",
 			sourceCode: "https://github.com/Vapok/BepInExConfigManager",
 			description:
@@ -21,6 +22,7 @@ export async function getConfigManagerMods() {
 			id: "config-manager-mono",
 			unityBackend: "Mono",
 			title: "Config Manager",
+			family: "unity-config-manager",
 			author: "sinai",
 			sourceCode: "https://github.com/sinai-dev/BepInExConfigManager",
 			description:
