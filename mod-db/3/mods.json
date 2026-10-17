@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "101726-gow-e-day-poc-p1",
-        "releaseDate": "2026-10-17T03:09:09Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101726-gow-e-day-poc-p1/uevr.zip"
+        "id": "101826-gow-e-day-poc-p2",
+        "releaseDate": "2026-10-17T16:28:33Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101826-gow-e-day-poc-p2/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "48b712d8ce1d87dfc7644abfa26e5ead0bcb8dbef2073733fe0f1fb62cfa3dfd",
+      "hash": "a9b03a70411d0f1560c0b7f865a3664d3c5642d07aa7dafe8cb15fcf0f884c55",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "101726-gow-e-day-poc-p1",
-        "releaseDate": "2026-10-17T03:13:07Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101726-gow-e-day-poc-p1/DIBRMONOUEVR.zip"
+        "id": "101826-gow-e-day-poc-p2",
+        "releaseDate": "2026-10-17T16:30:09Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/101826-gow-e-day-poc-p2/DIBRMONOUEVR.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "bb26874741be7878b61f9651101aa95f1340f1ef81e1cb12c057333fca6b3a11",
+      "hash": "a4b3d44906cc0977c2f682728ecbd35f48bd171caa3069ab536d21bc05cd26ba",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -1409,12 +1409,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1176",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1176-g1ba38db4.zip"
+        "id": "v3.0.1-1181",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1181-g83330635.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "72044fe988d64ae4f7ef5e7b691638654780f7f73b65f8b20d35802e57536767",
+      "hash": "454b69bb31f10d2ea4d6db39b6e2cd1b015528964c9348416fb672afeba04702",
       "id": "ue4ss",
       "install": {
         "extract": [
