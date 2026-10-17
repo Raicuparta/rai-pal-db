@@ -780,13 +780,13 @@
       },
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.4.0",
-        "releaseDate": "2026-10-13T23:17:11Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-unity-mono.zip"
+        "id": "v0.5.0",
+        "releaseDate": "2026-10-17T18:29:27Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-mono.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "df2e4adef6e772a550dcf97fbc2aebb24df088db8b92d5267894322451c2b74d",
+      "hash": "3b1c00f474729eb43dbf560297b34554bbc1331dea1f5852e0f203e58d019273",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -815,13 +815,13 @@
       },
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.4.0",
-        "releaseDate": "2026-10-13T23:17:11Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-unity-il2cpp.zip"
+        "id": "v0.5.0",
+        "releaseDate": "2026-10-17T18:29:27Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-il2cpp.zip"
       },
       "engine": "Unity",
       "family": "everyone",
-      "hash": "08ed9922dd65cc4456cf42937056c7f3d0cddb9bf3417f6097aa23dc69ebd6c2",
+      "hash": "93f3cff387ea0ab92a2b082fa22af81c3c445f4b91bd4e75dd04c331305f0ba8",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -846,9 +846,9 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.4.0",
-        "releaseDate": "2026-10-13T23:17:11Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-godot-3.zip"
+        "id": "v0.5.0",
+        "releaseDate": "2026-10-17T18:29:27Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-godot-3.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -860,7 +860,7 @@
         }
       },
       "family": "everyone",
-      "hash": "c64f861f37f14a266e89d6420cef8a47088c0bcdef0894724bd5cbd2e3251a2c",
+      "hash": "9fba978e61f9b750048d64eb2031b03210268dc20793bc5ee7e3a838e2c3d422",
       "id": "everyone-godot-3",
       "install": {
         "extract": [
@@ -884,9 +884,9 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.4.0",
-        "releaseDate": "2026-10-13T23:17:11Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-godot-4.zip"
+        "id": "v0.5.0",
+        "releaseDate": "2026-10-17T18:29:27Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-godot-4.zip"
       },
       "engine": "Godot",
       "engineVersionRange": {
@@ -895,7 +895,7 @@
         }
       },
       "family": "everyone",
-      "hash": "5fdddb270a04c1f4bfc1fbaaefaf2d4ba71753e4f87cb4d5c21ee1726376863b",
+      "hash": "881b3ba43b865abb951902fc0dfcd92a504bd0a162b59740864a7b3c8e7dcaa6",
       "id": "everyone-godot-4",
       "install": {
         "extract": [
@@ -919,13 +919,13 @@
       "author": "Raicuparta",
       "description": "Adds multiplayerish features. Requires being logged in to Rai Pal. F3 to chat.",
       "download": {
-        "id": "v0.4.0",
-        "releaseDate": "2026-10-13T23:17:11Z",
-        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.4.0/everyone-unreal.zip"
+        "id": "v0.5.0",
+        "releaseDate": "2026-10-17T18:29:27Z",
+        "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unreal.zip"
       },
       "engine": "Unreal",
       "family": "everyone",
-      "hash": "70928c93f638a6f282717c8004a4a8faf2fd0a40d2c8b1a88d43794d146f400f",
+      "hash": "1ba626542099878d46bb1dc617c1ea2efe1f89ae6e6cd37384dc1f5ea481f9ac",
       "id": "everyone-ue",
       "install": {
         "extract": [
