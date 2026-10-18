@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "101926swzcupdate2",
-        "releaseDate": "2026-10-17T21:39:54Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101926swzcupdate2/uevr.zip"
+        "id": "102026warpspeedinjection+swzcp2+e-day",
+        "releaseDate": "2026-10-18T01:47:24Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102026warpspeedinjection%2Bswzcp2%2Be-day/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "42e6a2cd5f53164b1da032ddd9aeb1723fc0335d96f9a94284f7027ade00b7d3",
+      "hash": "7668ff7efa7ed745ceff51275d44583cd93bf4ff6dbb9e14d72d35a9a76a0cbb",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "101926swzcupdate2",
-        "releaseDate": "2026-10-17T21:42:11Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/101926swzcupdate2/DIBRMONOuevr.zip"
+        "id": "102026warpspeedinjection+swzcp2+e-day",
+        "releaseDate": "2026-10-18T01:49:38Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102026warpspeedinjection%2Bswzcp2%2Be-day/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "cda319f585f8921dbd9142b367dc6d6051d03b4b4b8da231ea3434ca4893f36e",
+      "hash": "b48a121704c2fb994774a56dd02f432cd0ce0d9966b0ca17f86855ba8d3355da",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
