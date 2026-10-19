@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "102126SWGRWarpSpeedp3",
-        "releaseDate": "2026-10-19T02:26:41Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102126SWGRWarpSpeedp3/uevr.zip"
+        "id": "102226SWGRNoBarsJustCarsp4",
+        "releaseDate": "2026-10-19T18:03:44Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102226SWGRNoBarsJustCarsp4/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "931164d88563813b0ad4cdd84ef82e9f966be9e3d45561ebc1faaa77475259b2",
+      "hash": "7efa248a98d8df0f8a34b8060cefe95e58c98d43a0321dc014b219b1d2d2d550",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "102126SWGRWarpSpeedp3",
-        "releaseDate": "2026-10-19T02:33:13Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102126SWGRWarpSpeedp3/DIBRMONOuevr.zip"
+        "id": "102226SWGRNoBarsJustCarsp4",
+        "releaseDate": "2026-10-19T18:07:17Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102226SWGRNoBarsJustCarsp4/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "d6e16a87dfb9fa4c234e7d07669068250f54da090de5bae65f9cfa0495b45cb8",
+      "hash": "2ebf96182d25da069d42ffae8fae48bb67b858d2609ee1f8855a3343eb7d540c",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
