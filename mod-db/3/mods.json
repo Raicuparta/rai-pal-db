@@ -1137,13 +1137,13 @@
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
         "id": "102126SWGRWarpSpeedp3",
-        "releaseDate": "2026-10-19T01:37:52Z",
+        "releaseDate": "2026-10-19T02:26:41Z",
         "url": "https://github.com/joeyhodge/UEVR/releases/download/102126SWGRWarpSpeedp3/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "cda87b13cf4b6661f52808f48be5047de7d5c0ca561833b6bd724702e6dbb6dd",
+      "hash": "931164d88563813b0ad4cdd84ef82e9f966be9e3d45561ebc1faaa77475259b2",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1189,13 +1189,13 @@
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
         "id": "102126SWGRWarpSpeedp3",
-        "releaseDate": "2026-10-19T01:39:53Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102126SWGRWarpSpeedp3/MONODIBRuevr.zip"
+        "releaseDate": "2026-10-19T02:33:13Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102126SWGRWarpSpeedp3/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "3d60bbabadcf80528e2a00230819981cbebcacbfefe580a04a5e229b9c2ae37b",
+      "hash": "d6e16a87dfb9fa4c234e7d07669068250f54da090de5bae65f9cfa0495b45cb8",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
