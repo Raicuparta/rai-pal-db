@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "102526Sinking2GloryUI",
-        "releaseDate": "2026-10-23T02:31:07Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102526Sinking2GloryUI/uevr.zip"
+        "id": "102626_FFR_SWGR_Patch",
+        "releaseDate": "2026-10-23T17:37:51Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102626_FFR_SWGR_Patch/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "4f9f3bfad927be7ddeeac3d26df03a49c115a27745d04bbf83ddea5a0bb3202b",
+      "hash": "5b33cccc5c778f9f9336c742793e89b9585ed2e66bbb396052b24e39fdcf4d31",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "102526Sinking2GloryUI",
-        "releaseDate": "2026-10-23T02:33:02Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102526Sinking2GloryUI/DIBRMONOuevr.zip"
+        "id": "102626_FFR_SWGR_Patch",
+        "releaseDate": "2026-10-23T17:39:30Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102626_FFR_SWGR_Patch/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "d942427fb4246d36c75c350327919ce110713dc4bcbee6bbd0679caff9cbbff5",
+      "hash": "66bd9cece9eb42807ec2001f68e513237f1f83f8151f8cafb80712d8b7751b8f",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
