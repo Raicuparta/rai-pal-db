@@ -39,14 +39,14 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.790",
-        "releaseDate": "2026-10-20T18:52:15.525Z",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/790/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.790%2B4e98359.zip"
+        "id": "6.0.0-be.791",
+        "releaseDate": "2026-10-23T13:06:05.419Z",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/791/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.791%2Bb782da4.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "664ed01fdb0271243468adbcc33e4dcabf77dc80ae4d81e59a38b39a8ef7dd00",
+      "hash": "77d019794e889c7575a3746fba134103b189ee8950b711cb9a59d01721e8e5a3",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -96,14 +96,14 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.790",
-        "releaseDate": "2026-10-20T18:52:15.525Z",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/790/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.790%2B4e98359.zip"
+        "id": "6.0.0-be.791",
+        "releaseDate": "2026-10-23T13:06:05.419Z",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/791/BepInEx-Unity.IL2CPP-win-x86-6.0.0-be.791%2Bb782da4.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "e8a25d1f94fc958311ce283ec908d0f452b291f29ea9b7ff073e3effc724422f",
+      "hash": "a0e607ab59f2537874d297b74bd4a73fb71646f5368d36bad4357bab37f83132",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -153,9 +153,9 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "6.0.0-be.790",
-        "releaseDate": "2026-10-20T18:52:15.525Z",
-        "url": "https://builds.bepinex.dev/projects/bepinex_be/790/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.790%2B4e98359.zip"
+        "id": "6.0.0-be.791",
+        "releaseDate": "2026-10-23T13:06:05.419Z",
+        "url": "https://builds.bepinex.dev/projects/bepinex_be/791/BepInEx-Unity.IL2CPP-linux-x64-6.0.0-be.791%2Bb782da4.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
@@ -169,7 +169,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "baa23007c836f4a13a954a7b0fe5edb0dcb5caa5598173275b0f218c72bfa889",
+      "hash": "b857f63ece587fb079eaf9762004c1026b10c4be92cd50df0fba1d47c05ba66e",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
