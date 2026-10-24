@@ -210,14 +210,14 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "5.4.23.5",
-        "releaseDate": "2026-02-08T01:00:46Z",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
+        "id": "5.4.23.6",
+        "releaseDate": "2026-10-23T23:52:21Z",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.6/BepInEx_win_x64_5.4.23.6.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "c3c14ab325fa54a2718ae5cbd89732fec2f1d17481af58a59e382c2cb0828a37",
+      "hash": "6598ec8eda9adb9f5e20b178ee1fd72ad104d9071cefc48ee3e29edbfd0a7a0f",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -263,14 +263,14 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "5.4.23.5",
-        "releaseDate": "2026-02-08T01:00:47Z",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x86_5.4.23.5.zip"
+        "id": "5.4.23.6",
+        "releaseDate": "2026-10-23T23:52:22Z",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.6/BepInEx_win_x86_5.4.23.6.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
       "gameOs": "Windows",
-      "hash": "cfecd89c03b2cb9d955a9f9c75353c92beef13939de37b2b03554ac896b47554",
+      "hash": "1c9901aa7ab7a648307853c44c4e32277b98479cd68370d7ba71f6972982acdc",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -316,9 +316,9 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "5.4.23.5",
-        "releaseDate": "2026-02-08T01:00:47Z",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x64_5.4.23.5.zip"
+        "id": "5.4.23.6",
+        "releaseDate": "2026-10-23T23:52:23Z",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.6/BepInEx_linux_x64_5.4.23.6.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
@@ -330,7 +330,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "17fb8fe1782913a708ed8c4884bb410632ec088cb4aa694a6393f2b9cdd27670",
+      "hash": "1ff450932978acd7f448a9f5300924c0b848b13741e64715938474b10b5afc87",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -367,9 +367,9 @@
       },
       "description": "Mod loader for Unity mods.",
       "download": {
-        "id": "5.4.23.5",
-        "releaseDate": "2026-02-08T01:00:48Z",
-        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_linux_x86_5.4.23.5.zip"
+        "id": "5.4.23.6",
+        "releaseDate": "2026-10-23T23:52:23Z",
+        "url": "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.6/BepInEx_linux_x86_5.4.23.6.zip"
       },
       "engine": "Unity",
       "family": "bepinex",
@@ -381,7 +381,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "049f3cb86c16e45eaf22045795df77e99edf0d1aaadd8e38fc2d30cd6984662e",
+      "hash": "83cdceb8d8228f35dd6c752389819e861f1549767b1ddca841c85d2e310a77c1",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
