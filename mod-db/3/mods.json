@@ -716,12 +716,12 @@
       "author": "ManlyMarco",
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3.2.1",
-        "releaseDate": "2026-10-06T17:06:37Z",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin5_v6.3.2.1.zip"
+        "id": "v6.3.2.2",
+        "releaseDate": "2026-10-24T00:08:58Z",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin5_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "a3705b3682eb1b88dc47862cb321b2a2c40fdc0dcacd1102f9bc5c693608df05",
+      "hash": "2a43d42bea43359343835d283d7bc20ca273ae6eb987e23432be4df11740db13",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -746,12 +746,12 @@
       "author": "ManlyMarco",
       "description": "In-game inspector and debugging tools. May work on games where UnityExplorer fails.",
       "download": {
-        "id": "v6.3.2.1",
-        "releaseDate": "2026-10-06T17:06:46Z",
-        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.1/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.1.zip"
+        "id": "v6.3.2.2",
+        "releaseDate": "2026-10-24T00:08:55Z",
+        "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "a7df07e5aba9893038052f6d41e9dadbc1bb1d3de50ed3744b305dd115204687",
+      "hash": "938ed2395724a661b27fdf89e38489baeaf9aa37a47fb484e98c3a57fd37dc70",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
