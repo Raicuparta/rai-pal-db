@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "102826MONODUNEMONO",
-        "releaseDate": "2026-10-24T19:49:59Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102826MONODUNEMONO/uevr.zip"
+        "id": "102926nativefinch_5_8_4_Compatibility",
+        "releaseDate": "2026-10-26T02:05:47Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102926nativefinch_5_8_4_Compatibility/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "ffd7762bd66709ff433f2ff49b155de1e2cc2bcffa31a55d97e89a7a78976148",
+      "hash": "5e248ce401bb27364e094652cf49e4d024b009aacb4da2d92e6dbc8a4473758b",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "102826MONODUNEMONO",
-        "releaseDate": "2026-10-24T19:54:13Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102826MONODUNEMONO/DIBRMONOuevr.zip"
+        "id": "102926nativefinch_5_8_4_Compatibility",
+        "releaseDate": "2026-10-26T02:07:46Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/102926nativefinch_5_8_4_Compatibility/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "fe672b0b25e4a0e5a38c78a623dbeeb946d6ca5e658a0b5c06b22d88061243d8",
+      "hash": "d200d65a1ece6af2186357e511adb9b994c1e7aa62a03ef5c402ada9b51bc913",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
