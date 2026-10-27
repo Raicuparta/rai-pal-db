@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "102926nativefinch_5_8_4_Compatibility",
-        "releaseDate": "2026-10-26T02:05:47Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102926nativefinch_5_8_4_Compatibility/uevr.zip"
+        "id": "103026LEGACYAIM",
+        "releaseDate": "2026-10-27T00:50:22Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/103026LEGACYAIM/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "5e248ce401bb27364e094652cf49e4d024b009aacb4da2d92e6dbc8a4473758b",
+      "hash": "6ce9cc696d9124d0f0924a0303a4215d432444e76f001d0ce67c3fbdd2940ef3",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "102926nativefinch_5_8_4_Compatibility",
-        "releaseDate": "2026-10-26T02:07:46Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/102926nativefinch_5_8_4_Compatibility/DIBRMONOuevr.zip"
+        "id": "103026LEGACYAIM",
+        "releaseDate": "2026-10-27T00:53:38Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/103026LEGACYAIM/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "d200d65a1ece6af2186357e511adb9b994c1e7aa62a03ef5c402ada9b51bc913",
+      "hash": "a7f6b4798d8123bc000e399d2cd3f702ca8482e6ae006eb8b81e153b0b3d9191",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
