@@ -12,6 +12,10 @@
       "description": "Basic mod loader for Godot games.",
       "title": "Godot Mod Loader"
     },
+    "ogsa": {
+      "description": "Motion telemetry (OGSA Telemetry Standard) for motion rigs, haptics and dashboards.",
+      "title": "OGSA Telemetry"
+    },
     "ue4ss": {
       "description": "Scripting and modding framework for Unreal Engine games.",
       "title": "UE4SS"
@@ -1023,6 +1027,152 @@
       },
       "sourceCode": "https://github.com/Raicuparta/gdscript-loader",
       "title": "Godot 4 Mod Loader"
+    },
+    {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/ogsa.telemetry.cfg",
+        "destinationType": "File"
+      },
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unity game BepInEx injects (Mono / BepInEx 5).",
+      "download": {
+        "id": "v2026.10.27",
+        "releaseDate": "2026-10-27T09:00:33Z",
+        "url": "https://github.com/BrianGilbert/bepinex-ogsa-ts/releases/download/v2026.10.27/bepinex_ogsa_telemetry-2026.10.27-win64.zip"
+      },
+      "engine": "Unity",
+      "family": "ogsa",
+      "gameOs": "Windows",
+      "hash": "ba6d4e166a074ded30b21dab3503b26c733ae2a820e43aa9bb0b9366419a7a30",
+      "id": "ogsa-bepinex-mono",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogsa-bepinex-mono",
+            "source": "mono"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogsa-bepinex-mono",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/ogsa-bepinex-mono.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "bepinex"
+        }
+      ],
+      "sourceCode": "https://github.com/BrianGilbert/bepinex-ogsa-ts",
+      "title": "OGSA Telemetry (BepInEx)",
+      "unityBackend": "Mono"
+    },
+    {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/ogsa.telemetry.cfg",
+        "destinationType": "File"
+      },
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unity game BepInEx injects (IL2CPP / BepInEx 6).",
+      "download": {
+        "id": "v2026.10.27",
+        "releaseDate": "2026-10-27T09:00:33Z",
+        "url": "https://github.com/BrianGilbert/bepinex-ogsa-ts/releases/download/v2026.10.27/bepinex_ogsa_telemetry-2026.10.27-win64.zip"
+      },
+      "engine": "Unity",
+      "family": "ogsa",
+      "gameOs": "Windows",
+      "hash": "8f775f6c53e0d35e77d007ede5be8884c77a6978455bb0aeb1f78494b8fa1640",
+      "id": "ogsa-bepinex-il2cpp",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogsa-bepinex-il2cpp",
+            "source": "il2cpp"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/ogsa-bepinex-il2cpp",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/ogsa-bepinex-il2cpp.json"
+      },
+      "requiredDependencies": [
+        {
+          "family": "bepinex"
+        }
+      ],
+      "sourceCode": "https://github.com/BrianGilbert/bepinex-ogsa-ts",
+      "title": "OGSA Telemetry (BepInEx)",
+      "unityBackend": "Il2Cpp"
+    },
+    {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "config": {
+        "destinationPath": "{{SharedModsPath}}/uevr/plugins/ogsa_telemetry.ini",
+        "destinationType": "File"
+      },
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unreal game UEVR injects.",
+      "download": {
+        "id": "v2026.10.27",
+        "releaseDate": "2026-10-27T09:04:56Z",
+        "url": "https://github.com/BrianGilbert/uevr-ogsa-ts/releases/download/v2026.10.27/uevr_ogsa_telemetry-2026.10.27-win64.zip"
+      },
+      "engine": "Unreal",
+      "family": "ogsa",
+      "gameOs": "Windows",
+      "hash": "9921ace106c7f1fee9cfc7389903994b9660af59c4c9d6c03b1ba70866d7141b",
+      "id": "ogsa-uevr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{SharedModsPath}}/uevr/plugins/ogsa_telemetry.dll",
+            "source": "ogsa_telemetry.dll"
+          }
+        ],
+        "mainInstalledFolderPath": "{{SharedModsPath}}/uevr/plugins",
+        "manifestPath": "{{SharedModsPath}}/uevr/plugins/ogsa-telemetry.rai-pal-manifest.json"
+      },
+      "requiredDependencies": [
+        {
+          "modId": "uevr"
+        }
+      ],
+      "sourceCode": "https://github.com/BrianGilbert/uevr-ogsa-ts",
+      "title": "OGSA Telemetry (UEVR)"
+    },
+    {
+      "architecture": "X64",
+      "author": "BrianGilbert",
+      "config": {
+        "destinationPath": "{{GameInstalledModsPath}}/ue4ss/Mods/ogsa_telemetry/ogsa_telemetry.ini",
+        "destinationType": "File"
+      },
+      "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unreal game UE4SS injects. Requires UE4SS experimental (the runtime Rai Pal installs).",
+      "download": {
+        "id": "v2026.10.27",
+        "releaseDate": "2026-10-27T09:13:38Z",
+        "url": "https://github.com/BrianGilbert/ue4ss-ogsa-ts/releases/download/v2026.10.27/ue4ss_ogsa_telemetry-2026.10.27-win64.zip"
+      },
+      "engine": "Unreal",
+      "family": "ogsa",
+      "gameOs": "Windows",
+      "hash": "4929e0034f61cc3097ca915241eb5def32310f1fd13473733efb2c3ca938ab5c",
+      "id": "ogsa-ue4ss",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/ogsa_telemetry",
+            "source": "experimental/ogsa_telemetry"
+          }
+        ],
+        "mainInstalledFolderPath": "{{GameInstalledModsPath}}/ue4ss/Mods/ogsa_telemetry",
+        "manifestPath": "{{GameInstalledModsPath}}/manifests/ogsa-ue4ss.json"
+      },
+      "requiredDependencies": [
+        {
+          "modId": "ue4ss"
+        }
+      ],
+      "sourceCode": "https://github.com/BrianGilbert/ue4ss-ogsa-ts",
+      "title": "OGSA Telemetry (UE4SS)"
     },
     {
       "author": "praydog",

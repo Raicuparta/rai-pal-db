@@ -5,6 +5,7 @@ import { Mod, ModBase } from "./mod.ts";
 import { getBepinexMods } from "./bepinex/bepinex.ts";
 import { getEveryoneMods } from "./everyone.ts";
 import { getGodotMods } from "./godot/godot.ts";
+import { getOgsaMods } from "./ogsa.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
 import { families } from "./families.ts";
@@ -15,6 +16,7 @@ const modGetters: ModGetter[] = [
 	getBepinexMods,
 	getEveryoneMods,
 	getGodotMods,
+	getOgsaMods,
 	getUevrMods,
 	getUe4ssMods,
 ];
