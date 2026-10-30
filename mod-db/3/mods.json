@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "103026LEGACYAIM",
-        "releaseDate": "2026-10-27T00:50:22Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/103026LEGACYAIM/uevr.zip"
+        "id": "110126PhantomBlade0p1",
+        "releaseDate": "2026-10-30T14:44:56Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110126PhantomBlade0p1/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "6ce9cc696d9124d0f0924a0303a4215d432444e76f001d0ce67c3fbdd2940ef3",
+      "hash": "a672249b58d2c6fab5bcb6ae7fdb9fd8756d75ff1f4aa4c3f955bbf6dd0b98a2",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "103026LEGACYAIM",
-        "releaseDate": "2026-10-27T00:53:38Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/103026LEGACYAIM/DIBRMONOuevr.zip"
+        "id": "110126PhantomBlade0p1",
+        "releaseDate": "2026-10-30T14:46:28Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110126PhantomBlade0p1/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "a7f6b4798d8123bc000e399d2cd3f702ca8482e6ae006eb8b81e153b0b3d9191",
+      "hash": "3bff86c8523eb9dcc8f51632fd57f56f177ce76e115dc39940fca0c12e6a3933",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
