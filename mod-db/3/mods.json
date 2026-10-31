@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "110126PhantomBlade0p1",
-        "releaseDate": "2026-10-30T14:44:56Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/110126PhantomBlade0p1/uevr.zip"
+        "id": "110226CvarPBZBM;W",
+        "releaseDate": "2026-10-30T22:47:23Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110226CvarPBZBM%3BW/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "a672249b58d2c6fab5bcb6ae7fdb9fd8756d75ff1f4aa4c3f955bbf6dd0b98a2",
+      "hash": "5001307aa1330eebe3f3385f81634571932e3de3077384b035f6e6ef65f0af58",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "110126PhantomBlade0p1",
-        "releaseDate": "2026-10-30T14:46:28Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/110126PhantomBlade0p1/DIBRMONOuevr.zip"
+        "id": "110226CvarPBZBM;W",
+        "releaseDate": "2026-10-30T22:49:31Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110226CvarPBZBM%3BW/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "3bff86c8523eb9dcc8f51632fd57f56f177ce76e115dc39940fca0c12e6a3933",
+      "hash": "ac3f364999e880fe7ce1a1165e20751b2dca5d480fa4df095f7a0b43a673141b",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
@@ -1409,12 +1409,12 @@
       "author": "UE4SS-RE",
       "description": "Scripting and modding framework for Unreal Engine games.",
       "download": {
-        "id": "v3.0.1-1185",
-        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1185-gdff435dd.zip"
+        "id": "v3.0.1-1188",
+        "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1188-gf885e8d2.zip"
       },
       "engine": "Unreal",
       "family": "ue4ss",
-      "hash": "2edd8b2003a34b4641ce6ea7e9c88b39b06a89e923102cd923a19593ca08db66",
+      "hash": "845dbc56b3f80e9755a736974cb89a4f4bf3d96a8f6aff775b27ca30969f7a41",
       "id": "ue4ss",
       "install": {
         "extract": [
