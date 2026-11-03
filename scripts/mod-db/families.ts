@@ -33,6 +33,11 @@ export const families = {
 		description:
 			"An in-game UI for exploring, debugging and modifying Unity games.",
 	},
+	"ogs": {
+		title: "OGS Telemetry",
+		description:
+			"Motion telemetry (OGS Telemetry Standard) for motion rigs, haptics and dashboards.",
+	},
 } as const satisfies Record<string, Family>;
 
 export type FamilyId = keyof (typeof families);
