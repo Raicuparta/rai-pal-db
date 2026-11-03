@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "110326StupidAvowed",
-        "releaseDate": "2026-11-01T19:34:40Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/110326StupidAvowed/uevr.zip"
+        "id": "110426fatesbnative58",
+        "releaseDate": "2026-11-03T02:29:24Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110426fatesbnative58/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "95378364ab8b65709fb820000ab3c1a09cee88cb2ef440fa390ed2b421836109",
+      "hash": "135b37d484a27d07a29c5ddb5b1800b762e8d0207d1bdd31e6dced4178b89a53",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "110326StupidAvowed",
-        "releaseDate": "2026-11-01T19:36:30Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/110326StupidAvowed/DIBRMONOuevr.zip"
+        "id": "110426fatesbnative58",
+        "releaseDate": "2026-11-03T02:31:47Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110426fatesbnative58/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "bc096751b46465cc387526fa8d643cab164d3eb167afd54086f255ba14ca0159",
+      "hash": "0261a88959929ffecd23b423a6f36352251c9237cdf862b04a7bd773182aa476",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
