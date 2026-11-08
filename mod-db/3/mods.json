@@ -1136,14 +1136,14 @@
       },
       "description": "UEVR with joehhodge's enhancements.",
       "download": {
-        "id": "110526pbzp2",
-        "releaseDate": "2026-11-05T00:29:14Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/110526pbzp2/uevr.zip"
+        "id": "110826DeepEndOpenXRNative",
+        "releaseDate": "2026-11-08T05:53:32Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110826DeepEndOpenXRNative/uevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "07ca74bdfcb5108e1519e068384dafd7723fc4e8be236b9b21914f1dc6d9c963",
+      "hash": "076176a21eefadf5a14af35241b80efe7831ffcde38db3a36e1b6dba81f56484",
       "id": "uevr-joeyhodge",
       "install": {
         "extract": [
@@ -1188,14 +1188,14 @@
       },
       "description": "UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
       "download": {
-        "id": "110526pbzp2",
-        "releaseDate": "2026-11-05T00:31:26Z",
-        "url": "https://github.com/joeyhodge/UEVR/releases/download/110526pbzp2/DIBRMONOuevr.zip"
+        "id": "110826DeepEndOpenXRNative",
+        "releaseDate": "2026-11-08T05:55:55Z",
+        "url": "https://github.com/joeyhodge/UEVR/releases/download/110826DeepEndOpenXRNative/DIBRMONOuevr.zip"
       },
       "engine": "Unreal",
       "family": "uevr",
       "gameOs": "Windows",
-      "hash": "ce084ea856bde1696dc5789aa059bea16d73f1b92e3bb2b8c3e07e0479ae7b5c",
+      "hash": "f34bc180a472b175db948a1c51cfa64027880b414324a9141e1c4f4f94594757",
       "id": "uevr-joeyhodge-dibr",
       "install": {
         "extract": [
