@@ -45,6 +45,11 @@ export const families = {
 		title: "Unity Config Manager",
 		description: "In-game UI for changing BepInEx mod settings.",
 	},
+	"ogs": {
+		title: "OGS Telemetry",
+		description:
+			"Motion telemetry (OGS Telemetry Standard) for motion rigs, haptics and dashboards.",
+	},
 } as const satisfies Record<string, Family>;
 
 export type FamilyId = keyof (typeof families);
