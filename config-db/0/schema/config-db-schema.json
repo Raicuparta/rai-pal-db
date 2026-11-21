@@ -17,18 +17,18 @@
 					},
 					"modId": {
 						"type": "string",
-						"description": "The ID of the mod this config belongs to."
+						"description": "The ID of the mod this config belongs to. The generated config mod becomes an optional dependency of this mod."
 					},
 					"loaderId": {
 						"type": "string",
-						"description": "The ID of the mod loader that handles this mod."
+						"description": "Ignored. Configs are now installed as mods, so they no longer need a mod loader ID."
 					},
 					"file": {
 						"type": "string",
 						"description": "Name of the file to download in the 'configs' folder for this game in this db."
 					}
 				},
-				"required": ["version", "modId", "loaderId", "file"]
+				"required": ["version", "modId", "file"]
 			}
 		}
 	},

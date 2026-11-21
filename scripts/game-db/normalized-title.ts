@@ -35,5 +35,5 @@ export function addNormalizedTitles(game: Game) {
 	if (!game.title) return;
 	const normalizedTitles = getNormalizedTitles(game.title);
 	if (normalizedTitles.size === 0) return;
-	game.ids["Manual"] = normalizedTitles;
+	game.ids["NormalizedTitle"] = normalizedTitles;
 }

@@ -43,8 +43,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 				assetName.startsWith("UEVR-joeyhodge_AFW_") &&
 				assetName.endsWith(".zip"),
 			nightlyAfw: (assetName) =>
-				assetName.startsWith("UEVR-nightly_AFW_") &&
-				assetName.endsWith(".zip"),
+				assetName.startsWith("UEVR-nightly_AFW_") && assetName.endsWith(".zip"),
 		},
 	);
 
@@ -72,7 +71,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			title: "UEVR JoeyHodge",
 			author: "praydog + joeyhodge",
 			description: "UEVR with joehhodge's enhancements.",
-			sourceCode: "https://github.com/joeyhodge/UEVR",
+			website: "https://github.com/joeyhodge/UEVR",
 			download: joeyhodge,
 		},
 		{
@@ -81,7 +80,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "praydog + joeyhodge",
 			description:
 				"UEVR with joehhodge's enhancements, with options for DIBR / Mono rendering.",
-			sourceCode: "https://github.com/joeyhodge/UEVR",
+			website: "https://github.com/joeyhodge/UEVR",
 			download: joeyhodgeDibr,
 		},
 		{
@@ -90,7 +89,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			author: "praydog + PureDark + joeyhodge",
 			description:
 				"UEVR with joehhodge's enhancements + Alternate Frame Warping.",
-			sourceCode: "https://github.com/PureDark/UEVR",
+			website: "https://github.com/PureDark/UEVR",
 			download: joeyhodgeAfw,
 		},
 		{
@@ -98,7 +97,7 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			title: "UEVR Nightly AFW",
 			author: "praydog + PureDark",
 			description: "UEVR nightly + Alternate Frame Warping.",
-			sourceCode: "https://github.com/PureDark/UEVR",
+			website: "https://github.com/PureDark/UEVR",
 			download: nightlyAfw,
 		},
 		{
@@ -108,47 +107,58 @@ export async function getUevrMods(): Promise<ModBase[]> {
 			engine: "Unreal",
 			author: "bill gates himself",
 			description: "Required for running UEVR via Wine",
-			sourceCode: "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
+			website: "https://dotnet.microsoft.com/en-us/download/dotnet/6.0",
 			download: {
 				id: "6.0.36",
-				url:
-					"https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
+				url: "https://github.com/Raicuparta/rai-pal-db/releases/download/dotnet-6/dotnet+desktop-runtime-6.0.36-win-x64.zip",
 			},
 			install: {
-				manifestPath:
-					`${token.SharedModsPath}/${dotnetId}/rai-pal-manifest.json`,
+				manifestPath: `${token.SharedModsPath}/${dotnetId}/rai-pal-manifest.json`,
 				extract: [
 					{
 						source: ".",
 						destination: `${token.SharedModsPath}/${dotnetId}`,
 					},
 				],
-				mainInstalledFolderPath: `${token.SharedModsPath}/${dotnetId}`,
 			},
+			paths: [
+				{
+					id: "runtime",
+					title: "Runtime",
+					type: "Folder",
+					path: `${token.SharedModsPath}/${dotnetId}`,
+				},
+			],
 			gameOs: "Windows",
 			hostOs: "Linux",
 		},
 		{
 			id: chihuahuaId,
 			title: "Chihuahua",
-			family: "uevr",
+			tags: ["uevr"],
 			author: "Keton",
 			engine: "Unreal",
 			gameOs: "Windows",
 			description: "Simple injector/game launcher for UEVR",
-			sourceCode: "https://github.com/keton/chihuahua",
+			website: "https://github.com/keton/chihuahua",
 			download: chihuahua,
 			install: {
-				manifestPath:
-					`${token.SharedModsPath}/${chihuahuaId}/rai-pal-manifest.json`,
+				manifestPath: `${token.SharedModsPath}/${chihuahuaId}/rai-pal-manifest.json`,
 				extract: [
 					{
 						source: ".",
 						destination: `${token.SharedModsPath}/${chihuahuaId}`,
 					},
 				],
-				mainInstalledFolderPath: `${token.SharedModsPath}/${chihuahuaId}`,
 			},
+			paths: [
+				{
+					id: "mod",
+					title: "Mod",
+					type: "Folder",
+					path: `${token.SharedModsPath}/${chihuahuaId}`,
+				},
+			],
 			runForGame: {
 				path: `${token.SharedModsPath}/${chihuahuaId}/chihuahua.exe`,
 				args: [

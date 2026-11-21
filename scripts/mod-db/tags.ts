@@ -1,20 +1,24 @@
-interface Family {
+interface Tag {
 	title: string;
 	description: string;
+	filterable?: boolean;
 }
 
-export const families = {
+export const tags = {
 	uuvr: {
 		title: "UUVR",
 		description: "Universal VR mod for Unity games",
+		filterable: true,
 	},
 	uevr: {
 		title: "UEVR",
 		description: "Universal VR mod for Unreal Engine games",
+		filterable: true,
 	},
 	everyone: {
 		title: "Everyone",
 		description: "Adds multiplayerish features.",
+		filterable: true,
 	},
 	bepinex: {
 		title: "BepInEx",
@@ -41,10 +45,27 @@ export const families = {
 		title: "BepInEx Config",
 		description: "Default BepInEx config.",
 	},
+	"everyone-config": {
+		title: "Everyone Config",
+		description: "Recommended Everyone config for a specific game.",
+	},
+	"uuvr-config": {
+		title: "UUVR Config",
+		description: "Recommended UUVR config for a specific game.",
+	},
+	"uevr-config": {
+		title: "UEVR Config",
+		description: "Recommended UEVR config for a specific game.",
+	},
 	"unity-config-manager": {
 		title: "Unity Config Manager",
 		description: "In-game UI for changing BepInEx mod settings.",
 	},
-} as const satisfies Record<string, Family>;
+	"game-specific-vr": {
+		title: "Game-Specific VR",
+		description: "Mods made for specific games",
+		filterable: true,
+	},
+} as const satisfies Record<string, Tag>;
 
-export type FamilyId = keyof (typeof families);
+export type TagId = keyof typeof tags;

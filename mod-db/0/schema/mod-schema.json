@@ -6,6 +6,32 @@
 			"type": "string",
 			"description": "Unique identifier for this mod. Must be globally unique within all mods from all loaders."
 		},
+		"gameIds": {
+			"type": "object",
+			"description": "Game IDs that this mod is made for, keyed by game provider ID. If omitted, the mod is not specific to any game. Use the same IDs as the games database, and include every ID for the game across all providers.",
+			"propertyNames": {
+				"enum": [
+					"Amazon",
+					"Ea",
+					"Epic",
+					"Gog",
+					"Itch",
+					"Manual",
+					"NormalizedTitle",
+					"Steam",
+					"Ubisoft",
+					"Xbox"
+				]
+			},
+			"additionalProperties": {
+				"type": "array",
+				"items": {
+					"type": "string"
+				},
+				"minItems": 1,
+				"uniqueItems": true
+			}
+		},
 		"deprecated": {
 			"type": "boolean",
 			"description": "If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement."
@@ -32,10 +58,10 @@
 			"type": "string",
 			"description": "Mod author."
 		},
-		"sourceCode": {
+		"website": {
 			"type": "string",
 			"format": "uri",
-			"description": "URL of a repository with the mod's source code."
+			"description": "URL for the mod, can be source code or just some website."
 		},
 		"description": {
 			"type": "string",
@@ -85,5 +111,5 @@
 		}
 	},
 	"additionalProperties": false,
-	"required": ["id", "title", "author", "sourceCode", "description"]
+	"required": ["id", "title", "author", "website", "description"]
 }

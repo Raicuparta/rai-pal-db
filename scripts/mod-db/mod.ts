@@ -1,4 +1,27 @@
-import type { FamilyId } from "./families.ts";
+import type { IdProvider } from "../common/game-provider.ts";
+import type { TagId } from "./tags.ts";
+
+export interface ModPath {
+	/**
+	 * Unique identifier for this path within the mod.
+	 */
+	id: string;
+
+	/**
+	 * Display name for this path.
+	 */
+	title: string;
+
+	/**
+	 * Supports replacement tokens. Path to a file or folder that Rai Pal can open.
+	 */
+	path: string;
+
+	/**
+	 * Whether the path points to a file or a folder.
+	 */
+	type: "File" | "Folder";
+}
 
 export interface ModBase {
 	/**
@@ -7,9 +30,15 @@ export interface ModBase {
 	id: string;
 
 	/**
-	 * Non-unique family ID. Mods in the same family provide the same uhh thing. Rai Pal uses this for filters; you filter by games compatible with at least one mod of a given family.
+	 * Non-unique tag IDs. Mods with the same tag provide the same uhh thing. Rai Pal uses this for filters; you filter by games compatible with at least one mod of a given tag.
 	 */
-	family?: FamilyId;
+	tags?: readonly TagId[];
+
+	/**
+	 * Game IDs that this mod is made for. If omitted, the mod is not specific to any game and can be compatible with many games.
+	 * Use the same provider IDs and game IDs as the games database. Include every ID for the game, across all providers, and every duplicate ID within a provider.
+	 */
+	gameIds?: GameIds;
 
 	/**
 	 * If true, users should be warned about it and invited to uninstall this mod, and directed to install the appropriate replacement.
@@ -64,9 +93,9 @@ export interface ModBase {
 	author: string;
 
 	/**
-	 * URL of a repository with the mod's source code.
+	 * URL for the mod, can be source code or just some website.
 	 */
-	sourceCode: string;
+	website: string;
 
 	/**
 	 * Short description that explains what the mod does.
@@ -115,6 +144,17 @@ export interface ModBase {
 		}[];
 
 		/**
+		 * Copies the downloaded file, without extracting it, to the destination paths.
+		 * Use this for mods whose download is a single file instead of a zip.
+		 */
+		copy?: {
+			/**
+			 * Supports replacement tokens. Destination path to copy the downloaded file to.
+			 */
+			destination: string;
+		}[];
+
+		/**
 		 * Text files to write when installing the mod.
 		 */
 		write?: {
@@ -133,11 +173,6 @@ export interface ModBase {
 		 * Dll file names without extension, that will get the Wine DLL override flags set to "native,builtin".
 		 */
 		wineDllOverrides?: string[];
-
-		/**
-		 * Supports replacement tokens. Folder that opens when pressing the 'Open Mod Folder' button for a mod installed in a game.
-		 */
-		mainInstalledFolderPath?: string;
 	};
 
 	/**
@@ -159,24 +194,9 @@ export interface ModBase {
 	};
 
 	/**
-	 * Information used to find local mod configs, and also for downloading configs from the database.
+	 * Paths to files or folders that Rai Pal can open from this mod's actions menu.
 	 */
-	config?: {
-		/**
-		 * Path in the user's PC where the config is installed to. This path can be relative to something, depending on the mod loader.
-		 */
-		destinationPath: string;
-
-		/**
-		 * If file, the downloaded config will be placed directly in destinationPath. If folder, the downloaded file must be a zip, and gets extracted to the destination path, which must be a folder.
-		 */
-		destinationType: "File" | "Folder";
-
-		/**
-		 * If set, overrides the mod ID used for finding config files. Useful when multiple mods use the same configs.
-		 */
-		modIdOverride?: string;
-	};
+	paths?: ModPath[];
 }
 
 export interface Mod extends ModBase {
@@ -187,21 +207,29 @@ export interface Mod extends ModBase {
 }
 
 /**
- * We can defined dependencies via unique mod IDs, or via the non-unique family IDs
+ * Game IDs that a mod is made for, keyed by game provider ID.
+ * Mirrors the `ids` format of a game in the games database.
  */
-type ModDependency = {
-	modId: string;
-	family?: never;
-} | {
-	family: FamilyId;
-	modId?: never;
-};
+export type GameIds = Partial<Record<IdProvider, string[]>>;
+
+/**
+ * We can defined dependencies via unique mod IDs, or via the non-unique tag IDs
+ */
+type ModDependency =
+	| {
+			modId: string;
+			tag?: never;
+	  }
+	| {
+			tag: TagId;
+			modId?: never;
+	  };
 
 export type UnityBackend = "Il2Cpp" | "Mono";
 
 const ARCHITECTURES = ["X64", "X86"] as const;
 
-export type Architecture = typeof ARCHITECTURES[number];
+export type Architecture = (typeof ARCHITECTURES)[number];
 
 export function isArchitecture(value: string): value is Architecture {
 	return ARCHITECTURES.includes(value as Architecture);
@@ -218,7 +246,7 @@ export interface ModDownload {
 	id: string;
 
 	/**
-	 * Direct download url for the release zip.
+	 * Direct download url for the release archive or file.
 	 */
 	url: string;
 

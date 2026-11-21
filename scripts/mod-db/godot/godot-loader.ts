@@ -1,7 +1,7 @@
 import type { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
-const sourceCode = "https://github.com/Raicuparta/gdscript-loader";
+const website = "https://github.com/Raicuparta/gdscript-loader";
 
 // Each zip contains a single `script-loader.gd`, built and published by the
 // gdscript-loader release workflow.
@@ -10,12 +10,11 @@ const downloadBase =
 
 function godotLoader(major: 3 | 4): ModBase {
 	const id = `godot-loader-${major}`;
-	const scriptLoaderGdPath =
-		`${token.GameInstalledModsPath}/${id}/script-loader.gd`;
+	const scriptLoaderGdPath = `${token.GameInstalledModsPath}/${id}/script-loader.gd`;
 
 	return {
 		id,
-		family: "godot-loader",
+		tags: ["godot-loader"],
 		engine: "Godot",
 		engineVersionRange: {
 			minimum: { major },
@@ -23,7 +22,7 @@ function godotLoader(major: 3 | 4): ModBase {
 		},
 		title: `Godot ${major} Mod Loader`,
 		author: "Raicuparta",
-		sourceCode,
+		website,
 		description: "Basic mod loader for Godot games.",
 		download: {
 			id: "0.1.0",
@@ -45,8 +44,15 @@ ModLoaderStore="${token.MaybeWineRoot}${scriptLoaderGdPath}"
 					destination: `${token.GameExecutableFolderPath}/override.cfg`,
 				},
 			],
-			mainInstalledFolderPath: token.GameInstalledModsPath,
 		},
+		paths: [
+			{
+				id: "loader",
+				title: "Loader",
+				type: "Folder",
+				path: `${token.GameInstalledModsPath}/${id}`,
+			},
+		],
 	};
 }
 

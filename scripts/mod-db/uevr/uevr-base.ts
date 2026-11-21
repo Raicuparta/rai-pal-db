@@ -15,14 +15,17 @@ export function uevrBase(
 
 	return {
 		id,
-		family: "uevr",
+		tags: ["uevr"],
 		author: "praydog",
 		engine: "Unreal",
 		gameOs: "Windows",
-		sourceCode: "https://github.com/praydog/UEVR",
+		website: "https://github.com/praydog/UEVR",
 		optionalDependencies: [
 			{
 				modId: "dotnet-desktop-runtime-win-x64",
+			},
+			{
+				tag: "uevr-config",
 			},
 		],
 		runForGame: {
@@ -38,12 +41,20 @@ export function uevrBase(
 					destination: `${token.SharedModsPath}/${id}`,
 				},
 			],
-			mainInstalledFolderPath: `${token.SharedModsPath}/${id}`,
 		},
-		config: {
-			destinationPath:
-				`${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
-			destinationType: "Folder",
-		},
+		paths: [
+			{
+				id: "mod",
+				title: "Mod",
+				type: "Folder",
+				path: `${token.SharedModsPath}/${id}`,
+			},
+			{
+				id: "config",
+				title: "Config",
+				type: "Folder",
+				path: `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`,
+			},
+		],
 	};
 }

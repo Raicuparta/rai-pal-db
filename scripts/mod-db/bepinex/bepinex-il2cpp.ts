@@ -9,8 +9,7 @@ import type {
 import { token } from "../replacement-tokens.ts";
 
 const BLEEDING_BUILD_URL_DOMAIN = "https://builds.bepinex.dev";
-const BLEEDING_BUILD_URL_BASE =
-	`${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;
+const BLEEDING_BUILD_URL_BASE = `${BLEEDING_BUILD_URL_DOMAIN}/projects/bepinex_be`;
 
 /**
  * Base mod object for BepInEx itself, il2cpp version.
@@ -22,20 +21,29 @@ function bepinexIl2cppLoaderBase(
 	const gameEnvironment = bepinexIl2cppGameEnvironment(os);
 	return {
 		id: modId,
-		family: "bepinex",
+		tags: ["bepinex"],
 		engine: "Unity",
 		unityBackend: "Il2Cpp",
 		gameOs: os,
 		description: "Mod loader for Unity mods.",
 		author: "BepInEx",
-		sourceCode: "https://github.com/BepInEx/BepInEx",
+		website: "https://github.com/BepInEx/BepInEx",
 		install: bepinexIl2cppInstall(modId, os),
 		...(gameEnvironment ? { gameEnvironment } : {}),
-		config: {
-			destinationPath:
-				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
-			destinationType: "File",
-		},
+		paths: [
+			{
+				id: "bepinex",
+				title: "BepInEx",
+				type: "Folder",
+				path: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
+			},
+			{
+				id: "config",
+				title: "Config",
+				type: "File",
+				path: `${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+			},
+		],
 		optionalDependencies: [
 			{
 				modId: "bepinex-config-legacy",
@@ -56,14 +64,11 @@ function bepinexIl2cppGameEnvironment(
 
 	return {
 		DOORSTOP_ENABLED: "1",
-		DOORSTOP_TARGET_ASSEMBLY:
-			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll`,
-		DOORSTOP_CLR_RUNTIME_CORECLR_PATH:
-			`${token.GameInstalledModsPath}/bepinex/dotnet/libcoreclr.so`,
+		DOORSTOP_TARGET_ASSEMBLY: `${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Unity.IL2CPP.dll`,
+		DOORSTOP_CLR_RUNTIME_CORECLR_PATH: `${token.GameInstalledModsPath}/bepinex/dotnet/libcoreclr.so`,
 		DOORSTOP_CLR_CORLIB_DIR: `${token.GameInstalledModsPath}/bepinex/dotnet`,
 		DOORSTOP_IGNORE_DISABLED_ENV: "0",
-		LD_LIBRARY_PATH:
-			`${token.GameExecutableFolderPath}:${token.GameInstalledModsPath}/bepinex/dotnet:\${LD_LIBRARY_PATH}`,
+		LD_LIBRARY_PATH: `${token.GameExecutableFolderPath}:${token.GameInstalledModsPath}/bepinex/dotnet:\${LD_LIBRARY_PATH}`,
 		LD_PRELOAD: `libdoorstop.so:\${LD_PRELOAD}`,
 	};
 }
@@ -110,7 +115,6 @@ corlib_dir = ${token.GameInstalledModsPath}/bepinex/dotnet
 				},
 			],
 			wineDllOverrides: ["winhttp"],
-			mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 		};
 	}
 
@@ -124,7 +128,6 @@ corlib_dir = ${token.GameInstalledModsPath}/bepinex/dotnet
 				destination: `${token.GameExecutableFolderPath}/libdoorstop.so`,
 			},
 		],
-		mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 	};
 }
 
@@ -162,15 +165,13 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 	const latestByPlatform: Partial<
 		Record<
 			OperatingSystem,
-			Partial<
-				Record<Architecture, { timestamp: number; release: ModDownload }>
-			>
+			Partial<Record<Architecture, { timestamp: number; release: ModDownload }>>
 		>
 	> = {};
 
 	for (const releaseElement of releaseElements) {
-		const dateText = releaseElement.getElementsByClassName("build-date")[0]
-			?.innerText;
+		const dateText =
+			releaseElement.getElementsByClassName("build-date")[0]?.innerText;
 		const releaseTimestamp = Date.parse(dateText ?? "");
 
 		if (!releaseTimestamp) {
@@ -178,9 +179,8 @@ export async function getBepInExIl2cppLoaders(): Promise<ModBase[]> {
 			continue;
 		}
 
-		const buildLinkElements = releaseElement.getElementsByClassName(
-			"artifact-link",
-		);
+		const buildLinkElements =
+			releaseElement.getElementsByClassName("artifact-link");
 
 		for (const buildLinkElement of buildLinkElements) {
 			const href = buildLinkElement.getAttribute("href");

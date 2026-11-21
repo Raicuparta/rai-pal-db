@@ -9,25 +9,35 @@ import { getEveryoneMods } from "./everyone.ts";
 import { getGodotMods } from "./godot/godot.ts";
 import { getUevrMods } from "./uevr/uevr.ts";
 import { getUe4ssMods } from "./ue4ss/ue4ss.ts";
-import { families } from "./families.ts";
+import { getGameSpecificMods } from "./game-specific/game-specific.ts";
+import { getConfigMods } from "./configs.ts";
+import { tags } from "./tags.ts";
 
 type ModGetter = () => Promise<ModBase[]>;
 
 const modGetters: ModGetter[] = [
 	getBepinexMods,
 	getEveryoneMods,
+	getGameSpecificMods,
 	getGodotMods,
 	getUevrMods,
 	getUe4ssMods,
 ];
 
-const mods: Mod[] = (await Promise.all(modGetters.map((getter) => getter())))
-	.flat()
-	.map((modBase) => ({ ...modBase, hash: hash(modBase) }));
+const baseMods: ModBase[] = (
+	await Promise.all(modGetters.map((getter) => getter()))
+).flat();
+
+const configMods = await getConfigMods(baseMods);
+
+const mods: Mod[] = [...baseMods, ...configMods].map((modBase) => ({
+	...modBase,
+	hash: hash(modBase),
+}));
 
 const json = stringify(
 	{
-		families,
+		tags,
 		mods,
 	},
 	undefined,

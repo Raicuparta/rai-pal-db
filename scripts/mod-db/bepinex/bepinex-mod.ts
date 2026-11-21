@@ -1,61 +1,59 @@
-import type { ModBase, UnityBackend } from "../mod.ts";
+import type { ModBase } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
-/**
- * Base mod object for BepInEx mods.
- */
-export function bepinexMod(
-	mod:
-		& Omit<
-			ModBase,
-			| "engine"
-			| "install"
-			| "config"
-			| "requiredDependencies"
-			| "optionalDependencies"
-		>
-		& {
-			unityBackend: UnityBackend;
-		},
-	params?: {
-		configFileName?: string;
-		zipRoot?: string;
-		withPatchers?: boolean;
-	},
-): ModBase {
+type ModInstall = NonNullable<ModBase["install"]>;
+type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
+type ModPath = NonNullable<ModBase["paths"]>[number];
+
+export function bepinexModHelper(modId: string) {
+	const pluginFolder = `${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${modId}`;
+	const patcherFolder = `${token.GameInstalledModsPath}/bepinex/BepInEx/patchers/${modId}`;
+
 	return {
-		...mod,
-		engine: "Unity",
-		install: {
-			manifestPath: `${token.GameInstalledModsPath}/manifests/${mod.id}.json`,
-			extract: [
-				{
-					source: `${params?.zipRoot ? `${params.zipRoot}/` : ""}plugins`,
-					destination:
-						`${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
-				},
-				...params?.withPatchers
-					? [{
-						source: `${params?.zipRoot ? `${params.zipRoot}/` : ""}patchers`,
-						destination:
-							`${token.GameInstalledModsPath}/bepinex/BepInEx/patchers/${mod.id}`,
-					}]
-					: [],
-			],
-			mainInstalledFolderPath:
-				`${token.GameInstalledModsPath}/bepinex/BepInEx/plugins/${mod.id}`,
+		id: modId,
+
+		base: {
+			engine: "Unity",
+			requiredDependencies: [{ tag: "bepinex" }],
+		} satisfies Pick<ModBase, "engine" | "requiredDependencies">,
+
+		manifestPath: () =>
+			`${token.GameInstalledModsPath}/manifests/${modId}.json`,
+
+		pluginFolder: () => pluginFolder,
+
+		patcherFolder: () => patcherFolder,
+
+		extract: {
+			plugin: (): ModInstallExtract => ({
+				source: "plugins",
+				destination: pluginFolder,
+			}),
+			patch: (): ModInstallExtract => ({
+				source: "patchers",
+				destination: patcherFolder,
+			}),
 		},
-		config: params?.configFileName
-			? {
-				destinationPath:
-					`${token.GameInstalledModsPath}/bepinex/BepInEx/config/${params.configFileName}`,
-				destinationType: "File",
-			}
-			: undefined,
-		requiredDependencies: [
-			{
-				family: "bepinex",
-			},
-		],
+
+		paths: {
+			plugin: (): ModPath => ({
+				id: "plugin",
+				title: "Plugin",
+				type: "Folder",
+				path: pluginFolder,
+			}),
+			patcher: (): ModPath => ({
+				id: "patcher",
+				title: "Patcher",
+				type: "Folder",
+				path: patcherFolder,
+			}),
+			config: (fileName: string): ModPath => ({
+				id: "config",
+				title: "Config",
+				type: "File",
+				path: `${token.GameInstalledModsPath}/bepinex/BepInEx/config/${fileName}`,
+			}),
+		},
 	};
 }

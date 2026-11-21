@@ -3,7 +3,7 @@ import type {
 	Game,
 	GameSubscription,
 	IdMap,
-	ProviderId,
+	IdProvider,
 } from "./main.ts";
 import { addNormalizedTitles } from "./normalized-title.ts";
 
@@ -57,7 +57,7 @@ function mergeIds(idsA: IdMap, idsB: IdMap): IdMap {
 	for (const idKind of new Set([
 		...Object.keys(idsA),
 		...Object.keys(idsB),
-	] as ProviderId[])) {
+	] as IdProvider[])) {
 		const idSetA = idsA[idKind] || new Set();
 		const idSetB = idsB[idKind] || new Set();
 		mergedIds[idKind] = new Set([...idSetA, ...idSetB]);

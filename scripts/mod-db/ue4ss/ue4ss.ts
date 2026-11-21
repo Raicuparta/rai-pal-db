@@ -8,11 +8,11 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 	return [
 		{
 			id,
-			family: "ue4ss",
+			tags: ["ue4ss"],
 			engine: "Unreal",
 			title: "UE4SS",
 			author: "UE4SS-RE",
-			sourceCode: "https://github.com/UE4SS-RE/RE-UE4SS",
+			website: "https://github.com/UE4SS-RE/RE-UE4SS",
 			description: "Scripting and modding framework for Unreal Engine games.",
 			download: await getLatestUe4ss(),
 			install: {
@@ -29,14 +29,20 @@ export async function getUe4ssMods(): Promise<ModBase[]> {
 				],
 				write: [
 					{
-						content:
-							`${token.MaybeWineRoot}${token.GameInstalledModsPath}/ue4ss`,
+						content: `${token.MaybeWineRoot}${token.GameInstalledModsPath}/ue4ss`,
 						destination: `${token.GameExecutableFolderPath}/override.txt`,
 					},
 				],
 				wineDllOverrides: ["dwmapi"],
-				mainInstalledFolderPath: `${token.GameInstalledModsPath}/ue4ss`,
 			},
+			paths: [
+				{
+					id: "ue4ss",
+					title: "UE4SS",
+					type: "Folder",
+					path: `${token.GameInstalledModsPath}/ue4ss`,
+				},
+			],
 		},
 	];
 }

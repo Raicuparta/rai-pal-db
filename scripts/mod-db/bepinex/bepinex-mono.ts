@@ -22,20 +22,29 @@ function bepinexMonoLoaderBase(
 	const gameEnvironment = bepinexMonoGameEnvironment(os);
 	return {
 		id: modId,
-		family: "bepinex",
+		tags: ["bepinex"],
 		description: "Mod loader for Unity mods.",
 		engine: "Unity",
 		unityBackend: "Mono",
 		gameOs: os,
 		author: "BepInEx",
-		sourceCode: "https://github.com/BepInEx/BepInEx",
+		website: "https://github.com/BepInEx/BepInEx",
 		install: bepinexMonoInstall(modId, os),
 		...(gameEnvironment ? { gameEnvironment } : {}),
-		config: {
-			destinationPath:
-				`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
-			destinationType: "File",
-		},
+		paths: [
+			{
+				id: "bepinex",
+				title: "BepInEx",
+				type: "Folder",
+				path: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
+			},
+			{
+				id: "config",
+				title: "Config",
+				type: "File",
+				path: `${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+			},
+		],
 		optionalDependencies: [
 			{
 				modId: "bepinex-config-legacy",
@@ -56,8 +65,7 @@ function bepinexMonoGameEnvironment(
 
 	return {
 		DOORSTOP_ENABLED: "1",
-		DOORSTOP_TARGET_ASSEMBLY:
-			`${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll`,
+		DOORSTOP_TARGET_ASSEMBLY: `${token.GameInstalledModsPath}/bepinex/BepInEx/core/BepInEx.Preloader.dll`,
 		DOORSTOP_IGNORE_DISABLED_ENV: "0",
 		LD_LIBRARY_PATH: `${token.GameExecutableFolderPath}:\${LD_LIBRARY_PATH}`,
 		LD_PRELOAD: `libdoorstop.so:\${LD_PRELOAD}`,
@@ -98,7 +106,6 @@ dll_search_path_override=
 				},
 			],
 			wineDllOverrides: ["winhttp"],
-			mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 		};
 	}
 
@@ -111,7 +118,6 @@ dll_search_path_override=
 				destination: `${token.GameExecutableFolderPath}/libdoorstop.so`,
 			},
 		],
-		mainInstalledFolderPath: `${token.GameInstalledModsPath}/bepinex/BepInEx`,
 	};
 }
 
@@ -143,10 +149,7 @@ function asOs(osMatch: string): OperatingSystem | null {
 	}
 }
 
-function asPlatform(
-	osMatch: string,
-	archMatch: string,
-): LoaderPlatform | null {
+function asPlatform(osMatch: string, archMatch: string): LoaderPlatform | null {
 	const os = asOs(osMatch);
 	if (!os) {
 		return null;
@@ -190,7 +193,8 @@ function getMonoPlatformFromAssetName(
 	const altPrereleaseMatch = assetName.match(/^BepInEx_(.+)_(x64|x86)_/);
 	if (altPrereleaseMatch) {
 		const [, backendMatch, archMatch] = altPrereleaseMatch;
-		const isMonoLike = backendMatch.includes("UnityMono") ||
+		const isMonoLike =
+			backendMatch.includes("UnityMono") ||
 			backendMatch.includes("NetLauncher");
 		if (!isMonoLike) {
 			return null;
@@ -229,9 +233,7 @@ export async function getBepInExMonoLoaders(): Promise<ModBase[]> {
 	const latestByPlatform: Partial<
 		Record<
 			OperatingSystem,
-			Partial<
-				Record<Architecture, { timestamp: number; release: ModDownload }>
-			>
+			Partial<Record<Architecture, { timestamp: number; release: ModDownload }>>
 		>
 	> = {};
 

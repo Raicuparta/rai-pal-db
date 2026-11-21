@@ -49,18 +49,25 @@ function bepInExConfig(
 	return {
 		...mod,
 		author: "BepInEx",
-		family: "bepinex-config",
+		tags: ["bepinex-config"],
 		hideFromGameModsList: true,
 		description: "Default BepInEx config",
-		sourceCode: "https://github.com/BepInEx/BepInEx",
+		website: "https://github.com/BepInEx/BepInEx",
 		engine: "Unity",
+		paths: [
+			{
+				id: "config",
+				title: "Config",
+				type: "File",
+				path: `${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+			},
+		],
 		install: {
 			manifestPath: `${token.GameInstalledModsPath}/manifests/${mod.id}.json`,
 			write: [
 				{
 					content: config,
-					destination:
-						`${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
+					destination: `${token.GameInstalledModsPath}/bepinex/BepInEx/config/BepInEx.cfg`,
 				},
 			],
 		},
