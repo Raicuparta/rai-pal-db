@@ -6110,13 +6110,13 @@
       "author": "BrianGilbert",
       "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unity game BepInEx injects (IL2CPP / BepInEx 6).",
       "download": {
-        "id": "v2026.11.12.24",
-        "releaseDate": "2026-11-12T13:27:27Z",
-        "url": "https://github.com/BrianGilbert/bepinex-ogs-ts/releases/download/v2026.11.12.24/bepinex_ogs_telemetry-2026.11.12.24-win64.zip"
+        "id": "v2026.11.26",
+        "releaseDate": "2026-11-26T07:04:23Z",
+        "url": "https://github.com/BrianGilbert/bepinex-ogs-ts/releases/download/v2026.11.26/bepinex_ogs_telemetry-2026.11.26-win64.zip"
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "90fcce0299067388d870bab79befdff08561fc0f93982a3de634aaf2daf28f18",
+      "hash": "63c35697addd29adf074f974b8c591e83918d5cbea3f3055e353c18497bd5c4d",
       "id": "ogs-bepinex-il2cpp",
       "install": {
         "extract": [
@@ -6154,13 +6154,13 @@
       "author": "BrianGilbert",
       "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unity game BepInEx injects (Mono / BepInEx 5).",
       "download": {
-        "id": "v2026.11.12.24",
-        "releaseDate": "2026-11-12T13:27:27Z",
-        "url": "https://github.com/BrianGilbert/bepinex-ogs-ts/releases/download/v2026.11.12.24/bepinex_ogs_telemetry-2026.11.12.24-win64.zip"
+        "id": "v2026.11.26",
+        "releaseDate": "2026-11-26T07:04:23Z",
+        "url": "https://github.com/BrianGilbert/bepinex-ogs-ts/releases/download/v2026.11.26/bepinex_ogs_telemetry-2026.11.26-win64.zip"
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "2282cfb188381b0867d86cfddfee219197482d3d4cc313bca87f398c95aa7907",
+      "hash": "8c4f6c6323d2d9d7e88590b4554009926349f68b86fbaac599b4ebb935d96e29",
       "id": "ogs-bepinex-mono",
       "install": {
         "extract": [
@@ -6198,13 +6198,13 @@
       "author": "BrianGilbert",
       "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unreal game UE4SS injects. Requires UE4SS experimental (the runtime Rai Pal installs).",
       "download": {
-        "id": "v2026.11.04",
-        "releaseDate": "2026-11-04T23:57:02Z",
-        "url": "https://github.com/BrianGilbert/ue4ss-ogs-ts/releases/download/v2026.11.04/ue4ss_ogs_telemetry-2026.11.04-win64.zip"
+        "id": "v2026.11.26",
+        "releaseDate": "2026-11-26T07:05:20Z",
+        "url": "https://github.com/BrianGilbert/ue4ss-ogs-ts/releases/download/v2026.11.26/ue4ss_ogs_telemetry-2026.11.26-win64.zip"
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "f7eac6d84769e5d7edbf3c6639faa94e2b4eb43bf70f12f03820c91dc58251cd",
+      "hash": "1566e30bd7e18cd5c934584d0e9f9cd4d601d2b1f26667b26e77b46f2f922aeb",
       "id": "ogs-ue4ss",
       "install": {
         "extract": [
@@ -6241,13 +6241,13 @@
       "author": "BrianGilbert",
       "description": "Publishes motion telemetry (pose and body dynamics) on the local network for motion rigs, from any Unreal game UEVR injects.",
       "download": {
-        "id": "v2026.11.12",
-        "releaseDate": "2026-11-12T12:39:46Z",
-        "url": "https://github.com/BrianGilbert/uevr-ogs-ts/releases/download/v2026.11.12/uevr_ogs_telemetry-2026.11.12-win64.zip"
+        "id": "v2026.11.26",
+        "releaseDate": "2026-11-26T07:05:05Z",
+        "url": "https://github.com/BrianGilbert/uevr-ogs-ts/releases/download/v2026.11.26/uevr_ogs_telemetry-2026.11.26-win64.zip"
       },
       "engine": "Unreal",
       "gameOs": "Windows",
-      "hash": "84bafad525b9651b65bb2b5dc7772435e829a654f9122da611e778b7766564df",
+      "hash": "81af22acd1d36b470b08b409c625e1c2491a48fd3417d17a5c835a6c02b97433",
       "id": "ogs-uevr",
       "install": {
         "extract": [
