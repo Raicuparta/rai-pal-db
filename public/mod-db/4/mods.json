@@ -523,7 +523,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "4e130b848d4a7e787cfc55dfc76822039b64b39a40d6616f3cfb5842814778aa",
+      "hash": "e54652aa6b020e41c1743714dc550411aaa21a5f3527cf2014950ffb1f1338be",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
@@ -558,6 +558,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "tags": [
@@ -578,7 +582,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "4d6c258825cd233214ea22cd5f4c2c89ec7937ce951375c14ce7382f906997d9",
+      "hash": "68e201d3ea4f8695cb665d4e52e50c9cb84c1f6f5a4567ab32e61857f55169e0",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
@@ -622,6 +626,14 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
+        },
+        {
+          "path": "{{GameExecutableFolderPath}}/doorstop_config.ini",
+          "type": "File"
         }
       ],
       "tags": [
@@ -642,7 +654,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "effd22194f5106f8e550d031ae45ac0d8aa2776cf9cfff694812bae2a07fbaed",
+      "hash": "ee20219b19d9a4bc4d1a60a194815d716fef970b9e84fabce57e4744d770d97a",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
@@ -686,6 +698,14 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
+        },
+        {
+          "path": "{{GameExecutableFolderPath}}/doorstop_config.ini",
+          "type": "File"
         }
       ],
       "tags": [
@@ -713,7 +733,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "aedb8e9dfb8ea5b26501d6f72ced9e43c35248965b52dd43632aedbd1202b73f",
+      "hash": "dd1e32c53ce5dbe58d566cc30cf3fc6037a89d515af6405625443e0d9945d136",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
@@ -744,6 +764,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "tags": [
@@ -771,7 +795,7 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "db0ad94b1018c975658292af4072564d924b7025b4844f040969f921e72a4376",
+      "hash": "a799f47708a6c25b33cba7a212230c2edae0ac8f4fe4a8f7018c8c87a429e244",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
@@ -802,6 +826,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "tags": [
@@ -822,7 +850,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "595016160db3b8f31e8db655d4caedda1798585cd0ffde1bbb173d1e3d8ee70b",
+      "hash": "1e4ccb1208404fc332e7192f733269c4345b48fa09aefe2a567f4d8cfa06ebc7",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
@@ -862,6 +890,14 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
+        },
+        {
+          "path": "{{GameExecutableFolderPath}}/doorstop_config.ini",
+          "type": "File"
         }
       ],
       "tags": [
@@ -882,7 +918,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "40b8d43f20f05ea8996d97f399d1572673ee182e7b040cca0f8fd06fa883cac1",
+      "hash": "2face86166f45591bfb635fa36fba645977c1e38123b1e8562d08e20964900fa",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
@@ -921,6 +957,14 @@
         },
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/BepInEx.cfg",
+          "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
+        },
+        {
+          "path": "{{GameExecutableFolderPath}}/doorstop_config.ini",
           "type": "File"
         }
       ],
@@ -2776,7 +2820,7 @@
         "url": "https://github.com/Vapok/BepInExConfigManager/releases/download/v1.0.0/Vapok-BepInExConfigManager-1.0.0.zip"
       },
       "engine": "Unity",
-      "hash": "5fb6c2fcd95dc033966743960b811455299f981eae9ed860056c1689be56ebb1",
+      "hash": "672889c8360d4b7d8030c03525c926abd30bf365a4afec009dabddf05b0750ea",
       "id": "config-manager-il2cpp",
       "install": {
         "extract": [
@@ -2799,6 +2843,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-il2cpp",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -2821,7 +2869,7 @@
         "url": "https://github.com/sinai-dev/BepInExConfigManager/releases/download/1.3.0/BepInExConfigManager.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "ee6bcabb66720bd4f6a11864a06444c0b6354006c37ce737acf3c43e43a35416",
+      "hash": "1dca1318bd5e02870b0de21d1a5a3c0668630378c858a6de70c52b7ed3db7212",
       "id": "config-manager-mono",
       "install": {
         "extract": [
@@ -2844,6 +2892,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/config-manager-mono",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -3919,7 +3971,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-il2cpp.zip"
       },
       "engine": "Unity",
-      "hash": "5848d5da393692285d885361ba2eaadf2bf2dd44375c37e91a508607db5bb699",
+      "hash": "c32bef0ef39b90e6e5a321d7ea4a7389acfd320f4f25b668c2744afbb83a530c",
       "id": "everyone-il2cpp",
       "install": {
         "extract": [
@@ -3942,6 +3994,10 @@
         },
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+          "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
           "type": "File"
         }
       ],
@@ -3966,7 +4022,7 @@
         "url": "https://github.com/Raicuparta/everyone-client/releases/download/v0.5.0/everyone-unity-mono.zip"
       },
       "engine": "Unity",
-      "hash": "8b08c6fb6d367096cf7c7e415f808dfa08ed57deacb4a7bb9373cb21687164dc",
+      "hash": "fd29fc02c7d5d08759b37b9da2e039d0eda70f8aa14988c1ef97021013704bb8",
       "id": "everyone-mono",
       "install": {
         "extract": [
@@ -3989,6 +4045,10 @@
         },
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.everyone.json",
+          "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
           "type": "File"
         }
       ],
@@ -4894,7 +4954,7 @@
           "1533420"
         ]
       },
-      "hash": "4166e8f1267b2d313094cebd61f42f586ea5bb4b0fbc69062196cf87b83a28cc",
+      "hash": "6c31752b103b594aa550e699ddde01f4b4df1e11d2d094f10710dd12b2c2481b",
       "id": "HeavenVr",
       "install": {
         "extract": [
@@ -4925,6 +4985,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/HeavenVr",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -6116,7 +6180,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "63c35697addd29adf074f974b8c591e83918d5cbea3f3055e353c18497bd5c4d",
+      "hash": "a65fa49207f585b980b2e13dd504a8f1cc04bed8adda43d01b35dfcdf4ab3a0c",
       "id": "ogs-bepinex-il2cpp",
       "install": {
         "extract": [
@@ -6134,6 +6198,10 @@
         },
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/ogs.telemetry.cfg",
+          "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
           "type": "File"
         }
       ],
@@ -6160,7 +6228,7 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "8c4f6c6323d2d9d7e88590b4554009926349f68b86fbaac599b4ebb935d96e29",
+      "hash": "547b3bb62346210988ce11ab34ea3957b64bf26165fd5dc0c06ebfb3d1283551",
       "id": "ogs-bepinex-mono",
       "install": {
         "extract": [
@@ -6178,6 +6246,10 @@
         },
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/ogs.telemetry.cfg",
+          "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
           "type": "File"
         }
       ],
@@ -7183,7 +7255,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin6.IL2CPP_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "5b87f13667113c269ba36e79f742aa7e693152b2eab39404693593b11413c427",
+      "hash": "9d852c23a0b216f2248843aed9e955bdc16d9a9d69fa7cac678c209a60d2b745",
       "id": "runtime-unity-editor-il2cpp",
       "install": {
         "extract": [
@@ -7198,6 +7270,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-il2cpp",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -7221,7 +7297,7 @@
         "url": "https://github.com/ManlyMarco/RuntimeUnityEditor/releases/download/v6.3.2.2/RuntimeUnityEditor.Bepin5_v6.3.2.2.zip"
       },
       "engine": "Unity",
-      "hash": "d5647f06b29779d966a5ec3d9922819eece34d1bf1a52a5ceefe4d726a3187ef",
+      "hash": "ff3fa96de1ca6968922a882cfad2e74d1d07e12a9b18f14323327c20d2d5eb8a",
       "id": "runtime-unity-editor-mono",
       "install": {
         "extract": [
@@ -7236,6 +7312,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/runtime-unity-editor-mono",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -8178,7 +8258,7 @@
           "383870"
         ]
       },
-      "hash": "112150c464f85ee1ee659f370d6e8961986449f54a5fe4d1094791bf4f0634bc",
+      "hash": "44b126ab5e6b5a00f2f6f0c411555960058afc2fde0a34eac5d8891573e1eb15",
       "id": "TwoForksVr",
       "install": {
         "extract": [
@@ -8217,6 +8297,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/TwoForksVr",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -8693,7 +8777,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip"
       },
       "engine": "Unity",
-      "hash": "4f6d76d3e35026932c47244161f75bd6c05dc1455774e397b0ed0983c79f26ea",
+      "hash": "fb3007dab70b1a59209d8ca658d15588369235f078ab6520c0317a6811d0cea4",
       "id": "unity-explorer-il2cpp",
       "install": {
         "extract": [
@@ -8708,6 +8792,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-il2cpp",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -8731,7 +8819,7 @@
         "url": "https://github.com/yukieiji/UnityExplorer/releases/download/v4.13.6/UnityExplorer.BepInEx5.Mono.zip"
       },
       "engine": "Unity",
-      "hash": "e598bfc66d61b499ad516916d51d2bbc5c15ad77f59cd6926c8347a9833b732d",
+      "hash": "67818187521ad625d75d79ed71b8047504427d520cf721bc22526bb957cc8606",
       "id": "unity-explorer-mono",
       "install": {
         "extract": [
@@ -8746,6 +8834,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/unity-explorer-mono",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -8790,7 +8882,7 @@
           "major": 2019
         }
       },
-      "hash": "4612c3f02c4db12defc9fe797685c47308714773f5ecc6f8f4e3155d41a54cfc",
+      "hash": "ef9294e769b36c294c4ce032a26901fac7d7a125b7a0199192771b5ebcd241c1",
       "id": "uuvr-il2cpp-legacy",
       "install": {
         "extract": [
@@ -8822,6 +8914,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -8850,7 +8946,7 @@
           "major": 2019
         }
       },
-      "hash": "d672f812426b923ad6b5b20804f8623dc3550d78bdcb67737c8667ae361d35e3",
+      "hash": "023b1877366a2aae9d265359cac4b8c451be02edc70b7c72a998aaea37e7532e",
       "id": "uuvr-mono-legacy",
       "install": {
         "extract": [
@@ -8882,6 +8978,10 @@
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-legacy.cfg",
           "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
         }
       ],
       "requiredDependencies": [
@@ -8911,7 +9011,7 @@
           "minor": 4
         }
       },
-      "hash": "1cb7912b4ca8c0ee4f7f7310b5d94e29093cfc178772e3c901df859b99b895e1",
+      "hash": "0600dc91f9c67e0f99e8d85b2b0c13f285eefef6ec9a9e4388c9c58ce6182fb5",
       "id": "uuvr-mono-modern",
       "install": {
         "extract": [
@@ -8942,6 +9042,10 @@
         },
         {
           "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/config/raicuparta.uuvr-modern.cfg",
+          "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
           "type": "File"
         }
       ],

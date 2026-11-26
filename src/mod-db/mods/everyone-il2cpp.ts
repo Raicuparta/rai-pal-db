@@ -21,5 +21,9 @@ export default defineMod({
 		installKind: base.installKind,
 		extract: [base.extract.plugin()],
 	},
-	paths: [base.paths.plugin(), base.paths.config("raicuparta.everyone.json")],
+	paths: [
+		base.paths.plugin(),
+		base.paths.config("raicuparta.everyone.json"),
+		base.paths.logOutput(),
+	],
 });

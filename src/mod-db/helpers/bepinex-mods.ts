@@ -1,5 +1,9 @@
 import type { ModBase } from "../mod.ts";
-import { bepinexConfigFolder, bepinexFolder } from "../paths.ts";
+import {
+	bepinexConfigFolder,
+	bepinexFolder,
+	bepinexLogOutputPath,
+} from "./bepinex-paths.ts";
 
 type ModInstall = NonNullable<ModBase["install"]>;
 type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
@@ -39,6 +43,10 @@ export function bepinexModBase(id: string) {
 			}),
 			config: (fileName: string): ModPath => ({
 				path: `${bepinexConfigFolder}/${fileName}`,
+				type: "File",
+			}),
+			logOutput: (): ModPath => ({
+				path: bepinexLogOutputPath,
 				type: "File",
 			}),
 		},

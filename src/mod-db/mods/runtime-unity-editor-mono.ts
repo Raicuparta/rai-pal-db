@@ -28,5 +28,5 @@ export default defineMod({
 		installKind: base.installKind,
 		extract: [base.extract.plugin("BepInEx/plugins")],
 	},
-	paths: [base.paths.plugin()],
+	paths: [base.paths.plugin(), base.paths.logOutput()],
 });

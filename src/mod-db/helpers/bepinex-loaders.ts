@@ -9,7 +9,11 @@ import type {
 } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 import { createOctokit } from "./github.ts";
-import { bepinexConfigFolder, bepinexFolder } from "../paths.ts";
+import {
+	bepinexConfigFolder,
+	bepinexFolder,
+	bepinexLogOutputPath,
+} from "./bepinex-paths.ts";
 
 type ModInstall = NonNullable<ModBase["install"]>;
 type ModInstallExtract = NonNullable<ModInstall["extract"]>[number];
@@ -383,6 +387,18 @@ export async function bepinexLoader({
 				type: "File",
 				path: `${bepinexConfigFolder}/BepInEx.cfg`,
 			},
+			{
+				type: "File",
+				path: bepinexLogOutputPath,
+			},
+			...(platform.os === "Windows"
+				? [
+						{
+							type: "File" as const,
+							path: `${token.GameExecutableFolderPath}/doorstop_config.ini`,
+						},
+					]
+				: []),
 		],
 		optionalDependencies: [
 			{

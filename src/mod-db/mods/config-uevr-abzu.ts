@@ -1,4 +1,4 @@
-import { uevrConfigPath } from "../paths.ts";
+import { uevrConfigPath } from "../helpers/uevr.ts";
 import { configDownload } from "../helpers/config-database.ts";
 import { defineMod } from "../mod.ts";
 

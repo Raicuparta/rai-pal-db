@@ -43,5 +43,5 @@ export default defineMod({
 			})),
 		],
 	},
-	paths: [base.paths.plugin(), base.paths.patcher()],
+	paths: [base.paths.plugin(), base.paths.patcher(), base.paths.logOutput()],
 });

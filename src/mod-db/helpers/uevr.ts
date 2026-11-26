@@ -1,6 +1,10 @@
 import type { ModBase, ModRun } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
-import { sharedModFolder, uevrConfigPath } from "../paths.ts";
+import { sharedModFolder } from "../paths.ts";
+
+export function uevrConfigPath(): string {
+	return `${token.RoamingAppData}/UnrealVRMod/${token.GameExecutableNameWithoutExtension}`;
+}
 
 export function uevrBase(
 	id: string,

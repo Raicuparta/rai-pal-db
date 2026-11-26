@@ -21,5 +21,5 @@ export default defineMod({
 		installKind: base.installKind,
 		extract: [base.extract.plugin(), base.extract.patcher()],
 	},
-	paths: [base.paths.plugin(), base.paths.patcher()],
+	paths: [base.paths.plugin(), base.paths.patcher(), base.paths.logOutput()],
 });

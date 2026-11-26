@@ -24,5 +24,6 @@ export default defineMod({
 		base.paths.plugin(),
 		base.paths.patcher(),
 		base.paths.config("raicuparta.uuvr-modern.cfg"),
+		base.paths.logOutput(),
 	],
 });

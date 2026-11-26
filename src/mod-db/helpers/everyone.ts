@@ -1,5 +1,5 @@
 import type { ModBase } from "../mod.ts";
-import { bepinexConfigPath } from "../paths.ts";
+import { bepinexConfigPath } from "./bepinex-paths.ts";
 import { configDownload, type ConfigModOptions } from "./config-database.ts";
 
 export const everyoneBase = {

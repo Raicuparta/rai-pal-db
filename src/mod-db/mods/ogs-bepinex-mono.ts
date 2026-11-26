@@ -32,5 +32,9 @@ export default defineMod({
 		installKind: base.installKind,
 		extract: [base.extract.plugin("mono")],
 	},
-	paths: [base.paths.plugin(), base.paths.config("ogs.telemetry.cfg")],
+	paths: [
+		base.paths.plugin(),
+		base.paths.config("ogs.telemetry.cfg"),
+		base.paths.logOutput(),
+	],
 });
