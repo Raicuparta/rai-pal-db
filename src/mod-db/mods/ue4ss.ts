@@ -88,5 +88,13 @@ export default defineMod({
 			type: "Folder",
 			path: `${token.GameInstalledModsPath}/ue4ss`,
 		},
+		{
+			type: "File",
+			path: `${token.GameInstalledModsPath}/ue4ss/UE4SS.log`,
+		},
+		{
+			type: "File",
+			path: `${token.GameInstalledModsPath}/ue4ss/UE4SS-settings.ini`,
+		},
 	],
 });

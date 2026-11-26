@@ -8323,7 +8323,7 @@
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1208-g6f8dc3cc.zip"
       },
       "engine": "Unreal",
-      "hash": "8f8216cf1d13f4383cb7585136d0dc4732805ba5c88ef7ae1b336fb595730459",
+      "hash": "bf268d7852d695c2702df827616beb1a7de80fb207c7d62a20386433c4583d39",
       "id": "ue4ss",
       "install": {
         "extract": [
@@ -8351,6 +8351,14 @@
         {
           "path": "{{GameInstalledModsPath}}/ue4ss",
           "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/ue4ss/UE4SS.log",
+          "type": "File"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/ue4ss/UE4SS-settings.ini",
+          "type": "File"
         }
       ],
       "tags": [
