@@ -5672,6 +5672,66 @@
       "website": "https://discord.com/channels/747967102895390741/1553053055975690260"
     },
     {
+      "architecture": "X64",
+      "author": "JohnCorby",
+      "description": "VR Mod for Lorn's Lure, with motion controls.",
+      "download": {
+        "id": "1.0.0",
+        "releaseDate": "2026-11-27T04:09:46Z",
+        "url": "https://github.com/JohnCorby/lorns-lure-vr/releases/download/1.0.0/mod.zip"
+      },
+      "engine": "Unity",
+      "gameIds": {
+        "Itch": [
+          "876614"
+        ],
+        "NormalizedExecutable": [
+          "lornslure"
+        ],
+        "Steam": [
+          "1417930",
+          "1514800"
+        ]
+      },
+      "hash": "75befe765f745e12f6dea3ef2c7b72257dc212823a48fbec087290f6f6a7f570",
+      "id": "lorns-lure-vr",
+      "install": {
+        "extract": [
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/lorns-lure-vr",
+            "source": "plugins"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/lorns-lure-vr",
+            "source": "patchers"
+          }
+        ],
+        "installKind": "PerGame"
+      },
+      "paths": [
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/plugins/lorns-lure-vr",
+          "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/patchers/lorns-lure-vr",
+          "type": "Folder"
+        },
+        {
+          "path": "{{GameInstalledModsPath}}/bepinex/BepInEx/LogOutput.log",
+          "type": "File"
+        }
+      ],
+      "requiredDependencies": [
+        {
+          "tag": "bepinex"
+        }
+      ],
+      "title": "Lorn's Lure VR",
+      "unityBackend": "Mono",
+      "website": "https://github.com/JohnCorby/lorns-lure-vr"
+    },
+    {
       "author": "Tesseract",
       "description": "Lunacid VR mod with full motion controls.",
       "gameIds": {
