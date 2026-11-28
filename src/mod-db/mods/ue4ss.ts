@@ -4,6 +4,20 @@ import { defineMod } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 const id = "ue4ss";
+const ue4ssFolder = `${token.GameInstalledModsPath}/ue4ss`;
+const builtInModEntries = [
+	"BPML_GenericFunctions",
+	"BPModLoaderMod",
+	"CheatManagerEnablerMod",
+	"ConsoleCommandsMod",
+	"ConsoleEnablerMod",
+	"Keybinds",
+	"LineTraceMod",
+	"mods.json",
+	"mods.txt",
+	"shared",
+	"SplitScreenMod",
+];
 const octokit = createOctokit();
 const VERSION_PATTERN = /^UE4SS_(v[\d.]+\-\d+)[\-\w]*\.zip$/;
 
@@ -67,9 +81,25 @@ export default defineMod({
 		installKind: "PerGame",
 		extract: [
 			{
-				source: "ue4ss",
-				destination: `${token.GameInstalledModsPath}/ue4ss`,
+				source: "ue4ss/UE4SS.dll",
+				destination: `${ue4ssFolder}/UE4SS.dll`,
 			},
+			{
+				source: "ue4ss/UE4SS_SDK_Backends",
+				destination: `${ue4ssFolder}/UE4SS_SDK_Backends`,
+			},
+			{
+				source: "ue4ss/UE4SS-settings.ini",
+				destination: `${ue4ssFolder}/UE4SS-settings.ini`,
+			},
+			{
+				source: "ue4ss/LICENSE",
+				destination: `${ue4ssFolder}/LICENSE`,
+			},
+			...builtInModEntries.map((entry) => ({
+				source: `ue4ss/Mods/${entry}`,
+				destination: `${ue4ssFolder}/Mods/${entry}`,
+			})),
 			{
 				source: "dwmapi.dll",
 				destination: `${token.GameExecutableFolderPath}/dwmapi.dll`,
@@ -77,7 +107,7 @@ export default defineMod({
 		],
 		write: [
 			{
-				content: `${token.MaybeWineRoot}${token.GameInstalledModsPath}/ue4ss`,
+				content: `${token.MaybeWineRoot}${ue4ssFolder}`,
 				destination: `${token.GameExecutableFolderPath}/override.txt`,
 			},
 		],
@@ -86,15 +116,15 @@ export default defineMod({
 	paths: [
 		{
 			type: "Folder",
-			path: `${token.GameInstalledModsPath}/ue4ss`,
+			path: ue4ssFolder,
 		},
 		{
 			type: "File",
-			path: `${token.GameInstalledModsPath}/ue4ss/UE4SS.log`,
+			path: `${ue4ssFolder}/UE4SS.log`,
 		},
 		{
 			type: "File",
-			path: `${token.GameInstalledModsPath}/ue4ss/UE4SS-settings.ini`,
+			path: `${ue4ssFolder}/UE4SS-settings.ini`,
 		},
 	],
 });

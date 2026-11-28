@@ -8383,13 +8383,69 @@
         "url": "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1208-g6f8dc3cc.zip"
       },
       "engine": "Unreal",
-      "hash": "bf268d7852d695c2702df827616beb1a7de80fb207c7d62a20386433c4583d39",
+      "hash": "13fd9b4b3503c2235628c1c8f37633c665a6c6288ba9849fa3d18dc3939a5a63",
       "id": "ue4ss",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/ue4ss",
-            "source": "ue4ss"
+            "destination": "{{GameInstalledModsPath}}/ue4ss/UE4SS.dll",
+            "source": "ue4ss/UE4SS.dll"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/UE4SS_SDK_Backends",
+            "source": "ue4ss/UE4SS_SDK_Backends"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/UE4SS-settings.ini",
+            "source": "ue4ss/UE4SS-settings.ini"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/LICENSE",
+            "source": "ue4ss/LICENSE"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/BPML_GenericFunctions",
+            "source": "ue4ss/Mods/BPML_GenericFunctions"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/BPModLoaderMod",
+            "source": "ue4ss/Mods/BPModLoaderMod"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/CheatManagerEnablerMod",
+            "source": "ue4ss/Mods/CheatManagerEnablerMod"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/ConsoleCommandsMod",
+            "source": "ue4ss/Mods/ConsoleCommandsMod"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/ConsoleEnablerMod",
+            "source": "ue4ss/Mods/ConsoleEnablerMod"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/Keybinds",
+            "source": "ue4ss/Mods/Keybinds"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/LineTraceMod",
+            "source": "ue4ss/Mods/LineTraceMod"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/mods.json",
+            "source": "ue4ss/Mods/mods.json"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/mods.txt",
+            "source": "ue4ss/Mods/mods.txt"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/shared",
+            "source": "ue4ss/Mods/shared"
+          },
+          {
+            "destination": "{{GameInstalledModsPath}}/ue4ss/Mods/SplitScreenMod",
+            "source": "ue4ss/Mods/SplitScreenMod"
           },
           {
             "destination": "{{GameExecutableFolderPath}}/dwmapi.dll",
