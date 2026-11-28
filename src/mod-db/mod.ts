@@ -129,7 +129,12 @@ export interface ModBase {
 			source: string;
 
 			/**
-			 * Supports replacement tokens. Destination path to extract this file or folder to. If source was a folder, this must be a folder, if file, file.
+			 * Supports replacement tokens. Destination path to extract this file or folder to.
+			 * If source was a folder, this must be a folder, if file, file
+			 *
+			 * CAUTION: these paths get deleted when uninstalling or updating this mod.
+			 * So you gotta be careful not to use some preexisting folder as the destination.
+			 * This is also important to keep in mind for any "parent" mods (like mod loaders) that will have other mods inside their folders.
 			 */
 			destination: string;
 		}[];
