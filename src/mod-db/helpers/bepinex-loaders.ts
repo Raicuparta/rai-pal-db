@@ -328,7 +328,7 @@ export async function bepinexLoader({
 
 	const id = `bepinex-${spec.idPart}-${modIdSuffix(platform)}`;
 	const extract: ModInstallExtract[] = [
-		{ source: "BepInEx", destination: bepinexFolder },
+		{ source: "BepInEx/core", destination: `${bepinexFolder}/core` },
 		...spec.extraExtract,
 	];
 

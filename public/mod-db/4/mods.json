@@ -523,13 +523,13 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "e54652aa6b020e41c1743714dc550411aaa21a5f3527cf2014950ffb1f1338be",
+      "hash": "b2ddbf22101d8a249b6f6047a69382240326ad9178a0ecbf08c67d16982859a7",
       "id": "bepinex-il2cpp-linux-x64",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/core",
+            "source": "BepInEx/core"
           },
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/dotnet",
@@ -582,13 +582,13 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "68e201d3ea4f8695cb665d4e52e50c9cb84c1f6f5a4567ab32e61857f55169e0",
+      "hash": "9465bf1f92de26230c1fe6d84531d349c07d8dddb587912f8b67438862746503",
       "id": "bepinex-il2cpp-x64",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/core",
+            "source": "BepInEx/core"
           },
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/dotnet",
@@ -654,13 +654,13 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "ee20219b19d9a4bc4d1a60a194815d716fef970b9e84fabce57e4744d770d97a",
+      "hash": "efc2fed8ad2aab87181dd20ebc43c4c6686399c7321a83193a087f2e42f47ade",
       "id": "bepinex-il2cpp-x86",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/core",
+            "source": "BepInEx/core"
           },
           {
             "destination": "{{GameInstalledModsPath}}/bepinex/dotnet",
@@ -733,13 +733,13 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "dd1e32c53ce5dbe58d566cc30cf3fc6037a89d515af6405625443e0d9945d136",
+      "hash": "b986b9a4c809c49493c3fb07709c25bb90922f97a41b92184598d928da66712f",
       "id": "bepinex-mono-linux-x64",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/core",
+            "source": "BepInEx/core"
           },
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
@@ -795,13 +795,13 @@
         "LD_PRELOAD": "libdoorstop.so:${LD_PRELOAD}"
       },
       "gameOs": "Linux",
-      "hash": "a799f47708a6c25b33cba7a212230c2edae0ac8f4fe4a8f7018c8c87a429e244",
+      "hash": "692e2d583b9e77069531ab5a9bd9fb9d2379049263356d520df7e309a5283858",
       "id": "bepinex-mono-linux-x86",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/core",
+            "source": "BepInEx/core"
           },
           {
             "destination": "{{GameExecutableFolderPath}}/libdoorstop.so",
@@ -850,13 +850,13 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "1e4ccb1208404fc332e7192f733269c4345b48fa09aefe2a567f4d8cfa06ebc7",
+      "hash": "5a510989243d89c0001157b9be55778ba0f8f2d6447e00ec9f8d8e53a7ed6233",
       "id": "bepinex-mono-x64",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/core",
+            "source": "BepInEx/core"
           },
           {
             "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
@@ -918,13 +918,13 @@
       },
       "engine": "Unity",
       "gameOs": "Windows",
-      "hash": "2face86166f45591bfb635fa36fba645977c1e38123b1e8562d08e20964900fa",
+      "hash": "c4fb0b0e9c7c260169acd7ae4cea277b7bb0fc0625c3dd84dd9e480bb979613f",
       "id": "bepinex-mono-x86",
       "install": {
         "extract": [
           {
-            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx",
-            "source": "BepInEx"
+            "destination": "{{GameInstalledModsPath}}/bepinex/BepInEx/core",
+            "source": "BepInEx/core"
           },
           {
             "destination": "{{GameExecutableFolderPath}}/winhttp.dll",
