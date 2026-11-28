@@ -1,23 +1,11 @@
 import { createOctokit } from "../helpers/github.ts";
+import { extractZipContents } from "../helpers/zip-extracts.ts";
 import type { ModDownload } from "../mod.ts";
 import { defineMod } from "../mod.ts";
 import { token } from "../replacement-tokens.ts";
 
 const id = "ue4ss";
 const ue4ssFolder = `${token.GameInstalledModsPath}/ue4ss`;
-const builtInModEntries = [
-	"BPML_GenericFunctions",
-	"BPModLoaderMod",
-	"CheatManagerEnablerMod",
-	"ConsoleCommandsMod",
-	"ConsoleEnablerMod",
-	"Keybinds",
-	"LineTraceMod",
-	"mods.json",
-	"mods.txt",
-	"shared",
-	"SplitScreenMod",
-];
 const octokit = createOctokit();
 const VERSION_PATTERN = /^UE4SS_(v[\d.]+\-\d+)[\-\w]*\.zip$/;
 
@@ -68,6 +56,8 @@ async function getLatestUe4ss(): Promise<ModDownload> {
 	};
 }
 
+const download = await getLatestUe4ss();
+
 export default defineMod({
 	id,
 	tags: ["ue4ss"],
@@ -76,7 +66,7 @@ export default defineMod({
 	author: "UE4SS-RE",
 	website: "https://github.com/UE4SS-RE/RE-UE4SS",
 	description: "Scripting and modding framework for Unreal Engine games.",
-	download: await getLatestUe4ss(),
+	download,
 	install: {
 		installKind: "PerGame",
 		extract: [
@@ -96,10 +86,11 @@ export default defineMod({
 				source: "ue4ss/LICENSE",
 				destination: `${ue4ssFolder}/LICENSE`,
 			},
-			...builtInModEntries.map((entry) => ({
-				source: `ue4ss/Mods/${entry}`,
-				destination: `${ue4ssFolder}/Mods/${entry}`,
-			})),
+			...(await extractZipContents(
+				download,
+				"ue4ss/Mods",
+				`${ue4ssFolder}/Mods`,
+			)),
 			{
 				source: "dwmapi.dll",
 				destination: `${token.GameExecutableFolderPath}/dwmapi.dll`,

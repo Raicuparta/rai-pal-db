@@ -7,8 +7,12 @@ import { hash } from "canonical-json/hash";
 import { discoverMods } from "./discover-mods.ts";
 import type { Mod } from "./mod.ts";
 import { tags } from "./tags.ts";
+import { validateExtracts } from "./validate-extracts.ts";
 
-const mods: Mod[] = (await discoverMods()).map((mod) => ({
+const discoveredMods = await discoverMods();
+await validateExtracts(discoveredMods);
+
+const mods: Mod[] = discoveredMods.map((mod) => ({
 	...mod,
 	hash: hash(mod),
 }));
